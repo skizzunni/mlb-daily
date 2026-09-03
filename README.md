@@ -43,9 +43,17 @@ For a public URL that updates with the Mac closed, push this repo and turn on Pa
 3. In the repo: **Settings → Pages → Source → GitHub Actions**.
 4. **Actions → Rebuild MLB picks → Run workflow** once to seed it.
 
-Lands at `https://<you>.github.io/mlb-daily/` and rebuilds at :05 every hour on GitHub's
+Lands at `https://<you>.github.io/mlb-daily/` and rebuilds every ~10 minutes on GitHub's
 runners. Free for public repos, and `data/history.json` is committed each run so the graded
-record survives.
+record survives. Scheduled Actions are best-effort and often run late under load, so treat
+`*/10` as "roughly every 10-20 minutes".
+
+Pages serves:
+
+| path | page |
+|---|---|
+| `/` | the board — phone-oriented, 60s auto-refresh, live scores |
+| `/detail.html` | the fuller view with every model input |
 
 Note the repo must be public for free Pages, and everything in it is then public — the model,
 the picks, and the record. Nothing here holds credentials.
@@ -71,7 +79,7 @@ later run, so nothing is left ungraded.
 | `model.py` | data fetching + the run-expectancy model + simulator |
 | `build.py` | runs the model over today's slate, writes `site/index.html` |
 | `backtest.py` | grades the model against completed games |
-| `artifact.py` | emits `site/board.html`, the shareable board |
+| `artifact.py` | the shareable board; `--standalone` emits a full document for web hosting |
 | `data/history.json` | every pick, locked at first pitch, auto-graded |
 | `data/lines.json` | *optional* real book lines, keyed by gamePk (see below) |
 
