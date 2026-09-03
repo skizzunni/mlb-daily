@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-"""Emit an Artifact-ready page (no doctype/html/head/body wrapper) from the
-same data build.py produces. Usage: python3 artifact.py > site/board.html"""
+"""Render the shareable board from the data build.py produces.
+
+  python3 artifact.py              -> Artifact fragment (no doctype/html/head/body)
+  python3 artifact.py --standalone -> full document for GitHub Pages / any web host
+"""
 import json, os, sys, datetime as dt
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -178,11 +181,27 @@ def main():
                             ("%.0f%%" % (100 * r ** n)))
                          for n in (1, 2, 3, 5, 9)))
 
+    standalone = "--standalone" in sys.argv
     out = PAGE
     for k, v in (("@DATE@", data["date"]), ("@GEN@", data["generated"]),
                  ("@N@", str(len(games))), ("@PLAYS@", pl), ("@READNOTE@", readnote),
                  ("@BT@", btb), ("@STRIP@", strip), ("@CARDS@", "".join(cards))):
         out = out.replace(k, v)
+    if standalone:
+        marker = '\n<div class="wrap">'
+        head, body = out.split(marker, 1)
+        out = (
+            '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            '<meta http-equiv="refresh" content="60">\n'
+            '<meta name="theme-color" content="#0c1216">\n'
+            '<meta name="color-scheme" content="dark">\n'
+            '<meta name="apple-mobile-web-app-capable" content="yes">\n'
+            '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">\n'
+            '<meta name="description" content="MLB model win probabilities against real '
+            'de-vigged market prices, with live scores.">\n'
+            + head +
+            '\n</head>\n<body>\n<div class="wrap">' + body + '\n</body>\n</html>')
     print(out)
 
 
@@ -200,6 +219,7 @@ PAGE = """<title>MLB Model Board</title>
   --mono:'IBM Plex Mono','SF Mono',Menlo,monospace;
 }
 *{box-sizing:border-box}
+html{background:var(--ground)}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
   font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding:26px 18px 60px}

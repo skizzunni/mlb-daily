@@ -29,6 +29,8 @@ jobs:
       - name: Build site
         run: |
           python3 build.py
+          mv site/index.html site/detail.html          # detailed view
+          python3 artifact.py --standalone > site/index.html   # the shareable board
           python3 artifact.py > site/board.html
 
       # keep the graded pick history across runs
