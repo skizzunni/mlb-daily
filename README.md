@@ -10,7 +10,8 @@ launchctl load ~/Library/LaunchAgents/com.skizzy.mlbdaily.build.plist
 launchctl load ~/Library/LaunchAgents/com.skizzy.mlbdaily.serve.plist
 ```
 
-- Rebuilds every hour (`StartInterval 3600`), also on login.
+- Rebuilds **every 5 minutes** (`StartInterval 300`), also on login. A warm rebuild takes
+  ~1.3s, so this is cheap: it keeps scores live and refreshes picks far inside an hour.
 - Serves `site/` at <http://localhost:8765> — reachable from your phone on the
   same wifi at `http://<your-mac-ip>:8765` (`ipconfig getifaddr en0`).
 
@@ -48,6 +49,20 @@ record survives.
 
 Note the repo must be public for free Pages, and everything in it is then public — the model,
 the picks, and the record. Nothing here holds credentials.
+
+## What updates, and when
+
+| | cadence | notes |
+|---|---|---|
+| Live scores | every 5 min | inning, half, outs, R-H-E from the schedule linescore |
+| Pick refresh | every 5 min, until first pitch | a pick is **frozen** once its game starts |
+| New slate | daily | the Eastern date rolls the slate over, not the runner's clock |
+| Grading | every 5 min | finals graded automatically, including games that end after midnight |
+
+Picks lock at first pitch and the page renders the *locked* pick, not whatever the model
+says later — otherwise the page would show a pick the record never took. Late games that
+finish after the date rolls over are swept up and graded by `grade_open_days()` on a
+later run, so nothing is left ungraded.
 
 ## Files
 

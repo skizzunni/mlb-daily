@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="600">
+<meta http-equiv="refresh" content="60">
 <title>MLB Model — 2026-09-03</title>
 <style>
 :root{--bg:#0b0f14;--card:#141b24;--card2:#0f1620;--fg:#e7edf3;--dim:#8fa3b8;--line:#22303f;
@@ -23,7 +23,21 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)
 .match{font-weight:600;font-size:16px}
 .rec{color:var(--dim);font-weight:400;font-size:12px}
 .status{font-size:12px;color:var(--dim);text-align:right}
-.live{color:var(--acc);font-weight:600}
+.live{color:var(--acc);font-weight:700}
+.livescore{font-weight:600;color:var(--fg)}
+.inn{color:var(--dim);font-size:11.5px}
+.strip{background:var(--card2);border:1px solid var(--line);border-radius:10px;
+  padding:11px 13px;margin:14px 0 4px}
+.striph{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);
+  margin-bottom:8px}
+.scg{display:flex;gap:8px;flex-wrap:wrap}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:7px 10px;
+  min-width:88px}
+.sc.live{border-color:var(--acc)}
+.sc.won{border-left:3px solid var(--a)}
+.sc.lost{border-left:3px solid var(--red)}
+.scs{font-size:13px;font-weight:600;line-height:1.35;font-variant-numeric:tabular-nums}
+.scl{font-size:10.5px;color:var(--dim);margin-top:3px;text-transform:uppercase;letter-spacing:.05em}
 .final{color:var(--fg)}
 .win{color:var(--a);font-weight:700}
 .loss{color:var(--red);font-weight:700}
@@ -70,7 +84,8 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
 </style></head><body>
 
 <h1>MLB Model &mdash; 2026-09-03</h1>
-<div class="sub">Updated Sep 3, 3:25 AM EDT &middot; refreshes hourly, on its own &middot; 9 games</div>
+<div class="sub">Updated Sep 3, 3:43 AM EDT &middot; rebuilds every 5 min, scores live &middot; 9 games</div>
+
 
 <div class="rowstats">
   <div class="stat"><div class="k">Live record</div><div class="v">0-0</div></div>
@@ -286,6 +301,6 @@ above, it was read from a named source. Lines are never estimated — a blank me
 because a guessed line is worse than no line.</p>
 <p><strong>Picks lock at first pitch</strong> and are graded automatically against final scores, so
 the record above is the model's real one, including its losses.</p>
-<p>Generated Sep 3, 3:25 AM EDT by <code>build.py</code>. No LLM in the loop.</p>
+<p>Generated Sep 3, 3:43 AM EDT by <code>build.py</code>. No LLM in the loop.</p>
 </footer>
 </body></html>

@@ -68,6 +68,22 @@ def save_json(path, obj):
 
 # ---------------------------------------------------------------- analysis
 
+def live_state(g):
+    """Inning / half / outs for an in-progress game."""
+    ls = g.get("linescore") or {}
+    if not ls.get("currentInning"):
+        return None
+    half = (ls.get("inningState") or "").strip()
+    return {
+        "inning": ls.get("currentInning"),
+        "ord": ls.get("currentInningOrdinal", ""),
+        "half": half,
+        "outs": ls.get("outs"),
+        "away_h": (ls.get("teams", {}).get("away") or {}).get("hits"),
+        "home_h": (ls.get("teams", {}).get("home") or {}).get("hits"),
+    }
+
+
 def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
     away_t = g["teams"]["away"]["team"]
     home_t = g["teams"]["home"]["team"]
@@ -130,6 +146,7 @@ def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
         "pk": g["gamePk"],
         "state": g["status"]["abstractGameState"],
         "detail": g["status"]["detailedState"],
+        "live": live_state(g),
         "start_utc": g["gameDate"],
         "venue": venue,
         "park_factor": round(pf, 3),
@@ -262,8 +279,59 @@ def update_history(date_str, games):
                 rec["final"] = "%s %s - %s %s" % (a["away"]["abbr"], as_, a["home"]["abbr"], hs)
         a["locked"] = rec.get("locked", False)
         a["result"] = rec.get("result")
+        # The graded record is the locked one; render that, not whatever the model
+        # says now, or the page would show a pick the history never took.
+        if rec.get("locked") and rec.get("side") != a["pick"]["side"]:
+            a["pick"] = dict(a["pick"], team=rec["pick"], side=rec["side"], p=rec["p"],
+                             tier=rec["tier"], fair=rec["fair"],
+                             team_name=a[rec["side"]]["name"],
+                             reasons=["Locked at first pitch. The model has since moved to "
+                                      "the other side; the locked pick is what gets graded."])
+        elif rec.get("locked"):
+            a["pick"] = dict(a["pick"], p=rec["p"], tier=rec["tier"], fair=rec["fair"])
     save_json(HISTORY, hist)
     return hist
+
+
+def grade_open_days(hist, today_str):
+    """A 10pm ET game ends after midnight, by which point the build has moved to the
+    next slate -- without this sweep those picks would never be graded."""
+    graded = 0
+    for date_str in sorted(hist.keys()):
+        if date_str >= today_str:
+            continue
+        day = hist[date_str]
+        if all(r.get("result") for r in day.values()):
+            continue
+        try:
+            sl = M.fetch_slate(date_str)
+        except Exception as e:
+            sys.stderr.write("grade %s: %s\n" % (date_str, e))
+            continue
+        finals = {}
+        for d in sl.get("dates", []):
+            for g in d.get("games", []):
+                if g.get("status", {}).get("abstractGameState") != "Final":
+                    continue
+                hs = g["teams"]["home"].get("score")
+                as_ = g["teams"]["away"].get("score")
+                if hs is None or as_ is None:
+                    continue
+                finals[str(g["gamePk"])] = (as_, hs)
+        for pk, r in day.items():
+            if r.get("result") or pk not in finals:
+                continue
+            a_, h_ = finals[pk]
+            if a_ == h_:
+                continue
+            winner = "home" if h_ > a_ else "away"
+            r["result"] = "W" if winner == r.get("side") else "L"
+            r["final"] = "%d-%d" % (a_, h_)
+            r["locked"] = True
+            graded += 1
+    if graded:
+        sys.stderr.write("graded %d carry-over pick(s) from previous days\n" % graded)
+    return graded
 
 
 def tally(hist):
@@ -363,8 +431,17 @@ def render(date_str, games, hist, lines, notes, generated):
                     "win" if a["result"] == "W" else "loss",
                     "PICK WON" if a["result"] == "W" else "PICK LOST")
         elif a["state"] == "Live":
-            status = '<span class="live">LIVE %s %s - %s %s</span>' % (
-                a["away"]["abbr"], a["away"]["score"], a["home"]["abbr"], a["home"]["score"])
+            lv = a.get("live") or {}
+            half = lv.get("half") or ""
+            outs = lv.get("outs")
+            when_ = "%s %s" % (half, lv.get("ord", "")) if half else "In progress"
+            if outs is not None and half in ("Top", "Bottom"):
+                when_ += ", %d out" % outs
+            status = ('<span class="live">&#9679; LIVE</span> '
+                      '<span class="livescore">%s %s &ndash; %s %s</span> '
+                      '<span class="inn">%s</span>'
+                      % (a["away"]["abbr"], a["away"]["score"],
+                         a["home"]["abbr"], a["home"]["score"], when_))
         else:
             t = dt.datetime.strptime(a["start_utc"], "%Y-%m-%dT%H:%M:%SZ")
             t = t.replace(tzinfo=dt.timezone.utc)
@@ -419,6 +496,29 @@ def render(date_str, games, hist, lines, notes, generated):
     body_plays = "".join(game_card(a) for a in plays) or '<p class="none">No game on this slate clears the 60% threshold. That is the honest read — not every day has a play.</p>'
     body_leans = "".join(game_card(a) for a in leans)
     body_pass = "".join(game_card(a) for a in passes)
+
+    live_now = [a for a in games if a["state"] == "Live"]
+    done = [a for a in games if a["state"] == "Final"]
+    strip = ""
+    if live_now or done:
+        cells = ""
+        for a in live_now + done:
+            lv = a.get("live") or {}
+            if a["state"] == "Live":
+                sub = "%s %s" % (lv.get("half", ""), lv.get("ord", "")) if lv.get("half") else "live"
+                cls = "sc live"
+            else:
+                sub = "final"
+                cls = "sc"
+                if a.get("result"):
+                    cls += " won" if a["result"] == "W" else " lost"
+            cells += ('<div class="%s"><div class="scs">%s %s<br>%s %s</div>'
+                      '<div class="scl">%s</div></div>'
+                      % (cls, a["away"]["abbr"], a["away"]["score"],
+                         a["home"]["abbr"], a["home"]["score"], sub))
+        strip = ('<div class="strip"><div class="striph">Scoreboard &mdash; %d live, '
+                 '%d final</div><div class="scg">%s</div></div>'
+                 % (len(live_now), len(done), cells))
 
     bt = backtest_summary()
     a_rec = rec.get("A", [0, 0]); b_rec = rec.get("B", [0, 0]); all_rec = rec["ALL"]
@@ -538,7 +638,7 @@ def render(date_str, games, hist, lines, notes, generated):
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="600">
+<meta http-equiv="refresh" content="60">
 <title>MLB Model — %s</title>
 <style>
 :root{--bg:#0b0f14;--card:#141b24;--card2:#0f1620;--fg:#e7edf3;--dim:#8fa3b8;--line:#22303f;
@@ -559,7 +659,21 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)
 .match{font-weight:600;font-size:16px}
 .rec{color:var(--dim);font-weight:400;font-size:12px}
 .status{font-size:12px;color:var(--dim);text-align:right}
-.live{color:var(--acc);font-weight:600}
+.live{color:var(--acc);font-weight:700}
+.livescore{font-weight:600;color:var(--fg)}
+.inn{color:var(--dim);font-size:11.5px}
+.strip{background:var(--card2);border:1px solid var(--line);border-radius:10px;
+  padding:11px 13px;margin:14px 0 4px}
+.striph{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);
+  margin-bottom:8px}
+.scg{display:flex;gap:8px;flex-wrap:wrap}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:7px 10px;
+  min-width:88px}
+.sc.live{border-color:var(--acc)}
+.sc.won{border-left:3px solid var(--a)}
+.sc.lost{border-left:3px solid var(--red)}
+.scs{font-size:13px;font-weight:600;line-height:1.35;font-variant-numeric:tabular-nums}
+.scl{font-size:10.5px;color:var(--dim);margin-top:3px;text-transform:uppercase;letter-spacing:.05em}
 .final{color:var(--fg)}
 .win{color:var(--a);font-weight:700}
 .loss{color:var(--red);font-weight:700}
@@ -606,8 +720,9 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
 </style></head><body>
 
 <h1>MLB Model &mdash; %s</h1>
-<div class="sub">Updated %s &middot; refreshes hourly, on its own &middot; %d games</div>
+<div class="sub">Updated %s &middot; rebuilds every 5 min, scores live &middot; %d games</div>
 
+%s
 <div class="rowstats">
   <div class="stat"><div class="k">Live record</div><div class="v">%s</div></div>
   <div class="stat"><div class="k">PLAY tier</div><div class="v">%s</div></div>
@@ -641,7 +756,7 @@ the record above is the model's real one, including its losses.</p>
 <p>Generated %s by <code>build.py</code>. No LLM in the loop.</p>
 </footer>
 </body></html>""" % (
-        date_str, date_str, generated, len(games),
+        date_str, date_str, generated, len(games), strip,
         wl(all_rec), wl(a_rec), wl(b_rec), rec["days"], read, bt_block,
         body_plays,
         body_leans or '<p class="none">None.</p>',
@@ -651,7 +766,10 @@ the record above is the model's real one, including its losses.</p>
 # ---------------------------------------------------------------- main
 
 def main():
-    date_str = sys.argv[1] if len(sys.argv) > 1 else dt.date.today().isoformat()
+    # MLB schedules by Eastern date. On a UTC runner dt.date.today() would roll the
+    # slate over at 8pm ET and drop every late game.
+    today = (dt.datetime.now(TZ) if TZ else dt.datetime.now()).date()
+    date_str = sys.argv[1] if len(sys.argv) > 1 else today.isoformat()
     sl = M.fetch_slate(date_str)
     team_stats = M.fetch_team_stats(SEASON)
     lg = M.league_constants(team_stats)
@@ -682,6 +800,8 @@ def main():
 
     games.sort(key=lambda x: (-x["pick"]["p"], x["start_utc"]))
     hist = update_history(date_str, games)
+    if grade_open_days(hist, date_str):
+        save_json(HISTORY, hist)
 
     now = dt.datetime.now(TZ) if TZ else dt.datetime.now()
     generated = now.strftime("%b %-d, %-I:%M %p %Z").strip()

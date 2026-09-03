@@ -30,6 +30,26 @@ def main():
 
     plays = [r for r in rows if r[4] is not None and r[4] >= 0.03]
 
+    live_now = [g for g in games if g.get("state") == "Live"]
+    done = [g for g in games if g.get("state") == "Final"]
+    strip = ""
+    if live_now or done:
+        cells = ""
+        for g in live_now + done:
+            lv = g.get("live") or {}
+            if g.get("state") == "Live":
+                sub = ("%s %s" % (lv.get("half", ""), lv.get("ord", ""))).strip() or "live"
+                cls = "sc islive"
+            else:
+                sub, cls = "final", "sc"
+                if g.get("result"):
+                    cls += " won" if g["result"] == "W" else " lost"
+            cells += ('<div class="%s"><b>%s %s</b><b>%s %s</b><span>%s</span></div>'
+                      % (cls, g["away"]["abbr"], g["away"]["score"],
+                         g["home"]["abbr"], g["home"]["score"], sub))
+        strip = ('<section class="strip"><h2>Scoreboard &middot; %d live &middot; %d final</h2>'
+                 '<div class="scg">%s</div></section>' % (len(live_now), len(done), cells))
+
     def bar(model, market):
         """Two stacked measures on one 0-100 scale."""
         m2 = "" if market is None else (
@@ -43,6 +63,19 @@ def main():
             tzinfo=dt.timezone.utc)
         t = t.astimezone(B.TZ) if B.TZ else t
         when = t.strftime("%-I:%M %p")
+        if g.get("state") == "Live":
+            lv = g.get("live") or {}
+            half = lv.get("half") or ""
+            when = '<span class="lv">&#9679; %s %s</span> %s %s&ndash;%s %s' % (
+                half, lv.get("ord", ""), g["away"]["abbr"], g["away"]["score"],
+                g["home"]["abbr"], g["home"]["score"])
+        elif g.get("state") == "Final":
+            res = g.get("result")
+            mark = ('<span class="won">PICK WON</span>' if res == "W" else
+                    '<span class="lost">PICK LOST</span>' if res == "L" else "")
+            when = 'FINAL %s %s&ndash;%s %s %s' % (
+                g["away"]["abbr"], g["away"]["score"],
+                g["home"]["abbr"], g["home"]["score"], mark)
         if edge is None:
             ecls, etxt = "flat", "no line"
         elif edge >= 0.03:
@@ -148,7 +181,7 @@ def main():
     out = PAGE
     for k, v in (("@DATE@", data["date"]), ("@GEN@", data["generated"]),
                  ("@N@", str(len(games))), ("@PLAYS@", pl), ("@READNOTE@", readnote),
-                 ("@BT@", btb), ("@CARDS@", "".join(cards))):
+                 ("@BT@", btb), ("@STRIP@", strip), ("@CARDS@", "".join(cards))):
         out = out.replace(k, v)
     print(out)
 
@@ -188,6 +221,16 @@ section{margin-top:30px}
 .prow span{color:var(--dim);font-size:13px;font-family:var(--mono);margin-right:auto}
 .prow .pos{color:var(--jade);font-family:var(--mono);font-size:17px}
 .prow.none{color:var(--dim)}
+.strip .scg{display:flex;gap:7px;flex-wrap:wrap}
+.sc{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:7px 10px;
+  min-width:82px;display:flex;flex-direction:column}
+.sc b{font-family:var(--mono);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums}
+.sc span{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);
+  margin-top:3px}
+.sc.islive{border-color:var(--jade)}
+.sc.won{border-left:2px solid var(--jade)} .sc.lost{border-left:2px solid var(--rust)}
+.lv{color:var(--jade);font-weight:600}
+.won{color:var(--jade);font-weight:600} .lost{color:var(--rust);font-weight:600}
 .dog{color:var(--amber);font-style:normal}
 .readnote{font-size:13px;color:#b6c8d2;margin-top:11px;padding-top:11px;
   border-top:1px solid var(--jade-dim)}
@@ -254,6 +297,7 @@ footer b{color:var(--dim);font-weight:600}
 <h1>MLB Model <span>Board</span></h1>
 <div class="meta"><span>@DATE@</span><span>@N@ games</span><span>built @GEN@</span></div>
 
+@STRIP@
 <section class="read">
   <h2>Today's read</h2>
   @PLAYS@

@@ -4,7 +4,7 @@ name: Rebuild MLB picks
 # Free for public repos. No API keys needed; MLB StatsAPI is public.
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:

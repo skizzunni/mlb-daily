@@ -33,6 +33,16 @@ section{margin-top:30px}
 .prow span{color:var(--dim);font-size:13px;font-family:var(--mono);margin-right:auto}
 .prow .pos{color:var(--jade);font-family:var(--mono);font-size:17px}
 .prow.none{color:var(--dim)}
+.strip .scg{display:flex;gap:7px;flex-wrap:wrap}
+.sc{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:7px 10px;
+  min-width:82px;display:flex;flex-direction:column}
+.sc b{font-family:var(--mono);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums}
+.sc span{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);
+  margin-top:3px}
+.sc.islive{border-color:var(--jade)}
+.sc.won{border-left:2px solid var(--jade)} .sc.lost{border-left:2px solid var(--rust)}
+.lv{color:var(--jade);font-weight:600}
+.won{color:var(--jade);font-weight:600} .lost{color:var(--rust);font-weight:600}
 .dog{color:var(--amber);font-style:normal}
 .readnote{font-size:13px;color:#b6c8d2;margin-top:11px;padding-top:11px;
   border-top:1px solid var(--jade-dim)}
@@ -97,7 +107,8 @@ footer b{color:var(--dim);font-weight:600}
 
 <div class="wrap">
 <h1>MLB Model <span>Board</span></h1>
-<div class="meta"><span>2026-09-03</span><span>9 games</span><span>built Sep 3, 3:25 AM EDT</span></div>
+<div class="meta"><span>2026-09-03</span><span>9 games</span><span>built Sep 3, 3:43 AM EDT</span></div>
+
 
 <section class="read">
   <h2>Today's read</h2>
