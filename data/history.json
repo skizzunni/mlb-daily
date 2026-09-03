@@ -35,7 +35,7 @@
    "matchup": "TB @ TEX",
    "pick": "TB",
    "side": "away",
-   "p": 0.5515,
+   "p": 0.5514,
    "tier": "PASS",
    "fair": "-123",
    "locked": false,
@@ -48,7 +48,7 @@
    "p": 0.5222,
    "tier": "PASS",
    "fair": "-109",
-   "locked": false,
+   "locked": true,
    "result": null
   },
   "824144": {
@@ -66,10 +66,10 @@
    "matchup": "MIL @ CHC",
    "pick": "CHC",
    "side": "home",
-   "p": 0.5141,
+   "p": 0.5126,
    "tier": "PASS",
-   "fair": "-106",
-   "locked": false,
+   "fair": "-105",
+   "locked": true,
    "result": null
   },
   "824388": {
@@ -87,10 +87,10 @@
    "matchup": "BOS @ BAL",
    "pick": "BOS",
    "side": "away",
-   "p": 0.5217,
+   "p": 0.5224,
    "tier": "PASS",
    "fair": "-109",
-   "locked": false,
+   "locked": true,
    "result": null
   }
  }
