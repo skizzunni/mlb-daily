@@ -4,7 +4,7 @@
   "away": "STL",
   "home": "TOR",
   "pick": "TOR",
-  "p": 0.5119,
+  "p": 0.5066,
   "tier": "PASS",
   "win": 1
  },
@@ -13,7 +13,7 @@
   "away": "MIN",
   "home": "SEA",
   "pick": "SEA",
-  "p": 0.5065,
+  "p": 0.5138,
   "tier": "PASS",
   "win": 1
  },
@@ -22,7 +22,7 @@
   "away": "CWS",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5178,
+  "p": 0.5156,
   "tier": "PASS",
   "win": 1
  },
@@ -31,7 +31,7 @@
   "away": "MIA",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5309,
+  "p": 0.5385,
   "tier": "PASS",
   "win": 0
  },
@@ -40,7 +40,7 @@
   "away": "PIT",
   "home": "CIN",
   "pick": "PIT",
-  "p": 0.6621,
+  "p": 0.6125,
   "tier": "A",
   "win": 1
  },
@@ -49,7 +49,7 @@
   "away": "PHI",
   "home": "BAL",
   "pick": "PHI",
-  "p": 0.5309,
+  "p": 0.5271,
   "tier": "PASS",
   "win": 1
  },
@@ -58,7 +58,7 @@
   "away": "TEX",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.5074,
+  "p": 0.525,
   "tier": "PASS",
   "win": 1
  },
@@ -67,7 +67,7 @@
   "away": "ARI",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.551,
+  "p": 0.535,
   "tier": "PASS",
   "win": 0
  },
@@ -76,7 +76,7 @@
   "away": "WSH",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5583,
+  "p": 0.5674,
   "tier": "B",
   "win": 1
  },
@@ -85,7 +85,7 @@
   "away": "NYY",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5186,
+  "p": 0.5295,
   "tier": "PASS",
   "win": 1
  },
@@ -94,8 +94,8 @@
   "away": "KC",
   "home": "COL",
   "pick": "COL",
-  "p": 0.5543,
-  "tier": "PASS",
+  "p": 0.5707,
+  "tier": "B",
   "win": 1
  },
  {
@@ -103,7 +103,7 @@
   "away": "SF",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5204,
+  "p": 0.5324,
   "tier": "PASS",
   "win": 1
  },
@@ -112,8 +112,8 @@
   "away": "BOS",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.5624,
-  "tier": "B",
+  "p": 0.5405,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -121,7 +121,7 @@
   "away": "MIL",
   "home": "LAA",
   "pick": "MIL",
-  "p": 0.5998,
+  "p": 0.5786,
   "tier": "B",
   "win": 1
  },
@@ -130,8 +130,8 @@
   "away": "DET",
   "home": "ATH",
   "pick": "DET",
-  "p": 0.618,
-  "tier": "A",
+  "p": 0.5767,
+  "tier": "B",
   "win": 1
  },
  {
@@ -139,7 +139,7 @@
   "away": "PHI",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.5028,
+  "p": 0.5048,
   "tier": "PASS",
   "win": 0
  },
@@ -148,8 +148,8 @@
   "away": "WSH",
   "home": "ATL",
   "pick": "WSH",
-  "p": 0.5604,
-  "tier": "B",
+  "p": 0.5266,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -157,7 +157,7 @@
   "away": "STL",
   "home": "TOR",
   "pick": "STL",
-  "p": 0.534,
+  "p": 0.5128,
   "tier": "PASS",
   "win": 1
  },
@@ -166,7 +166,7 @@
   "away": "ARI",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5126,
+  "p": 0.5051,
   "tier": "PASS",
   "win": 1
  },
@@ -175,7 +175,7 @@
   "away": "PIT",
   "home": "CIN",
   "pick": "PIT",
-  "p": 0.5345,
+  "p": 0.5088,
   "tier": "PASS",
   "win": 0
  },
@@ -184,7 +184,7 @@
   "away": "CWS",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5386,
+  "p": 0.5266,
   "tier": "PASS",
   "win": 0
  },
@@ -192,17 +192,17 @@
   "date": "2026-08-02",
   "away": "MIA",
   "home": "NYM",
-  "pick": "MIA",
-  "p": 0.5139,
+  "pick": "NYM",
+  "p": 0.5055,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-02",
   "away": "TEX",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.623,
+  "p": 0.6095,
   "tier": "A",
   "win": 1
  },
@@ -211,7 +211,7 @@
   "away": "NYY",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5405,
+  "p": 0.5375,
   "tier": "PASS",
   "win": 0
  },
@@ -220,8 +220,8 @@
   "away": "KC",
   "home": "COL",
   "pick": "COL",
-  "p": 0.5425,
-  "tier": "PASS",
+  "p": 0.5666,
+  "tier": "B",
   "win": 1
  },
  {
@@ -229,7 +229,7 @@
   "away": "MIL",
   "home": "LAA",
   "pick": "MIL",
-  "p": 0.6856,
+  "p": 0.6394,
   "tier": "A",
   "win": 0
  },
@@ -238,8 +238,8 @@
   "away": "DET",
   "home": "ATH",
   "pick": "DET",
-  "p": 0.5673,
-  "tier": "B",
+  "p": 0.5206,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -247,7 +247,7 @@
   "away": "SF",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5613,
+  "p": 0.5757,
   "tier": "B",
   "win": 1
  },
@@ -255,17 +255,17 @@
   "date": "2026-08-02",
   "away": "MIN",
   "home": "SEA",
-  "pick": "MIN",
-  "p": 0.5019,
+  "pick": "SEA",
+  "p": 0.5014,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-02",
   "away": "BOS",
   "home": "LAD",
   "pick": "BOS",
-  "p": 0.5229,
+  "p": 0.5164,
   "tier": "PASS",
   "win": 1
  },
@@ -274,7 +274,7 @@
   "away": "WSH",
   "home": "PHI",
   "pick": "WSH",
-  "p": 0.5989,
+  "p": 0.5574,
   "tier": "B",
   "win": 0
  },
@@ -283,7 +283,7 @@
   "away": "STL",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.6345,
+  "p": 0.6192,
   "tier": "A",
   "win": 0
  },
@@ -292,7 +292,7 @@
   "away": "PIT",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.5098,
+  "p": 0.529,
   "tier": "PASS",
   "win": 0
  },
@@ -301,8 +301,8 @@
   "away": "LAD",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5534,
-  "tier": "PASS",
+  "p": 0.5597,
+  "tier": "B",
   "win": 1
  },
  {
@@ -310,8 +310,8 @@
   "away": "SF",
   "home": "TEX",
   "pick": "SF",
-  "p": 0.5985,
-  "tier": "B",
+  "p": 0.5488,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -319,8 +319,8 @@
   "away": "TOR",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.6076,
-  "tier": "A",
+  "p": 0.5968,
+  "tier": "B",
   "win": 0
  },
  {
@@ -328,26 +328,26 @@
   "away": "TB",
   "home": "COL",
   "pick": "TB",
-  "p": 0.5674,
-  "tier": "B",
+  "p": 0.5052,
+  "tier": "PASS",
   "win": 1
  },
  {
   "date": "2026-08-03",
   "away": "SD",
   "home": "ARI",
-  "pick": "SD",
-  "p": 0.5105,
+  "pick": "ARI",
+  "p": 0.522,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-04",
   "away": "LAA",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.6115,
-  "tier": "A",
+  "p": 0.5936,
+  "tier": "B",
   "win": 1
  },
  {
@@ -355,25 +355,25 @@
   "away": "NYM",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5605,
-  "tier": "B",
+  "p": 0.5543,
+  "tier": "PASS",
   "win": 0
  },
  {
   "date": "2026-08-04",
   "away": "ATH",
   "home": "CIN",
-  "pick": "ATH",
-  "p": 0.5036,
+  "pick": "CIN",
+  "p": 0.5,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-04",
   "away": "WSH",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6076,
+  "p": 0.6082,
   "tier": "A",
   "win": 1
  },
@@ -382,8 +382,8 @@
   "away": "STL",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5513,
-  "tier": "PASS",
+  "p": 0.5593,
+  "tier": "B",
   "win": 1
  },
  {
@@ -391,7 +391,7 @@
   "away": "CWS",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5044,
+  "p": 0.5375,
   "tier": "PASS",
   "win": 1
  },
@@ -400,7 +400,7 @@
   "away": "MIA",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5844,
+  "p": 0.573,
   "tier": "B",
   "win": 1
  },
@@ -409,8 +409,8 @@
   "away": "MIN",
   "home": "KC",
   "pick": "MIN",
-  "p": 0.5595,
-  "tier": "B",
+  "p": 0.5514,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -418,8 +418,8 @@
   "away": "PIT",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6002,
-  "tier": "A",
+  "p": 0.5917,
+  "tier": "B",
   "win": 1
  },
  {
@@ -427,26 +427,26 @@
   "away": "LAD",
   "home": "CHC",
   "pick": "LAD",
-  "p": 0.5685,
-  "tier": "B",
+  "p": 0.5463,
+  "tier": "PASS",
   "win": 0
  },
  {
   "date": "2026-08-04",
   "away": "SF",
   "home": "TEX",
-  "pick": "SF",
-  "p": 0.5039,
+  "pick": "TEX",
+  "p": 0.5249,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-04",
   "away": "TOR",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.6092,
-  "tier": "A",
+  "p": 0.5966,
+  "tier": "B",
   "win": 1
  },
  {
@@ -454,7 +454,7 @@
   "away": "TB",
   "home": "COL",
   "pick": "COL",
-  "p": 0.5124,
+  "p": 0.5409,
   "tier": "PASS",
   "win": 0
  },
@@ -463,8 +463,8 @@
   "away": "SD",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5447,
-  "tier": "PASS",
+  "p": 0.5636,
+  "tier": "B",
   "win": 0
  },
  {
@@ -472,7 +472,7 @@
   "away": "DET",
   "home": "SEA",
   "pick": "DET",
-  "p": 0.5774,
+  "p": 0.564,
   "tier": "B",
   "win": 1
  },
@@ -481,7 +481,7 @@
   "away": "TOR",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.6779,
+  "p": 0.639,
   "tier": "A",
   "win": 0
  },
@@ -490,7 +490,7 @@
   "away": "LAD",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5844,
+  "p": 0.5835,
   "tier": "B",
   "win": 1
  },
@@ -499,7 +499,7 @@
   "away": "SF",
   "home": "TEX",
   "pick": "TEX",
-  "p": 0.5026,
+  "p": 0.5299,
   "tier": "PASS",
   "win": 1
  },
@@ -508,8 +508,8 @@
   "away": "TB",
   "home": "COL",
   "pick": "TB",
-  "p": 0.5664,
-  "tier": "B",
+  "p": 0.5208,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -517,7 +517,7 @@
   "away": "LAA",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.5881,
+  "p": 0.5835,
   "tier": "B",
   "win": 1
  },
@@ -525,17 +525,17 @@
   "date": "2026-08-05",
   "away": "NYM",
   "home": "CLE",
-  "pick": "NYM",
-  "p": 0.516,
+  "pick": "CLE",
+  "p": 0.5084,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-05",
   "away": "ATH",
   "home": "CIN",
   "pick": "CIN",
-  "p": 0.514,
+  "p": 0.5216,
   "tier": "PASS",
   "win": 1
  },
@@ -544,7 +544,7 @@
   "away": "WSH",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.501,
+  "p": 0.5182,
   "tier": "PASS",
   "win": 0
  },
@@ -553,7 +553,7 @@
   "away": "STL",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5336,
+  "p": 0.5389,
   "tier": "PASS",
   "win": 0
  },
@@ -562,7 +562,7 @@
   "away": "CWS",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5653,
+  "p": 0.5725,
   "tier": "B",
   "win": 1
  },
@@ -571,34 +571,34 @@
   "away": "MIA",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5513,
-  "tier": "PASS",
+  "p": 0.567,
+  "tier": "B",
   "win": 1
  },
  {
   "date": "2026-08-05",
   "away": "MIN",
   "home": "KC",
-  "pick": "MIN",
-  "p": 0.5094,
+  "pick": "KC",
+  "p": 0.5175,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-05",
   "away": "PIT",
   "home": "MIL",
-  "pick": "PIT",
-  "p": 0.5109,
+  "pick": "MIL",
+  "p": 0.5144,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-05",
   "away": "SD",
   "home": "ARI",
   "pick": "SD",
-  "p": 0.5539,
+  "p": 0.5081,
   "tier": "PASS",
   "win": 0
  },
@@ -607,7 +607,7 @@
   "away": "DET",
   "home": "SEA",
   "pick": "DET",
-  "p": 0.5435,
+  "p": 0.5242,
   "tier": "PASS",
   "win": 0
  },
@@ -616,7 +616,7 @@
   "away": "LAA",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.6603,
+  "p": 0.6301,
   "tier": "A",
   "win": 0
  },
@@ -625,7 +625,7 @@
   "away": "ATH",
   "home": "CIN",
   "pick": "CIN",
-  "p": 0.5666,
+  "p": 0.5569,
   "tier": "B",
   "win": 1
  },
@@ -634,7 +634,7 @@
   "away": "NYM",
   "home": "CLE",
   "pick": "NYM",
-  "p": 0.5149,
+  "p": 0.5074,
   "tier": "PASS",
   "win": 1
  },
@@ -643,7 +643,7 @@
   "away": "PIT",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.519,
+  "p": 0.5374,
   "tier": "PASS",
   "win": 1
  },
@@ -652,7 +652,7 @@
   "away": "TOR",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5864,
+  "p": 0.5715,
   "tier": "B",
   "win": 1
  },
@@ -661,7 +661,7 @@
   "away": "DET",
   "home": "SEA",
   "pick": "DET",
-  "p": 0.5827,
+  "p": 0.5624,
   "tier": "B",
   "win": 1
  },
@@ -670,7 +670,7 @@
   "away": "WSH",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6484,
+  "p": 0.6275,
   "tier": "A",
   "win": 1
  },
@@ -679,8 +679,8 @@
   "away": "CWS",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5903,
-  "tier": "B",
+  "p": 0.6011,
+  "tier": "A",
   "win": 1
  },
  {
@@ -688,7 +688,7 @@
   "away": "MIA",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5617,
+  "p": 0.5737,
   "tier": "B",
   "win": 1
  },
@@ -697,7 +697,7 @@
   "away": "MIN",
   "home": "KC",
   "pick": "KC",
-  "p": 0.5001,
+  "p": 0.513,
   "tier": "PASS",
   "win": 0
  },
@@ -706,7 +706,7 @@
   "away": "SD",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5095,
+  "p": 0.5354,
   "tier": "PASS",
   "win": 0
  },
@@ -715,7 +715,7 @@
   "away": "NYM",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5701,
+  "p": 0.5555,
   "tier": "B",
   "win": 0
  },
@@ -724,8 +724,8 @@
   "away": "TOR",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6076,
-  "tier": "A",
+  "p": 0.5989,
+  "tier": "B",
   "win": 0
  },
  {
@@ -733,7 +733,7 @@
   "away": "CIN",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.6947,
+  "p": 0.6566,
   "tier": "A",
   "win": 1
  },
@@ -742,7 +742,7 @@
   "away": "ATL",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5239,
+  "p": 0.5261,
   "tier": "PASS",
   "win": 1
  },
@@ -751,7 +751,7 @@
   "away": "ATH",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6984,
+  "p": 0.662,
   "tier": "A",
   "win": 1
  },
@@ -760,7 +760,7 @@
   "away": "LAA",
   "home": "MIA",
   "pick": "MIA",
-  "p": 0.5697,
+  "p": 0.5673,
   "tier": "B",
   "win": 0
  },
@@ -769,7 +769,7 @@
   "away": "CLE",
   "home": "CWS",
   "pick": "CLE",
-  "p": 0.5235,
+  "p": 0.5009,
   "tier": "PASS",
   "win": 1
  },
@@ -778,7 +778,7 @@
   "away": "MIN",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6279,
+  "p": 0.6301,
   "tier": "A",
   "win": 0
  },
@@ -787,7 +787,7 @@
   "away": "CHC",
   "home": "KC",
   "pick": "CHC",
-  "p": 0.6325,
+  "p": 0.6258,
   "tier": "A",
   "win": 1
  },
@@ -796,8 +796,8 @@
   "away": "COL",
   "home": "STL",
   "pick": "STL",
-  "p": 0.5764,
-  "tier": "B",
+  "p": 0.5511,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -805,7 +805,7 @@
   "away": "BAL",
   "home": "TEX",
   "pick": "BAL",
-  "p": 0.5449,
+  "p": 0.5195,
   "tier": "PASS",
   "win": 0
  },
@@ -813,17 +813,17 @@
   "date": "2026-08-07",
   "away": "LAD",
   "home": "ARI",
-  "pick": "LAD",
-  "p": 0.5119,
+  "pick": "ARI",
+  "p": 0.5152,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-07",
   "away": "HOU",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5655,
+  "p": 0.5573,
   "tier": "B",
   "win": 0
  },
@@ -832,7 +832,7 @@
   "away": "TB",
   "home": "SEA",
   "pick": "TB",
-  "p": 0.5534,
+  "p": 0.5515,
   "tier": "PASS",
   "win": 1
  },
@@ -841,7 +841,7 @@
   "away": "DET",
   "home": "SF",
   "pick": "DET",
-  "p": 0.5309,
+  "p": 0.5205,
   "tier": "PASS",
   "win": 0
  },
@@ -850,8 +850,8 @@
   "away": "ATL",
   "home": "NYY",
   "pick": "ATL",
-  "p": 0.6042,
-  "tier": "A",
+  "p": 0.5831,
+  "tier": "B",
   "win": 0
  },
  {
@@ -859,7 +859,7 @@
   "away": "ATH",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6714,
+  "p": 0.655,
   "tier": "A",
   "win": 0
  },
@@ -868,7 +868,7 @@
   "away": "LAA",
   "home": "MIA",
   "pick": "MIA",
-  "p": 0.5709,
+  "p": 0.5611,
   "tier": "B",
   "win": 1
  },
@@ -877,7 +877,7 @@
   "away": "TOR",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6101,
+  "p": 0.6019,
   "tier": "A",
   "win": 0
  },
@@ -886,7 +886,7 @@
   "away": "NYM",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5604,
+  "p": 0.5577,
   "tier": "B",
   "win": 1
  },
@@ -895,8 +895,8 @@
   "away": "CIN",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.6196,
-  "tier": "A",
+  "p": 0.5741,
+  "tier": "B",
   "win": 1
  },
  {
@@ -904,7 +904,7 @@
   "away": "CHC",
   "home": "KC",
   "pick": "CHC",
-  "p": 0.6769,
+  "p": 0.6376,
   "tier": "A",
   "win": 0
  },
@@ -913,7 +913,7 @@
   "away": "MIN",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.579,
+  "p": 0.5833,
   "tier": "B",
   "win": 1
  },
@@ -922,7 +922,7 @@
   "away": "HOU",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5324,
+  "p": 0.5316,
   "tier": "PASS",
   "win": 1
  },
@@ -931,7 +931,7 @@
   "away": "DET",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5091,
+  "p": 0.5252,
   "tier": "PASS",
   "win": 0
  },
@@ -940,7 +940,7 @@
   "away": "COL",
   "home": "STL",
   "pick": "STL",
-  "p": 0.5226,
+  "p": 0.507,
   "tier": "PASS",
   "win": 0
  },
@@ -949,7 +949,7 @@
   "away": "BAL",
   "home": "TEX",
   "pick": "BAL",
-  "p": 0.513,
+  "p": 0.502,
   "tier": "PASS",
   "win": 0
  },
@@ -958,7 +958,7 @@
   "away": "CLE",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.5395,
+  "p": 0.5403,
   "tier": "PASS",
   "win": 1
  },
@@ -967,8 +967,8 @@
   "away": "LAD",
   "home": "ARI",
   "pick": "LAD",
-  "p": 0.5617,
-  "tier": "B",
+  "p": 0.5304,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -976,7 +976,7 @@
   "away": "TB",
   "home": "SEA",
   "pick": "TB",
-  "p": 0.5417,
+  "p": 0.5004,
   "tier": "PASS",
   "win": 1
  },
@@ -985,8 +985,8 @@
   "away": "CIN",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.6564,
-  "tier": "A",
+  "p": 0.5992,
+  "tier": "B",
   "win": 1
  },
  {
@@ -994,7 +994,7 @@
   "away": "ATH",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6681,
+  "p": 0.642,
   "tier": "A",
   "win": 0
  },
@@ -1003,7 +1003,7 @@
   "away": "NYM",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5789,
+  "p": 0.5714,
   "tier": "B",
   "win": 0
  },
@@ -1012,7 +1012,7 @@
   "away": "TOR",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6809,
+  "p": 0.6706,
   "tier": "A",
   "win": 1
  },
@@ -1021,7 +1021,7 @@
   "away": "ATL",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5799,
+  "p": 0.5671,
   "tier": "B",
   "win": 0
  },
@@ -1030,7 +1030,7 @@
   "away": "LAA",
   "home": "MIA",
   "pick": "MIA",
-  "p": 0.5925,
+  "p": 0.5959,
   "tier": "B",
   "win": 1
  },
@@ -1039,8 +1039,8 @@
   "away": "CHC",
   "home": "KC",
   "pick": "CHC",
-  "p": 0.6234,
-  "tier": "A",
+  "p": 0.5913,
+  "tier": "B",
   "win": 1
  },
  {
@@ -1048,7 +1048,7 @@
   "away": "CLE",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.5525,
+  "p": 0.5523,
   "tier": "PASS",
   "win": 1
  },
@@ -1057,7 +1057,7 @@
   "away": "MIN",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6785,
+  "p": 0.6591,
   "tier": "A",
   "win": 1
  },
@@ -1066,7 +1066,7 @@
   "away": "COL",
   "home": "STL",
   "pick": "STL",
-  "p": 0.5525,
+  "p": 0.5344,
   "tier": "PASS",
   "win": 1
  },
@@ -1075,7 +1075,7 @@
   "away": "BAL",
   "home": "TEX",
   "pick": "BAL",
-  "p": 0.5416,
+  "p": 0.5109,
   "tier": "PASS",
   "win": 1
  },
@@ -1083,17 +1083,17 @@
   "date": "2026-08-09",
   "away": "DET",
   "home": "SF",
-  "pick": "DET",
-  "p": 0.5108,
+  "pick": "SF",
+  "p": 0.5016,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-09",
   "away": "LAD",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5032,
+  "p": 0.522,
   "tier": "PASS",
   "win": 1
  },
@@ -1102,8 +1102,8 @@
   "away": "TB",
   "home": "SEA",
   "pick": "TB",
-  "p": 0.5767,
-  "tier": "B",
+  "p": 0.5473,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1111,7 +1111,7 @@
   "away": "HOU",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5491,
+  "p": 0.5156,
   "tier": "PASS",
   "win": 1
  },
@@ -1120,7 +1120,7 @@
   "away": "BOS",
   "home": "TOR",
   "pick": "BOS",
-  "p": 0.6683,
+  "p": 0.6307,
   "tier": "A",
   "win": 0
  },
@@ -1129,7 +1129,7 @@
   "away": "NYM",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5202,
+  "p": 0.5367,
   "tier": "PASS",
   "win": 0
  },
@@ -1138,7 +1138,7 @@
   "away": "BAL",
   "home": "MIN",
   "pick": "BAL",
-  "p": 0.5463,
+  "p": 0.5189,
   "tier": "PASS",
   "win": 0
  },
@@ -1147,7 +1147,7 @@
   "away": "PHI",
   "home": "STL",
   "pick": "STL",
-  "p": 0.5218,
+  "p": 0.5179,
   "tier": "PASS",
   "win": 0
  },
@@ -1156,7 +1156,7 @@
   "away": "TEX",
   "home": "LAA",
   "pick": "LAA",
-  "p": 0.5276,
+  "p": 0.5416,
   "tier": "PASS",
   "win": 0
  },
@@ -1165,7 +1165,7 @@
   "away": "COL",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5775,
+  "p": 0.5631,
   "tier": "B",
   "win": 1
  },
@@ -1174,8 +1174,8 @@
   "away": "TB",
   "home": "ATH",
   "pick": "TB",
-  "p": 0.5816,
-  "tier": "B",
+  "p": 0.5259,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1183,7 +1183,7 @@
   "away": "MIL",
   "home": "SD",
   "pick": "MIL",
-  "p": 0.5221,
+  "p": 0.523,
   "tier": "PASS",
   "win": 0
  },
@@ -1192,7 +1192,7 @@
   "away": "HOU",
   "home": "SF",
   "pick": "HOU",
-  "p": 0.5406,
+  "p": 0.5333,
   "tier": "PASS",
   "win": 1
  },
@@ -1201,7 +1201,7 @@
   "away": "KC",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.7071,
+  "p": 0.6696,
   "tier": "A",
   "win": 1
  },
@@ -1210,7 +1210,7 @@
   "away": "CLE",
   "home": "DET",
   "pick": "DET",
-  "p": 0.5874,
+  "p": 0.5817,
   "tier": "B",
   "win": 1
  },
@@ -1219,8 +1219,8 @@
   "away": "PIT",
   "home": "MIA",
   "pick": "PIT",
-  "p": 0.5584,
-  "tier": "B",
+  "p": 0.5491,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1228,8 +1228,8 @@
   "away": "CHC",
   "home": "WSH",
   "pick": "CHC",
-  "p": 0.5666,
-  "tier": "B",
+  "p": 0.5285,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1237,7 +1237,7 @@
   "away": "SEA",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5779,
+  "p": 0.5761,
   "tier": "B",
   "win": 1
  },
@@ -1246,7 +1246,7 @@
   "away": "BOS",
   "home": "TOR",
   "pick": "TOR",
-  "p": 0.5101,
+  "p": 0.5119,
   "tier": "PASS",
   "win": 1
  },
@@ -1255,7 +1255,7 @@
   "away": "NYM",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5069,
+  "p": 0.5296,
   "tier": "PASS",
   "win": 1
  },
@@ -1263,17 +1263,17 @@
   "date": "2026-08-11",
   "away": "BAL",
   "home": "MIN",
-  "pick": "BAL",
-  "p": 0.5081,
+  "pick": "MIN",
+  "p": 0.5024,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-11",
   "away": "CIN",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.6627,
+  "p": 0.6359,
   "tier": "A",
   "win": 0
  },
@@ -1282,8 +1282,8 @@
   "away": "PHI",
   "home": "STL",
   "pick": "PHI",
-  "p": 0.6125,
-  "tier": "A",
+  "p": 0.5931,
+  "tier": "B",
   "win": 0
  },
  {
@@ -1291,8 +1291,8 @@
   "away": "TEX",
   "home": "LAA",
   "pick": "TEX",
-  "p": 0.5699,
-  "tier": "B",
+  "p": 0.553,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1300,7 +1300,7 @@
   "away": "COL",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5916,
+  "p": 0.5551,
   "tier": "B",
   "win": 0
  },
@@ -1309,8 +1309,8 @@
   "away": "TB",
   "home": "ATH",
   "pick": "TB",
-  "p": 0.6624,
-  "tier": "A",
+  "p": 0.5895,
+  "tier": "B",
   "win": 1
  },
  {
@@ -1318,8 +1318,8 @@
   "away": "MIL",
   "home": "SD",
   "pick": "MIL",
-  "p": 0.5664,
-  "tier": "B",
+  "p": 0.5523,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1327,7 +1327,7 @@
   "away": "HOU",
   "home": "SF",
   "pick": "HOU",
-  "p": 0.5842,
+  "p": 0.5807,
   "tier": "B",
   "win": 0
  },
@@ -1336,7 +1336,7 @@
   "away": "KC",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.6615,
+  "p": 0.6458,
   "tier": "A",
   "win": 1
  },
@@ -1345,7 +1345,7 @@
   "away": "BAL",
   "home": "MIN",
   "pick": "BAL",
-  "p": 0.5254,
+  "p": 0.5088,
   "tier": "PASS",
   "win": 0
  },
@@ -1354,7 +1354,7 @@
   "away": "PHI",
   "home": "STL",
   "pick": "PHI",
-  "p": 0.517,
+  "p": 0.5044,
   "tier": "PASS",
   "win": 0
  },
@@ -1363,7 +1363,7 @@
   "away": "TB",
   "home": "ATH",
   "pick": "TB",
-  "p": 0.6633,
+  "p": 0.613,
   "tier": "A",
   "win": 1
  },
@@ -1372,8 +1372,8 @@
   "away": "COL",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5611,
-  "tier": "B",
+  "p": 0.5449,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1381,7 +1381,7 @@
   "away": "HOU",
   "home": "SF",
   "pick": "HOU",
-  "p": 0.5184,
+  "p": 0.5194,
   "tier": "PASS",
   "win": 1
  },
@@ -1399,7 +1399,7 @@
   "away": "CLE",
   "home": "DET",
   "pick": "DET",
-  "p": 0.5998,
+  "p": 0.5805,
   "tier": "B",
   "win": 0
  },
@@ -1408,7 +1408,7 @@
   "away": "PIT",
   "home": "MIA",
   "pick": "PIT",
-  "p": 0.5237,
+  "p": 0.5071,
   "tier": "PASS",
   "win": 0
  },
@@ -1417,7 +1417,7 @@
   "away": "CHC",
   "home": "WSH",
   "pick": "CHC",
-  "p": 0.5406,
+  "p": 0.5224,
   "tier": "PASS",
   "win": 1
  },
@@ -1426,8 +1426,8 @@
   "away": "SEA",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5996,
-  "tier": "B",
+  "p": 0.6082,
+  "tier": "A",
   "win": 1
  },
  {
@@ -1435,7 +1435,7 @@
   "away": "BOS",
   "home": "TOR",
   "pick": "BOS",
-  "p": 0.5805,
+  "p": 0.5764,
   "tier": "B",
   "win": 0
  },
@@ -1444,7 +1444,7 @@
   "away": "NYM",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5623,
+  "p": 0.5555,
   "tier": "B",
   "win": 1
  },
@@ -1453,7 +1453,7 @@
   "away": "CIN",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.6182,
+  "p": 0.6128,
   "tier": "A",
   "win": 1
  },
@@ -1462,7 +1462,7 @@
   "away": "KC",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.5624,
+  "p": 0.592,
   "tier": "B",
   "win": 1
  },
@@ -1470,17 +1470,17 @@
   "date": "2026-08-12",
   "away": "TEX",
   "home": "LAA",
-  "pick": "TEX",
-  "p": 0.5035,
+  "pick": "LAA",
+  "p": 0.5085,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-13",
   "away": "CLE",
   "home": "DET",
   "pick": "DET",
-  "p": 0.5152,
+  "p": 0.5171,
   "tier": "PASS",
   "win": 1
  },
@@ -1489,7 +1489,7 @@
   "away": "CIN",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.647,
+  "p": 0.6314,
   "tier": "A",
   "win": 0
  },
@@ -1498,7 +1498,7 @@
   "away": "PIT",
   "home": "MIA",
   "pick": "PIT",
-  "p": 0.5455,
+  "p": 0.5181,
   "tier": "PASS",
   "win": 1
  },
@@ -1507,7 +1507,7 @@
   "away": "SEA",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.6144,
+  "p": 0.6059,
   "tier": "A",
   "win": 0
  },
@@ -1516,7 +1516,7 @@
   "away": "BOS",
   "home": "TOR",
   "pick": "BOS",
-  "p": 0.6285,
+  "p": 0.6165,
   "tier": "A",
   "win": 1
  },
@@ -1525,7 +1525,7 @@
   "away": "CHC",
   "home": "WSH",
   "pick": "CHC",
-  "p": 0.5291,
+  "p": 0.5054,
   "tier": "PASS",
   "win": 0
  },
@@ -1534,8 +1534,8 @@
   "away": "PHI",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5573,
-  "tier": "B",
+  "p": 0.5456,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1543,7 +1543,7 @@
   "away": "TEX",
   "home": "LAA",
   "pick": "LAA",
-  "p": 0.5016,
+  "p": 0.501,
   "tier": "PASS",
   "win": 1
  },
@@ -1552,8 +1552,8 @@
   "away": "MIL",
   "home": "LAD",
   "pick": "MIL",
-  "p": 0.5551,
-  "tier": "B",
+  "p": 0.5499,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1561,7 +1561,7 @@
   "away": "STL",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.6667,
+  "p": 0.6364,
   "tier": "A",
   "win": 1
  },
@@ -1569,17 +1569,17 @@
   "date": "2026-08-14",
   "away": "MIA",
   "home": "CIN",
-  "pick": "MIA",
-  "p": 0.5075,
+  "pick": "CIN",
+  "p": 0.5132,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-14",
   "away": "BOS",
   "home": "PIT",
   "pick": "BOS",
-  "p": 0.535,
+  "p": 0.5323,
   "tier": "PASS",
   "win": 0
  },
@@ -1588,8 +1588,8 @@
   "away": "CWS",
   "home": "DET",
   "pick": "CWS",
-  "p": 0.5759,
-  "tier": "B",
+  "p": 0.5201,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1597,8 +1597,8 @@
   "away": "WSH",
   "home": "NYM",
   "pick": "WSH",
-  "p": 0.5553,
-  "tier": "B",
+  "p": 0.523,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1606,7 +1606,7 @@
   "away": "SD",
   "home": "CLE",
   "pick": "SD",
-  "p": 0.5376,
+  "p": 0.523,
   "tier": "PASS",
   "win": 1
  },
@@ -1615,7 +1615,7 @@
   "away": "BAL",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5029,
+  "p": 0.5154,
   "tier": "PASS",
   "win": 0
  },
@@ -1624,7 +1624,7 @@
   "away": "ARI",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.6515,
+  "p": 0.6404,
   "tier": "A",
   "win": 0
  },
@@ -1633,8 +1633,8 @@
   "away": "NYY",
   "home": "TOR",
   "pick": "NYY",
-  "p": 0.6029,
-  "tier": "A",
+  "p": 0.5541,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1642,7 +1642,7 @@
   "away": "SEA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.5866,
+  "p": 0.5877,
   "tier": "B",
   "win": 1
  },
@@ -1651,7 +1651,7 @@
   "away": "KC",
   "home": "LAA",
   "pick": "LAA",
-  "p": 0.5131,
+  "p": 0.5174,
   "tier": "PASS",
   "win": 0
  },
@@ -1660,7 +1660,7 @@
   "away": "TEX",
   "home": "ATH",
   "pick": "ATH",
-  "p": 0.521,
+  "p": 0.538,
   "tier": "PASS",
   "win": 1
  },
@@ -1669,7 +1669,7 @@
   "away": "MIL",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.566,
+  "p": 0.5617,
   "tier": "B",
   "win": 1
  },
@@ -1678,8 +1678,8 @@
   "away": "COL",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5656,
-  "tier": "B",
+  "p": 0.5232,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1687,8 +1687,8 @@
   "away": "CWS",
   "home": "DET",
   "pick": "DET",
-  "p": 0.5736,
-  "tier": "B",
+  "p": 0.5489,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -1696,7 +1696,7 @@
   "away": "STL",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.6255,
+  "p": 0.6042,
   "tier": "A",
   "win": 0
  },
@@ -1705,8 +1705,8 @@
   "away": "NYY",
   "home": "TOR",
   "pick": "NYY",
-  "p": 0.6035,
-  "tier": "A",
+  "p": 0.576,
+  "tier": "B",
   "win": 0
  },
  {
@@ -1714,8 +1714,8 @@
   "away": "COL",
   "home": "SF",
   "pick": "SF",
-  "p": 0.615,
-  "tier": "A",
+  "p": 0.5707,
+  "tier": "B",
   "win": 1
  },
  {
@@ -1723,7 +1723,7 @@
   "away": "WSH",
   "home": "NYM",
   "pick": "WSH",
-  "p": 0.5494,
+  "p": 0.5034,
   "tier": "PASS",
   "win": 0
  },
@@ -1732,7 +1732,7 @@
   "away": "BAL",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5306,
+  "p": 0.5359,
   "tier": "PASS",
   "win": 0
  },
@@ -1741,8 +1741,8 @@
   "away": "MIA",
   "home": "CIN",
   "pick": "MIA",
-  "p": 0.5794,
-  "tier": "B",
+  "p": 0.5259,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1750,7 +1750,7 @@
   "away": "SD",
   "home": "CLE",
   "pick": "SD",
-  "p": 0.5289,
+  "p": 0.5296,
   "tier": "PASS",
   "win": 0
  },
@@ -1759,7 +1759,7 @@
   "away": "SEA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.6228,
+  "p": 0.6121,
   "tier": "A",
   "win": 0
  },
@@ -1768,7 +1768,7 @@
   "away": "PHI",
   "home": "MIN",
   "pick": "PHI",
-  "p": 0.57,
+  "p": 0.5626,
   "tier": "B",
   "win": 1
  },
@@ -1777,7 +1777,7 @@
   "away": "BOS",
   "home": "PIT",
   "pick": "BOS",
-  "p": 0.5465,
+  "p": 0.5375,
   "tier": "PASS",
   "win": 1
  },
@@ -1786,7 +1786,7 @@
   "away": "ARI",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5191,
+  "p": 0.5333,
   "tier": "PASS",
   "win": 0
  },
@@ -1795,8 +1795,8 @@
   "away": "MIL",
   "home": "LAD",
   "pick": "MIL",
-  "p": 0.6038,
-  "tier": "A",
+  "p": 0.5775,
+  "tier": "B",
   "win": 1
  },
  {
@@ -1804,8 +1804,8 @@
   "away": "KC",
   "home": "LAA",
   "pick": "LAA",
-  "p": 0.5523,
-  "tier": "PASS",
+  "p": 0.556,
+  "tier": "B",
   "win": 1
  },
  {
@@ -1813,7 +1813,7 @@
   "away": "TEX",
   "home": "ATH",
   "pick": "ATH",
-  "p": 0.5032,
+  "p": 0.5112,
   "tier": "PASS",
   "win": 0
  },
@@ -1822,7 +1822,7 @@
   "away": "BAL",
   "home": "TB",
   "pick": "BAL",
-  "p": 0.5174,
+  "p": 0.504,
   "tier": "PASS",
   "win": 1
  },
@@ -1830,17 +1830,17 @@
   "date": "2026-08-16",
   "away": "BOS",
   "home": "PIT",
-  "pick": "BOS",
-  "p": 0.5004,
+  "pick": "PIT",
+  "p": 0.5154,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-16",
   "away": "ARI",
   "home": "ATL",
   "pick": "ARI",
-  "p": 0.5135,
+  "p": 0.5076,
   "tier": "PASS",
   "win": 0
  },
@@ -1849,7 +1849,7 @@
   "away": "NYY",
   "home": "TOR",
   "pick": "TOR",
-  "p": 0.5374,
+  "p": 0.5401,
   "tier": "PASS",
   "win": 0
  },
@@ -1858,7 +1858,7 @@
   "away": "WSH",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5563,
+  "p": 0.5593,
   "tier": "B",
   "win": 1
  },
@@ -1867,8 +1867,8 @@
   "away": "SD",
   "home": "CLE",
   "pick": "SD",
-  "p": 0.5664,
-  "tier": "B",
+  "p": 0.5504,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1876,7 +1876,7 @@
   "away": "CWS",
   "home": "DET",
   "pick": "DET",
-  "p": 0.5114,
+  "p": 0.5174,
   "tier": "PASS",
   "win": 0
  },
@@ -1885,8 +1885,8 @@
   "away": "MIA",
   "home": "CIN",
   "pick": "MIA",
-  "p": 0.6039,
-  "tier": "A",
+  "p": 0.5533,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1894,7 +1894,7 @@
   "away": "PHI",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5064,
+  "p": 0.5144,
   "tier": "PASS",
   "win": 0
  },
@@ -1903,7 +1903,7 @@
   "away": "STL",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5649,
+  "p": 0.5801,
   "tier": "B",
   "win": 0
  },
@@ -1911,26 +1911,26 @@
   "date": "2026-08-16",
   "away": "COL",
   "home": "SF",
-  "pick": "SF",
-  "p": 0.5094,
+  "pick": "COL",
+  "p": 0.5071,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-16",
   "away": "TEX",
   "home": "ATH",
-  "pick": "TEX",
-  "p": 0.5017,
+  "pick": "ATH",
+  "p": 0.5225,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-16",
   "away": "KC",
   "home": "LAA",
   "pick": "KC",
-  "p": 0.5471,
+  "p": 0.5484,
   "tier": "PASS",
   "win": 1
  },
@@ -1939,7 +1939,7 @@
   "away": "MIL",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.5336,
+  "p": 0.5455,
   "tier": "PASS",
   "win": 0
  },
@@ -1948,7 +1948,7 @@
   "away": "SEA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.5886,
+  "p": 0.5931,
   "tier": "B",
   "win": 0
  },
@@ -1957,8 +1957,8 @@
   "away": "STL",
   "home": "CIN",
   "pick": "STL",
-  "p": 0.5655,
-  "tier": "B",
+  "p": 0.526,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -1966,7 +1966,7 @@
   "away": "STL",
   "home": "CIN",
   "pick": "STL",
-  "p": 0.5959,
+  "p": 0.5555,
   "tier": "B",
   "win": 0
  },
@@ -1975,7 +1975,7 @@
   "away": "BAL",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5423,
+  "p": 0.5449,
   "tier": "PASS",
   "win": 1
  },
@@ -1984,7 +1984,7 @@
   "away": "MIA",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.6211,
+  "p": 0.6234,
   "tier": "A",
   "win": 1
  },
@@ -1993,7 +1993,7 @@
   "away": "DET",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5367,
+  "p": 0.5269,
   "tier": "PASS",
   "win": 0
  },
@@ -2002,8 +2002,8 @@
   "away": "ARI",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5992,
-  "tier": "B",
+  "p": 0.607,
+  "tier": "A",
   "win": 1
  },
  {
@@ -2011,7 +2011,7 @@
   "away": "SD",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5641,
+  "p": 0.5823,
   "tier": "B",
   "win": 1
  },
@@ -2020,8 +2020,8 @@
   "away": "ATH",
   "home": "KC",
   "pick": "KC",
-  "p": 0.6056,
-  "tier": "A",
+  "p": 0.5775,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2029,7 +2029,7 @@
   "away": "ATL",
   "home": "MIN",
   "pick": "ATL",
-  "p": 0.5192,
+  "p": 0.5156,
   "tier": "PASS",
   "win": 0
  },
@@ -2038,7 +2038,7 @@
   "away": "CWS",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5459,
+  "p": 0.5424,
   "tier": "PASS",
   "win": 1
  },
@@ -2047,8 +2047,8 @@
   "away": "LAD",
   "home": "COL",
   "pick": "LAD",
-  "p": 0.6455,
-  "tier": "A",
+  "p": 0.5817,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2056,7 +2056,7 @@
   "away": "NYY",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.5364,
+  "p": 0.5373,
   "tier": "PASS",
   "win": 0
  },
@@ -2065,7 +2065,7 @@
   "away": "DET",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5446,
+  "p": 0.5545,
   "tier": "PASS",
   "win": 1
  },
@@ -2074,7 +2074,7 @@
   "away": "SF",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.571,
+  "p": 0.5654,
   "tier": "B",
   "win": 1
  },
@@ -2083,8 +2083,8 @@
   "away": "STL",
   "home": "CIN",
   "pick": "STL",
-  "p": 0.6109,
-  "tier": "A",
+  "p": 0.5495,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -2092,7 +2092,7 @@
   "away": "TOR",
   "home": "TB",
   "pick": "TB",
-  "p": 0.577,
+  "p": 0.5679,
   "tier": "B",
   "win": 0
  },
@@ -2101,7 +2101,7 @@
   "away": "MIA",
   "home": "PHI",
   "pick": "PHI",
-  "p": 0.5787,
+  "p": 0.5774,
   "tier": "B",
   "win": 1
  },
@@ -2110,7 +2110,7 @@
   "away": "ARI",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6525,
+  "p": 0.6384,
   "tier": "A",
   "win": 1
  },
@@ -2119,7 +2119,7 @@
   "away": "SD",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5172,
+  "p": 0.5296,
   "tier": "PASS",
   "win": 0
  },
@@ -2128,7 +2128,7 @@
   "away": "ATH",
   "home": "KC",
   "pick": "KC",
-  "p": 0.5164,
+  "p": 0.5098,
   "tier": "PASS",
   "win": 1
  },
@@ -2137,7 +2137,7 @@
   "away": "ATL",
   "home": "MIN",
   "pick": "ATL",
-  "p": 0.5463,
+  "p": 0.5299,
   "tier": "PASS",
   "win": 0
  },
@@ -2146,7 +2146,7 @@
   "away": "SEA",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.652,
+  "p": 0.6411,
   "tier": "A",
   "win": 1
  },
@@ -2155,7 +2155,7 @@
   "away": "WSH",
   "home": "TEX",
   "pick": "WSH",
-  "p": 0.5966,
+  "p": 0.5581,
   "tier": "B",
   "win": 0
  },
@@ -2164,8 +2164,8 @@
   "away": "CWS",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5311,
-  "tier": "PASS",
+  "p": 0.5571,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2173,7 +2173,7 @@
   "away": "LAA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.5866,
+  "p": 0.5761,
   "tier": "B",
   "win": 0
  },
@@ -2181,18 +2181,18 @@
   "date": "2026-08-18",
   "away": "LAD",
   "home": "COL",
-  "pick": "LAD",
-  "p": 0.5214,
+  "pick": "COL",
+  "p": 0.5172,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-19",
   "away": "DET",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.6055,
-  "tier": "A",
+  "p": 0.5915,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2200,7 +2200,7 @@
   "away": "SD",
   "home": "NYM",
   "pick": "SD",
-  "p": 0.5292,
+  "p": 0.5096,
   "tier": "PASS",
   "win": 0
  },
@@ -2209,7 +2209,7 @@
   "away": "ATL",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5079,
+  "p": 0.5076,
   "tier": "PASS",
   "win": 1
  },
@@ -2218,8 +2218,8 @@
   "away": "CWS",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5139,
-  "tier": "PASS",
+  "p": 0.5616,
+  "tier": "B",
   "win": 0
  },
  {
@@ -2227,7 +2227,7 @@
   "away": "ARI",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6045,
+  "p": 0.6068,
   "tier": "A",
   "win": 0
  },
@@ -2235,17 +2235,17 @@
   "date": "2026-08-19",
   "away": "MIA",
   "home": "PHI",
-  "pick": "MIA",
-  "p": 0.5159,
+  "pick": "PHI",
+  "p": 0.5168,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-19",
   "away": "NYY",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.5086,
+  "p": 0.5222,
   "tier": "PASS",
   "win": 0
  },
@@ -2254,7 +2254,7 @@
   "away": "SF",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5924,
+  "p": 0.5964,
   "tier": "B",
   "win": 0
  },
@@ -2263,7 +2263,7 @@
   "away": "STL",
   "home": "CIN",
   "pick": "CIN",
-  "p": 0.5178,
+  "p": 0.5296,
   "tier": "PASS",
   "win": 1
  },
@@ -2272,7 +2272,7 @@
   "away": "TOR",
   "home": "TB",
   "pick": "TB",
-  "p": 0.6733,
+  "p": 0.6376,
   "tier": "A",
   "win": 1
  },
@@ -2281,8 +2281,8 @@
   "away": "ATH",
   "home": "KC",
   "pick": "KC",
-  "p": 0.5579,
-  "tier": "B",
+  "p": 0.5474,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -2290,7 +2290,7 @@
   "away": "SEA",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6121,
+  "p": 0.6204,
   "tier": "A",
   "win": 0
  },
@@ -2299,8 +2299,8 @@
   "away": "WSH",
   "home": "TEX",
   "pick": "WSH",
-  "p": 0.6119,
-  "tier": "A",
+  "p": 0.5837,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2308,26 +2308,26 @@
   "away": "LAA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.5544,
-  "tier": "PASS",
+  "p": 0.5557,
+  "tier": "B",
   "win": 1
  },
  {
   "date": "2026-08-19",
   "away": "LAD",
   "home": "COL",
-  "pick": "LAD",
-  "p": 0.536,
+  "pick": "COL",
+  "p": 0.5076,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-20",
   "away": "STL",
   "home": "CIN",
   "pick": "STL",
-  "p": 0.5807,
-  "tier": "B",
+  "p": 0.533,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -2335,7 +2335,7 @@
   "away": "SF",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5279,
+  "p": 0.5353,
   "tier": "PASS",
   "win": 1
  },
@@ -2344,7 +2344,7 @@
   "away": "TOR",
   "home": "TB",
   "pick": "TB",
-  "p": 0.6281,
+  "p": 0.6049,
   "tier": "A",
   "win": 0
  },
@@ -2353,7 +2353,7 @@
   "away": "ATH",
   "home": "KC",
   "pick": "KC",
-  "p": 0.5195,
+  "p": 0.5353,
   "tier": "PASS",
   "win": 1
  },
@@ -2362,7 +2362,7 @@
   "away": "ATL",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.5118,
+  "p": 0.5215,
   "tier": "PASS",
   "win": 0
  },
@@ -2371,7 +2371,7 @@
   "away": "SEA",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6215,
+  "p": 0.6322,
   "tier": "A",
   "win": 1
  },
@@ -2380,7 +2380,7 @@
   "away": "NYY",
   "home": "BAL",
   "pick": "BAL",
-  "p": 0.5016,
+  "p": 0.5214,
   "tier": "PASS",
   "win": 0
  },
@@ -2389,8 +2389,8 @@
   "away": "WSH",
   "home": "TEX",
   "pick": "WSH",
-  "p": 0.5836,
-  "tier": "B",
+  "p": 0.5536,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -2398,291 +2398,21 @@
   "away": "LAA",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.6264,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-21",
-  "away": "ATL",
-  "home": "MIL",
-  "pick": "MIL",
-  "p": 0.5331,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "STL",
-  "home": "PHI",
-  "pick": "PHI",
-  "p": 0.6075,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "TOR",
-  "home": "NYY",
-  "pick": "NYY",
-  "p": 0.6182,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "SF",
-  "home": "BOS",
-  "pick": "BOS",
   "p": 0.6155,
   "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "WSH",
-  "home": "MIA",
-  "pick": "WSH",
-  "p": 0.5225,
-  "tier": "PASS",
   "win": 0
  },
  {
   "date": "2026-08-21",
-  "away": "TB",
-  "home": "BAL",
-  "pick": "BAL",
-  "p": 0.541,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "NYM",
-  "home": "CWS",
-  "pick": "CWS",
-  "p": 0.5942,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "DET",
-  "home": "KC",
-  "pick": "DET",
-  "p": 0.5706,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-21",
-  "away": "ATH",
-  "home": "HOU",
-  "pick": "HOU",
-  "p": 0.5896,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "LAA",
-  "home": "TEX",
-  "pick": "LAA",
-  "p": 0.5245,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-21",
-  "away": "CLE",
-  "home": "COL",
-  "pick": "CLE",
-  "p": 0.5192,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "CIN",
-  "home": "ARI",
-  "pick": "ARI",
-  "p": 0.6308,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "MIN",
-  "home": "SD",
-  "pick": "SD",
-  "p": 0.5149,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "PIT",
-  "home": "LAD",
-  "pick": "LAD",
-  "p": 0.588,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-21",
-  "away": "CHC",
-  "home": "SEA",
-  "pick": "CHC",
-  "p": 0.6202,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "TOR",
-  "home": "NYY",
-  "pick": "NYY",
-  "p": 0.5054,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
   "away": "ATL",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6111,
-  "tier": "A",
+  "p": 0.5381,
+  "tier": "PASS",
   "win": 1
  },
  {
-  "date": "2026-08-22",
-  "away": "WSH",
-  "home": "MIA",
-  "pick": "MIA",
-  "p": 0.5703,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-22",
-  "away": "STL",
-  "home": "PHI",
-  "pick": "STL",
-  "p": 0.5037,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "TB",
-  "home": "BAL",
-  "pick": "TB",
-  "p": 0.5292,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "LAA",
-  "home": "TEX",
-  "pick": "TEX",
-  "p": 0.5551,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "ATH",
-  "home": "HOU",
-  "pick": "HOU",
-  "p": 0.628,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "NYM",
-  "home": "CWS",
-  "pick": "CWS",
-  "p": 0.5301,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "DET",
-  "home": "KC",
-  "pick": "DET",
-  "p": 0.5455,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "PIT",
-  "home": "LAD",
-  "pick": "LAD",
-  "p": 0.6212,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-22",
-  "away": "CHC",
-  "home": "SEA",
-  "pick": "CHC",
-  "p": 0.6062,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "SF",
-  "home": "BOS",
-  "pick": "BOS",
-  "p": 0.6268,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-22",
-  "away": "CIN",
-  "home": "ARI",
-  "pick": "ARI",
-  "p": 0.6418,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "CLE",
-  "home": "COL",
-  "pick": "COL",
-  "p": 0.5114,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-22",
-  "away": "MIN",
-  "home": "SD",
-  "pick": "SD",
-  "p": 0.5881,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-23",
-  "away": "TB",
-  "home": "BAL",
-  "pick": "BAL",
-  "p": 0.5049,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-23",
+  "date": "2026-08-21",
   "away": "STL",
   "home": "PHI",
   "pick": "PHI",
@@ -2691,11 +2421,281 @@
   "win": 1
  },
  {
+  "date": "2026-08-21",
+  "away": "TOR",
+  "home": "NYY",
+  "pick": "NYY",
+  "p": 0.6031,
+  "tier": "A",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "SF",
+  "home": "BOS",
+  "pick": "BOS",
+  "p": 0.6292,
+  "tier": "A",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "WSH",
+  "home": "MIA",
+  "pick": "MIA",
+  "p": 0.5215,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "TB",
+  "home": "BAL",
+  "pick": "BAL",
+  "p": 0.5456,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "NYM",
+  "home": "CWS",
+  "pick": "CWS",
+  "p": 0.5924,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "DET",
+  "home": "KC",
+  "pick": "DET",
+  "p": 0.5239,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-21",
+  "away": "ATH",
+  "home": "HOU",
+  "pick": "HOU",
+  "p": 0.5715,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "LAA",
+  "home": "TEX",
+  "pick": "LAA",
+  "p": 0.5174,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-21",
+  "away": "CLE",
+  "home": "COL",
+  "pick": "COL",
+  "p": 0.5218,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-21",
+  "away": "CIN",
+  "home": "ARI",
+  "pick": "ARI",
+  "p": 0.6125,
+  "tier": "A",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "MIN",
+  "home": "SD",
+  "pick": "SD",
+  "p": 0.511,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "PIT",
+  "home": "LAD",
+  "pick": "LAD",
+  "p": 0.5846,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-21",
+  "away": "CHC",
+  "home": "SEA",
+  "pick": "CHC",
+  "p": 0.594,
+  "tier": "B",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "TOR",
+  "home": "NYY",
+  "pick": "NYY",
+  "p": 0.5084,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "ATL",
+  "home": "MIL",
+  "pick": "MIL",
+  "p": 0.5926,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-22",
+  "away": "WSH",
+  "home": "MIA",
+  "pick": "MIA",
+  "p": 0.5636,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-22",
+  "away": "STL",
+  "home": "PHI",
+  "pick": "PHI",
+  "p": 0.5216,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-22",
+  "away": "TB",
+  "home": "BAL",
+  "pick": "TB",
+  "p": 0.511,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "LAA",
+  "home": "TEX",
+  "pick": "TEX",
+  "p": 0.5531,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "ATH",
+  "home": "HOU",
+  "pick": "HOU",
+  "p": 0.606,
+  "tier": "A",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "NYM",
+  "home": "CWS",
+  "pick": "CWS",
+  "p": 0.5357,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "DET",
+  "home": "KC",
+  "pick": "DET",
+  "p": 0.5095,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "PIT",
+  "home": "LAD",
+  "pick": "LAD",
+  "p": 0.6195,
+  "tier": "A",
+  "win": 1
+ },
+ {
+  "date": "2026-08-22",
+  "away": "CHC",
+  "home": "SEA",
+  "pick": "CHC",
+  "p": 0.6068,
+  "tier": "A",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "SF",
+  "home": "BOS",
+  "pick": "BOS",
+  "p": 0.6408,
+  "tier": "A",
+  "win": 1
+ },
+ {
+  "date": "2026-08-22",
+  "away": "CIN",
+  "home": "ARI",
+  "pick": "ARI",
+  "p": 0.6161,
+  "tier": "A",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "CLE",
+  "home": "COL",
+  "pick": "COL",
+  "p": 0.5577,
+  "tier": "B",
+  "win": 0
+ },
+ {
+  "date": "2026-08-22",
+  "away": "MIN",
+  "home": "SD",
+  "pick": "SD",
+  "p": 0.5697,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-23",
+  "away": "TB",
+  "home": "BAL",
+  "pick": "BAL",
+  "p": 0.5126,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-23",
+  "away": "STL",
+  "home": "PHI",
+  "pick": "PHI",
+  "p": 0.6071,
+  "tier": "A",
+  "win": 1
+ },
+ {
   "date": "2026-08-23",
   "away": "TOR",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5511,
+  "p": 0.5487,
   "tier": "PASS",
   "win": 1
  },
@@ -2704,7 +2704,7 @@
   "away": "WSH",
   "home": "MIA",
   "pick": "MIA",
-  "p": 0.5314,
+  "p": 0.5292,
   "tier": "PASS",
   "win": 1
  },
@@ -2713,7 +2713,7 @@
   "away": "DET",
   "home": "KC",
   "pick": "DET",
-  "p": 0.5179,
+  "p": 0.5384,
   "tier": "PASS",
   "win": 0
  },
@@ -2722,8 +2722,8 @@
   "away": "ATH",
   "home": "HOU",
   "pick": "HOU",
-  "p": 0.522,
-  "tier": "PASS",
+  "p": 0.5564,
+  "tier": "B",
   "win": 0
  },
  {
@@ -2731,7 +2731,7 @@
   "away": "NYM",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.585,
+  "p": 0.555,
   "tier": "B",
   "win": 1
  },
@@ -2739,26 +2739,26 @@
   "date": "2026-08-23",
   "away": "LAA",
   "home": "TEX",
-  "pick": "LAA",
-  "p": 0.5126,
+  "pick": "TEX",
+  "p": 0.5012,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-23",
   "away": "CLE",
   "home": "COL",
-  "pick": "CLE",
-  "p": 0.5537,
+  "pick": "COL",
+  "p": 0.5042,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-23",
   "away": "SF",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.6435,
+  "p": 0.6428,
   "tier": "A",
   "win": 1
  },
@@ -2767,8 +2767,8 @@
   "away": "PIT",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.6131,
-  "tier": "A",
+  "p": 0.584,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2776,8 +2776,8 @@
   "away": "CHC",
   "home": "SEA",
   "pick": "CHC",
-  "p": 0.6008,
-  "tier": "A",
+  "p": 0.5777,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2785,7 +2785,7 @@
   "away": "MIN",
   "home": "SD",
   "pick": "SD",
-  "p": 0.5333,
+  "p": 0.5272,
   "tier": "PASS",
   "win": 1
  },
@@ -2794,7 +2794,7 @@
   "away": "CIN",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.587,
+  "p": 0.5854,
   "tier": "B",
   "win": 1
  },
@@ -2803,7 +2803,7 @@
   "away": "ATL",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.5889,
+  "p": 0.5857,
   "tier": "B",
   "win": 0
  },
@@ -2812,7 +2812,7 @@
   "away": "TB",
   "home": "DET",
   "pick": "TB",
-  "p": 0.5419,
+  "p": 0.5131,
   "tier": "PASS",
   "win": 1
  },
@@ -2821,7 +2821,7 @@
   "away": "BOS",
   "home": "MIA",
   "pick": "BOS",
-  "p": 0.5566,
+  "p": 0.5606,
   "tier": "B",
   "win": 1
  },
@@ -2830,8 +2830,8 @@
   "away": "COL",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.6178,
-  "tier": "A",
+  "p": 0.5837,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2839,7 +2839,7 @@
   "away": "TEX",
   "home": "CWS",
   "pick": "CWS",
-  "p": 0.6458,
+  "p": 0.6298,
   "tier": "A",
   "win": 0
  },
@@ -2848,7 +2848,7 @@
   "away": "CLE",
   "home": "LAA",
   "pick": "CLE",
-  "p": 0.5975,
+  "p": 0.5634,
   "tier": "B",
   "win": 1
  },
@@ -2857,8 +2857,8 @@
   "away": "CHC",
   "home": "ARI",
   "pick": "CHC",
-  "p": 0.6432,
-  "tier": "A",
+  "p": 0.5877,
+  "tier": "B",
   "win": 1
  },
  {
@@ -2866,7 +2866,7 @@
   "away": "PIT",
   "home": "SD",
   "pick": "PIT",
-  "p": 0.5359,
+  "p": 0.5135,
   "tier": "PASS",
   "win": 1
  },
@@ -2875,8 +2875,8 @@
   "away": "MIN",
   "home": "ATH",
   "pick": "MIN",
-  "p": 0.5939,
-  "tier": "B",
+  "p": 0.5477,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -2884,7 +2884,7 @@
   "away": "PHI",
   "home": "SEA",
   "pick": "PHI",
-  "p": 0.5777,
+  "p": 0.5682,
   "tier": "B",
   "win": 0
  },
@@ -2893,8 +2893,8 @@
   "away": "CIN",
   "home": "SF",
   "pick": "CIN",
-  "p": 0.5571,
-  "tier": "B",
+  "p": 0.5321,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -2902,8 +2902,8 @@
   "away": "TB",
   "home": "DET",
   "pick": "TB",
-  "p": 0.5664,
-  "tier": "B",
+  "p": 0.5289,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -2911,7 +2911,7 @@
   "away": "BOS",
   "home": "MIA",
   "pick": "BOS",
-  "p": 0.5733,
+  "p": 0.5671,
   "tier": "B",
   "win": 1
  },
@@ -2920,273 +2920,12 @@
   "away": "COL",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.619,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "HOU",
-  "home": "NYY",
-  "pick": "NYY",
-  "p": 0.5791,
+  "p": 0.572,
   "tier": "B",
   "win": 0
  },
  {
   "date": "2026-08-25",
-  "away": "KC",
-  "home": "TOR",
-  "pick": "KC",
-  "p": 0.5132,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-25",
-  "away": "MIL",
-  "home": "NYM",
-  "pick": "MIL",
-  "p": 0.5564,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "LAD",
-  "home": "ATL",
-  "pick": "LAD",
-  "p": 0.578,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "TEX",
-  "home": "CWS",
-  "pick": "CWS",
-  "p": 0.557,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-25",
-  "away": "BAL",
-  "home": "STL",
-  "pick": "BAL",
-  "p": 0.5025,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-25",
-  "away": "CLE",
-  "home": "LAA",
-  "pick": "CLE",
-  "p": 0.5042,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-25",
-  "away": "CHC",
-  "home": "ARI",
-  "pick": "CHC",
-  "p": 0.6113,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "PIT",
-  "home": "SD",
-  "pick": "PIT",
-  "p": 0.5454,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-25",
-  "away": "MIN",
-  "home": "ATH",
-  "pick": "MIN",
-  "p": 0.5476,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "PHI",
-  "home": "SEA",
-  "pick": "PHI",
-  "p": 0.5028,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-25",
-  "away": "CIN",
-  "home": "SF",
-  "pick": "SF",
-  "p": 0.5655,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "TB",
-  "home": "DET",
-  "pick": "DET",
-  "p": 0.5285,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "CHC",
-  "home": "ARI",
-  "pick": "CHC",
-  "p": 0.5611,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "CIN",
-  "home": "SF",
-  "pick": "SF",
-  "p": 0.6335,
-  "tier": "A",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "CLE",
-  "home": "LAA",
-  "pick": "CLE",
-  "p": 0.5629,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "PIT",
-  "home": "SD",
-  "pick": "PIT",
-  "p": 0.5176,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "PHI",
-  "home": "SEA",
-  "pick": "PHI",
-  "p": 0.5922,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "BOS",
-  "home": "MIA",
-  "pick": "BOS",
-  "p": 0.5762,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "COL",
-  "home": "WSH",
-  "pick": "WSH",
-  "p": 0.599,
-  "tier": "B",
-  "win": 0
- },
- {
-  "date": "2026-08-26",
-  "away": "HOU",
-  "home": "NYY",
-  "pick": "NYY",
-  "p": 0.5086,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "KC",
-  "home": "TOR",
-  "pick": "TOR",
-  "p": 0.5675,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "MIL",
-  "home": "NYM",
-  "pick": "MIL",
-  "p": 0.5571,
-  "tier": "B",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "LAD",
-  "home": "ATL",
-  "pick": "ATL",
-  "p": 0.5156,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "TEX",
-  "home": "CWS",
-  "pick": "CWS",
-  "p": 0.6128,
-  "tier": "A",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "BAL",
-  "home": "STL",
-  "pick": "BAL",
-  "p": 0.5271,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-26",
-  "away": "MIN",
-  "home": "ATH",
-  "pick": "MIN",
-  "p": 0.5328,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-27",
-  "away": "COL",
-  "home": "WSH",
-  "pick": "WSH",
-  "p": 0.5184,
-  "tier": "PASS",
-  "win": 1
- },
- {
-  "date": "2026-08-27",
-  "away": "BAL",
-  "home": "STL",
-  "pick": "BAL",
-  "p": 0.5125,
-  "tier": "PASS",
-  "win": 0
- },
- {
-  "date": "2026-08-27",
   "away": "HOU",
   "home": "NYY",
   "pick": "NYY",
@@ -3195,20 +2934,281 @@
   "win": 0
  },
  {
+  "date": "2026-08-25",
+  "away": "KC",
+  "home": "TOR",
+  "pick": "TOR",
+  "p": 0.5088,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "MIL",
+  "home": "NYM",
+  "pick": "MIL",
+  "p": 0.5337,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "LAD",
+  "home": "ATL",
+  "pick": "LAD",
+  "p": 0.5528,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "TEX",
+  "home": "CWS",
+  "pick": "CWS",
+  "p": 0.5504,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-25",
+  "away": "BAL",
+  "home": "STL",
+  "pick": "STL",
+  "p": 0.5225,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "CLE",
+  "home": "LAA",
+  "pick": "CLE",
+  "p": 0.5039,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-25",
+  "away": "CHC",
+  "home": "ARI",
+  "pick": "CHC",
+  "p": 0.5725,
+  "tier": "B",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "PIT",
+  "home": "SD",
+  "pick": "PIT",
+  "p": 0.5311,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-25",
+  "away": "MIN",
+  "home": "ATH",
+  "pick": "MIN",
+  "p": 0.5116,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "PHI",
+  "home": "SEA",
+  "pick": "PHI",
+  "p": 0.5106,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-25",
+  "away": "CIN",
+  "home": "SF",
+  "pick": "SF",
+  "p": 0.5567,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "TB",
+  "home": "DET",
+  "pick": "DET",
+  "p": 0.5345,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-26",
+  "away": "CHC",
+  "home": "ARI",
+  "pick": "CHC",
+  "p": 0.5237,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-26",
+  "away": "CIN",
+  "home": "SF",
+  "pick": "SF",
+  "p": 0.584,
+  "tier": "B",
+  "win": 0
+ },
+ {
+  "date": "2026-08-26",
+  "away": "CLE",
+  "home": "LAA",
+  "pick": "CLE",
+  "p": 0.534,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "PIT",
+  "home": "SD",
+  "pick": "SD",
+  "p": 0.5001,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "PHI",
+  "home": "SEA",
+  "pick": "PHI",
+  "p": 0.5777,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "BOS",
+  "home": "MIA",
+  "pick": "BOS",
+  "p": 0.57,
+  "tier": "B",
+  "win": 0
+ },
+ {
+  "date": "2026-08-26",
+  "away": "COL",
+  "home": "WSH",
+  "pick": "WSH",
+  "p": 0.5504,
+  "tier": "PASS",
+  "win": 0
+ },
+ {
+  "date": "2026-08-26",
+  "away": "HOU",
+  "home": "NYY",
+  "pick": "NYY",
+  "p": 0.5082,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "KC",
+  "home": "TOR",
+  "pick": "TOR",
+  "p": 0.5326,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "MIL",
+  "home": "NYM",
+  "pick": "MIL",
+  "p": 0.5508,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "LAD",
+  "home": "ATL",
+  "pick": "ATL",
+  "p": 0.5336,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "TEX",
+  "home": "CWS",
+  "pick": "CWS",
+  "p": 0.589,
+  "tier": "B",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "BAL",
+  "home": "STL",
+  "pick": "BAL",
+  "p": 0.5122,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-26",
+  "away": "MIN",
+  "home": "ATH",
+  "pick": "ATH",
+  "p": 0.505,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-27",
+  "away": "COL",
+  "home": "WSH",
+  "pick": "WSH",
+  "p": 0.5064,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-27",
+  "away": "BAL",
+  "home": "STL",
+  "pick": "STL",
+  "p": 0.5072,
+  "tier": "PASS",
+  "win": 1
+ },
+ {
+  "date": "2026-08-27",
+  "away": "HOU",
+  "home": "NYY",
+  "pick": "NYY",
+  "p": 0.57,
+  "tier": "B",
+  "win": 0
+ },
+ {
   "date": "2026-08-27",
   "away": "KC",
   "home": "TOR",
-  "pick": "KC",
-  "p": 0.5214,
+  "pick": "TOR",
+  "p": 0.5021,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-08-27",
   "away": "MIL",
   "home": "NYM",
   "pick": "MIL",
-  "p": 0.6798,
+  "p": 0.6399,
   "tier": "A",
   "win": 1
  },
@@ -3217,7 +3217,7 @@
   "away": "LAD",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5357,
+  "p": 0.5531,
   "tier": "PASS",
   "win": 1
  },
@@ -3226,7 +3226,7 @@
   "away": "ARI",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5044,
+  "p": 0.5072,
   "tier": "PASS",
   "win": 1
  },
@@ -3235,7 +3235,7 @@
   "away": "CIN",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.695,
+  "p": 0.6518,
   "tier": "A",
   "win": 0
  },
@@ -3244,7 +3244,7 @@
   "away": "LAD",
   "home": "DET",
   "pick": "LAD",
-  "p": 0.6219,
+  "p": 0.605,
   "tier": "A",
   "win": 1
  },
@@ -3253,7 +3253,7 @@
   "away": "MIA",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.5112,
+  "p": 0.5299,
   "tier": "PASS",
   "win": 1
  },
@@ -3262,7 +3262,7 @@
   "away": "KC",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5124,
+  "p": 0.5091,
   "tier": "PASS",
   "win": 0
  },
@@ -3271,7 +3271,7 @@
   "away": "HOU",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5009,
+  "p": 0.5081,
   "tier": "PASS",
   "win": 0
  },
@@ -3280,7 +3280,7 @@
   "away": "SD",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5291,
+  "p": 0.5355,
   "tier": "PASS",
   "win": 1
  },
@@ -3289,8 +3289,8 @@
   "away": "SEA",
   "home": "TOR",
   "pick": "TOR",
-  "p": 0.5999,
-  "tier": "B",
+  "p": 0.6166,
+  "tier": "A",
   "win": 1
  },
  {
@@ -3298,7 +3298,7 @@
   "away": "COL",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5966,
+  "p": 0.5715,
   "tier": "B",
   "win": 1
  },
@@ -3307,7 +3307,7 @@
   "away": "BOS",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5857,
+  "p": 0.5869,
   "tier": "B",
   "win": 1
  },
@@ -3316,7 +3316,7 @@
   "away": "TEX",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.7001,
+  "p": 0.6755,
   "tier": "A",
   "win": 1
  },
@@ -3325,7 +3325,7 @@
   "away": "CWS",
   "home": "MIN",
   "pick": "CWS",
-  "p": 0.5395,
+  "p": 0.5169,
   "tier": "PASS",
   "win": 1
  },
@@ -3334,7 +3334,7 @@
   "away": "PIT",
   "home": "STL",
   "pick": "STL",
-  "p": 0.516,
+  "p": 0.5228,
   "tier": "PASS",
   "win": 1
  },
@@ -3343,7 +3343,7 @@
   "away": "PHI",
   "home": "LAA",
   "pick": "LAA",
-  "p": 0.5249,
+  "p": 0.5192,
   "tier": "PASS",
   "win": 0
  },
@@ -3352,8 +3352,8 @@
   "away": "BAL",
   "home": "ATH",
   "pick": "BAL",
-  "p": 0.5767,
-  "tier": "B",
+  "p": 0.5228,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3361,7 +3361,7 @@
   "away": "ARI",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5225,
+  "p": 0.5181,
   "tier": "PASS",
   "win": 0
  },
@@ -3370,7 +3370,7 @@
   "away": "BOS",
   "home": "NYY",
   "pick": "BOS",
-  "p": 0.513,
+  "p": 0.5019,
   "tier": "PASS",
   "win": 1
  },
@@ -3379,7 +3379,7 @@
   "away": "BOS",
   "home": "NYY",
   "pick": "NYY",
-  "p": 0.5447,
+  "p": 0.52,
   "tier": "PASS",
   "win": 1
  },
@@ -3388,7 +3388,7 @@
   "away": "LAD",
   "home": "DET",
   "pick": "LAD",
-  "p": 0.5979,
+  "p": 0.5793,
   "tier": "B",
   "win": 0
  },
@@ -3397,7 +3397,7 @@
   "away": "CWS",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5019,
+  "p": 0.5018,
   "tier": "PASS",
   "win": 0
  },
@@ -3406,7 +3406,7 @@
   "away": "PIT",
   "home": "STL",
   "pick": "STL",
-  "p": 0.5424,
+  "p": 0.5395,
   "tier": "PASS",
   "win": 0
  },
@@ -3415,7 +3415,7 @@
   "away": "CIN",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.7097,
+  "p": 0.6795,
   "tier": "A",
   "win": 1
  },
@@ -3424,7 +3424,7 @@
   "away": "SEA",
   "home": "TOR",
   "pick": "TOR",
-  "p": 0.5595,
+  "p": 0.5705,
   "tier": "B",
   "win": 1
  },
@@ -3433,7 +3433,7 @@
   "away": "ARI",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5325,
+  "p": 0.5154,
   "tier": "PASS",
   "win": 0
  },
@@ -3442,7 +3442,7 @@
   "away": "ARI",
   "home": "SF",
   "pick": "SF",
-  "p": 0.5195,
+  "p": 0.5086,
   "tier": "PASS",
   "win": 1
  },
@@ -3451,8 +3451,8 @@
   "away": "MIA",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.5514,
-  "tier": "PASS",
+  "p": 0.5559,
+  "tier": "B",
   "win": 1
  },
  {
@@ -3460,8 +3460,8 @@
   "away": "KC",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5275,
-  "tier": "PASS",
+  "p": 0.5577,
+  "tier": "B",
   "win": 0
  },
  {
@@ -3469,7 +3469,7 @@
   "away": "HOU",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5184,
+  "p": 0.5339,
   "tier": "PASS",
   "win": 1
  },
@@ -3478,7 +3478,7 @@
   "away": "SD",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5747,
+  "p": 0.5607,
   "tier": "B",
   "win": 1
  },
@@ -3487,8 +3487,8 @@
   "away": "COL",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.568,
-  "tier": "B",
+  "p": 0.5523,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3496,7 +3496,7 @@
   "away": "TEX",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.7109,
+  "p": 0.6713,
   "tier": "A",
   "win": 1
  },
@@ -3505,8 +3505,8 @@
   "away": "BAL",
   "home": "ATH",
   "pick": "BAL",
-  "p": 0.6334,
-  "tier": "A",
+  "p": 0.5687,
+  "tier": "B",
   "win": 1
  },
  {
@@ -3514,7 +3514,7 @@
   "away": "PHI",
   "home": "LAA",
   "pick": "PHI",
-  "p": 0.7112,
+  "p": 0.6775,
   "tier": "A",
   "win": 1
  },
@@ -3523,8 +3523,8 @@
   "away": "MIA",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.5624,
-  "tier": "B",
+  "p": 0.5537,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -3532,8 +3532,8 @@
   "away": "COL",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5617,
-  "tier": "B",
+  "p": 0.5381,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3541,7 +3541,7 @@
   "away": "BOS",
   "home": "NYY",
   "pick": "BOS",
-  "p": 0.5189,
+  "p": 0.5149,
   "tier": "PASS",
   "win": 0
  },
@@ -3550,7 +3550,7 @@
   "away": "SEA",
   "home": "TOR",
   "pick": "SEA",
-  "p": 0.5499,
+  "p": 0.5045,
   "tier": "PASS",
   "win": 0
  },
@@ -3559,7 +3559,7 @@
   "away": "KC",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5968,
+  "p": 0.594,
   "tier": "B",
   "win": 1
  },
@@ -3568,8 +3568,8 @@
   "away": "LAD",
   "home": "DET",
   "pick": "LAD",
-  "p": 0.5687,
-  "tier": "B",
+  "p": 0.544,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3577,7 +3577,7 @@
   "away": "SD",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5761,
+  "p": 0.5763,
   "tier": "B",
   "win": 1
  },
@@ -3586,7 +3586,7 @@
   "away": "CWS",
   "home": "MIN",
   "pick": "CWS",
-  "p": 0.5443,
+  "p": 0.5393,
   "tier": "PASS",
   "win": 0
  },
@@ -3595,7 +3595,7 @@
   "away": "TEX",
   "home": "MIL",
   "pick": "MIL",
-  "p": 0.6719,
+  "p": 0.6661,
   "tier": "A",
   "win": 0
  },
@@ -3604,8 +3604,8 @@
   "away": "PIT",
   "home": "STL",
   "pick": "PIT",
-  "p": 0.5603,
-  "tier": "B",
+  "p": 0.5269,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3613,7 +3613,7 @@
   "away": "HOU",
   "home": "NYM",
   "pick": "NYM",
-  "p": 0.5464,
+  "p": 0.5511,
   "tier": "PASS",
   "win": 0
  },
@@ -3622,8 +3622,8 @@
   "away": "BAL",
   "home": "ATH",
   "pick": "BAL",
-  "p": 0.634,
-  "tier": "A",
+  "p": 0.5776,
+  "tier": "B",
   "win": 1
  },
  {
@@ -3631,8 +3631,8 @@
   "away": "PHI",
   "home": "LAA",
   "pick": "PHI",
-  "p": 0.6004,
-  "tier": "A",
+  "p": 0.5773,
+  "tier": "B",
   "win": 1
  },
  {
@@ -3640,7 +3640,7 @@
   "away": "CIN",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5994,
+  "p": 0.5915,
   "tier": "B",
   "win": 0
  },
@@ -3649,7 +3649,7 @@
   "away": "SF",
   "home": "ATL",
   "pick": "ATL",
-  "p": 0.5575,
+  "p": 0.5641,
   "tier": "B",
   "win": 0
  },
@@ -3658,8 +3658,8 @@
   "away": "SD",
   "home": "CIN",
   "pick": "SD",
-  "p": 0.5953,
-  "tier": "B",
+  "p": 0.5406,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3667,7 +3667,7 @@
   "away": "NYM",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5884,
+  "p": 0.5813,
   "tier": "B",
   "win": 0
  },
@@ -3676,8 +3676,8 @@
   "away": "SEA",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5915,
-  "tier": "B",
+  "p": 0.6044,
+  "tier": "A",
   "win": 1
  },
  {
@@ -3685,7 +3685,7 @@
   "away": "MIA",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.5341,
+  "p": 0.5354,
   "tier": "PASS",
   "win": 1
  },
@@ -3694,7 +3694,7 @@
   "away": "DET",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5809,
+  "p": 0.5825,
   "tier": "B",
   "win": 1
  },
@@ -3703,7 +3703,7 @@
   "away": "MIL",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5687,
+  "p": 0.557,
   "tier": "B",
   "win": 1
  },
@@ -3712,7 +3712,7 @@
   "away": "ATH",
   "home": "TEX",
   "pick": "TEX",
-  "p": 0.5373,
+  "p": 0.5216,
   "tier": "PASS",
   "win": 1
  },
@@ -3720,18 +3720,18 @@
   "date": "2026-08-31",
   "away": "CWS",
   "home": "HOU",
-  "pick": "CWS",
-  "p": 0.5042,
+  "pick": "HOU",
+  "p": 0.5176,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-08-31",
   "away": "BAL",
   "home": "COL",
   "pick": "BAL",
-  "p": 0.5893,
-  "tier": "B",
+  "p": 0.5386,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3739,7 +3739,7 @@
   "away": "NYY",
   "home": "LAA",
   "pick": "NYY",
-  "p": 0.5319,
+  "p": 0.5101,
   "tier": "PASS",
   "win": 0
  },
@@ -3748,7 +3748,7 @@
   "away": "PHI",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5265,
+  "p": 0.5285,
   "tier": "PASS",
   "win": 0
  },
@@ -3757,8 +3757,8 @@
   "away": "SD",
   "home": "CIN",
   "pick": "SD",
-  "p": 0.567,
-  "tier": "B",
+  "p": 0.5369,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -3766,7 +3766,7 @@
   "away": "SF",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5786,
+  "p": 0.5741,
   "tier": "B",
   "win": 1
  },
@@ -3775,7 +3775,7 @@
   "away": "NYM",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5851,
+  "p": 0.574,
   "tier": "B",
   "win": 1
  },
@@ -3784,7 +3784,7 @@
   "away": "TOR",
   "home": "CLE",
   "pick": "CLE",
-  "p": 0.5072,
+  "p": 0.5246,
   "tier": "PASS",
   "win": 1
  },
@@ -3792,27 +3792,27 @@
   "date": "2026-09-01",
   "away": "SEA",
   "home": "BOS",
-  "pick": "SEA",
-  "p": 0.5269,
+  "pick": "BOS",
+  "p": 0.5364,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-09-01",
   "away": "ATL",
   "home": "WSH",
-  "pick": "ATL",
-  "p": 0.5232,
+  "pick": "WSH",
+  "p": 0.501,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-09-01",
   "away": "DET",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5707,
-  "tier": "B",
+  "p": 0.5395,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3820,7 +3820,7 @@
   "away": "MIA",
   "home": "KC",
   "pick": "KC",
-  "p": 0.5164,
+  "p": 0.5225,
   "tier": "PASS",
   "win": 0
  },
@@ -3829,26 +3829,26 @@
   "away": "MIL",
   "home": "CHC",
   "pick": "CHC",
-  "p": 0.5577,
-  "tier": "B",
+  "p": 0.5483,
+  "tier": "PASS",
   "win": 0
  },
  {
   "date": "2026-09-01",
   "away": "ATH",
   "home": "TEX",
-  "pick": "ATH",
-  "p": 0.5016,
+  "pick": "TEX",
+  "p": 0.5386,
   "tier": "PASS",
-  "win": 0
+  "win": 1
  },
  {
   "date": "2026-09-01",
   "away": "CWS",
   "home": "HOU",
   "pick": "CWS",
-  "p": 0.578,
-  "tier": "B",
+  "p": 0.5497,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3856,8 +3856,8 @@
   "away": "BAL",
   "home": "COL",
   "pick": "BAL",
-  "p": 0.5938,
-  "tier": "B",
+  "p": 0.531,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -3865,8 +3865,8 @@
   "away": "NYY",
   "home": "LAA",
   "pick": "NYY",
-  "p": 0.6194,
-  "tier": "A",
+  "p": 0.5874,
+  "tier": "B",
   "win": 1
  },
  {
@@ -3874,8 +3874,8 @@
   "away": "PHI",
   "home": "ARI",
   "pick": "PHI",
-  "p": 0.5601,
-  "tier": "B",
+  "p": 0.5386,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -3883,7 +3883,7 @@
   "away": "STL",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.5041,
+  "p": 0.5271,
   "tier": "PASS",
   "win": 0
  },
@@ -3892,8 +3892,8 @@
   "away": "SD",
   "home": "CIN",
   "pick": "SD",
-  "p": 0.616,
-  "tier": "A",
+  "p": 0.577,
+  "tier": "B",
   "win": 0
  },
  {
@@ -3901,8 +3901,8 @@
   "away": "ATL",
   "home": "WSH",
   "pick": "WSH",
-  "p": 0.561,
-  "tier": "B",
+  "p": 0.5254,
+  "tier": "PASS",
   "win": 0
  },
  {
@@ -3910,7 +3910,7 @@
   "away": "ATH",
   "home": "TEX",
   "pick": "TEX",
-  "p": 0.5341,
+  "p": 0.5261,
   "tier": "PASS",
   "win": 0
  },
@@ -3919,8 +3919,8 @@
   "away": "BAL",
   "home": "COL",
   "pick": "BAL",
-  "p": 0.6302,
-  "tier": "A",
+  "p": 0.5566,
+  "tier": "B",
   "win": 0
  },
  {
@@ -3928,7 +3928,7 @@
   "away": "PHI",
   "home": "ARI",
   "pick": "ARI",
-  "p": 0.5254,
+  "p": 0.5308,
   "tier": "PASS",
   "win": 1
  },
@@ -3937,8 +3937,8 @@
   "away": "SEA",
   "home": "BOS",
   "pick": "BOS",
-  "p": 0.5733,
-  "tier": "B",
+  "p": 0.611,
+  "tier": "A",
   "win": 0
  },
  {
@@ -3946,8 +3946,8 @@
   "away": "SF",
   "home": "PIT",
   "pick": "PIT",
-  "p": 0.5503,
-  "tier": "PASS",
+  "p": 0.5617,
+  "tier": "B",
   "win": 0
  },
  {
@@ -3955,7 +3955,7 @@
   "away": "NYM",
   "home": "TB",
   "pick": "TB",
-  "p": 0.5971,
+  "p": 0.5817,
   "tier": "B",
   "win": 0
  },
@@ -3964,7 +3964,7 @@
   "away": "TOR",
   "home": "CLE",
   "pick": "TOR",
-  "p": 0.528,
+  "p": 0.5177,
   "tier": "PASS",
   "win": 1
  },
@@ -3973,7 +3973,7 @@
   "away": "DET",
   "home": "MIN",
   "pick": "MIN",
-  "p": 0.5359,
+  "p": 0.5515,
   "tier": "PASS",
   "win": 0
  },
@@ -3981,18 +3981,18 @@
   "date": "2026-09-02",
   "away": "MIA",
   "home": "KC",
-  "pick": "MIA",
-  "p": 0.5077,
+  "pick": "KC",
+  "p": 0.5141,
   "tier": "PASS",
-  "win": 1
+  "win": 0
  },
  {
   "date": "2026-09-02",
   "away": "MIL",
   "home": "CHC",
   "pick": "MIL",
-  "p": 0.5771,
-  "tier": "B",
+  "p": 0.5489,
+  "tier": "PASS",
   "win": 1
  },
  {
@@ -4000,7 +4000,7 @@
   "away": "CWS",
   "home": "HOU",
   "pick": "CWS",
-  "p": 0.5279,
+  "p": 0.5085,
   "tier": "PASS",
   "win": 0
  },
@@ -4009,7 +4009,7 @@
   "away": "NYY",
   "home": "LAA",
   "pick": "NYY",
-  "p": 0.5962,
+  "p": 0.5627,
   "tier": "B",
   "win": 1
  },
@@ -4018,7 +4018,7 @@
   "away": "STL",
   "home": "LAD",
   "pick": "LAD",
-  "p": 0.634,
+  "p": 0.6241,
   "tier": "A",
   "win": 0
  }

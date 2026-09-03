@@ -8,6 +8,7 @@ No LLM calls. No paid services. Runs entirely on stdlib Python.
 import json
 import math
 import random
+import sys
 import urllib.request
 import urllib.error
 import datetime as dt
@@ -64,10 +65,12 @@ def ip_to_float(ip):
 
 
 def f(v, default=0.0):
+    """StatsAPI uses 'INF' and '-.--' sentinels; float('INF') would poison the sim."""
     try:
-        return float(v)
+        out = float(v)
     except Exception:
         return default
+    return out if math.isfinite(out) else default
 
 
 def clamp(x, lo, hi):
@@ -88,19 +91,30 @@ PARKS = [
     ("Progressive", 97), ("Camden", 97), ("Citi Field", 97),
     ("loanDepot", 96), ("Petco", 96), ("Tropicana", 96),
     ("George M. Steinbrenner", 104), ("Oracle Park", 94), ("T-Mobile", 94),
+    # neutral-site regular-season games
+    ("Field of Dreams", 103), ("Journey Bank", 103), ("Harp Helu", 130),
+    ("Rickwood", 100), ("London Stadium", 112), ("Tokyo Dome", 100),
 ]
 
 
+UNKNOWN_PARKS = set()
+
+
 def park_factor(venue_name):
-    for key, val in PARKS:
-        if key.lower() in (venue_name or "").lower():
+    """Longest key first so 'Rate Field' cannot shadow 'Guaranteed Rate Field'."""
+    name = (venue_name or "").lower()
+    for key, val in sorted(PARKS, key=lambda kv: -len(kv[0])):
+        if key.lower() in name:
             return val / 100.0
+    if venue_name and venue_name not in UNKNOWN_PARKS:
+        UNKNOWN_PARKS.add(venue_name)
+        sys.stderr.write("park_factor: no entry for %r, using neutral 1.00\n" % venue_name)
     return 1.00
 
 # ---------------------------------------------------------------- fetch
 
 def fetch_slate(date_str):
-    url = (API + "/schedule?sportId=1&date=" + date_str +
+    url = (API + "/schedule?sportId=1&date=" + date_str + "&gameType=R" +
            "&hydrate=probablePitcher,team,linescore,venue,decisions")
     return get(url)
 
@@ -190,18 +204,21 @@ def fetch_lineup(game_pk):
 
 def league_constants(team_stats):
     tot = {"r": 0.0, "g": 0.0, "hr": 0.0, "bb": 0.0, "hbp": 0.0, "k": 0.0,
-           "ip": 0.0, "er": 0.0}
+           "ip": 0.0, "er": 0.0, "ra": 0.0}
     for tid, s in team_stats.items():
         h = s.get("hit", {}); p = s.get("pit", {})
         tot["r"] += f(h.get("runs")); tot["g"] += f(h.get("gamesPlayed"))
         tot["hr"] += f(p.get("homeRuns")); tot["bb"] += f(p.get("baseOnBalls"))
         tot["hbp"] += f(p.get("hitByPitch")); tot["k"] += f(p.get("strikeOuts"))
         tot["ip"] += ip_to_float(p.get("inningsPitched")); tot["er"] += f(p.get("earnedRuns"))
+        tot["ra"] += f(p.get("runs"))
     lg_rpg = tot["r"] / max(tot["g"], 1)
     lg_era = 9.0 * tot["er"] / max(tot["ip"], 1)
     fip_raw = (13 * tot["hr"] + 3 * (tot["bb"] + tot["hbp"]) - 2 * tot["k"]) / max(tot["ip"], 1)
     c_fip = lg_era - fip_raw
-    return {"rpg": lg_rpg, "era": lg_era, "cfip": c_fip}
+    lg_ra9 = 9.0 * tot["ra"] / max(tot["ip"], 1)
+    return {"rpg": lg_rpg, "era": lg_era, "cfip": c_fip, "ra9": lg_ra9,
+            "r_per_er": (tot["ra"] / tot["er"]) if tot["er"] else 1.08}
 
 # ---------------------------------------------------------------- pitcher model
 
@@ -315,12 +332,12 @@ def pitcher_prior(history, season, lg, lg_by_season):
 def pitcher_true_talent(stat, lg, history=None, lg_by_season=None, season=2026):
     """Regressed RA/9 estimate for a starter. Returns (ra9, detail dict)."""
     if not stat:
-        # No season data (debut / callup): league average, flagged.
-        return lg["era"] + 0.35, {"unknown": True}
+        # No season data (debut / callup): replacement-ish, on the RA/9 scale.
+        return (lg["era"] + 0.35) * lg.get("r_per_er", 1.08), {"unknown": True}
     ip = ip_to_float(stat.get("inningsPitched"))
     bf = f(stat.get("battersFaced"))
     if ip < 1 or bf < 1:
-        return lg["era"] + 0.35, {"unknown": True}
+        return (lg["era"] + 0.35) * lg.get("r_per_er", 1.08), {"unknown": True}
     hr = f(stat.get("homeRuns")); bb = f(stat.get("baseOnBalls"))
     hbp = f(stat.get("hitByPitch")); k = f(stat.get("strikeOuts"))
     era = f(stat.get("era"), lg["era"])
@@ -342,8 +359,7 @@ def pitcher_true_talent(stat, lg, history=None, lg_by_season=None, season=2026):
     w_era = bf / (bf + SP_PRIOR_BF)
     era_r = w_era * era + (1 - w_era) * lg["era"]
     true = 0.82 * fip_r + 0.18 * era_r
-    # ERA->RA conversion (unearned runs ~ 8%)
-    ra9 = true * 1.08
+    ra9 = true * lg.get("r_per_er", 1.08)
     gs = max(f(stat.get("gamesStarted")), 1)
     ip_per = ip / gs
     exp_ip = clamp(0.65 * ip_per + 0.35 * 5.2, 3.2, 6.8) if gs >= 3 else 4.6
@@ -360,11 +376,11 @@ def pitcher_true_talent(stat, lg, history=None, lg_by_season=None, season=2026):
 
 def bullpen_ra9(pen, lg):
     if not pen:
-        return lg["era"] * 1.08, {}
+        return lg["era"] * lg.get("r_per_er", 1.08), {"fallback": True}
     ip = ip_to_float(pen.get("inningsPitched"))
     bf = f(pen.get("battersFaced")) or (ip * 4.3)
     if ip < 1:
-        return lg["era"] * 1.08, {}
+        return lg["era"] * lg.get("r_per_er", 1.08), {"fallback": True}
     hr = f(pen.get("homeRuns")); bb = f(pen.get("baseOnBalls"))
     hbp = f(pen.get("hitByPitch")); k = f(pen.get("strikeOuts"))
     era = f(pen.get("era"), lg["era"])
@@ -372,12 +388,12 @@ def bullpen_ra9(pen, lg):
     w = bf / (bf + PEN_PRIOR_BF)
     fip_r = w * fip + (1 - w) * lg["era"]
     era_r = w * era + (1 - w) * lg["era"]
-    true = (0.65 * fip_r + 0.35 * era_r) * 1.08
+    true = (0.65 * fip_r + 0.35 * era_r) * lg.get("r_per_er", 1.08)
     return true, {"era": pen.get("era"), "fip": round(fip, 2), "ip": round(ip, 1)}
 
 # ---------------------------------------------------------------- offense
 
-HFA = 1.034   # home run-scoring multiplier -> ~53% HFA for even teams
+HFA = 1.065   # measured: 2026 home win rate .5257; this reproduces .5263 at r=3.34
 
 
 def team_offense(team_id, team_stats, form, lg, home_park):
@@ -403,9 +419,11 @@ def team_offense(team_id, team_stats, form, lg, home_park):
 
 # ---------------------------------------------------------------- simulation
 
-DISPERSION = 8.0   # calibrated so simulate() reproduces Pythagenpat (mean err 0.2%)
-                   # NOTE: conditional on a known matchup the residual run variance is
-                   # lower than the raw season-long marginal variance.
+DISPERSION = 3.34  # measured: 2100 completed 2026 games, per-team runs mean 4.484,
+                   # var 10.501 -> r = mean^2/(var-mean) = 3.34.
+                   # Do NOT calibrate this against Pythagenpat: Pythagenpat constrains the
+                   # win-probability mapping only and is satisfied by almost any r, which is
+                   # how an earlier fit landed on 8.0 and made every game look too certain.
 
 
 def _poisson(lam, rnd):
@@ -444,13 +462,12 @@ def simulate(home_exp, away_exp, n=30000, seed=None):
     for _ in range(n):
         h = _nb_sample(home_exp, rnd)
         a = _nb_sample(away_exp, rnd)
+        # Resolve extra innings for the WINNER only. Adding a run here would double-count:
+        # the run expectations already contain extra-inning scoring.
         if h == a:
-            # extra innings: near coin flip, slight home edge
             if rnd.random() < 0.52:
-                h += 1
-            else:
-                a += 1
-        if h > a:
+                hw += 1
+        elif h > a:
             hw += 1
         if h - a >= 2:
             h_cover += 1
@@ -460,8 +477,7 @@ def simulate(home_exp, away_exp, n=30000, seed=None):
         h_runs += h
         a_runs += a
     totals.sort()
-    def p_over(line):
-        # count strictly greater than line (lines are .5 so no push)
+    def _gt(line):
         lo, hi = 0, len(totals)
         while lo < hi:
             mid = (lo + hi) // 2
@@ -469,7 +485,16 @@ def simulate(home_exp, away_exp, n=30000, seed=None):
                 lo = mid + 1
             else:
                 hi = mid
-        return (len(totals) - lo) / float(len(totals))
+        return len(totals) - lo
+
+    def p_over(line):
+        """No-push over price. Integer lines can push; counting a push as an under
+        would misprice four of the nine lines this emits."""
+        over = _gt(line) / float(n)
+        push = (totals.count(int(line)) / float(n)) if float(line).is_integer() else 0.0
+        under = 1.0 - over - push
+        denom = over + under
+        return (over / denom) if denom > 0 else 0.5
     return {
         "p_home": hw / float(n),
         "p_away": 1 - hw / float(n),

@@ -113,9 +113,16 @@ def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
     away_staff = staff(a_ra9, a_det, a_pen)   # what the AWAY team's pitching allows
     home_staff = staff(h_ra9, h_det, h_pen)
 
-    # expected runs: team offense x opposing staff / league, then park, form, HFA
-    away_exp = a_off * (home_staff / lg["rpg"]) * pf * a_form / M.HFA ** 0.5
-    home_exp = h_off * (away_staff / lg["rpg"]) * pf * h_form * M.HFA ** 0.5
+    # strip each staff's OWN park, mirroring what team_offense does to the hitters.
+    # Without this the venue factor below is applied on top of a park-contaminated rate.
+    away_staff /= (1.0 + parks.get(away_t["id"], 1.0)) / 2.0
+    home_staff /= (1.0 + parks.get(home_t["id"], 1.0)) / 2.0
+
+    # expected runs: team offense x opposing staff / league, then park, form, HFA.
+    # Denominator is league RA/9 -- the same per-9-innings scale as the numerator.
+    lg_ra9 = lg.get("ra9") or lg["rpg"]
+    away_exp = a_off * (home_staff / lg_ra9) * pf * a_form / M.HFA ** 0.5
+    home_exp = h_off * (away_staff / lg_ra9) * pf * h_form * M.HFA ** 0.5
 
     sim = M.simulate(home_exp, away_exp, n=30000, seed=g["gamePk"])
 
@@ -177,7 +184,7 @@ def build_pick(a):
                        "which is itself a risk flag" % opp["sp"])
 
     pen_gap = opp["pen_ra9"] - me["pen_ra9"]
-    if abs(pen_gap) >= 0.30:
+    if abs(pen_gap) >= 0.30 and not me["pen"].get("fallback") and not opp["pen"].get("fallback"):
         reasons.append("Bullpen edge %+.2f RA/9 (%s pen %s ERA vs %s pen %s ERA) — matters because "
                        "the starters project to hand off around the 6th"
                        % (pen_gap, me["abbr"], me["pen"].get("era"), opp["abbr"], opp["pen"].get("era")))
@@ -430,20 +437,31 @@ def render(date_str, games, hist, lines, notes, generated):
         mkt = ph if pk_["side"] == "home" else pa
         edges.append((pk_["p"] - mkt, a, mkt))
     edges.sort(key=lambda x: -x[0])
-    val = [e for e in edges if e[0] >= 0.03 and e[1]["pick"]["tier"] in ("A", "B")]
+    # Edge vs the market is the criterion once real lines exist -- a 62% pick the market
+    # prices at 72% is not a bet, and a 52% pick the market prices at 48% might be.
+    val = [e for e in edges if e[0] >= 0.03]
     if val:
-        rows = "".join(
-            '<div class="vrow"><b>%s %s</b><span>model %s vs market %s '
-            '&nbsp;→&nbsp; <b class="pos">+%.1f pts</b></span></div>'
-            % (a["pick"]["team_name"], lines.get(str(a["pk"]), {}).get(
-                "ml_home" if a["pick"]["side"] == "home" else "ml_away", ""),
-               pct(a["pick"]["p"]), pct(mkt), 100 * ed)
-            for ed, a, mkt in val)
+        rows = ""
+        for ed, a, mkt in val:
+            pk_ = a["pick"]
+            price = lines.get(str(a["pk"]), {}).get(
+                "ml_home" if pk_["side"] == "home" else "ml_away", "")
+            dog = str(price).startswith("+")
+            rows += ('<div class="vrow"><b>%s %s</b>'
+                     '<span>model %s vs market %s%s</span>'
+                     '<b class="pos">+%.1f pts</b></div>'
+                     % (pk_["team_name"], price, pct(pk_["p"]), pct(mkt),
+                        ' &middot; <i class="dogflag">plus-money dog</i>' if dog else "",
+                        100 * ed))
+        favs = [e for e in val if not str(lines.get(str(e[1]["pk"]), {}).get(
+            "ml_home" if e[1]["pick"]["side"] == "home" else "ml_away", "")).startswith("+")]
+        tail = ("" if favs else
+                " Every one of them is a plus-money underdog, which your own rule excludes from "
+                "a floor build &mdash; so by that rule today is a pass.")
         read = ('<div class="read"><div class="rh">Today\'s read</div>%s'
                 '<div class="rnote">%d of %d games priced. These are the only spots where the '
-                'model is <i>higher</i> than the de-vigged market. Everywhere else the market is '
-                'level with the model or ahead of it &mdash; those are not bets, at any leg count.'
-                '</div></div>' % (rows, len(edges), len(games)))
+                'model sits <i>above</i> the de-vigged market.%s</div></div>'
+                % (rows, len(edges), len(games), tail))
     else:
         read = ('<div class="read"><div class="rh">Today\'s read</div>'
                 '<div class="rnote">No game on this slate prices better than the market by 3+ '
@@ -467,26 +485,39 @@ def render(date_str, games, hist, lines, notes, generated):
         mkt = ph if pk_["side"] == "home" else pa
         edges.append((pk_["p"] - mkt, a, mkt))
     edges.sort(key=lambda x: -x[0])
-    val = [e for e in edges if e[0] >= 0.03 and e[1]["pick"]["tier"] in ("A", "B")]
+    # Edge vs the market is the criterion once real lines exist -- a 62% pick the market
+    # prices at 72% is not a bet, and a 52% pick the market prices at 48% might be.
+    val = [e for e in edges if e[0] >= 0.03]
     if val:
-        rows = "".join(
-            '<div class="vrow"><b>%s %s</b><span>model %s vs market %s '
-            '&nbsp;→&nbsp; <b class="pos">+%.1f pts</b></span></div>'
-            % (a["pick"]["team_name"], lines.get(str(a["pk"]), {}).get(
-                "ml_home" if a["pick"]["side"] == "home" else "ml_away", ""),
-               pct(a["pick"]["p"]), pct(mkt), 100 * ed)
-            for ed, a, mkt in val)
+        rows = ""
+        for ed, a, mkt in val:
+            pk_ = a["pick"]
+            price = lines.get(str(a["pk"]), {}).get(
+                "ml_home" if pk_["side"] == "home" else "ml_away", "")
+            dog = str(price).startswith("+")
+            rows += ('<div class="vrow"><b>%s %s</b>'
+                     '<span>model %s vs market %s%s</span>'
+                     '<b class="pos">+%.1f pts</b></div>'
+                     % (pk_["team_name"], price, pct(pk_["p"]), pct(mkt),
+                        ' &middot; <i class="dogflag">plus-money dog</i>' if dog else "",
+                        100 * ed))
+        favs = [e for e in val if not str(lines.get(str(e[1]["pk"]), {}).get(
+            "ml_home" if e[1]["pick"]["side"] == "home" else "ml_away", "")).startswith("+")]
+        tail = ("" if favs else
+                " Every one of them is a plus-money underdog, which your own rule excludes from "
+                "a floor build &mdash; so by that rule today is a pass.")
         read = ('<div class="read"><div class="rh">Today\'s read</div>%s'
                 '<div class="rnote">%d of %d games priced. These are the only spots where the '
-                'model is <i>higher</i> than the de-vigged market. Everywhere else the market is '
-                'level with the model or ahead of it &mdash; those are not bets, at any leg count.'
-                '</div></div>' % (rows, len(edges), len(games)))
+                'model sits <i>above</i> the de-vigged market.%s</div></div>'
+                % (rows, len(edges), len(games), tail))
     else:
         read = ('<div class="read"><div class="rh">Today\'s read</div>'
                 '<div class="rnote">No game on this slate prices better than the market by 3+ '
                 'points. The honest answer is no play &mdash; not a smaller play.</div></div>')
 
-    bt_block = """
+    bt_block = ""
+    if bt:
+        bt_block = """
 <div class="bt">
   <div class="bth">Backtest &mdash; %d games, %s to %s</div>
   <div class="btrow"><span>PLAY + LEAN tiers</span><b>%d-%d &nbsp;(%.1f%%)</b></div>
@@ -500,8 +531,8 @@ def render(date_str, games, hist, lines, notes, generated):
     the model somewhat. It is a calibration check, not a profit claim &mdash; no closing prices were
     captured, and hit rate alone does not establish an edge against the vig.</div>
 </div>""" % (bt["n"], bt["from"], bt["to"], bt["AB"][0], bt["AB"][1], ab_pct,
-             bt["PASS"][0], bt["PASS"][1], pass_pct, ab_pct,
-             100 * r ** 2, 100 * r ** 3, 100 * r ** 5, 100 * r ** 9, ab_pct)
+               bt["PASS"][0], bt["PASS"][1], pass_pct, ab_pct,
+               100 * r ** 2, 100 * r ** 3, 100 * r ** 5, 100 * r ** 9, ab_pct)
 
     return """<!doctype html>
 <html lang="en"><head>
@@ -562,6 +593,7 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
 .rh{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--a);margin-bottom:8px;font-weight:700}
 .vrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13.5px;padding:4px 0}
 .vrow span{color:var(--dim)}
+.dogflag{color:#fbbf24;font-style:normal}
 .pos{color:var(--a)}
 .rnote{font-size:12px;color:#c3d0dd;margin-top:9px;border-top:1px solid #1c4532;padding-top:8px;line-height:1.55}
 .bt{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:13px 15px;margin:4px 0 6px}
@@ -638,6 +670,10 @@ def main():
     for date in sl.get("dates", []):
         for g in date.get("games", []):
             try:
+                for side in ("away", "home"):
+                    tid = g["teams"][side]["team"]["id"]
+                    if tid not in team_stats:
+                        raise ValueError("no season stats for team id %s" % tid)
                 a = analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby)
                 a["pick"] = build_pick(a)
                 games.append(a)

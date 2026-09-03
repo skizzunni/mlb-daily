@@ -28,7 +28,7 @@ def main():
         edge = (p["p"] - mkt) if mkt is not None else None
         rows.append((g, p, ln, mkt, edge))
 
-    plays = [r for r in rows if r[4] is not None and r[4] >= 0.03 and r[1]["tier"] in ("A", "B")]
+    plays = [r for r in rows if r[4] is not None and r[4] >= 0.03]
 
     def bar(model, market):
         """Two stacked measures on one 0-100 scale."""
@@ -101,16 +101,19 @@ def main():
             g["home"]["abbr"], g["home"]["exp_runs"], p["mean_total"], why, ctx))
 
     if plays:
-        pl = "".join(
-            '<div class="prow"><b>%s %s</b><span>model %.1f%% &middot; market %.1f%%</span>'
-            '<b class="pos">+%.1f</b></div>'
-            % (esc(p["team_name"]),
-               ln.get("ml_home" if p["side"] == "home" else "ml_away", ""),
-               100 * p["p"], 100 * mkt, 100 * ed)
-            for g, p, ln, mkt, ed in plays)
-        readnote = ("The only spots where the model prices above the de-vigged market. "
-                    "Everywhere else the market is level or ahead &mdash; those are not bets, "
-                    "at any leg count.")
+        pl = ""
+        anyfav = False
+        for g, p, ln, mkt, ed in plays:
+            price = ln.get("ml_home" if p["side"] == "home" else "ml_away", "")
+            dog = str(price).startswith("+")
+            anyfav = anyfav or not dog
+            pl += ('<div class="prow"><b>%s %s</b><span>model %.1f%% &middot; market %.1f%%%s'
+                   '</span><b class="pos">+%.1f</b></div>'
+                   % (esc(p["team_name"]), price, 100 * p["p"], 100 * mkt,
+                      ' &middot; <i class="dog">plus-money dog</i>' if dog else "", 100 * ed))
+        readnote = ("The only spots where the model prices above the de-vigged market."
+                    + ("" if anyfav else " All of them are plus-money underdogs, which the "
+                       "no-plus-money rule excludes &mdash; by that rule today is a pass."))
     else:
         pl = '<div class="prow none">Nothing prices above the market today.</div>'
         readnote = "The honest answer is no play &mdash; not a smaller play."
@@ -185,6 +188,7 @@ section{margin-top:30px}
 .prow span{color:var(--dim);font-size:13px;font-family:var(--mono);margin-right:auto}
 .prow .pos{color:var(--jade);font-family:var(--mono);font-size:17px}
 .prow.none{color:var(--dim)}
+.dog{color:var(--amber);font-style:normal}
 .readnote{font-size:13px;color:#b6c8d2;margin-top:11px;padding-top:11px;
   border-top:1px solid var(--jade-dim)}
 .btg{display:grid;grid-template-columns:1fr 1fr;gap:10px}

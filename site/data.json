@@ -1,10 +1,12 @@
 {
  "date": "2026-09-03",
- "generated": "Sep 3, 3:08 AM EDT",
+ "generated": "Sep 3, 3:25 AM EDT",
  "league": {
   "rpg": 4.484040019056693,
   "era": 4.171657222654886,
-  "cfip": 3.088782662405672
+  "cfip": 3.088782662405672,
+  "ra9": 4.549668340628944,
+  "r_per_er": 1.090614136732329
  },
  "games": [
   {
@@ -30,7 +32,7 @@
      "avg": ".295",
      "gs": 4,
      "exp_ip": 4.9,
-     "ra9": 4.3,
+     "ra9": 4.34,
      "unknown": false,
      "prior_fip": null,
      "prior_bf": 0,
@@ -39,8 +41,8 @@
      "start_ip_recent": 4.92,
      "n_starts": 4
     },
-    "sp_ra9": 4.3,
-    "pen_ra9": 4.67,
+    "sp_ra9": 4.34,
+    "pen_ra9": 4.71,
     "pen": {
      "era": "4.45",
      "fip": 4.29,
@@ -58,7 +60,7 @@
      "recent_ra": 5.5,
      "recent_rec": "10-10"
     },
-    "exp_runs": 3.6,
+    "exp_runs": 3.57,
     "score": null
    },
    "home": {
@@ -77,7 +79,7 @@
      "avg": ".211",
      "gs": 21,
      "exp_ip": 6.0,
-     "ra9": 3.13,
+     "ra9": 3.16,
      "unknown": false,
      "prior_fip": 2.5,
      "prior_bf": 622,
@@ -86,8 +88,8 @@
      "start_ip_recent": 6.0,
      "n_starts": 21
     },
-    "sp_ra9": 3.13,
-    "pen_ra9": 4.3,
+    "sp_ra9": 3.16,
+    "pen_ra9": 4.34,
     "pen": {
      "era": "3.98",
      "fip": 3.92,
@@ -105,195 +107,50 @@
      "recent_ra": 4.0,
      "recent_rec": "10-9"
     },
-    "exp_runs": 4.8,
+    "exp_runs": 4.9,
     "score": null
    },
    "sim": {
-    "p_home": 0.6272,
-    "p_away": 0.3728,
-    "p_home_rl": 0.44953333333333334,
-    "p_away_rl": 0.21803333333333333,
-    "mean_total": 8.5351,
+    "p_home": 0.6180333333333333,
+    "p_away": 0.3819666666666667,
+    "p_home_rl": 0.46086666666666665,
+    "p_away_rl": 0.24273333333333333,
+    "mean_total": 8.501066666666667,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.7071,
-     "7.0": 0.5652666666666667,
-     "7.5": 0.5652666666666667,
-     "8.0": 0.4780333333333333,
-     "8.5": 0.4780333333333333,
-     "9.0": 0.35036666666666666,
-     "9.5": 0.35036666666666666,
-     "10.0": 0.2788333333333333,
-     "10.5": 0.2788333333333333
+     "6.5": 0.6323666666666666,
+     "7.0": 0.5933109627936133,
+     "7.5": 0.5363333333333333,
+     "8.0": 0.4897285399853265,
+     "8.5": 0.445,
+     "9.0": 0.39524916460845566,
+     "9.5": 0.36273333333333335,
+     "10.0": 0.3127965492451473,
+     "10.5": 0.29006666666666664
     },
-    "mean_home": 4.8634,
-    "mean_away": 3.6717
+    "mean_home": 4.925433333333333,
+    "mean_away": 3.575633333333333
    },
    "pick": {
     "side": "home",
     "team": "LAD",
     "team_name": "Los Angeles Dodgers",
-    "p": 0.6272,
+    "p": 0.618,
     "tier": "A",
-    "fair": "-168",
+    "fair": "-162",
     "reasons": [
-     "Starter edge +1.17 RA/9: Tarik Skubal (2.84 ERA, 10.87 K/9, 1.49 BB/9 over 126.7 IP) vs Quinn Mathews (5.03 ERA, 9.15 K/9, 3.66 BB/9)",
+     "Starter edge +1.18 RA/9: Tarik Skubal (2.84 ERA, 10.87 K/9, 1.49 BB/9 over 126.7 IP) vs Quinn Mathews (5.03 ERA, 9.15 K/9, 3.66 BB/9)",
      "Bullpen edge +0.37 RA/9 (LAD pen 3.98 ERA vs STL pen 4.45 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Offense gap +0.41 R/G (LAD 4.92 R/G, .758 OPS vs STL 4.51 R/G, .700 OPS)",
      "Last 3 weeks: LAD 10-9 (4.32 R/G scored, 4.0 allowed) vs STL 10-10 (5.45 / 5.5)"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6496333333333333
+     0.6372666666666666
     ],
-    "mean_total": 8.54,
-    "rl_p": 0.4495,
-    "rl_fair": "+122"
-   },
-   "locked": false,
-   "result": null
-  },
-  {
-   "pk": 822853,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "start_utc": "2026-09-04T00:05:00Z",
-   "venue": "Globe Life Field",
-   "park_factor": 1.01,
-   "away": {
-    "name": "Tampa Bay Rays",
-    "abbr": "TB",
-    "rec": "83-56",
-    "sp": "Shane McClanahan",
-    "sp_det": {
-     "ip": 113.0,
-     "era": "3.19",
-     "fip": 3.42,
-     "k9": "8.20",
-     "bb9": "3.03",
-     "hr9": "0.72",
-     "whip": "1.11",
-     "avg": ".206",
-     "gs": 23,
-     "exp_ip": 4.6,
-     "ra9": 3.95,
-     "unknown": false,
-     "prior_fip": null,
-     "prior_bf": 0,
-     "blend_w": 0.651,
-     "opener": false,
-     "start_ip_recent": 4.4,
-     "n_starts": 23
-    },
-    "sp_ra9": 3.95,
-    "pen_ra9": 4.58,
-    "pen": {
-     "era": "4.05",
-     "fip": 4.36,
-     "ip": 550.7
-    },
-    "off": {
-     "rs_pg": 4.52,
-     "ops": ".733",
-     "hr": 144,
-     "avg": ".261",
-     "obp": ".329",
-     "so": 970,
-     "form_mult": 0.992,
-     "recent_rs": 4.35,
-     "recent_ra": 4.7,
-     "recent_rec": "10-10"
-    },
-    "exp_runs": 4.79,
-    "score": null
-   },
-   "home": {
-    "name": "Texas Rangers",
-    "abbr": "TEX",
-    "rec": "69-71",
-    "sp": "Cal Quantrill",
-    "sp_det": {
-     "ip": 89.7,
-     "era": "3.01",
-     "fip": 4.07,
-     "k9": "6.83",
-     "bb9": "2.21",
-     "hr9": "1.10",
-     "whip": "1.10",
-     "avg": ".228",
-     "gs": 11,
-     "exp_ip": 5.6,
-     "ra9": 4.75,
-     "unknown": false,
-     "prior_fip": 5.25,
-     "prior_bf": 465,
-     "blend_w": 0.769,
-     "opener": false,
-     "start_ip_recent": 6.0,
-     "n_starts": 11
-    },
-    "sp_ra9": 4.75,
-    "pen_ra9": 4.7,
-    "pen": {
-     "era": "4.44",
-     "fip": 4.36,
-     "ip": 504.3
-    },
-    "off": {
-     "rs_pg": 4.09,
-     "ops": ".715",
-     "hr": 157,
-     "avg": ".243",
-     "obp": ".317",
-     "so": 1188,
-     "form_mult": 0.987,
-     "recent_rs": 3.85,
-     "recent_ra": 4.7,
-     "recent_rec": "9-11"
-    },
-    "exp_runs": 3.91,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.41076666666666667,
-    "p_away": 0.5892333333333333,
-    "p_home_rl": 0.24746666666666667,
-    "p_away_rl": 0.4235333333333333,
-    "mean_total": 8.785933333333332,
-    "median_total": 9,
-    "p_over": {
-     "6.5": 0.7263,
-     "7.0": 0.5913333333333334,
-     "7.5": 0.5913333333333334,
-     "8.0": 0.5024666666666666,
-     "8.5": 0.5024666666666666,
-     "9.0": 0.3756,
-     "9.5": 0.3756,
-     "10.0": 0.3006666666666667,
-     "10.5": 0.3006666666666667
-    },
-    "mean_home": 3.9457333333333335,
-    "mean_away": 4.8402
-   },
-   "pick": {
-    "side": "away",
-    "team": "TB",
-    "team_name": "Tampa Bay Rays",
-    "p": 0.5892,
-    "tier": "B",
-    "fair": "-143",
-    "reasons": [
-     "Starter edge +0.80 RA/9: Shane McClanahan (3.19 ERA, 8.20 K/9, 3.03 BB/9 over 113.0 IP) vs Cal Quantrill (3.01 ERA, 6.83 K/9, 2.21 BB/9)",
-     "Offense gap +0.43 R/G (TB 4.52 R/G, .733 OPS vs TEX 4.09 R/G, .715 OPS)",
-     "Last 3 weeks: TB 10-10 (4.35 R/G scored, 4.7 allowed) vs TEX 9-11 (3.85 / 4.7)"
-    ],
-    "total_lean": [
-     "UNDER 9.5",
-     0.6244000000000001
-    ],
-    "mean_total": 8.79,
-    "rl_p": 0.4235,
-    "rl_fair": "+136"
+    "mean_total": 8.5,
+    "rl_p": 0.4609,
+    "rl_fair": "+117"
    },
    "locked": false,
    "result": null
@@ -321,7 +178,7 @@
      "avg": ".239",
      "gs": 5,
      "exp_ip": 5.1,
-     "ra9": 4.6,
+     "ra9": 4.64,
      "unknown": false,
      "prior_fip": null,
      "prior_bf": 0,
@@ -330,8 +187,8 @@
      "start_ip_recent": 5.13,
      "n_starts": 5
     },
-    "sp_ra9": 4.6,
-    "pen_ra9": 4.51,
+    "sp_ra9": 4.64,
+    "pen_ra9": 4.55,
     "pen": {
      "era": "4.22",
      "fip": 4.15,
@@ -349,7 +206,7 @@
      "recent_ra": 4.95,
      "recent_rec": "8-12"
     },
-    "exp_runs": 4.2,
+    "exp_runs": 4.16,
     "score": null
    },
    "home": {
@@ -368,7 +225,7 @@
      "avg": ".192",
      "gs": 7,
      "exp_ip": 2.2,
-     "ra9": 4.65,
+     "ra9": 4.7,
      "unknown": false,
      "prior_fip": 4.26,
      "prior_bf": 162,
@@ -377,8 +234,8 @@
      "start_ip_recent": 2.13,
      "n_starts": 7
     },
-    "sp_ra9": 4.65,
-    "pen_ra9": 4.37,
+    "sp_ra9": 4.7,
+    "pen_ra9": 4.41,
     "pen": {
      "era": "4.11",
      "fip": 3.98,
@@ -396,48 +253,193 @@
      "recent_ra": 4.05,
      "recent_rec": "10-9"
     },
-    "exp_runs": 4.91,
+    "exp_runs": 5.11,
     "score": null
    },
    "sim": {
-    "p_home": 0.576,
-    "p_away": 0.42400000000000004,
-    "p_home_rl": 0.4082,
-    "p_away_rl": 0.2709,
-    "mean_total": 9.202166666666667,
+    "p_home": 0.5789666666666666,
+    "p_away": 0.42103333333333337,
+    "p_home_rl": 0.4338,
+    "p_away_rl": 0.2895,
+    "mean_total": 9.257866666666667,
     "median_total": 9,
     "p_over": {
-     "6.5": 0.7610333333333333,
-     "7.0": 0.6343666666666666,
-     "7.5": 0.6343666666666666,
-     "8.0": 0.5486333333333333,
-     "8.5": 0.5486333333333333,
-     "9.0": 0.4188,
-     "9.5": 0.4188,
-     "10.0": 0.3409333333333333,
-     "10.5": 0.3409333333333333
+     "6.5": 0.6925333333333333,
+     "7.0": 0.6627175661839988,
+     "7.5": 0.6041333333333333,
+     "8.0": 0.5648063322217745,
+     "8.5": 0.5137666666666667,
+     "9.0": 0.4665764645652015,
+     "9.5": 0.4253,
+     "10.0": 0.3764331440558429,
+     "10.5": 0.3469333333333333
     },
-    "mean_home": 4.9626,
-    "mean_away": 4.239566666666667
+    "mean_home": 5.126966666666666,
+    "mean_away": 4.1309
    },
    "pick": {
     "side": "home",
     "team": "PIT",
     "team_name": "Pittsburgh Pirates",
-    "p": 0.576,
+    "p": 0.579,
     "tier": "B",
-    "fair": "-136",
+    "fair": "-138",
     "reasons": [
      "Offense gap +0.73 R/G (PIT 4.9 R/G, .735 OPS vs SF 4.17 R/G, .716 OPS)",
      "Last 3 weeks: PIT 10-9 (4.42 R/G scored, 4.05 allowed) vs SF 8-12 (4.6 / 4.95)"
     ],
     "total_lean": [
      "OVER 7.5",
-     0.6343666666666666
+     0.6041333333333333
     ],
-    "mean_total": 9.2,
-    "rl_p": 0.4082,
-    "rl_fair": "+145"
+    "mean_total": 9.26,
+    "rl_p": 0.4338,
+    "rl_fair": "+131"
+   },
+   "locked": false,
+   "result": null
+  },
+  {
+   "pk": 822853,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "start_utc": "2026-09-04T00:05:00Z",
+   "venue": "Globe Life Field",
+   "park_factor": 1.01,
+   "away": {
+    "name": "Tampa Bay Rays",
+    "abbr": "TB",
+    "rec": "83-56",
+    "sp": "Shane McClanahan",
+    "sp_det": {
+     "ip": 113.0,
+     "era": "3.19",
+     "fip": 3.42,
+     "k9": "8.20",
+     "bb9": "3.03",
+     "hr9": "0.72",
+     "whip": "1.11",
+     "avg": ".206",
+     "gs": 23,
+     "exp_ip": 4.6,
+     "ra9": 3.98,
+     "unknown": false,
+     "prior_fip": null,
+     "prior_bf": 0,
+     "blend_w": 0.651,
+     "opener": false,
+     "start_ip_recent": 4.4,
+     "n_starts": 23
+    },
+    "sp_ra9": 3.98,
+    "pen_ra9": 4.62,
+    "pen": {
+     "era": "4.05",
+     "fip": 4.36,
+     "ip": 550.7
+    },
+    "off": {
+     "rs_pg": 4.52,
+     "ops": ".733",
+     "hr": 144,
+     "avg": ".261",
+     "obp": ".329",
+     "so": 970,
+     "form_mult": 0.992,
+     "recent_rs": 4.35,
+     "recent_ra": 4.7,
+     "recent_rec": "10-10"
+    },
+    "exp_runs": 4.68,
+    "score": null
+   },
+   "home": {
+    "name": "Texas Rangers",
+    "abbr": "TEX",
+    "rec": "69-71",
+    "sp": "Cal Quantrill",
+    "sp_det": {
+     "ip": 89.7,
+     "era": "3.01",
+     "fip": 4.07,
+     "k9": "6.83",
+     "bb9": "2.21",
+     "hr9": "1.10",
+     "whip": "1.10",
+     "avg": ".228",
+     "gs": 11,
+     "exp_ip": 5.6,
+     "ra9": 4.8,
+     "unknown": false,
+     "prior_fip": 5.25,
+     "prior_bf": 465,
+     "blend_w": 0.769,
+     "opener": false,
+     "start_ip_recent": 6.0,
+     "n_starts": 11
+    },
+    "sp_ra9": 4.8,
+    "pen_ra9": 4.75,
+    "pen": {
+     "era": "4.44",
+     "fip": 4.36,
+     "ip": 504.3
+    },
+    "off": {
+     "rs_pg": 4.09,
+     "ops": ".715",
+     "hr": 157,
+     "avg": ".243",
+     "obp": ".317",
+     "so": 1188,
+     "form_mult": 0.987,
+     "recent_rs": 3.85,
+     "recent_ra": 4.7,
+     "recent_rec": "9-11"
+    },
+    "exp_runs": 4.03,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.4483333333333333,
+    "p_away": 0.5516666666666667,
+    "p_home_rl": 0.3005,
+    "p_away_rl": 0.4062,
+    "mean_total": 8.681433333333333,
+    "median_total": 8,
+    "p_over": {
+     "6.5": 0.6489666666666667,
+     "7.0": 0.6117603686635945,
+     "7.5": 0.5531333333333334,
+     "8.0": 0.5084335582282195,
+     "8.5": 0.4622,
+     "9.0": 0.4110819097678493,
+     "9.5": 0.3754,
+     "10.0": 0.32436720271147335,
+     "10.5": 0.29986666666666667
+    },
+    "mean_home": 4.008466666666667,
+    "mean_away": 4.6729666666666665
+   },
+   "pick": {
+    "side": "away",
+    "team": "TB",
+    "team_name": "Tampa Bay Rays",
+    "p": 0.5517,
+    "tier": "PASS",
+    "fair": "-123",
+    "reasons": [
+     "Starter edge +0.82 RA/9: Shane McClanahan (3.19 ERA, 8.20 K/9, 3.03 BB/9 over 113.0 IP) vs Cal Quantrill (3.01 ERA, 6.83 K/9, 2.21 BB/9)",
+     "Offense gap +0.43 R/G (TB 4.52 R/G, .733 OPS vs TEX 4.09 R/G, .715 OPS)",
+     "Last 3 weeks: TB 10-10 (4.35 R/G scored, 4.7 allowed) vs TEX 9-11 (3.85 / 4.7)"
+    ],
+    "total_lean": [
+     "UNDER 9.5",
+     0.6246
+    ],
+    "mean_total": 8.68,
+    "rl_p": 0.4062,
+    "rl_fair": "+146"
    },
    "locked": false,
    "result": null
@@ -465,7 +467,7 @@
      "avg": ".265",
      "gs": 12,
      "exp_ip": 4.7,
-     "ra9": 5.12,
+     "ra9": 5.17,
      "unknown": false,
      "prior_fip": 4.13,
      "prior_bf": 88,
@@ -474,8 +476,8 @@
      "start_ip_recent": 4.8,
      "n_starts": 12
     },
-    "sp_ra9": 5.12,
-    "pen_ra9": 5.18,
+    "sp_ra9": 5.17,
+    "pen_ra9": 5.23,
     "pen": {
      "era": "5.56",
      "fip": 4.53,
@@ -493,7 +495,7 @@
      "recent_ra": 5.45,
      "recent_rec": "7-13"
     },
-    "exp_runs": 4.07,
+    "exp_runs": 4.12,
     "score": null
    },
    "home": {
@@ -512,7 +514,7 @@
      "avg": ".229",
      "gs": 2,
      "exp_ip": 5.0,
-     "ra9": 4.69,
+     "ra9": 4.74,
      "unknown": false,
      "prior_fip": null,
      "prior_bf": 0,
@@ -521,8 +523,8 @@
      "start_ip_recent": 5.0,
      "n_starts": 2
     },
-    "sp_ra9": 4.69,
-    "pen_ra9": 4.53,
+    "sp_ra9": 4.74,
+    "pen_ra9": 4.58,
     "pen": {
      "era": "4.49",
      "fip": 4.05,
@@ -540,37 +542,37 @@
      "recent_ra": 6.75,
      "recent_rec": "10-10"
     },
-    "exp_runs": 4.64,
+    "exp_runs": 4.55,
     "score": null
    },
    "sim": {
-    "p_home": 0.5606666666666666,
-    "p_away": 0.43933333333333335,
-    "p_home_rl": 0.38563333333333333,
-    "p_away_rl": 0.28076666666666666,
-    "mean_total": 8.8749,
-    "median_total": 9,
+    "p_home": 0.5318333333333334,
+    "p_away": 0.4681666666666666,
+    "p_home_rl": 0.3824,
+    "p_away_rl": 0.3257333333333333,
+    "mean_total": 8.739566666666667,
+    "median_total": 8,
     "p_over": {
-     "6.5": 0.7379,
-     "7.0": 0.5981333333333333,
-     "7.5": 0.5981333333333333,
-     "8.0": 0.5124,
-     "8.5": 0.5124,
-     "9.0": 0.38356666666666667,
-     "9.5": 0.38356666666666667,
-     "10.0": 0.30846666666666667,
-     "10.5": 0.30846666666666667
+     "6.5": 0.653,
+     "7.0": 0.6168145176132809,
+     "7.5": 0.5585666666666667,
+     "8.0": 0.5135899507823405,
+     "8.5": 0.4661,
+     "9.0": 0.4168851026649192,
+     "9.5": 0.3817,
+     "10.0": 0.32965921000325255,
+     "10.5": 0.30406666666666665
     },
-    "mean_home": 4.710366666666666,
-    "mean_away": 4.164533333333333
+    "mean_home": 4.5583,
+    "mean_away": 4.181266666666667
    },
    "pick": {
     "side": "home",
     "team": "SEA",
     "team_name": "Seattle Mariners",
-    "p": 0.5607,
-    "tier": "B",
-    "fair": "-128",
+    "p": 0.5318,
+    "tier": "PASS",
+    "fair": "-114",
     "reasons": [
      "Starter edge +0.43 RA/9: Kade Anderson (4.50 ERA, 7.20 K/9, 4.50 BB/9 over 10.0 IP) vs Jack Perkins (6.42 ERA, 10.29 K/9, 3.97 BB/9)",
      "Bullpen edge +0.65 RA/9 (SEA pen 4.49 ERA vs ATH pen 5.56 ERA) \u2014 matters because the starters project to hand off around the 6th",
@@ -580,11 +582,11 @@
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6164333333333334
+     0.6183000000000001
     ],
-    "mean_total": 8.87,
-    "rl_p": 0.3856,
-    "rl_fair": "+159"
+    "mean_total": 8.74,
+    "rl_p": 0.3824,
+    "rl_fair": "+162"
    },
    "locked": false,
    "result": null
@@ -612,7 +614,7 @@
      "avg": ".280",
      "gs": 22,
      "exp_ip": 4.7,
-     "ra9": 4.81,
+     "ra9": 4.86,
      "unknown": false,
      "prior_fip": 3.93,
      "prior_bf": 611,
@@ -621,8 +623,8 @@
      "start_ip_recent": 4.47,
      "n_starts": 22
     },
-    "sp_ra9": 4.81,
-    "pen_ra9": 4.32,
+    "sp_ra9": 4.86,
+    "pen_ra9": 4.36,
     "pen": {
      "era": "3.74",
      "fip": 4.09,
@@ -640,7 +642,7 @@
      "recent_ra": 4.38,
      "recent_rec": "12-9"
     },
-    "exp_runs": 4.36,
+    "exp_runs": 4.3,
     "score": null
    },
    "home": {
@@ -659,7 +661,7 @@
      "avg": ".210",
      "gs": 15,
      "exp_ip": 5.6,
-     "ra9": 4.08,
+     "ra9": 4.12,
      "unknown": false,
      "prior_fip": 3.33,
      "prior_bf": 600,
@@ -668,8 +670,8 @@
      "start_ip_recent": 5.67,
      "n_starts": 15
     },
-    "sp_ra9": 4.08,
-    "pen_ra9": 4.5,
+    "sp_ra9": 4.12,
+    "pen_ra9": 4.55,
     "pen": {
      "era": "4.09",
      "fip": 4.21,
@@ -687,48 +689,48 @@
      "recent_ra": 4.74,
      "recent_rec": "10-9"
     },
-    "exp_runs": 4.55,
+    "exp_runs": 4.59,
     "score": null
    },
    "sim": {
-    "p_home": 0.5226333333333333,
-    "p_away": 0.4773666666666667,
-    "p_home_rl": 0.3540333333333333,
-    "p_away_rl": 0.3176,
-    "mean_total": 9.013433333333333,
-    "median_total": 9,
+    "p_home": 0.5276333333333333,
+    "p_away": 0.4723666666666667,
+    "p_home_rl": 0.3786333333333333,
+    "p_away_rl": 0.3287,
+    "mean_total": 8.8628,
+    "median_total": 8,
     "p_over": {
-     "6.5": 0.7462,
-     "7.0": 0.6155666666666667,
-     "7.5": 0.6155666666666667,
-     "8.0": 0.5294,
-     "8.5": 0.5294,
-     "9.0": 0.4005666666666667,
-     "9.5": 0.4005666666666667,
-     "10.0": 0.3233333333333333,
-     "10.5": 0.3233333333333333
+     "6.5": 0.6636666666666666,
+     "7.0": 0.628825779870512,
+     "7.5": 0.5698,
+     "8.0": 0.5285651665692577,
+     "8.5": 0.48233333333333334,
+     "9.0": 0.43341846041590665,
+     "9.5": 0.396,
+     "10.0": 0.34404865334491747,
+     "10.5": 0.3168
     },
-    "mean_home": 4.6031,
-    "mean_away": 4.410333333333333
+    "mean_home": 4.576666666666667,
+    "mean_away": 4.286133333333333
    },
    "pick": {
     "side": "home",
     "team": "HOU",
     "team_name": "Houston Astros",
-    "p": 0.5226,
+    "p": 0.5276,
     "tier": "PASS",
-    "fair": "-109",
+    "fair": "-112",
     "reasons": [
-     "Starter edge +0.73 RA/9: Hunter Brown (3.33 ERA, 9.56 K/9, 4.89 BB/9 over 81.0 IP) vs Luis Castillo (5.31 ERA, 7.82 K/9, 2.80 BB/9)",
+     "Starter edge +0.74 RA/9: Hunter Brown (3.33 ERA, 9.56 K/9, 4.89 BB/9 over 81.0 IP) vs Luis Castillo (5.31 ERA, 7.82 K/9, 2.80 BB/9)",
      "Last 3 weeks: HOU 10-9 (4.0 R/G scored, 4.74 allowed) vs CWS 12-9 (4.71 / 4.38)"
     ],
     "total_lean": [
-     "OVER 7.5",
-     0.6155666666666667
+     "UNDER 9.5",
+     0.604
     ],
-    "mean_total": 9.01,
-    "rl_p": 0.354,
-    "rl_fair": "+182"
+    "mean_total": 8.86,
+    "rl_p": 0.3786,
+    "rl_fair": "+164"
    },
    "locked": false,
    "result": null
@@ -756,7 +758,7 @@
      "avg": ".228",
      "gs": 16,
      "exp_ip": 5.7,
-     "ra9": 3.86,
+     "ra9": 3.9,
      "unknown": false,
      "prior_fip": null,
      "prior_bf": 0,
@@ -765,8 +767,8 @@
      "start_ip_recent": 5.6,
      "n_starts": 16
     },
-    "sp_ra9": 3.86,
-    "pen_ra9": 3.84,
+    "sp_ra9": 3.9,
+    "pen_ra9": 3.88,
     "pen": {
      "era": "3.16",
      "fip": 3.6,
@@ -784,7 +786,7 @@
      "recent_ra": 4.95,
      "recent_rec": "11-10"
     },
-    "exp_runs": 4.17,
+    "exp_runs": 4.15,
     "score": null
    },
    "home": {
@@ -803,7 +805,7 @@
      "avg": ".255",
      "gs": 23,
      "exp_ip": 5.5,
-     "ra9": 4.63,
+     "ra9": 4.67,
      "unknown": false,
      "prior_fip": 5.37,
      "prior_bf": 140,
@@ -812,8 +814,8 @@
      "start_ip_recent": 5.4,
      "n_starts": 23
     },
-    "sp_ra9": 4.63,
-    "pen_ra9": 4.21,
+    "sp_ra9": 4.67,
+    "pen_ra9": 4.25,
     "pen": {
      "era": "3.92",
      "fip": 3.81,
@@ -831,35 +833,35 @@
      "recent_ra": 4.15,
      "recent_rec": "11-9"
     },
-    "exp_runs": 3.96,
+    "exp_runs": 3.87,
     "score": null
    },
    "sim": {
-    "p_home": 0.47933333333333333,
-    "p_away": 0.5206666666666666,
-    "p_home_rl": 0.3002,
-    "p_away_rl": 0.3438,
-    "mean_total": 8.278233333333333,
-    "median_total": 8,
+    "p_home": 0.47833333333333333,
+    "p_away": 0.5216666666666667,
+    "p_home_rl": 0.3196,
+    "p_away_rl": 0.3641333333333333,
+    "mean_total": 8.012366666666667,
+    "median_total": 7,
     "p_over": {
-     "6.5": 0.6859333333333333,
-     "7.0": 0.5380666666666667,
-     "7.5": 0.5380666666666667,
-     "8.0": 0.44863333333333333,
-     "8.5": 0.44863333333333333,
-     "9.0": 0.31976666666666664,
-     "9.5": 0.31976666666666664,
-     "10.0": 0.25193333333333334,
-     "10.5": 0.25193333333333334
+     "6.5": 0.5970333333333333,
+     "7.0": 0.5524581667407079,
+     "7.5": 0.49743333333333334,
+     "8.0": 0.4456373864764497,
+     "8.5": 0.404,
+     "9.0": 0.3496762930093839,
+     "9.5": 0.3204666666666667,
+     "10.0": 0.26792832262003086,
+     "10.5": 0.2487
     },
-    "mean_home": 4.0318,
-    "mean_away": 4.246433333333333
+    "mean_home": 3.8652,
+    "mean_away": 4.147166666666666
    },
    "pick": {
     "side": "away",
     "team": "BOS",
     "team_name": "Boston Red Sox",
-    "p": 0.5207,
+    "p": 0.5217,
     "tier": "PASS",
     "fair": "-109",
     "reasons": [
@@ -870,11 +872,11 @@
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6802333333333334
+     0.6795333333333333
     ],
-    "mean_total": 8.28,
-    "rl_p": 0.3438,
-    "rl_fair": "+191"
+    "mean_total": 8.01,
+    "rl_p": 0.3641,
+    "rl_fair": "+175"
    },
    "locked": false,
    "result": null
@@ -902,7 +904,7 @@
      "avg": ".242",
      "gs": 29,
      "exp_ip": 6.6,
-     "ra9": 4.23,
+     "ra9": 4.27,
      "unknown": false,
      "prior_fip": 4.29,
      "prior_bf": 409,
@@ -911,8 +913,8 @@
      "start_ip_recent": 6.6,
      "n_starts": 29
     },
-    "sp_ra9": 4.23,
-    "pen_ra9": 4.33,
+    "sp_ra9": 4.27,
+    "pen_ra9": 4.37,
     "pen": {
      "era": "4.00",
      "fip": 3.97,
@@ -930,7 +932,7 @@
      "recent_ra": 4.25,
      "recent_rec": "10-10"
     },
-    "exp_runs": 4.44,
+    "exp_runs": 4.34,
     "score": null
    },
    "home": {
@@ -949,7 +951,7 @@
      "avg": ".229",
      "gs": 27,
      "exp_ip": 6.4,
-     "ra9": 4.16,
+     "ra9": 4.2,
      "unknown": false,
      "prior_fip": 3.69,
      "prior_bf": 585,
@@ -958,8 +960,8 @@
      "start_ip_recent": 6.47,
      "n_starts": 27
     },
-    "sp_ra9": 4.16,
-    "pen_ra9": 5.38,
+    "sp_ra9": 4.2,
+    "pen_ra9": 5.44,
     "pen": {
      "era": "5.09",
      "fip": 5.16,
@@ -977,193 +979,48 @@
      "recent_ra": 3.95,
      "recent_rec": "13-6"
     },
-    "exp_runs": 4.34,
+    "exp_runs": 4.47,
     "score": null
    },
    "sim": {
-    "p_home": 0.4916,
-    "p_away": 0.5084,
-    "p_home_rl": 0.3225,
-    "p_away_rl": 0.3418333333333333,
-    "mean_total": 8.892866666666666,
-    "median_total": 9,
+    "p_home": 0.5215333333333333,
+    "p_away": 0.4784666666666667,
+    "p_home_rl": 0.36873333333333336,
+    "p_away_rl": 0.3371,
+    "mean_total": 8.827133333333334,
+    "median_total": 8,
     "p_over": {
-     "6.5": 0.7366666666666667,
-     "7.0": 0.6009666666666666,
-     "7.5": 0.6009666666666666,
-     "8.0": 0.5169,
-     "8.5": 0.5169,
-     "9.0": 0.3878666666666667,
-     "9.5": 0.3878666666666667,
-     "10.0": 0.31396666666666667,
-     "10.5": 0.31396666666666667
+     "6.5": 0.661,
+     "7.0": 0.624764786186031,
+     "7.5": 0.5644333333333333,
+     "8.0": 0.5203186373481149,
+     "8.5": 0.47246666666666665,
+     "9.0": 0.42446723398065317,
+     "9.5": 0.38906666666666667,
+     "10.0": 0.3387451744416784,
+     "10.5": 0.31296666666666667
     },
-    "mean_home": 4.395666666666667,
-    "mean_away": 4.4972
-   },
-   "pick": {
-    "side": "away",
-    "team": "MIA",
-    "team_name": "Miami Marlins",
-    "p": 0.5084,
-    "tier": "PASS",
-    "fair": "-103",
-    "reasons": [
-     "Bullpen edge +1.05 RA/9 (MIA pen 4.00 ERA vs KC pen 5.09 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: MIA 10-10 (4.3 R/G scored, 4.25 allowed) vs KC 13-6 (5.16 / 3.95)"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.6009666666666666
-    ],
-    "mean_total": 8.89,
-    "rl_p": 0.3418,
-    "rl_fair": "+193"
-   },
-   "locked": false,
-   "result": null
-  },
-  {
-   "pk": 824388,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "start_utc": "2026-09-03T17:10:00Z",
-   "venue": "Progressive Field",
-   "park_factor": 0.97,
-   "away": {
-    "name": "Toronto Blue Jays",
-    "abbr": "TOR",
-    "rec": "69-71",
-    "sp": "Jos\u00e9 Soriano",
-    "sp_det": {
-     "ip": 151.3,
-     "era": "3.45",
-     "fip": 3.77,
-     "k9": "8.86",
-     "bb9": "3.98",
-     "hr9": "0.83",
-     "whip": "1.28",
-     "avg": ".228",
-     "gs": 27,
-     "exp_ip": 5.6,
-     "ra9": 4.12,
-     "unknown": false,
-     "prior_fip": 3.78,
-     "prior_bf": 529,
-     "blend_w": 0.823,
-     "opener": false,
-     "start_ip_recent": 5.67,
-     "n_starts": 27
-    },
-    "sp_ra9": 4.12,
-    "pen_ra9": 4.26,
-    "pen": {
-     "era": "3.81",
-     "fip": 3.96,
-     "ip": 585.3
-    },
-    "off": {
-     "rs_pg": 4.0,
-     "ops": ".688",
-     "hr": 133,
-     "avg": ".246",
-     "obp": ".307",
-     "so": 1012,
-     "form_mult": 1.023,
-     "recent_rs": 4.42,
-     "recent_ra": 3.79,
-     "recent_rec": "11-8"
-    },
-    "exp_runs": 3.85,
-    "score": null
-   },
-   "home": {
-    "name": "Cleveland Guardians",
-    "abbr": "CLE",
-    "rec": "70-69",
-    "sp": "Tanner Bibee",
-    "sp_det": {
-     "ip": 162.3,
-     "era": "3.88",
-     "fip": 4.55,
-     "k9": "7.10",
-     "bb9": "2.55",
-     "hr9": "1.44",
-     "whip": "1.16",
-     "avg": ".234",
-     "gs": 28,
-     "exp_ip": 5.9,
-     "ra9": 4.59,
-     "unknown": false,
-     "prior_fip": 4.12,
-     "prior_bf": 617,
-     "blend_w": 0.837,
-     "opener": false,
-     "start_ip_recent": 6.0,
-     "n_starts": 28
-    },
-    "sp_ra9": 4.59,
-    "pen_ra9": 4.16,
-    "pen": {
-     "era": "3.77",
-     "fip": 3.8,
-     "ip": 470.0
-    },
-    "off": {
-     "rs_pg": 4.05,
-     "ops": ".686",
-     "hr": 130,
-     "avg": ".236",
-     "obp": ".314",
-     "so": 1120,
-     "form_mult": 1.026,
-     "recent_rs": 4.53,
-     "recent_ra": 3.42,
-     "recent_rec": "12-7"
-    },
-    "exp_runs": 3.87,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5048,
-    "p_away": 0.4952,
-    "p_home_rl": 0.3215,
-    "p_away_rl": 0.31333333333333335,
-    "mean_total": 7.8548,
-    "median_total": 7,
-    "p_over": {
-     "6.5": 0.6365666666666666,
-     "7.0": 0.4857666666666667,
-     "7.5": 0.4857666666666667,
-     "8.0": 0.39963333333333334,
-     "8.5": 0.39963333333333334,
-     "9.0": 0.2776666666666667,
-     "9.5": 0.2776666666666667,
-     "10.0": 0.21156666666666665,
-     "10.5": 0.21156666666666665
-    },
-    "mean_home": 3.9439,
-    "mean_away": 3.9109
+    "mean_home": 4.509133333333334,
+    "mean_away": 4.318
    },
    "pick": {
     "side": "home",
-    "team": "CLE",
-    "team_name": "Cleveland Guardians",
-    "p": 0.5048,
+    "team": "KC",
+    "team_name": "Kansas City Royals",
+    "p": 0.5215,
     "tier": "PASS",
-    "fair": "-102",
+    "fair": "-109",
     "reasons": [
-     "Starter edge -0.47 RA/9: Tanner Bibee (3.88 ERA, 7.10 K/9, 2.55 BB/9 over 162.3 IP) vs Jos\u00e9 Soriano (3.45 ERA, 8.86 K/9, 3.98 BB/9)",
-     "Last 3 weeks: CLE 12-7 (4.53 R/G scored, 3.42 allowed) vs TOR 11-8 (4.42 / 3.79)",
-     "Progressive Field suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
+     "Bullpen edge -1.07 RA/9 (KC pen 5.09 ERA vs MIA pen 4.00 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: KC 13-6 (5.16 R/G scored, 3.95 allowed) vs MIA 10-10 (4.3 / 4.25)"
     ],
     "total_lean": [
-     "UNDER 8.5",
-     0.6003666666666667
+     "UNDER 9.5",
+     0.6109333333333333
     ],
-    "mean_total": 7.85,
-    "rl_p": 0.3215,
-    "rl_fair": "+211"
+    "mean_total": 8.83,
+    "rl_p": 0.3687,
+    "rl_fair": "+171"
    },
    "locked": false,
    "result": null
@@ -1191,7 +1048,7 @@
      "avg": ".181",
      "gs": 14,
      "exp_ip": 6.1,
-     "ra9": 3.86,
+     "ra9": 3.9,
      "unknown": false,
      "prior_fip": 3.03,
      "prior_bf": 54,
@@ -1200,8 +1057,8 @@
      "start_ip_recent": 6.47,
      "n_starts": 14
     },
-    "sp_ra9": 3.86,
-    "pen_ra9": 3.93,
+    "sp_ra9": 3.9,
+    "pen_ra9": 3.97,
     "pen": {
      "era": "3.32",
      "fip": 3.67,
@@ -1219,7 +1076,7 @@
      "recent_ra": 3.7,
      "recent_rec": "13-7"
     },
-    "exp_runs": 4.95,
+    "exp_runs": 4.85,
     "score": null
    },
    "home": {
@@ -1238,7 +1095,7 @@
      "avg": ".258",
      "gs": 28,
      "exp_ip": 5.6,
-     "ra9": 4.12,
+     "ra9": 4.16,
      "unknown": false,
      "prior_fip": 3.57,
      "prior_bf": 637,
@@ -1247,8 +1104,8 @@
      "start_ip_recent": 5.6,
      "n_starts": 28
     },
-    "sp_ra9": 4.12,
-    "pen_ra9": 4.72,
+    "sp_ra9": 4.16,
+    "pen_ra9": 4.77,
     "pen": {
      "era": "4.02",
      "fip": 4.62,
@@ -1266,48 +1123,193 @@
      "recent_ra": 5.3,
      "recent_rec": "8-12"
     },
-    "exp_runs": 4.93,
+    "exp_runs": 4.98,
     "score": null
    },
    "sim": {
-    "p_home": 0.49846666666666667,
-    "p_away": 0.5015333333333334,
-    "p_home_rl": 0.34336666666666665,
-    "p_away_rl": 0.3494333333333333,
-    "mean_total": 9.986033333333333,
+    "p_home": 0.5141666666666667,
+    "p_away": 0.48583333333333334,
+    "p_home_rl": 0.3742666666666667,
+    "p_away_rl": 0.35446666666666665,
+    "mean_total": 9.837166666666667,
     "median_total": 9,
     "p_over": {
-     "6.5": 0.8154333333333333,
-     "7.0": 0.7044,
-     "7.5": 0.7044,
-     "8.0": 0.6253666666666666,
-     "8.5": 0.6253666666666666,
-     "9.0": 0.49916666666666665,
-     "9.5": 0.49916666666666665,
-     "10.0": 0.41986666666666667,
-     "10.5": 0.41986666666666667
+     "6.5": 0.7265333333333334,
+     "7.0": 0.7025057112811401,
+     "7.5": 0.6457666666666667,
+     "8.0": 0.6119125004564876,
+     "8.5": 0.5585333333333333,
+     "9.0": 0.5178389398572886,
+     "9.5": 0.47413333333333335,
+     "10.0": 0.43079809496319815,
+     "10.5": 0.398
     },
-    "mean_home": 4.983766666666667,
-    "mean_away": 5.002266666666666
+    "mean_home": 4.9952,
+    "mean_away": 4.841966666666667
    },
    "pick": {
-    "side": "away",
-    "team": "MIL",
-    "team_name": "Milwaukee Brewers",
-    "p": 0.5015,
+    "side": "home",
+    "team": "CHC",
+    "team_name": "Chicago Cubs",
+    "p": 0.5142,
     "tier": "PASS",
-    "fair": "-101",
+    "fair": "-106",
     "reasons": [
-     "Bullpen edge +0.79 RA/9 (MIL pen 3.32 ERA vs CHC pen 4.02 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: MIL 13-7 (5.75 R/G scored, 3.7 allowed) vs CHC 8-12 (6.45 / 5.3)"
+     "Bullpen edge -0.80 RA/9 (CHC pen 4.02 ERA vs MIL pen 3.32 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: CHC 8-12 (6.45 R/G scored, 5.3 allowed) vs MIL 13-7 (5.75 / 3.7)"
     ],
     "total_lean": [
      "OVER 7.5",
-     0.7044
+     0.6457666666666667
     ],
-    "mean_total": 9.99,
-    "rl_p": 0.3494,
-    "rl_fair": "+186"
+    "mean_total": 9.84,
+    "rl_p": 0.3743,
+    "rl_fair": "+167"
+   },
+   "locked": false,
+   "result": null
+  },
+  {
+   "pk": 824388,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "start_utc": "2026-09-03T17:10:00Z",
+   "venue": "Progressive Field",
+   "park_factor": 0.97,
+   "away": {
+    "name": "Toronto Blue Jays",
+    "abbr": "TOR",
+    "rec": "69-71",
+    "sp": "Jos\u00e9 Soriano",
+    "sp_det": {
+     "ip": 151.3,
+     "era": "3.45",
+     "fip": 3.77,
+     "k9": "8.86",
+     "bb9": "3.98",
+     "hr9": "0.83",
+     "whip": "1.28",
+     "avg": ".228",
+     "gs": 27,
+     "exp_ip": 5.6,
+     "ra9": 4.16,
+     "unknown": false,
+     "prior_fip": 3.78,
+     "prior_bf": 529,
+     "blend_w": 0.823,
+     "opener": false,
+     "start_ip_recent": 5.67,
+     "n_starts": 27
+    },
+    "sp_ra9": 4.16,
+    "pen_ra9": 4.3,
+    "pen": {
+     "era": "3.81",
+     "fip": 3.96,
+     "ip": 585.3
+    },
+    "off": {
+     "rs_pg": 4.0,
+     "ops": ".688",
+     "hr": 133,
+     "avg": ".246",
+     "obp": ".307",
+     "so": 1012,
+     "form_mult": 1.023,
+     "recent_rs": 4.42,
+     "recent_ra": 3.79,
+     "recent_rec": "11-8"
+    },
+    "exp_runs": 3.83,
+    "score": null
+   },
+   "home": {
+    "name": "Cleveland Guardians",
+    "abbr": "CLE",
+    "rec": "70-69",
+    "sp": "Tanner Bibee",
+    "sp_det": {
+     "ip": 162.3,
+     "era": "3.88",
+     "fip": 4.55,
+     "k9": "7.10",
+     "bb9": "2.55",
+     "hr9": "1.44",
+     "whip": "1.16",
+     "avg": ".234",
+     "gs": 28,
+     "exp_ip": 5.9,
+     "ra9": 4.64,
+     "unknown": false,
+     "prior_fip": 4.12,
+     "prior_bf": 617,
+     "blend_w": 0.837,
+     "opener": false,
+     "start_ip_recent": 6.0,
+     "n_starts": 28
+    },
+    "sp_ra9": 4.64,
+    "pen_ra9": 4.2,
+    "pen": {
+     "era": "3.77",
+     "fip": 3.8,
+     "ip": 470.0
+    },
+    "off": {
+     "rs_pg": 4.05,
+     "ops": ".686",
+     "hr": 130,
+     "avg": ".236",
+     "obp": ".314",
+     "so": 1120,
+     "form_mult": 1.026,
+     "recent_rs": 4.53,
+     "recent_ra": 3.42,
+     "recent_rec": "12-7"
+    },
+    "exp_runs": 3.89,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5055,
+    "p_away": 0.49450000000000005,
+    "p_home_rl": 0.3405666666666667,
+    "p_away_rl": 0.33613333333333334,
+    "mean_total": 7.723766666666666,
+    "median_total": 7,
+    "p_over": {
+     "6.5": 0.5673333333333334,
+     "7.0": 0.5184388216962232,
+     "7.5": 0.4658,
+     "8.0": 0.4115227848566078,
+     "8.5": 0.37356666666666666,
+     "9.0": 0.31761074800290484,
+     "9.5": 0.29156666666666664,
+     "10.0": 0.23892569382273945,
+     "10.5": 0.2224
+    },
+    "mean_home": 3.8793333333333333,
+    "mean_away": 3.8444333333333334
+   },
+   "pick": {
+    "side": "home",
+    "team": "CLE",
+    "team_name": "Cleveland Guardians",
+    "p": 0.5055,
+    "tier": "PASS",
+    "fair": "-102",
+    "reasons": [
+     "Starter edge -0.48 RA/9: Tanner Bibee (3.88 ERA, 7.10 K/9, 2.55 BB/9 over 162.3 IP) vs Jos\u00e9 Soriano (3.45 ERA, 8.86 K/9, 3.98 BB/9)",
+     "Last 3 weeks: CLE 12-7 (4.53 R/G scored, 3.42 allowed) vs TOR 11-8 (4.42 / 3.79)",
+     "Progressive Field suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
+    ],
+    "total_lean": [
+     "UNDER 8.5",
+     0.6264333333333334
+    ],
+    "mean_total": 7.72,
+    "rl_p": 0.3406,
+    "rl_fair": "+194"
    },
    "locked": false,
    "result": null
