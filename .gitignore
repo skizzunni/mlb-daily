@@ -1,0 +1,4 @@
+data/cache/
+data/*.log
+data/launchd.*
+data/serve.err

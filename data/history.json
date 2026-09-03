@@ -1,0 +1,94 @@
+{
+ "2026-09-03": {
+  "823907": {
+   "matchup": "STL @ LAD",
+   "pick": "LAD",
+   "side": "home",
+   "p": 0.6272,
+   "tier": "A",
+   "fair": "-168",
+   "locked": false,
+   "result": null
+  },
+  "823095": {
+   "matchup": "ATH @ SEA",
+   "pick": "SEA",
+   "side": "home",
+   "p": 0.5607,
+   "tier": "B",
+   "fair": "-128",
+   "locked": false,
+   "result": null
+  },
+  "823337": {
+   "matchup": "SF @ PIT",
+   "pick": "PIT",
+   "side": "home",
+   "p": 0.576,
+   "tier": "B",
+   "fair": "-136",
+   "locked": false,
+   "result": null
+  },
+  "822853": {
+   "matchup": "TB @ TEX",
+   "pick": "TB",
+   "side": "away",
+   "p": 0.5892,
+   "tier": "B",
+   "fair": "-143",
+   "locked": false,
+   "result": null
+  },
+  "824069": {
+   "matchup": "MIA @ KC",
+   "pick": "MIA",
+   "side": "away",
+   "p": 0.5084,
+   "tier": "PASS",
+   "fair": "-103",
+   "locked": false,
+   "result": null
+  },
+  "824144": {
+   "matchup": "CWS @ HOU",
+   "pick": "HOU",
+   "side": "home",
+   "p": 0.5226,
+   "tier": "PASS",
+   "fair": "-109",
+   "locked": false,
+   "result": null
+  },
+  "824632": {
+   "matchup": "MIL @ CHC",
+   "pick": "MIL",
+   "side": "away",
+   "p": 0.5015,
+   "tier": "PASS",
+   "fair": "-101",
+   "locked": false,
+   "result": null
+  },
+  "824388": {
+   "matchup": "TOR @ CLE",
+   "pick": "CLE",
+   "side": "home",
+   "p": 0.5048,
+   "tier": "PASS",
+   "fair": "-102",
+   "locked": false,
+   "result": null
+  },
+  "824796": {
+   "matchup": "BOS @ BAL",
+   "pick": "BOS",
+   "side": "away",
+   "p": 0.5207,
+   "tier": "PASS",
+   "fair": "-109",
+   "locked": false,
+   "result": null
+  }
+ }
+}
