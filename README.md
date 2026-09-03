@@ -25,6 +25,30 @@ Only runs while the Mac is awake. For a real URL that updates with the Mac off,
 push this repo to GitHub and enable Pages — `.github/workflows/update.yml` runs
 the same build hourly on GitHub's runners, free for public repos.
 
+## Share it from anywhere
+
+`site/index.html` is the local page; `site/board.html` is the shareable board (same data,
+built by `artifact.py`). Both regenerate on every hourly run.
+
+For a public URL that updates with the Mac closed, push this repo and turn on Pages:
+
+1. Create an empty repo at <https://github.com/new> — **public**, no README/licence.
+2. Point this repo at it and push:
+
+   ```bash
+   git remote add origin https://github.com/<you>/mlb-daily.git && git push -u origin main
+   ```
+
+3. In the repo: **Settings → Pages → Source → GitHub Actions**.
+4. **Actions → Rebuild MLB picks → Run workflow** once to seed it.
+
+Lands at `https://<you>.github.io/mlb-daily/` and rebuilds at :05 every hour on GitHub's
+runners. Free for public repos, and `data/history.json` is committed each run so the graded
+record survives.
+
+Note the repo must be public for free Pages, and everything in it is then public — the model,
+the picks, and the record. Nothing here holds credentials.
+
 ## Files
 
 | file | what it does |
@@ -32,6 +56,7 @@ the same build hourly on GitHub's runners, free for public repos.
 | `model.py` | data fetching + the run-expectancy model + simulator |
 | `build.py` | runs the model over today's slate, writes `site/index.html` |
 | `backtest.py` | grades the model against completed games |
+| `artifact.py` | emits `site/board.html`, the shareable board |
 | `data/history.json` | every pick, locked at first pitch, auto-graded |
 | `data/lines.json` | *optional* real book lines, keyed by gamePk (see below) |
 
