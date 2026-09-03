@@ -150,11 +150,14 @@ def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
         "start_utc": g["gameDate"],
         "venue": venue,
         "park_factor": round(pf, 3),
+        "hr_park": round(M.hr_park_factor(venue), 3),
+        "away_id": away_t["id"], "home_id": home_t["id"],
         "away": {
             "name": away_t["name"], "abbr": abbr(away_t["name"]),
             "rec": "%s-%s" % (g["teams"]["away"].get("leagueRecord", {}).get("wins", 0),
                               g["teams"]["away"].get("leagueRecord", {}).get("losses", 0)),
-            "sp": ap.get("fullName", "TBD"), "sp_det": a_det, "sp_ra9": round(a_ra9, 2),
+            "sp": ap.get("fullName", "TBD"), "sp_id": ap.get("id"),
+            "sp_det": a_det, "sp_ra9": round(a_ra9, 2),
             "pen_ra9": round(a_pen, 2), "pen": a_pen_det,
             "off": a_off_det, "exp_runs": round(away_exp, 2),
             "score": g["teams"]["away"].get("score"),
@@ -163,7 +166,8 @@ def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
             "name": home_t["name"], "abbr": abbr(home_t["name"]),
             "rec": "%s-%s" % (g["teams"]["home"].get("leagueRecord", {}).get("wins", 0),
                               g["teams"]["home"].get("leagueRecord", {}).get("losses", 0)),
-            "sp": hp.get("fullName", "TBD"), "sp_det": h_det, "sp_ra9": round(h_ra9, 2),
+            "sp": hp.get("fullName", "TBD"), "sp_id": hp.get("id"),
+            "sp_det": h_det, "sp_ra9": round(h_ra9, 2),
             "pen_ra9": round(h_pen, 2), "pen": h_pen_det,
             "off": h_off_det, "exp_runs": round(home_exp, 2),
             "score": g["teams"]["home"].get("score"),
@@ -172,6 +176,50 @@ def analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby):
     }
 
 # ---------------------------------------------------------------- picks
+
+def build_hr_board(games, team_stats, lg, top_n=5):
+    """Most likely home run hitters on the slate.
+
+    Not an HR leaderboard: a hitter's regressed HR-per-PA is scaled by the
+    opposing staff's HR-allowed rate, the park's HR factor (which is a different
+    number from its run factor) and the platoon matchup, then converted to
+    P(at least one) over his expected plate appearances.
+    """
+    lg_rate = M.league_hr_rate(team_stats)
+    cands = []
+    for a in games:
+        if a["state"] != "Preview":
+            continue                      # only publish before first pitch
+        for side, opp in (("away", "home"), ("home", "away")):
+            me, other = a[side], a[opp]
+            roster = M.fetch_roster(a["%s_id" % side], SEASON)
+            if not roster:
+                continue
+            sp_stat = M.fetch_pitcher(other["sp_id"], SEASON) if other.get("sp_id") else None
+            pen_stat = M.fetch_bullpen(a["%s_id" % opp], SEASON)
+            hand = M.fetch_pitch_hand(other["sp_id"]) if other.get("sp_id") else "R"
+            staff_rate = M.staff_hr_per_bf(
+                sp_stat, pen_stat, other["sp_det"].get("exp_ip", 5.0), lg_rate)
+            tg = M.f(team_stats.get(a["%s_id" % side], {}).get("hit", {}).get("gamesPlayed"), 1)
+            for bat in roster:
+                r = M.batter_hr_prob(bat, staff_rate, lg_rate, a["hr_park"], hand, tg)
+                if not r:
+                    continue
+                cands.append({
+                    "name": bat["name"], "team": me["abbr"], "pos": bat["pos"],
+                    "bats": bat["bats"], "opp": other["abbr"], "opp_sp": other["sp"],
+                    "opp_hand": hand, "venue": a["venue"], "hr_park": a["hr_park"],
+                    "hr": int(bat["hr"]), "pa": int(bat["pa"]),
+                    "hr_per": round(bat["pa"] / bat["hr"], 1) if bat["hr"] else None,
+                    "ops": bat["ops"], "platoon": r["platoon"], "pa_g": r["pa_g"],
+                    "p": round(r["p"], 4),
+                    "fair": M.fmt_odds(M.prob_to_american(r["p"])),
+                    "sp_hr9": other["sp_det"].get("hr9"),
+                    "start_utc": a["start_utc"],
+                })
+    cands.sort(key=lambda x: -x["p"])
+    return cands[:top_n], round(lg_rate, 4)
+
 
 def build_pick(a):
     p_home = a["sim"]["p_home"]
@@ -799,6 +847,11 @@ def main():
                 sys.stderr.write("skip game %s: %s\n" % (g.get("gamePk"), e))
 
     games.sort(key=lambda x: (-x["pick"]["p"], x["start_utc"]))
+    try:
+        hr_board, lg_hr = build_hr_board(games, team_stats, lg)
+    except Exception as e:
+        sys.stderr.write("hr board: %s\n" % e)
+        hr_board, lg_hr = [], 0.0
     hist = update_history(date_str, games)
     if grade_open_days(hist, date_str):
         save_json(HISTORY, hist)
@@ -811,7 +864,8 @@ def main():
     with open(os.path.join(SITE, "index.html"), "w") as f:
         f.write(html)
     save_json(os.path.join(SITE, "data.json"),
-              {"date": date_str, "generated": generated, "league": lg, "games": games})
+              {"date": date_str, "generated": generated, "league": lg,
+               "league_hr_rate": lg_hr, "hr_board": hr_board, "games": games})
     print("built %d games -> %s/index.html" % (len(games), SITE))
 
 

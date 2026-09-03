@@ -20,6 +20,8 @@ def main():
     data = json.load(open(os.path.join(HERE, "site", "data.json")))
     lines, notes = D("lines.json", {}), D("notes.json", {})
     bt = B.backtest_summary()
+    hrb = data.get("hr_board", [])
+    lghr = data.get("league_hr_rate", 0.0302)
     games = data["games"]
 
     rows = []
@@ -136,6 +138,39 @@ def main():
             g["away"]["abbr"], g["away"]["exp_runs"],
             g["home"]["abbr"], g["home"]["exp_runs"], p["mean_total"], why, ctx))
 
+    hr_html = ""
+    if hrb:
+        rows_hr = ""
+        for i, h in enumerate(hrb, 1):
+            why = []
+            if h.get("hr_per"):
+                why.append("%d HR in %d PA (one per %.1f)" % (h["hr"], h["pa"], h["hr_per"]))
+            if h.get("sp_hr9"):
+                why.append("%s allows %s HR/9" % (h["opp_sp"], h["sp_hr9"]))
+            if h["hr_park"] >= 1.05:
+                why.append("%s inflates homers (%d HR factor)"
+                           % (h["venue"], round(h["hr_park"] * 100)))
+            elif h["hr_park"] <= 0.95:
+                why.append("%s suppresses homers (%d) &mdash; counted against him"
+                           % (h["venue"], round(h["hr_park"] * 100)))
+            why.append("%s-handed bat, %s" % (h["bats"], h["platoon"]))
+            rows_hr += (
+                '<div class="hrow"><div class="hrk">%d</div>'
+                '<div class="hmain"><div class="hname">%s <span class="htm">%s %s</span></div>'
+                '<div class="hwhy">%s</div></div>'
+                '<div class="hnum"><b>%.1f%%</b><span>fair %s</span></div></div>'
+                % (i, esc(h["name"]), esc(h["team"]), esc(h["pos"]),
+                   " &middot; ".join(why), 100 * h["p"], h["fair"]))
+        hr_html = (
+            '<section class="hr"><h2>Most likely to homer today</h2>%s'
+            '<p class="fine">Not an HR leaderboard. Each hitter\'s regressed HR-per-plate-appearance '
+            'is scaled by the opposing staff\'s HR-allowed rate, the park\'s <i>home run</i> factor '
+            '(a different number from its run factor &mdash; Kauffman is neutral for runs but 0.88 '
+            'for homers) and the platoon matchup, then converted to P(at least one) over his '
+            'expected plate appearances. League average is one homer per %.1f PA. Bench bats who '
+            'start under 55%% of games are excluded. Prices are model fair odds, not a book\'s.</p>'
+            '</section>' % (rows_hr, 1 / lghr if lghr else 33.1))
+
     if plays:
         pl = ""
         anyfav = False
@@ -185,7 +220,7 @@ def main():
     out = PAGE
     for k, v in (("@DATE@", data["date"]), ("@GEN@", data["generated"]),
                  ("@N@", str(len(games))), ("@PLAYS@", pl), ("@READNOTE@", readnote),
-                 ("@BT@", btb), ("@STRIP@", strip), ("@CARDS@", "".join(cards))):
+                 ("@BT@", btb), ("@HR@", hr_html), ("@STRIP@", strip), ("@CARDS@", "".join(cards))):
         out = out.replace(k, v)
     if standalone:
         marker = '\n<div class="wrap">'
@@ -269,6 +304,21 @@ section{margin-top:30px}
 .pl b{display:block;font-family:var(--display);font-size:15px;color:var(--dim);font-weight:600}
 .pl span{font-family:var(--mono);font-size:13px}
 .pl.danger span{color:var(--rust)}
+.hrow{display:flex;align-items:flex-start;gap:12px;padding:11px 0;
+  border-bottom:1px solid var(--rule)}
+.hrow:last-of-type{border-bottom:0}
+.hrk{font-family:var(--display);font-size:20px;font-weight:700;color:var(--faint);
+  min-width:20px;line-height:1.2}
+.hmain{flex:1;min-width:0}
+.hname{font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:.01em}
+.htm{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:0;
+  margin-left:5px}
+.hwhy{font-size:12.5px;color:#a9bcc7;margin-top:2px;line-height:1.45}
+.hnum{text-align:right;white-space:nowrap}
+.hnum b{display:block;font-family:var(--mono);font-size:18px;font-weight:500;
+  font-variant-numeric:tabular-nums;color:var(--jade)}
+.hnum span{font-family:var(--mono);font-size:11px;color:var(--faint)}
+@media(max-width:430px){.hname{font-size:18px}.hwhy{font-size:12px}}
 .fine{font-size:12px;color:var(--faint);margin:13px 0 0;line-height:1.5}
 .g{background:var(--panel);border:1px solid var(--rule);border-left:2px solid var(--faint);
   border-radius:3px;padding:14px 16px;margin-bottom:10px}
@@ -324,6 +374,7 @@ footer b{color:var(--dim);font-weight:600}
   <p class="readnote">@READNOTE@</p>
 </section>
 
+@HR@
 @BT@
 
 <section>

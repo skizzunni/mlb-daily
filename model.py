@@ -535,3 +535,130 @@ def fetch_team_parks(season):
 
 
 lg_cache = {"rpg": 4.5, "era": 4.2, "cfip": 3.1}
+
+
+# ---------------------------------------------------------------- home runs
+# HR park factors are NOT run park factors: Kauffman suppresses HR but plays
+# neutral for runs; Fenway inflates runs but not homers.
+HR_PARKS = [
+    ("Great American", 120), ("Rate Field", 112), ("Guaranteed Rate", 112),
+    ("Yankee Stadium", 114), ("Coors", 110), ("Citizens Bank", 110),
+    ("American Family", 108), ("Dodger Stadium", 108),
+    ("George M. Steinbrenner", 108), ("Sutter Health", 105),
+    ("Truist", 104), ("Globe Life", 103), ("Chase Field", 103),
+    ("Rogers Centre", 103), ("Angel Stadium", 103), ("Wrigley", 102),
+    ("Nationals Park", 102), ("Daikin", 101), ("Minute Maid", 101),
+    ("Target Field", 99), ("Progressive", 98), ("Camden", 96),
+    ("Fenway", 96), ("Tropicana", 96), ("T-Mobile", 95), ("Petco", 95),
+    ("Comerica", 94), ("Busch", 92), ("PNC Park", 92), ("loanDepot", 92),
+    ("Kauffman", 88), ("Oracle Park", 84),
+    ("Field of Dreams", 105), ("Journey Bank", 105), ("Harp Helu", 130),
+]
+
+HR_REG_PA = 170.0     # HR/PA stabilization point
+HR_REG_BF = 300.0
+
+
+def hr_park_factor(venue_name):
+    name = (venue_name or "").lower()
+    for key, val in sorted(HR_PARKS, key=lambda kv: -len(kv[0])):
+        if key.lower() in name:
+            return val / 100.0
+    return 1.00
+
+
+def fetch_roster(team_id, season):
+    """Active roster with season hitting stats and handedness, one request."""
+    u = (API + "/teams/%d/roster?rosterType=active"
+         "&hydrate=person(stats(type=season,group=hitting,season=%d))" % (team_id, season))
+    try:
+        d = get(u, cache_key="rost_%d_%d" % (team_id, season), max_age=3600 * 4)
+    except Exception:
+        return []
+    out = []
+    for r in d.get("roster", []):
+        pos = r.get("position", {}).get("abbreviation", "")
+        if pos == "P":
+            continue
+        p = r.get("person", {})
+        st = None
+        for s in p.get("stats", []):
+            if s.get("group", {}).get("displayName") == "hitting" and s.get("splits"):
+                st = s["splits"][0]["stat"]
+                break
+        if not st:
+            continue
+        out.append({
+            "id": p.get("id"), "name": p.get("fullName"), "pos": pos,
+            "bats": (p.get("batSide") or {}).get("code", "R"),
+            "pa": f(st.get("plateAppearances")), "hr": f(st.get("homeRuns")),
+            "g": f(st.get("gamesPlayed")), "ops": st.get("ops"),
+            "slg": st.get("slg"), "avg": st.get("avg"),
+        })
+    return out
+
+
+def fetch_pitch_hand(pid):
+    try:
+        d = get(API + "/people/%d" % pid, cache_key="hand_%d" % pid, max_age=86400 * 7)
+        return (d["people"][0].get("pitchHand") or {}).get("code", "R")
+    except Exception:
+        return "R"
+
+
+def league_hr_rate(team_stats):
+    hr = pa = 0.0
+    for tid, s in team_stats.items():
+        h = s.get("hit", {})
+        hr += f(h.get("homeRuns"))
+        pa += f(h.get("plateAppearances"))
+    return (hr / pa) if pa else 0.031
+
+
+def staff_hr_per_bf(sp_stat, pen_stat, exp_ip, lg_rate):
+    """Blended HR-allowed rate per batter faced for tonight's staff."""
+    def rate(st, prior):
+        if not st:
+            return lg_rate
+        bf = f(st.get("battersFaced"))
+        if bf < 1:
+            ip = ip_to_float(st.get("inningsPitched"))
+            bf = ip * 4.3
+        if bf < 1:
+            return lg_rate
+        r = f(st.get("homeRuns")) / bf
+        w = bf / (bf + prior)
+        return w * r + (1 - w) * lg_rate
+    sp = rate(sp_stat, HR_REG_BF)
+    pen = rate(pen_stat, HR_REG_BF * 1.5)
+    share = clamp(exp_ip / 9.0, 0.0, 1.0)
+    return share * sp + (1 - share) * pen
+
+
+def batter_hr_prob(bat, staff_rate, lg_rate, park, pitch_hand, team_games):
+    """P(at least one HR) for one hitter in one game."""
+    if bat["pa"] < 40 or bat["g"] < 15:
+        return None
+    # regressed HR per PA
+    raw = bat["hr"] / bat["pa"]
+    w = bat["pa"] / (bat["pa"] + HR_REG_PA)
+    rate = w * raw + (1 - w) * lg_rate
+    # opposing staff, park
+    rate *= (staff_rate / lg_rate) if lg_rate else 1.0
+    rate *= park
+    # platoon
+    b = bat["bats"]
+    if b == "S" or (b == "L" and pitch_hand == "R") or (b == "R" and pitch_hand == "L"):
+        rate *= 1.08
+        plat = "platoon edge"
+    else:
+        rate *= 0.93
+        plat = "same-handed"
+    # expected plate appearances, and how regularly this player actually starts
+    pa_g = clamp(bat["pa"] / max(bat["g"], 1), 2.0, 5.2)
+    play = clamp(bat["g"] / max(team_games, 1), 0.0, 1.0)
+    if play < 0.55:
+        return None      # bench bat: too likely to sit to publish
+    p = 1.0 - (1.0 - clamp(rate, 0.0, 0.4)) ** pa_g
+    return {"p": p, "rate": rate, "pa_g": round(pa_g, 2), "platoon": plat,
+            "play": round(play, 2), "raw": raw}
