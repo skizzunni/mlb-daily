@@ -3,6 +3,8 @@ name: Rebuild MLB picks
 # Hourly, on GitHub's servers — runs even when the Mac is off.
 # Free for public repos. No API keys needed; MLB StatsAPI is public.
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
