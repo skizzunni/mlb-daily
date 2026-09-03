@@ -32,13 +32,18 @@ jobs:
           python3 artifact.py > site/board.html
 
       # keep the graded pick history across runs
-      - name: Commit history
+      - name: Persist graded pick history
         run: |
           git config user.name  "mlb-daily bot"
           git config user.email "actions@github.com"
-          git add data/history.json site/ || true
-          git diff --staged --quiet || git commit -m "rebuild $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          git add data/history.json
+          if git diff --staged --quiet; then
+            echo "no history change"
+          else
+            git commit -m "picks/results $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
