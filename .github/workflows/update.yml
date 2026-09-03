@@ -27,7 +27,9 @@ jobs:
           python-version: '3.11'
 
       - name: Build site
-        run: python3 build.py
+        run: |
+          python3 build.py
+          python3 artifact.py > site/board.html
 
       # keep the graded pick history across runs
       - name: Commit history
