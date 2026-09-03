@@ -37,7 +37,8 @@ def main():
 
     live_now = [g for g in games if g.get("state") == "Live"]
     done = [g for g in games if g.get("state") == "Final"]
-    strip = ""
+    strip = ('<section class="strip" id="strip" hidden><h2 id="striph">Scoreboard</h2>'
+             '<div class="scg" id="scg"></div></section>')
     if live_now or done:
         cells = ""
         for g in live_now + done:
@@ -52,8 +53,9 @@ def main():
             cells += ('<div class="%s"><b>%s %s</b><b>%s %s</b><span>%s</span></div>'
                       % (cls, g["away"]["abbr"], g["away"]["score"],
                          g["home"]["abbr"], g["home"]["score"], sub))
-        strip = ('<section class="strip"><h2>Scoreboard &middot; %d live &middot; %d final</h2>'
-                 '<div class="scg">%s</div></section>' % (len(live_now), len(done), cells))
+        strip = ('<section class="strip" id="strip"><h2 id="striph">Scoreboard &middot; %d live '
+                 '&middot; %d final</h2><div class="scg" id="scg">%s</div></section>'
+                 % (len(live_now), len(done), cells))
 
     def bar(model, market):
         """Two stacked measures on one 0-100 scale."""
@@ -109,10 +111,10 @@ def main():
                        ln.get("ml_home", ""), ln.get("total", "-")))
 
         cards.append("""
-<article class="g %s">
+<article class="g %s" data-pk="%s" data-side="%s" data-away="%s" data-home="%s">
   <header class="gh">
     <div class="teams"><b>%s</b><i>%s</i> <em>at</em> <b>%s</b><i>%s</i></div>
-    <div class="when">%s</div>
+    <div class="when" data-when>%s</div>
   </header>
   <div class="arms">%s <span class="v">vs</span> %s</div>
   <div class="line">
@@ -128,7 +130,8 @@ def main():
   <ul class="why">%s</ul>
   %s
 </article>""" % (
-            p["tier"].lower(),
+            p["tier"].lower(), g["pk"], p["side"],
+            esc(g["away"]["abbr"]), esc(g["home"]["abbr"]),
             esc(g["away"]["abbr"]), esc(g["away"]["rec"]),
             esc(g["home"]["abbr"]), esc(g["home"]["rec"]), when,
             esc(g["away"]["sp"]), esc(g["home"]["sp"]),
@@ -228,7 +231,7 @@ def main():
         out = (
             '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            '<meta http-equiv="refresh" content="60">\n'
+            '<meta http-equiv="refresh" content="900">\n'
             '<meta name="theme-color" content="#0c1216">\n'
             '<meta name="color-scheme" content="dark">\n'
             '<meta name="apple-mobile-web-app-capable" content="yes">\n'
@@ -236,9 +239,105 @@ def main():
             '<meta name="description" content="MLB model win probabilities against real '
             'de-vigged market prices, with live scores.">\n'
             + head +
-            '\n</head>\n<body>\n<div class="wrap">' + body + '\n</body>\n</html>')
+            '\n</head>\n<body>\n<div class="wrap">' + body
+            + LIVE_JS.replace("__BUILT__", data["generated"].replace("'", ""))
+            + '\n</body>\n</html>')
     print(out)
 
+
+LIVE_JS = r"""
+<script>
+/* Live scores, fetched straight from MLB's public API by the browser.
+   GitHub throttles scheduled Actions hard, so the static rebuild cannot be
+   relied on for score freshness -- this keeps scores current regardless. */
+(function () {
+  var API = 'https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=R' +
+            '&hydrate=linescore,team&date=';
+  var BUILT = '__BUILT__';
+  function etDate() {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York',
+      year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; });
+  }
+  function stamp(t) {
+    var el = document.getElementById('livestamp'); if (el) el.textContent = t;
+  }
+  function cell(cls, a, b, sub) {
+    return '<div class="' + cls + '"><b>' + esc(a) + '</b><b>' + esc(b) +
+           '</b><span>' + esc(sub) + '</span></div>';
+  }
+  async function tick() {
+    var data;
+    try {
+      var r = await fetch(API + etDate(), { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json();
+    } catch (e) { stamp('scores unavailable'); return; }
+
+    var games = [];
+    (data.dates || []).forEach(function (d) {
+      (d.games || []).forEach(function (g) { games.push(g); }); });
+
+    var live = 0, final = 0, cells = [];
+    games.forEach(function (g) {
+      var art = document.querySelector('article[data-pk="' + g.gamePk + '"]');
+      var st = (g.status || {}).abstractGameState;
+      var a = g.teams.away.score, h = g.teams.home.score;
+      if (a == null || h == null) return;
+      var aw = art ? art.dataset.away : (g.teams.away.team.abbreviation || 'AWY');
+      var hm = art ? art.dataset.home : (g.teams.home.team.abbreviation || 'HOM');
+      var ls = g.linescore || {};
+      var w = art ? art.querySelector('[data-when]') : null;
+      if (st === 'Live') {
+        live++;
+        var half = (ls.inningState || '').trim(), ord = ls.currentInningOrdinal || '';
+        var sub = (half + ' ' + ord).trim() || 'live';
+        if (ls.outs != null && (half === 'Top' || half === 'Bottom')) sub += ', ' + ls.outs + ' out';
+        if (w) w.innerHTML = '<span class="lv">&#9679; ' + esc(sub) + '</span> ' +
+          esc(aw) + ' ' + a + '&ndash;' + esc(hm) + ' ' + h;
+        cells.push(cell('sc islive', aw + ' ' + a, hm + ' ' + h, sub));
+      } else if (st === 'Final') {
+        final++;
+        var cls = 'sc', tail = '';
+        if (art) {
+          var won = art.dataset.side === 'home' ? h > a : a > h;
+          cls += won ? ' won' : ' lost';
+          tail = ' <span class="' + (won ? 'won' : 'lost') + '">PICK ' +
+                 (won ? 'WON' : 'LOST') + '</span>';
+        }
+        if (w) w.innerHTML = 'FINAL ' + esc(aw) + ' ' + a + '&ndash;' + esc(hm) + ' ' + h + tail;
+        cells.push(cell(cls, aw + ' ' + a, hm + ' ' + h, 'final'));
+      }
+    });
+
+    var strip = document.getElementById('strip');
+    var scg = document.getElementById('scg');
+    if (cells.length && strip && scg) {
+      scg.innerHTML = cells.join('');
+      document.getElementById('striph').innerHTML =
+        'Scoreboard &middot; ' + live + ' live &middot; ' + final + ' final';
+      strip.hidden = false;
+    } else if (strip) { strip.hidden = true; }
+
+    stamp('scores ' + new Date().toLocaleTimeString('en-US',
+      { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }));
+
+    /* reload only when a genuinely newer build exists */
+    try {
+      var j = await (await fetch('data.json', { cache: 'no-store' })).json();
+      if (BUILT && j.generated && j.generated !== BUILT) location.reload();
+    } catch (e) {}
+  }
+  tick();
+  setInterval(tick, 45000);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) tick(); });
+})();
+</script>
+"""
 
 PAGE = """<title>MLB Model Board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,6 +362,7 @@ h1{font-family:var(--display);font-size:38px;font-weight:700;letter-spacing:.01e
 h1 span{color:var(--jade)}
 .meta{color:var(--dim);font-size:13px;margin-top:7px;font-family:var(--mono);
   display:flex;gap:14px;flex-wrap:wrap}
+.lstamp{color:var(--jade)}
 h2{font-family:var(--display);font-size:15px;font-weight:600;text-transform:uppercase;
   letter-spacing:.1em;color:var(--dim);margin:0 0 12px}
 section{margin-top:30px}
@@ -365,7 +465,8 @@ footer b{color:var(--dim);font-weight:600}
 
 <div class="wrap">
 <h1>MLB Model <span>Board</span></h1>
-<div class="meta"><span>@DATE@</span><span>@N@ games</span><span>built @GEN@</span></div>
+<div class="meta"><span>@DATE@</span><span>@N@ games</span><span>built @GEN@</span>
+<span id="livestamp" class="lstamp"></span></div>
 
 @STRIP@
 <section class="read">
