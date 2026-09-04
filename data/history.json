@@ -4,7 +4,7 @@
    "matchup": "STL @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.6183,
+   "p": 0.6181,
    "tier": "A",
    "fair": "-162",
    "locked": false,
@@ -14,10 +14,10 @@
    "matchup": "ATH @ SEA",
    "pick": "SEA",
    "side": "home",
-   "p": 0.5316,
+   "p": 0.5315,
    "tier": "PASS",
-   "fair": "-114",
-   "locked": false,
+   "fair": "-113",
+   "locked": true,
    "result": null
   },
   "823337": {
@@ -35,10 +35,10 @@
    "matchup": "TB @ TEX",
    "pick": "TB",
    "side": "away",
-   "p": 0.5514,
+   "p": 0.5438,
    "tier": "PASS",
-   "fair": "-123",
-   "locked": false,
+   "fair": "-119",
+   "locked": true,
    "result": null
   },
   "824069": {
