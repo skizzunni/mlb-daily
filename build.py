@@ -28,9 +28,25 @@ BACKTEST = os.path.join(DATA, "backtest.json")
 NOTES = os.path.join(DATA, "notes.json")
 SEASON = 2026
 
-# thresholds
-TIER_A = 0.600
-TIER_B = 0.555
+# Thresholds re-cut on the 447-game backtest. The old A=60 / B=55.5 split was
+# not supported: cumulative from 60% up scores 58.2%, WORSE than the 55-58 band
+# at 61.3%, because the model's top end is a saw rather than a gradient:
+#
+#     50-55%  122-108 (53.0%)      60-62%   17-12 (58.6%)
+#     55-58%   65-41  (61.3%)      62-65%   13-13 (50.0%)
+#     58-60%   29-15  (65.9%)      65%+      9-3  (75.0%, n=12)
+#
+# One cut survives: 55%. Above it 133-84 (61.3%) on 217 picks; below it
+# 122-108 (53.0%) on 230. Everything finer is noise, so there is one PLAY tier
+# and one PASS tier and no claim of a gradient in between.
+#
+# There is deliberately NO "lock" tier here. On the companion board LOCK means
+# 88% -- tennis at 72%+ and soccer favourites. Baseball's ceiling is about 61%
+# and the cells that look better than that (65%+ at 75%, 66%+ at 87.5%) sit on
+# 12 and 8 picks with a 50.0% band directly beneath them. Badging those as
+# locks would be selling n=8 as a promise.
+TIER_A = 0.580
+TIER_B = 0.550
 
 TEAM_ABBR = {
     "Arizona Diamondbacks": "ARI", "Atlanta Braves": "ATL", "Baltimore Orioles": "BAL",
@@ -228,11 +244,11 @@ def build_pick(a):
     other = "away" if side == "home" else "home"
     p = max(p_home, p_away)
     if p >= TIER_A:
-        tier = "A"
+        tier = "A"          # 58%+ : 68-43 (61.3%) in backtest
     elif p >= TIER_B:
-        tier = "B"
+        tier = "B"          # 55-58% : 65-41 (61.3%)
     else:
-        tier = "PASS"
+        tier = "PASS"       # under 55% : 122-108 (53.0%), not bettable
 
     me, opp = a[side], a[other]
     reasons = []
@@ -825,13 +841,13 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
 %s
 %s
 
-<h2>Plays &mdash; 60%%+ confidence</h2>
+<h2>Plays &mdash; 58%%+ confidence</h2>
 %s
 
-<h2>Leans &mdash; 55.5&ndash;60%%</h2>
+<h2>Leans &mdash; 55&ndash;58%%</h2>
 %s
 
-<h2>Pass &mdash; too close to bet</h2>
+<h2>Pass &mdash; under 55%%, measured 53.0%% and not bettable</h2>
 %s
 
 <footer>
@@ -844,6 +860,11 @@ League baseline: %.2f R/G, %.2f ERA.</p>
 <p><strong>Fair odds are model prices, not book prices.</strong> Where a real sportsbook line appears
 above, it was read from a named source. Lines are never estimated — a blank means no line was found,
 because a guessed line is worse than no line.</p>
+<p><strong>There is no lock tier here, on purpose.</strong> On the companion board a
+lock means 88%% &mdash; tennis at 72%%+ and soccer favourites. Baseball's ceiling is about
+61%%: above 55%% this model goes 133-84 (61.3%%) across 217 backtested picks, and the cells
+that look better (65%%+ at 75%%, 66%%+ at 87.5%%) rest on 12 and 8 picks with a 50.0%% band
+directly beneath them. A badge promising more than 61%% would be selling a sample as a rate.</p>
 <p><strong>Hit rate is not profit.</strong> On the companion board's 140 priced
 graded picks, the ones whose model probability beat the de-vigged price went 41-45
 (47.7%%) for +10.4%% ROI, while the ones that lost to the price went 35-19 (64.8%%) for

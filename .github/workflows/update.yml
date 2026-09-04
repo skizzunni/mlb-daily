@@ -2,9 +2,23 @@ name: Rebuild MLB picks
 
 # Hourly, on GitHub's servers — runs even when the Mac is off.
 # Free for public repos. No API keys needed; MLB StatsAPI is public.
+# GitHub throttles scheduled workflows on public repos hard. Measured on this
+# repo: 12 of 12 runs SUCCEEDED, and the gaps between consecutive scheduled
+# runs were 292, 280, 105, 105, 140, 165 and 234 minutes against a '*/10' cron.
+# Nothing is failing -- the schedule simply is not honoured, and no cron
+# expression fixes that.
+#
+# repository_dispatch is the escape hatch: it fires immediately, every time.
+# Point any free cron service at
+#   POST https://api.github.com/repos/skizzunni/mlb-daily/dispatches
+#   Authorization: Bearer <fine-grained PAT with Contents: read+write>
+#   body: {"event_type":"rebuild"}
+# and the board rebuilds on that schedule instead of GitHub's mood.
 on:
   push:
     branches: [main]
+  repository_dispatch:
+    types: [rebuild]
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
