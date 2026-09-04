@@ -299,7 +299,17 @@ def build_pick(a):
 
 # ---------------------------------------------------------------- history / grading
 
-def update_history(date_str, games):
+def update_history(date_str, games, lines=None):
+    """Freeze each pick at first pitch, and freeze the PRICE with it.
+
+    Hit rate and profit are different things. On the other board's ledger, the
+    picks whose model probability beat the de-vigged price went 41-45 (47.7%)
+    for +10.4% ROI, while the picks that lost to the price went 35-19 (64.8%)
+    for +3.9%. The worse record made more money because it was paid better.
+    Recording only W-L cannot see that, so the price is stored at lock time and
+    the record carries ROI beside the hit rate.
+    """
+    lines = lines or {}
     hist = load_json(HISTORY, {})
     day = hist.setdefault(date_str, {})
     for a in games:
@@ -308,13 +318,25 @@ def update_history(date_str, games):
         started = a["state"] != "Preview"
         final = a["state"] == "Final"
         if rec is None:
+            ln = lines.get(pk, {})
+            price = ln.get("ml_home" if a["pick"]["side"] == "home" else "ml_away")
+            pa, ph = novig(ln.get("ml_away"), ln.get("ml_home"))
+            mkt = (ph if a["pick"]["side"] == "home" else pa)
             day[pk] = rec = {
                 "matchup": "%s @ %s" % (a["away"]["abbr"], a["home"]["abbr"]),
                 "pick": a["pick"]["team"], "side": a["pick"]["side"],
                 "p": a["pick"]["p"], "tier": a["pick"]["tier"],
                 "fair": a["pick"]["fair"], "locked": started, "result": None,
+                "price": price, "mkt": round(mkt, 4) if mkt else None,
             }
-        elif not rec.get("locked"):
+        elif rec.get("price") is None and lines.get(pk):
+            # written before the price was being frozen; fill it in once
+            ln = lines[pk]
+            pa, ph = novig(ln.get("ml_away"), ln.get("ml_home"))
+            mkt = ph if rec.get("side") == "home" else pa
+            rec["price"] = ln.get("ml_home" if rec.get("side") == "home" else "ml_away")
+            rec["mkt"] = round(mkt, 4) if mkt else None
+        if not rec.get("locked"):
             # refresh the pick until first pitch, then freeze it
             rec.update({"pick": a["pick"]["team"], "side": a["pick"]["side"],
                         "p": a["pick"]["p"], "tier": a["pick"]["tier"],
@@ -382,8 +404,18 @@ def grade_open_days(hist, today_str):
     return graded
 
 
+def payout(american):
+    """Units returned per unit staked on a winner."""
+    try:
+        v = int(str(american).replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+    return v / 100.0 if v > 0 else 100.0 / (-v)
+
+
 def tally(hist):
-    out = {"A": [0, 0], "B": [0, 0], "PASS": [0, 0], "ALL": [0, 0], "days": 0}
+    out = {"A": [0, 0], "B": [0, 0], "PASS": [0, 0], "ALL": [0, 0], "days": 0,
+           "pl": 0.0, "staked": 0, "ev_pl": 0.0, "ev_staked": 0}
     for day, games in hist.items():
         graded = False
         for pk, r in games.items():
@@ -393,6 +425,16 @@ def tally(hist):
                 i = 0 if r["result"] == "W" else 1
                 out.setdefault(t, [0, 0])[i] += 1
                 out["ALL"][i] += 1
+                pay = payout(r.get("price"))
+                if pay is not None:
+                    unit = pay if r["result"] == "W" else -1.0
+                    out["pl"] += unit
+                    out["staked"] += 1
+                    # picks the model priced ABOVE the market -- the ones that
+                    # are supposed to carry the edge
+                    if r.get("mkt") and r.get("p", 0) > r["mkt"]:
+                        out["ev_pl"] += unit
+                        out["ev_staked"] += 1
         if graded:
             out["days"] += 1
     return out
@@ -700,6 +742,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)
 .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;flex:1;min-width:110px}
 .stat .k{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
 .stat .v{font-size:20px;font-weight:600;margin-top:2px}
+.stat .sub2{font-size:10.5px;color:var(--dim);margin-top:3px;line-height:1.35}
 .card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--pass);border-radius:10px;padding:13px 15px;margin-bottom:11px}
 .card.tier-a{border-left-color:var(--a)}
 .card.tier-b{border-left-color:var(--b)}
@@ -776,6 +819,8 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
   <div class="stat"><div class="k">PLAY tier</div><div class="v">%s</div></div>
   <div class="stat"><div class="k">LEAN tier</div><div class="v">%s</div></div>
   <div class="stat"><div class="k">Days graded</div><div class="v">%d</div></div>
+  <div class="stat"><div class="k">ROI on priced picks</div><div class="v">%s</div>
+    <div class="sub2">%s</div></div>
 </div>
 %s
 %s
@@ -799,13 +844,24 @@ League baseline: %.2f R/G, %.2f ERA.</p>
 <p><strong>Fair odds are model prices, not book prices.</strong> Where a real sportsbook line appears
 above, it was read from a named source. Lines are never estimated — a blank means no line was found,
 because a guessed line is worse than no line.</p>
+<p><strong>Hit rate is not profit.</strong> On the companion board's 140 priced
+graded picks, the ones whose model probability beat the de-vigged price went 41-45
+(47.7%%) for +10.4%% ROI, while the ones that lost to the price went 35-19 (64.8%%) for
++3.9%%. The worse record made more money because it was paid better. So the price is
+frozen here alongside each pick and the record carries ROI, not just wins.</p>
 <p><strong>Picks lock at first pitch</strong> and are graded automatically against final scores, so
 the record above is the model's real one, including its losses.</p>
 <p>Generated %s by <code>build.py</code>. No LLM in the loop.</p>
 </footer>
 </body></html>""" % (
         date_str, date_str, generated, len(games), strip,
-        wl(all_rec), wl(a_rec), wl(b_rec), rec["days"], read, bt_block,
+        wl(all_rec), wl(a_rec), wl(b_rec), rec["days"],
+        ("%+.1f%%" % (100 * rec["pl"] / rec["staked"])) if rec["staked"] else "--",
+        ("%d priced picks%s" % (
+            rec["staked"],
+            (" · +EV subset %+.1f%%" % (100 * rec["ev_pl"] / rec["ev_staked"]))
+            if rec["ev_staked"] else "")) if rec["staked"] else "no prices recorded yet",
+        read, bt_block,
         body_plays,
         body_leans or '<p class="none">None.</p>',
         body_pass or '<p class="none">None.</p>',
@@ -852,7 +908,7 @@ def main():
     except Exception as e:
         sys.stderr.write("hr board: %s\n" % e)
         hr_board, lg_hr = [], 0.0
-    hist = update_history(date_str, games)
+    hist = update_history(date_str, games, lines)
     if grade_open_days(hist, date_str):
         save_json(HISTORY, hist)
 
