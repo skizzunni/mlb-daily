@@ -478,13 +478,23 @@ def novig(ml_away, ml_home):
 
 
 def backtest_summary():
+    """Re-tier the backtest against the CURRENT thresholds, every time.
+
+    backtest.json stores the tier string that was assigned when the backtest
+    ran. Reading it back meant the page kept quoting 63.1% -- a number produced
+    by the old A>=60 / B>=55.5 cuts -- for hours after those cuts were replaced
+    by 58/55. The honest figure under the shipped thresholds is 61.3%. Deriving
+    the tier from the stored probability instead means the claim can never drift
+    from the rule again.
+    """
     bt = load_json(BACKTEST, [])
     if not bt:
         return None
     out = {"A": [0, 0], "B": [0, 0], "PASS": [0, 0]}
     lo = hi = None
     for r in bt:
-        t = r.get("tier", "PASS")
+        p = r.get("p", 0)
+        t = "A" if p >= TIER_A else ("B" if p >= TIER_B else "PASS")
         out.setdefault(t, [0, 0])[0 if r["win"] else 1] += 1
         d = r["date"]
         lo = d if lo is None or d < lo else lo
