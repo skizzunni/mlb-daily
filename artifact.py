@@ -98,7 +98,7 @@ def main():
         ctx = ""
         if nt.get("verified"):
             ctx += ('<div class="ctx"><span class="ctxh">Sourced</span><ul>%s</ul></div>'
-                    % "".join("<li>%s</li>" % esc(x) for x in nt["verified"][:3]))
+                    % "".join("<li>%s</li>" % esc(x) for x in nt["verified"]))
         if nt.get("caution"):
             ctx += ('<div class="ctx warn"><span class="ctxh">Fact-check flag</span><ul>%s</ul></div>'
                     % "".join("<li>%s</li>" % esc(x) for x in nt["caution"]))
