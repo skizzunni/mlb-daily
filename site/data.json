@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 1:10 AM EDT",
+ "generated": "Sep 5, 2:09 AM EDT",
  "league": {
   "rpg": 4.4747760490334745,
   "era": 4.171501078092974,
@@ -84,13 +84,13 @@
    "venue": "UNIQLO Field at Dodger Stadium",
    "hr_park": 1.08,
    "hr": 30,
-   "pa": 539,
-   "hr_per": 18.0,
-   "ops": ".924",
+   "pa": 544,
+   "hr_per": 18.1,
+   "ops": ".928",
    "platoon": "platoon edge",
    "pa_g": 4.69,
-   "p": 0.2281,
-   "fair": "+338",
+   "p": 0.2268,
+   "fair": "+341",
    "sp_hr9": "0.87",
    "start_utc": "2026-09-06T01:10:00Z"
   },
