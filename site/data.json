@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 2:50 PM EDT",
+ "generated": "Sep 6, 3:10 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -124,10 +124,10 @@
    "live": {
     "inning": 8,
     "ord": "8th",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 2,
     "away_h": 6,
-    "home_h": 12
+    "home_h": 14
    },
    "start_utc": "2026-09-06T16:10:00Z",
    "venue": "Great American Ball Park",
@@ -229,7 +229,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.13,
-    "score": 9
+    "score": 12
    },
    "sim": {
     "p_home": 0.3857,
@@ -282,11 +282,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Top",
-    "outs": 2,
-    "away_h": 3,
+    "inning": 6,
+    "ord": "6th",
+    "half": "Middle",
+    "outs": 3,
+    "away_h": 4,
     "home_h": 2
    },
    "start_utc": "2026-09-06T17:35:00Z",
@@ -442,10 +442,10 @@
    "live": {
     "inning": 5,
     "ord": "5th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Bottom",
+    "outs": 1,
     "away_h": 5,
-    "home_h": 3
+    "home_h": 7
    },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "loanDepot park",
@@ -547,7 +547,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 4.09,
-    "score": 3
+    "score": 8
    },
    "sim": {
     "p_home": 0.4135333333333333,
@@ -600,12 +600,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "End",
-    "outs": 3,
+    "inning": 5,
+    "ord": "5th",
+    "half": "Bottom",
+    "outs": 2,
     "away_h": 4,
-    "home_h": 2
+    "home_h": 4
    },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "Progressive Field",
@@ -707,7 +707,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.51,
-    "score": 1
+    "score": 2
    },
    "sim": {
     "p_home": 0.5638,
@@ -1226,7 +1226,7 @@
   {
    "pk": 824309,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -1386,12 +1386,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Top",
-    "outs": 2,
-    "away_h": 0,
-    "home_h": 2
+    "inning": 4,
+    "ord": "4th",
+    "half": "Bottom",
+    "outs": 0,
+    "away_h": 1,
+    "home_h": 5
    },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Kauffman Stadium",
@@ -1493,7 +1493,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.75,
-    "score": 3
+    "score": 5
    },
    "sim": {
     "p_home": 0.5323666666666667,
@@ -1541,10 +1541,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Top",
-    "outs": 1,
+    "inning": 6,
+    "ord": "6th",
+    "half": "Middle",
+    "outs": 3,
     "away_h": 4,
     "home_h": 3
    },
@@ -1846,12 +1846,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Middle",
-    "outs": 3,
+    "inning": 5,
+    "ord": "5th",
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 2,
-    "home_h": 2
+    "home_h": 3
    },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "Oriole Park at Camden Yards",
@@ -2005,11 +2005,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
+    "inning": 3,
+    "ord": "3rd",
     "half": "Bottom",
-    "outs": 2,
-    "away_h": 2,
+    "outs": 1,
+    "away_h": 6,
     "home_h": 1
    },
    "start_utc": "2026-09-06T18:10:00Z",
@@ -2064,7 +2064,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 3.99,
-    "score": 1
+    "score": 3
    },
    "home": {
     "name": "Houston Astros",
@@ -2161,12 +2161,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 0,
-    "home_h": 1
+    "inning": 2,
+    "ord": "2nd",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 3,
+    "home_h": 2
    },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
@@ -2220,7 +2220,7 @@
      "recent_rec": "11-10"
     },
     "exp_runs": 4.32,
-    "score": 0
+    "score": 2
    },
    "home": {
     "name": "Texas Rangers",
@@ -2318,12 +2318,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "End",
-    "outs": 3,
-    "away_h": 3,
-    "home_h": 4
+    "inning": 7,
+    "ord": "7th",
+    "half": "Bottom",
+    "outs": 2,
+    "away_h": 4,
+    "home_h": 5
    },
    "start_utc": "2026-09-06T17:10:00Z",
    "venue": "Citizens Bank Park",
@@ -2425,7 +2425,7 @@
      "recent_rec": "15-4"
     },
     "exp_runs": 4.44,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.5007,
