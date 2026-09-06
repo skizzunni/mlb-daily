@@ -1017,6 +1017,40 @@ def main():
                "league_hr_rate": lg_hr, "hr_board": hr_board, "games": games})
     print("built %d games -> %s/index.html" % (len(games), SITE))
 
+    # Also publish TOMORROW's slate. The companion board reads these picks and
+    # shows tomorrow's games overnight; without this it fell back to its own
+    # weaker MLB model (38-34, 52.8%) for exactly the slate anyone looking at
+    # the board after midnight would see. No history is written for tomorrow --
+    # nothing has locked yet, so there is nothing to grade.
+    try:
+        tmr = (dt.date.fromisoformat(date_str) + dt.timedelta(days=1)).isoformat()
+        tsl = M.fetch_slate(tmr)
+        tgames, tpen = [], {}
+        for date in tsl.get("dates", []):
+            for g in date.get("games", []):
+                try:
+                    for side in ("away", "home"):
+                        if g["teams"][side]["team"]["id"] not in team_stats:
+                            raise ValueError("no stats")
+                    ta = analyze_game(g, team_stats, form, lg, tpen, parks, lgby)
+                    ta["pick"] = build_pick(ta)
+                    apply_research(ta, research)
+                    tgames.append(ta)
+                except Exception:
+                    continue
+        tgames.sort(key=lambda x: (-x["pick"]["p"], x["start_utc"]))
+        tidx = {(a["away"]["abbr"], a["home"]["abbr"]): a["pk"] for a in tgames}
+        try:
+            tlines = M.fetch_book_lines(tmr, tidx)
+        except Exception:
+            tlines = {}
+        save_json(os.path.join(SITE, "data_tomorrow.json"),
+                  {"date": tmr, "generated": generated, "league": lg,
+                   "lines": tlines, "games": tgames})
+        print("built %d games -> %s/data_tomorrow.json" % (len(tgames), SITE))
+    except Exception as e:
+        sys.stderr.write("tomorrow: %s\n" % e)
+
 
 if __name__ == "__main__":
     main()

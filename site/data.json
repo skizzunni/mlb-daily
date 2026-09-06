@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 11:08 PM EDT",
+ "generated": "Sep 5, 11:09 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -173,14 +173,14 @@
   {
    "pk": 824468,
    "state": "Live",
-   "detail": "In Progress",
+   "detail": "Manager challenge",
    "live": {
     "inning": 7,
     "ord": "7th",
     "half": "Bottom",
     "outs": 0,
     "away_h": 6,
-    "home_h": 9
+    "home_h": 10
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "Great American Ball Park",
@@ -658,8 +658,8 @@
    "live": {
     "inning": 7,
     "ord": "7th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Middle",
+    "outs": 3,
     "away_h": 7,
     "home_h": 4
    },
