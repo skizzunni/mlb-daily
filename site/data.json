@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 4:21 PM EDT",
+ "generated": "Sep 6, 4:37 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,12 +122,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 0,
-    "home_h": 2
+    "inning": 2,
+    "ord": "2nd",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 2,
+    "home_h": 3
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "Petco Park",
@@ -229,7 +229,7 @@
      "recent_rec": "8-11"
     },
     "exp_runs": 3.61,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.45976666666666666,
@@ -281,11 +281,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "Bottom",
-    "outs": 2,
-    "away_h": 6,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Middle",
+    "outs": 3,
+    "away_h": 7,
     "home_h": 7
    },
    "start_utc": "2026-09-06T18:10:00Z",
@@ -595,14 +595,14 @@
   },
   {
    "pk": 823822,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
     "half": "Top",
-    "outs": 1,
-    "away_h": 6,
+    "outs": 3,
+    "away_h": 7,
     "home_h": 11
    },
    "start_utc": "2026-09-06T17:40:00Z",
@@ -614,7 +614,7 @@
    "away": {
     "name": "Chicago Cubs",
     "abbr": "CHC",
-    "rec": "81-62",
+    "rec": "81-63",
     "sp": "Clay Holmes",
     "sp_id": 605280,
     "sp_det": {
@@ -662,7 +662,7 @@
    "home": {
     "name": "Miami Marlins",
     "abbr": "MIA",
-    "rec": "71-72",
+    "rec": "72-72",
     "sp": "Tyler Phillips",
     "sp_id": 663969,
     "sp_det": {
@@ -752,7 +752,7 @@
    },
    "edge": 0.02525552977010659,
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 824552,
@@ -1238,10 +1238,10 @@
    "live": {
     "inning": 8,
     "ord": "8th",
-    "half": "Top",
-    "outs": 0,
-    "away_h": 7,
-    "home_h": 4
+    "half": "Bottom",
+    "outs": 1,
+    "away_h": 8,
+    "home_h": 5
    },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Daikin Park",
@@ -1393,12 +1393,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "End",
-    "outs": 3,
+    "inning": 5,
+    "ord": "5th",
+    "half": "Bottom",
+    "outs": 1,
     "away_h": 6,
-    "home_h": 7
+    "home_h": 8
    },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
@@ -1551,11 +1551,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Bottom",
+    "inning": 5,
+    "ord": "5th",
+    "half": "Top",
     "outs": 2,
-    "away_h": 5,
+    "away_h": 8,
     "home_h": 6
    },
    "start_utc": "2026-09-06T19:10:00Z",
@@ -1610,7 +1610,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.4,
-    "score": 1
+    "score": 3
    },
    "home": {
     "name": "Colorado Rockies",
@@ -1708,7 +1708,7 @@
   {
    "pk": 824794,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -1867,15 +1867,15 @@
   },
   {
    "pk": 824385,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
     "inning": 10,
     "ord": "10th",
     "half": "Bottom",
     "outs": 0,
     "away_h": 4,
-    "home_h": 5
+    "home_h": 7
    },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "Progressive Field",
@@ -1886,7 +1886,7 @@
    "away": {
     "name": "Detroit Tigers",
     "abbr": "DET",
-    "rec": "65-77",
+    "rec": "65-78",
     "sp": "Jackson Jobe",
     "sp_id": 695549,
     "sp_det": {
@@ -1934,7 +1934,7 @@
    "home": {
     "name": "Cleveland Guardians",
     "abbr": "CLE",
-    "rec": "72-71",
+    "rec": "73-71",
     "sp": "Gavin Williams",
     "sp_id": 668909,
     "sp_det": {
@@ -1977,7 +1977,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.51,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.5638,
@@ -2023,7 +2023,7 @@
    },
    "edge": -0.042482178860381636,
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 823578,
@@ -2337,10 +2337,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
+    "inning": 2,
+    "ord": "2nd",
     "half": "Bottom",
-    "outs": 1,
+    "outs": 2,
     "away_h": 0,
     "home_h": 1
    },

@@ -441,9 +441,10 @@
    "tier": "A",
    "fair": "-142",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-144",
-   "mkt": 0.5638
+   "mkt": 0.5638,
+   "final": "CHC 3 - MIA 10"
   },
   "824552": {
    "matchup": "MIN @ CWS",
@@ -465,9 +466,10 @@
    "tier": "B",
    "fair": "-129",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-171",
-   "mkt": 0.6033
+   "mkt": 0.6033,
+   "final": "DET 2 - CLE 3"
   },
   "823091": {
    "matchup": "ATH @ SEA",

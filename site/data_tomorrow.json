@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 4:21 PM EDT",
+ "generated": "Sep 6, 4:37 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -610,7 +610,7 @@
    "away": {
     "name": "Cleveland Guardians",
     "abbr": "CLE",
-    "rec": "72-71",
+    "rec": "73-71",
     "sp": "Joey Cantillo",
     "sp_id": 676282,
     "sp_det": {
@@ -804,7 +804,7 @@
    "home": {
     "name": "Miami Marlins",
     "abbr": "MIA",
-    "rec": "71-72",
+    "rec": "72-72",
     "sp": "Eury P\u00e9rez",
     "sp_id": 691587,
     "sp_det": {
@@ -1196,7 +1196,7 @@
    "home": {
     "name": "Detroit Tigers",
     "abbr": "DET",
-    "rec": "65-77",
+    "rec": "65-78",
     "sp": "Troy Melton",
     "sp_id": 675512,
     "sp_det": {
@@ -1297,7 +1297,7 @@
    "away": {
     "name": "Chicago Cubs",
     "abbr": "CHC",
-    "rec": "81-62",
+    "rec": "81-63",
     "sp": "Matthew Boyd",
     "sp_id": 571510,
     "sp_det": {
