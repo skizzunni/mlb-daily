@@ -331,9 +331,10 @@
    "tier": "PASS",
    "fair": "-111",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-108",
-   "mkt": 0.4967
+   "mkt": 0.4967,
+   "final": "TOR 4 - KC 3"
   },
   "823257": {
    "matchup": "NYY @ SD",
@@ -355,9 +356,10 @@
    "tier": "PASS",
    "fair": "-108",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-107",
-   "mkt": 0.4945
+   "mkt": 0.4945,
+   "final": "TB 6 - TEX 3"
   },
   "824310": {
    "matchup": "STL @ COL",
@@ -379,9 +381,10 @@
    "tier": "PASS",
    "fair": "-110",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-126",
-   "mkt": 0.5321
+   "mkt": 0.5321,
+   "final": "MIN 6 - CWS 4"
   },
   "824145": {
    "matchup": "ARI @ HOU",

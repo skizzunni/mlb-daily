@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 9:26 PM EDT",
+ "generated": "Sep 5, 9:54 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -333,10 +333,10 @@
   {
    "pk": 823094,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
+    "inning": 2,
+    "ord": "2nd",
     "half": "Top",
     "outs": 0,
     "away_h": 0,
@@ -656,12 +656,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
-    "half": "Bottom",
-    "outs": 2,
-    "away_h": 0,
-    "home_h": 2
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 2,
+    "home_h": 3
    },
    "start_utc": "2026-09-06T01:10:00Z",
    "venue": "UNIQLO Field at Dodger Stadium",
@@ -715,7 +715,7 @@
      "recent_rec": "7-13"
     },
     "exp_runs": 4.1,
-    "score": 0
+    "score": 1
    },
    "home": {
     "name": "Los Angeles Dodgers",
@@ -763,7 +763,7 @@
      "recent_rec": "11-8"
     },
     "exp_runs": 4.77,
-    "score": 1
+    "score": 2
    },
    "sim": {
     "p_home": 0.5555666666666667,
@@ -974,12 +974,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
+    "inning": 9,
+    "ord": "9th",
     "half": "Top",
-    "outs": 1,
-    "away_h": 8,
-    "home_h": 3
+    "outs": 2,
+    "away_h": 9,
+    "home_h": 4
    },
    "start_utc": "2026-09-05T23:05:00Z",
    "venue": "Oriole Park at Camden Yards",
@@ -1292,11 +1292,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "Bottom",
-    "outs": 1,
-    "away_h": 8,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 2,
+    "away_h": 9,
     "home_h": 2
    },
    "start_utc": "2026-09-05T23:15:00Z",
@@ -1447,14 +1447,14 @@
   },
   {
    "pk": 822850,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
-    "inning": 9,
-    "ord": "9th",
+    "inning": 10,
+    "ord": "10th",
     "half": "Bottom",
-    "outs": 0,
-    "away_h": 9,
+    "outs": 3,
+    "away_h": 10,
     "home_h": 6
    },
    "start_utc": "2026-09-05T23:05:00Z",
@@ -1466,7 +1466,7 @@
    "away": {
     "name": "Tampa Bay Rays",
     "abbr": "TB",
-    "rec": "84-57",
+    "rec": "85-57",
     "sp": "Drew Rasmussen",
     "sp_id": 656876,
     "sp_det": {
@@ -1509,12 +1509,12 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 4.15,
-    "score": 3
+    "score": 6
    },
    "home": {
     "name": "Texas Rangers",
     "abbr": "TEX",
-    "rec": "70-72",
+    "rec": "70-73",
     "sp": "Jacob deGrom",
     "sp_id": 594798,
     "sp_det": {
@@ -1601,19 +1601,19 @@
     "research": "agrees"
    },
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 824145,
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "Middle",
-    "outs": 3,
-    "away_h": 6,
-    "home_h": 6
+    "inning": 8,
+    "ord": "8th",
+    "half": "Bottom",
+    "outs": 1,
+    "away_h": 7,
+    "home_h": 7
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Daikin Park",
@@ -1667,7 +1667,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 2
+    "score": 3
    },
    "home": {
     "name": "Houston Astros",
@@ -1765,12 +1765,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Bottom",
+    "inning": 6,
+    "ord": "6th",
+    "half": "Top",
     "outs": 0,
-    "away_h": 8,
-    "home_h": 1
+    "away_h": 11,
+    "home_h": 6
    },
    "start_utc": "2026-09-06T00:10:00Z",
    "venue": "Coors Field",
@@ -1824,7 +1824,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.05,
-    "score": 3
+    "score": 4
    },
    "home": {
     "name": "Colorado Rockies",
@@ -1872,7 +1872,7 @@
      "recent_rec": "6-14"
     },
     "exp_runs": 5.33,
-    "score": 0
+    "score": 6
    },
    "sim": {
     "p_home": 0.5209,
@@ -1919,15 +1919,15 @@
   },
   {
    "pk": 824553,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Middle",
+    "inning": 9,
+    "ord": "9th",
+    "half": "Bottom",
     "outs": 3,
     "away_h": 8,
-    "home_h": 5
+    "home_h": 6
    },
    "start_utc": "2026-09-05T23:10:00Z",
    "venue": "Rate Field",
@@ -2072,19 +2072,19 @@
     "research": "locked-before-research"
    },
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 824066,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Middle",
+    "inning": 9,
+    "ord": "9th",
+    "half": "Bottom",
     "outs": 3,
-    "away_h": 12,
-    "home_h": 5
+    "away_h": 13,
+    "home_h": 7
    },
    "start_utc": "2026-09-05T23:10:00Z",
    "venue": "Kauffman Stadium",
@@ -2095,7 +2095,7 @@
    "away": {
     "name": "Toronto Blue Jays",
     "abbr": "TOR",
-    "rec": "71-71",
+    "rec": "72-71",
     "sp": "Max Scherzer",
     "sp_id": 453286,
     "sp_det": {
@@ -2143,7 +2143,7 @@
    "home": {
     "name": "Kansas City Royals",
     "abbr": "KC",
-    "rec": "63-79",
+    "rec": "63-80",
     "sp": "Seth Lugo",
     "sp_id": 607625,
     "sp_det": {
@@ -2229,7 +2229,7 @@
     "research": "locked-before-research"
    },
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 823419,
