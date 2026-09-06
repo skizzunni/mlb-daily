@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 5:07 PM EDT",
+ "generated": "Sep 6, 5:22 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -16,8 +16,8 @@
    "source": "DraftKings via ESPN, fetched 2026-09-07"
   },
   "823820": {
-   "ml_away": "+104",
-   "ml_home": "-126",
+   "ml_away": "+103",
+   "ml_home": "-124",
    "total": "8.0",
    "source": "DraftKings via ESPN, fetched 2026-09-07"
   },
@@ -30,6 +30,12 @@
   "823742": {
    "ml_away": "+108",
    "ml_home": "-131",
+   "total": "8.5",
+   "source": "DraftKings via ESPN, fetched 2026-09-07"
+  },
+  "824958": {
+   "ml_away": "-198",
+   "ml_home": "+162",
    "total": "8.5",
    "source": "DraftKings via ESPN, fetched 2026-09-07"
   }

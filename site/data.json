@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 5:07 PM EDT",
+ "generated": "Sep 6, 5:22 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,12 +122,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
+    "inning": 5,
+    "ord": "5th",
     "half": "Top",
     "outs": 1,
-    "away_h": 3,
-    "home_h": 4
+    "away_h": 4,
+    "home_h": 5
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "Petco Park",
@@ -279,7 +279,7 @@
   {
    "pk": 824065,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -1393,10 +1393,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "Middle",
-    "outs": 3,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 1,
     "away_h": 8,
     "home_h": 10
    },
@@ -1553,8 +1553,8 @@
    "live": {
     "inning": 7,
     "ord": "7th",
-    "half": "Top",
-    "outs": 0,
+    "half": "Bottom",
+    "outs": 1,
     "away_h": 11,
     "home_h": 6
    },
@@ -2328,7 +2328,7 @@
     "rl_p": 0.3883,
     "rl_fair": "+158"
    },
-   "edge": -0.10561669807993967,
+   "edge": -0.11099667247961531,
    "locked": false,
    "result": null
   },
@@ -2340,9 +2340,9 @@
     "inning": 4,
     "ord": "4th",
     "half": "Bottom",
-    "outs": 0,
+    "outs": 2,
     "away_h": 1,
-    "home_h": 2
+    "home_h": 6
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "T-Mobile Park",
@@ -2444,7 +2444,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 4.19,
-    "score": 0
+    "score": 2
    },
    "sim": {
     "p_home": 0.5402666666666667,
