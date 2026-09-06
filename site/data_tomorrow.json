@@ -1,12 +1,12 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 1:32 AM EDT",
+ "generated": "Sep 6, 2:22 AM EDT",
  "league": {
-  "rpg": 4.468632958801498,
-  "era": 4.170902098457249,
-  "cfip": 3.086002346320422,
-  "ra9": 4.546480960403637,
-  "r_per_er": 1.0900473933649288
+  "rpg": 4.480364656381487,
+  "era": 4.170538890596864,
+  "cfip": 3.0886995476305508,
+  "ra9": 4.545733233782775,
+  "r_per_er": 1.0899630366789879
  },
  "lines": {},
  "games": [
@@ -30,7 +30,7 @@
     "sp_det": {
      "ip": 149.0,
      "era": "4.11",
-     "fip": 4.6,
+     "fip": 4.61,
      "k9": "7.31",
      "bb9": "2.96",
      "hr9": "1.45",
@@ -48,11 +48,11 @@
      "n_starts": 26
     },
     "sp_ra9": 4.84,
-    "pen_ra9": 4.06,
+    "pen_ra9": 4.04,
     "pen": {
-     "era": "3.37",
-     "fip": 3.79,
-     "ip": 518.7
+     "era": "3.34",
+     "fip": 3.78,
+     "ip": 523.0
     },
     "off": {
      "rs_pg": 4.65,
@@ -60,13 +60,13 @@
      "hr": 181,
      "avg": ".248",
      "obp": ".312",
-     "so": 1156,
+     "so": 1158,
      "form_mult": 0.943,
      "recent_rs": 3.45,
      "recent_ra": 3.6,
      "recent_rec": "11-9"
     },
-    "exp_runs": 3.51,
+    "exp_runs": 3.52,
     "score": null
    },
    "home": {
@@ -96,66 +96,66 @@
      "n_starts": 28
     },
     "sp_ra9": 3.49,
-    "pen_ra9": 4.36,
+    "pen_ra9": 4.37,
     "pen": {
-     "era": "4.22",
-     "fip": 3.83,
-     "ip": 486.7
+     "era": "4.21",
+     "fip": 3.85,
+     "ip": 489.7
     },
     "off": {
      "rs_pg": 4.49,
      "ops": ".713",
      "hr": 167,
-     "avg": ".243",
+     "avg": ".242",
      "obp": ".313",
-     "so": 1175,
+     "so": 1177,
      "form_mult": 1.025,
      "recent_rs": 5.0,
      "recent_ra": 3.11,
      "recent_rec": "15-4"
     },
-    "exp_runs": 4.79,
+    "exp_runs": 4.78,
     "score": null
    },
    "sim": {
-    "p_home": 0.6070333333333333,
-    "p_away": 0.3929666666666667,
-    "p_home_rl": 0.4488,
-    "p_away_rl": 0.25053333333333333,
-    "mean_total": 8.2636,
+    "p_home": 0.6069,
+    "p_away": 0.3931,
+    "p_home_rl": 0.4493,
+    "p_away_rl": 0.25066666666666665,
+    "mean_total": 8.258966666666666,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6170666666666667,
-     "7.0": 0.576135483156846,
-     "7.5": 0.5205,
-     "8.0": 0.47078949304686923,
-     "8.5": 0.42656666666666665,
-     "9.0": 0.3726112326768782,
-     "9.5": 0.3405666666666667,
-     "10.0": 0.2887906241012367,
-     "10.5": 0.26776666666666665
+     "6.5": 0.6162,
+     "7.0": 0.5752545374059319,
+     "7.5": 0.5198,
+     "8.0": 0.4703871181206573,
+     "8.5": 0.4265,
+     "9.0": 0.3724238555535291,
+     "9.5": 0.3403333333333333,
+     "10.0": 0.28851339205464677,
+     "10.5": 0.2675
     },
-    "mean_home": 4.734933333333333,
-    "mean_away": 3.5286666666666666
+    "mean_home": 4.7353,
+    "mean_away": 3.5236666666666667
    },
    "pick": {
     "side": "home",
     "team": "PHI",
     "team_name": "Philadelphia Phillies",
-    "p": 0.607,
+    "p": 0.6069,
     "tier": "A",
     "fair": "-154",
     "reasons": [
      "Starter edge +1.35 RA/9: Jes\u00fas Luzardo (3.02 ERA, 11.09 K/9, 2.71 BB/9 over 169.7 IP) vs Bryce Elder (4.11 ERA, 7.31 K/9, 2.96 BB/9)",
-     "Bullpen edge -0.30 RA/9 (PHI pen 4.22 ERA vs ATL pen 3.37 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Bullpen edge -0.33 RA/9 (PHI pen 4.21 ERA vs ATL pen 3.34 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Last 3 weeks: PHI 15-4 (5.0 R/G scored, 3.11 allowed) vs ATL 11-9 (3.45 / 3.6)"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6594333333333333
+     0.6596666666666666
     ],
     "mean_total": 8.26,
-    "rl_p": 0.4488,
+    "rl_p": 0.4493,
     "rl_fair": "+123"
    }
   },
@@ -180,25 +180,25 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 4.53,
+    "pen_ra9": 4.54,
     "pen": {
      "era": "4.35",
-     "fip": 4.05,
-     "ip": 523.0
+     "fip": 4.07,
+     "ip": 526.0
     },
     "off": {
-     "rs_pg": 4.04,
+     "rs_pg": 4.06,
      "ops": ".678",
      "hr": 136,
      "avg": ".234",
      "obp": ".308",
-     "so": 1343,
-     "form_mult": 0.983,
+     "so": 1347,
+     "form_mult": 0.982,
      "recent_rs": 3.74,
      "recent_ra": 3.32,
      "recent_rec": "6-13"
     },
-    "exp_runs": 3.91,
+    "exp_runs": 3.92,
     "score": null
    },
    "home": {
@@ -213,66 +213,64 @@
     "sp_ra9": 4.93,
     "pen_ra9": 3.88,
     "pen": {
-     "era": "3.17",
+     "era": "3.16",
      "fip": 3.6,
-     "ip": 534.0
+     "ip": 536.0
     },
     "off": {
-     "rs_pg": 4.43,
+     "rs_pg": 4.47,
      "ops": ".729",
      "hr": 148,
      "avg": ".249",
      "obp": ".323",
-     "so": 1150,
-     "form_mult": 1.009,
+     "so": 1157,
+     "form_mult": 1.007,
      "recent_rs": 4.62,
      "recent_ra": 4.52,
      "recent_rec": "13-8"
     },
-    "exp_runs": 4.99,
+    "exp_runs": 5.02,
     "score": null
    },
    "sim": {
-    "p_home": 0.5910333333333333,
-    "p_away": 0.4089666666666667,
-    "p_home_rl": 0.4416,
-    "p_away_rl": 0.27336666666666665,
-    "mean_total": 8.886466666666667,
+    "p_home": 0.5939666666666666,
+    "p_away": 0.40603333333333336,
+    "p_home_rl": 0.4444,
+    "p_away_rl": 0.27163333333333334,
+    "mean_total": 8.9509,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6647333333333333,
-     "7.0": 0.6303700709271985,
-     "7.5": 0.5717666666666666,
-     "8.0": 0.52963790136565,
-     "8.5": 0.4822,
-     "9.0": 0.43568133105678064,
-     "9.5": 0.39976666666666666,
-     "10.0": 0.34934056007226744,
-     "10.5": 0.32226666666666665
+     "6.5": 0.6703,
+     "7.0": 0.6364939360529217,
+     "7.5": 0.5773,
+     "8.0": 0.5356985940246046,
+     "8.5": 0.4877,
+     "9.0": 0.4404150737302021,
+     "9.5": 0.4032,
+     "10.0": 0.3536462093862816,
+     "10.5": 0.32653333333333334
     },
-    "mean_home": 4.976933333333333,
-    "mean_away": 3.9095333333333335
+    "mean_home": 5.0201,
+    "mean_away": 3.9308
    },
    "pick": {
     "side": "home",
     "team": "BOS",
     "team_name": "Boston Red Sox",
-    "p": 0.591,
+    "p": 0.594,
     "tier": "A",
-    "fair": "-145",
+    "fair": "-146",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge +0.65 RA/9 (BOS pen 3.17 ERA vs LAA pen 4.35 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Bullpen edge +0.66 RA/9 (BOS pen 3.16 ERA vs LAA pen 4.35 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Offense gap +0.41 R/G (BOS 4.47 R/G, .729 OPS vs LAA 4.06 R/G, .678 OPS)",
      "Last 3 weeks: BOS 13-8 (4.62 R/G scored, 4.52 allowed) vs LAA 6-13 (3.74 / 3.32)",
      "Fenway Park plays as a hitters' park (107 run factor) \u2014 raises variance, which cuts against the favorite"
     ],
-    "total_lean": [
-     "UNDER 9.5",
-     0.6002333333333334
-    ],
-    "mean_total": 8.89,
-    "rl_p": 0.4416,
-    "rl_fair": "+126"
+    "total_lean": null,
+    "mean_total": 8.95,
+    "rl_p": 0.4444,
+    "rl_fair": "+125"
    }
   },
   {
@@ -296,25 +294,25 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 4.75,
+    "pen_ra9": 4.76,
     "pen": {
-     "era": "4.51",
+     "era": "4.56",
      "fip": 4.32,
-     "ip": 535.3
+     "ip": 539.0
     },
     "off": {
-     "rs_pg": 4.51,
-     "ops": ".701",
-     "hr": 151,
-     "avg": ".242",
+     "rs_pg": 4.52,
+     "ops": ".702",
+     "hr": 153,
+     "avg": ".243",
      "obp": ".316",
-     "so": 1117,
-     "form_mult": 1.054,
+     "so": 1129,
+     "form_mult": 1.053,
      "recent_rs": 5.62,
      "recent_ra": 5.95,
      "recent_rec": "10-11"
     },
-    "exp_runs": 4.04,
+    "exp_runs": 4.05,
     "score": null
    },
    "home": {
@@ -326,7 +324,7 @@
     "sp_det": {
      "ip": 149.7,
      "era": "4.21",
-     "fip": 3.43,
+     "fip": 3.44,
      "k9": "7.16",
      "bb9": "2.29",
      "hr9": "0.66",
@@ -347,7 +345,7 @@
     "pen_ra9": 4.59,
     "pen": {
      "era": "4.26",
-     "fip": 4.19,
+     "fip": 4.2,
      "ip": 515.0
     },
     "off": {
@@ -366,31 +364,31 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.5606,
-    "p_away": 0.4394,
-    "p_home_rl": 0.4118,
-    "p_away_rl": 0.29783333333333334,
-    "mean_total": 8.7548,
+    "p_home": 0.5621666666666667,
+    "p_away": 0.4378333333333333,
+    "p_home_rl": 0.4135333333333333,
+    "p_away_rl": 0.2971666666666667,
+    "mean_total": 8.767633333333333,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6574666666666666,
-     "7.0": 0.6208677685950413,
-     "7.5": 0.5609333333333333,
-     "8.0": 0.5150399469828062,
-     "8.5": 0.4663,
-     "9.0": 0.4171459774299236,
-     "9.5": 0.3819666666666667,
-     "10.0": 0.33108449383072375,
-     "10.5": 0.3059
+     "6.5": 0.6588333333333334,
+     "7.0": 0.6223943921785648,
+     "7.5": 0.5623333333333334,
+     "8.0": 0.5164794697109188,
+     "8.5": 0.4675,
+     "9.0": 0.4184776673583051,
+     "9.5": 0.3832,
+     "10.0": 0.33155118849794096,
+     "10.5": 0.30593333333333333
     },
-    "mean_home": 4.731166666666667,
-    "mean_away": 4.023633333333334
+    "mean_home": 4.740333333333333,
+    "mean_away": 4.0273
    },
    "pick": {
     "side": "home",
     "team": "SF",
     "team_name": "San Francisco Giants",
-    "p": 0.5606,
+    "p": 0.5622,
     "tier": "B",
     "fair": "-128",
     "reasons": [
@@ -400,11 +398,11 @@
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6180333333333333
+     0.6168
     ],
-    "mean_total": 8.75,
-    "rl_p": 0.4118,
-    "rl_fair": "+143"
+    "mean_total": 8.77,
+    "rl_p": 0.4135,
+    "rl_fair": "+142"
    }
   },
   {
@@ -435,7 +433,7 @@
      "avg": ".219",
      "gs": 26,
      "exp_ip": 5.4,
-     "ra9": 3.62,
+     "ra9": 3.63,
      "unknown": false,
      "prior_fip": 2.66,
      "prior_bf": 103,
@@ -444,26 +442,26 @@
      "start_ip_recent": 5.33,
      "n_starts": 26
     },
-    "sp_ra9": 3.62,
-    "pen_ra9": 5.08,
+    "sp_ra9": 3.63,
+    "pen_ra9": 5.05,
     "pen": {
-     "era": "4.66",
-     "fip": 4.78,
-     "ip": 525.7
+     "era": "4.63",
+     "fip": 4.76,
+     "ip": 530.7
     },
     "off": {
-     "rs_pg": 4.15,
-     "ops": ".705",
-     "hr": 189,
+     "rs_pg": 4.18,
+     "ops": ".706",
+     "hr": 191,
      "avg": ".229",
      "obp": ".308",
-     "so": 1345,
-     "form_mult": 1.022,
+     "so": 1352,
+     "form_mult": 1.021,
      "recent_rs": 4.57,
      "recent_ra": 6.14,
      "recent_rec": "9-12"
     },
-    "exp_runs": 4.06,
+    "exp_runs": 4.08,
     "score": null
    },
    "home": {
@@ -476,66 +474,66 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 4.31,
+    "pen_ra9": 4.3,
     "pen": {
      "era": "3.98",
-     "fip": 3.88,
-     "ip": 470.0
+     "fip": 3.86,
+     "ip": 473.0
     },
     "off": {
-     "rs_pg": 4.91,
+     "rs_pg": 4.92,
      "ops": ".756",
-     "hr": 172,
-     "avg": ".257",
+     "hr": 173,
+     "avg": ".256",
      "obp": ".336",
-     "so": 1109,
-     "form_mult": 0.981,
+     "so": 1120,
+     "form_mult": 0.98,
      "recent_rs": 4.47,
      "recent_ra": 4.11,
      "recent_rec": "11-8"
     },
-    "exp_runs": 4.44,
+    "exp_runs": 4.43,
     "score": null
    },
    "sim": {
-    "p_home": 0.5321666666666667,
-    "p_away": 0.4678333333333333,
-    "p_home_rl": 0.37903333333333333,
-    "p_away_rl": 0.3232333333333333,
-    "mean_total": 8.543933333333333,
+    "p_home": 0.5314333333333333,
+    "p_away": 0.4685666666666667,
+    "p_home_rl": 0.3785,
+    "p_away_rl": 0.3229666666666667,
+    "mean_total": 8.5555,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6396,
-     "7.0": 0.6000739781764379,
-     "7.5": 0.5407666666666666,
-     "8.0": 0.4938648052902278,
-     "8.5": 0.4481,
-     "9.0": 0.39781778505182763,
-     "9.5": 0.3646,
-     "10.0": 0.3129325259515571,
-     "10.5": 0.2894
+     "6.5": 0.6397333333333334,
+     "7.0": 0.6000148033011361,
+     "7.5": 0.5404333333333333,
+     "8.0": 0.4945929102972983,
+     "8.5": 0.4497333333333333,
+     "9.0": 0.3989878763607238,
+     "9.5": 0.3653,
+     "10.0": 0.3136647082146848,
+     "10.5": 0.29006666666666664
     },
-    "mean_home": 4.443,
-    "mean_away": 4.100933333333334
+    "mean_home": 4.4493,
+    "mean_away": 4.1062
    },
    "pick": {
     "side": "home",
     "team": "LAD",
     "team_name": "Los Angeles Dodgers",
-    "p": 0.5322,
+    "p": 0.5314,
     "tier": "PASS",
-    "fair": "-114",
+    "fair": "-113",
     "reasons": [
-     "Bullpen edge +0.77 RA/9 (LAD pen 3.98 ERA vs CIN pen 4.66 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Offense gap +0.76 R/G (LAD 4.91 R/G, .756 OPS vs CIN 4.15 R/G, .705 OPS)",
+     "Bullpen edge +0.75 RA/9 (LAD pen 3.98 ERA vs CIN pen 4.63 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Offense gap +0.74 R/G (LAD 4.92 R/G, .756 OPS vs CIN 4.18 R/G, .706 OPS)",
      "Last 3 weeks: LAD 11-8 (4.47 R/G scored, 4.11 allowed) vs CIN 9-12 (4.57 / 6.14)"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6354
+     0.6347
     ],
-    "mean_total": 8.54,
-    "rl_p": 0.379,
+    "mean_total": 8.56,
+    "rl_p": 0.3785,
     "rl_fair": "+164"
    }
   },
@@ -563,7 +561,7 @@
     "pen_ra9": 4.77,
     "pen": {
      "era": "3.98",
-     "fip": 4.64,
+     "fip": 4.65,
      "ip": 528.7
     },
     "off": {
@@ -578,7 +576,7 @@
      "recent_ra": 5.0,
      "recent_rec": "9-11"
     },
-    "exp_runs": 5.35,
+    "exp_runs": 5.36,
     "score": null
    },
    "home": {
@@ -591,19 +589,19 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 3.95,
+    "pen_ra9": 3.97,
     "pen": {
-     "era": "3.30",
-     "fip": 3.66,
-     "ip": 548.7
+     "era": "3.32",
+     "fip": 3.68,
+     "ip": 553.0
     },
     "off": {
-     "rs_pg": 5.01,
+     "rs_pg": 5.02,
      "ops": ".739",
      "hr": 132,
      "avg": ".256",
      "obp": ".339",
-     "so": 1192,
+     "so": 1201,
      "form_mult": 1.043,
      "recent_rs": 6.0,
      "recent_ra": 3.85,
@@ -613,44 +611,44 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.5300666666666667,
-    "p_away": 0.4699333333333333,
-    "p_home_rl": 0.40613333333333335,
-    "p_away_rl": 0.3471,
-    "mean_total": 11.145933333333334,
+    "p_home": 0.5296333333333333,
+    "p_away": 0.4703666666666667,
+    "p_home_rl": 0.4069333333333333,
+    "p_away_rl": 0.3475666666666667,
+    "mean_total": 11.1733,
     "median_total": 10,
     "p_over": {
-     "6.5": 0.7967333333333333,
-     "7.0": 0.7806711505952595,
-     "7.5": 0.7235,
-     "8.0": 0.7008978473298958,
-     "8.5": 0.6479333333333334,
-     "9.0": 0.6187554143805949,
-     "9.5": 0.5714,
-     "10.0": 0.5365484429065743,
-     "10.5": 0.4962
+     "6.5": 0.7991,
+     "7.0": 0.7831468355341273,
+     "7.5": 0.7255333333333334,
+     "8.0": 0.7033541088734374,
+     "8.5": 0.6507666666666667,
+     "9.0": 0.621905449296283,
+     "9.5": 0.5744333333333334,
+     "10.0": 0.539728891773019,
+     "10.5": 0.49903333333333333
     },
-    "mean_home": 5.779466666666667,
-    "mean_away": 5.366466666666667
+    "mean_home": 5.791033333333333,
+    "mean_away": 5.382266666666666
    },
    "pick": {
     "side": "home",
     "team": "MIL",
     "team_name": "Milwaukee Brewers",
-    "p": 0.5301,
+    "p": 0.5296,
     "tier": "PASS",
     "fair": "-113",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge +0.82 RA/9 (MIL pen 3.30 ERA vs CHC pen 3.98 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Bullpen edge +0.80 RA/9 (MIL pen 3.32 ERA vs CHC pen 3.98 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Last 3 weeks: MIL 13-7 (6.0 R/G scored, 3.85 allowed) vs CHC 9-11 (6.4 / 5.0)"
     ],
     "total_lean": [
      "OVER 7.5",
-     0.7235
+     0.7255333333333334
     ],
-    "mean_total": 11.15,
-    "rl_p": 0.4061,
+    "mean_total": 11.17,
+    "rl_p": 0.4069,
     "rl_fair": "+146"
    }
   },
@@ -707,7 +705,7 @@
      "recent_ra": 4.42,
      "recent_rec": "10-9"
     },
-    "exp_runs": 4.13,
+    "exp_runs": 4.14,
     "score": null
    },
    "home": {
@@ -742,31 +740,31 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.5255666666666666,
-    "p_away": 0.4744333333333334,
-    "p_home_rl": 0.36833333333333335,
-    "p_away_rl": 0.3282333333333333,
-    "mean_total": 8.565933333333334,
+    "p_home": 0.5263333333333333,
+    "p_away": 0.4736666666666667,
+    "p_home_rl": 0.3692,
+    "p_away_rl": 0.32803333333333334,
+    "mean_total": 8.5685,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6417333333333334,
-     "7.0": 0.6026617375231054,
-     "7.5": 0.5434,
-     "8.0": 0.49750550256786497,
-     "8.5": 0.45206666666666667,
-     "9.0": 0.4008820206290776,
-     "9.5": 0.3666333333333333,
-     "10.0": 0.3153779635367875,
-     "10.5": 0.2917666666666667
+     "6.5": 0.6424333333333333,
+     "7.0": 0.6033207602987944,
+     "7.5": 0.5438333333333333,
+     "8.0": 0.49772443661454885,
+     "8.5": 0.45203333333333334,
+     "9.0": 0.4009110787172012,
+     "9.5": 0.3667,
+     "10.0": 0.3154253594206032,
+     "10.5": 0.2918
     },
-    "mean_home": 4.404233333333333,
-    "mean_away": 4.1617
+    "mean_home": 4.4092666666666664,
+    "mean_away": 4.159233333333333
    },
    "pick": {
     "side": "home",
     "team": "MIA",
     "team_name": "Miami Marlins",
-    "p": 0.5256,
+    "p": 0.5263,
     "tier": "PASS",
     "fair": "-111",
     "reasons": [
@@ -775,10 +773,10 @@
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6333666666666666
+     0.6333
     ],
     "mean_total": 8.57,
-    "rl_p": 0.3683,
+    "rl_p": 0.3692,
     "rl_fair": "+171"
    }
   },
@@ -820,11 +818,11 @@
      "n_starts": 29
     },
     "sp_ra9": 4.31,
-    "pen_ra9": 4.14,
+    "pen_ra9": 4.15,
     "pen": {
-     "era": "3.69",
-     "fip": 3.76,
-     "ip": 485.7
+     "era": "3.72",
+     "fip": 3.74,
+     "ip": 488.7
     },
     "off": {
      "rs_pg": 4.03,
@@ -853,17 +851,17 @@
     "sp_ra9": 4.93,
     "pen_ra9": 4.27,
     "pen": {
-     "era": "3.94",
-     "fip": 3.84,
-     "ip": 503.0
+     "era": "3.95",
+     "fip": 3.83,
+     "ip": 506.3
     },
     "off": {
      "rs_pg": 4.48,
-     "ops": ".711",
+     "ops": ".710",
      "hr": 172,
-     "avg": ".235",
+     "avg": ".234",
      "obp": ".316",
-     "so": 1308,
+     "so": 1315,
      "form_mult": 0.993,
      "recent_rs": 4.33,
      "recent_ra": 3.95,
@@ -873,161 +871,45 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.5203,
-    "p_away": 0.4797,
-    "p_home_rl": 0.3632666666666667,
-    "p_away_rl": 0.3296,
-    "mean_total": 8.359033333333333,
+    "p_home": 0.5204,
+    "p_away": 0.4796,
+    "p_home_rl": 0.3631333333333333,
+    "p_away_rl": 0.32843333333333335,
+    "mean_total": 8.359066666666667,
     "median_total": 8,
     "p_over": {
      "6.5": 0.6199,
-     "7.0": 0.5789765175011077,
-     "7.5": 0.5227,
-     "8.0": 0.4746092316724151,
-     "8.5": 0.43116666666666664,
-     "9.0": 0.3817028985507246,
-     "9.5": 0.3511666666666667,
-     "10.0": 0.30004674745585963,
-     "10.5": 0.27813333333333334
+     "7.0": 0.5788054519262734,
+     "7.5": 0.5223333333333333,
+     "8.0": 0.4746104491292392,
+     "8.5": 0.4315,
+     "9.0": 0.3816843708081064,
+     "9.5": 0.3509333333333333,
+     "10.0": 0.3001222054489253,
+     "10.5": 0.2783333333333333
     },
-    "mean_home": 4.280366666666667,
-    "mean_away": 4.078666666666667
+    "mean_home": 4.2813,
+    "mean_away": 4.077766666666666
    },
    "pick": {
     "side": "home",
     "team": "BAL",
     "team_name": "Baltimore Orioles",
-    "p": 0.5203,
+    "p": 0.5204,
     "tier": "PASS",
-    "fair": "-108",
+    "fair": "-109",
     "reasons": [
-     "Offense gap +0.45 R/G (BAL 4.48 R/G, .711 OPS vs CLE 4.03 R/G, .685 OPS)",
+     "Offense gap +0.45 R/G (BAL 4.48 R/G, .710 OPS vs CLE 4.03 R/G, .685 OPS)",
      "Last 3 weeks: BAL 10-11 (4.33 R/G scored, 3.95 allowed) vs CLE 13-7 (4.45 / 3.6)",
      "Oriole Park at Camden Yards suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6488333333333334
+     0.6490666666666667
     ],
     "mean_total": 8.36,
-    "rl_p": 0.3633,
+    "rl_p": 0.3631,
     "rl_fair": "+175"
-   }
-  },
-  {
-   "pk": 824958,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-08T02:05:00Z",
-   "venue": "Sutter Health Park",
-   "park_factor": 1.06,
-   "hr_park": 1.05,
-   "away_id": 141,
-   "home_id": 133,
-   "away": {
-    "name": "Toronto Blue Jays",
-    "abbr": "TOR",
-    "rec": "72-71",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.28,
-    "pen": {
-     "era": "3.76",
-     "fip": 3.96,
-     "ip": 596.7
-    },
-    "off": {
-     "rs_pg": 4.03,
-     "ops": ".692",
-     "hr": 134,
-     "avg": ".248",
-     "obp": ".309",
-     "so": 1025,
-     "form_mult": 1.05,
-     "recent_rs": 4.95,
-     "recent_ra": 3.58,
-     "recent_rec": "12-7"
-    },
-    "exp_runs": 4.65,
-    "score": null
-   },
-   "home": {
-    "name": "Athletics",
-    "abbr": "ATH",
-    "rec": "57-86",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 5.17,
-    "pen": {
-     "era": "5.47",
-     "fip": 4.49,
-     "ip": 574.0
-    },
-    "off": {
-     "rs_pg": 4.4,
-     "ops": ".727",
-     "hr": 172,
-     "avg": ".248",
-     "obp": ".321",
-     "so": 1218,
-     "form_mult": 1.016,
-     "recent_rs": 4.71,
-     "recent_ra": 5.24,
-     "recent_rec": "9-12"
-    },
-    "exp_runs": 4.82,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5139333333333334,
-    "p_away": 0.48606666666666665,
-    "p_home_rl": 0.3762,
-    "p_away_rl": 0.3461666666666667,
-    "mean_total": 9.4735,
-    "median_total": 9,
-    "p_over": {
-     "6.5": 0.7037333333333333,
-     "7.0": 0.6754546118454685,
-     "7.5": 0.6166,
-     "8.0": 0.5794207985958754,
-     "8.5": 0.5282,
-     "9.0": 0.48375095743516794,
-     "9.5": 0.4421,
-     "10.0": 0.3957543593631539,
-     "10.5": 0.3654
-    },
-    "mean_home": 4.825733333333333,
-    "mean_away": 4.647766666666667
-   },
-   "pick": {
-    "side": "home",
-    "team": "ATH",
-    "team_name": "Athletics",
-    "p": 0.5139,
-    "tier": "PASS",
-    "fair": "-106",
-    "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge -0.89 RA/9 (ATH pen 5.47 ERA vs TOR pen 3.76 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: ATH 9-12 (4.71 R/G scored, 5.24 allowed) vs TOR 12-7 (4.95 / 3.58)",
-     "Sutter Health Park plays as a hitters' park (106 run factor) \u2014 raises variance, which cuts against the favorite"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.6166
-    ],
-    "mean_total": 9.47,
-    "rl_p": 0.3762,
-    "rl_fair": "+166"
    }
   },
   {
@@ -1051,25 +933,25 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 4.8,
+    "pen_ra9": 4.77,
     "pen": {
-     "era": "4.76",
-     "fip": 4.27,
-     "ip": 504.7
+     "era": "4.72",
+     "fip": 4.24,
+     "ip": 508.7
     },
     "off": {
-     "rs_pg": 4.64,
-     "ops": ".726",
-     "hr": 166,
+     "rs_pg": 4.68,
+     "ops": ".728",
+     "hr": 167,
      "avg": ".246",
-     "obp": ".319",
-     "so": 1122,
-     "form_mult": 1.012,
+     "obp": ".320",
+     "so": 1124,
+     "form_mult": 1.01,
      "recent_rs": 4.89,
      "recent_ra": 4.95,
      "recent_rec": "8-11"
     },
-    "exp_runs": 4.72,
+    "exp_runs": 4.76,
     "score": null
    },
    "home": {
@@ -1084,9 +966,9 @@
     "sp_ra9": 4.93,
     "pen_ra9": 4.57,
     "pen": {
-     "era": "4.02",
+     "era": "4.01",
      "fip": 4.29,
-     "ip": 519.3
+     "ip": 521.3
     },
     "off": {
      "rs_pg": 4.4,
@@ -1094,43 +976,43 @@
      "hr": 160,
      "avg": ".239",
      "obp": ".315",
-     "so": 1226,
+     "so": 1229,
      "form_mult": 0.95,
      "recent_rs": 3.4,
      "recent_ra": 5.15,
      "recent_rec": "5-15"
     },
-    "exp_runs": 4.58,
+    "exp_runs": 4.56,
     "score": null
    },
    "sim": {
-    "p_home": 0.4877666666666667,
-    "p_away": 0.5122333333333333,
-    "p_home_rl": 0.34173333333333333,
-    "p_away_rl": 0.3728666666666667,
-    "mean_total": 9.288933333333333,
+    "p_home": 0.4854,
+    "p_away": 0.5146,
+    "p_home_rl": 0.3446666666666667,
+    "p_away_rl": 0.37443333333333334,
+    "mean_total": 9.2994,
     "median_total": 9,
     "p_over": {
-     "6.5": 0.6968,
-     "7.0": 0.6660915531735252,
-     "7.5": 0.6048333333333333,
-     "8.0": 0.565528109653302,
-     "8.5": 0.5143666666666666,
-     "9.0": 0.4682264481512574,
-     "9.5": 0.4276,
-     "10.0": 0.3777809986230886,
-     "10.5": 0.34753333333333336
+     "6.5": 0.6954666666666667,
+     "7.0": 0.6652621551313523,
+     "7.5": 0.6052333333333333,
+     "8.0": 0.5661427995750449,
+     "8.5": 0.5151333333333333,
+     "9.0": 0.4691047118507975,
+     "9.5": 0.42843333333333333,
+     "10.0": 0.3787994058616817,
+     "10.5": 0.3485333333333333
     },
-    "mean_home": 4.5499,
-    "mean_away": 4.739033333333333
+    "mean_home": 4.550066666666667,
+    "mean_away": 4.749333333333333
    },
    "pick": {
     "side": "away",
     "team": "MIN",
     "team_name": "Minnesota Twins",
-    "p": 0.5122,
+    "p": 0.5146,
     "tier": "PASS",
-    "fair": "-105",
+    "fair": "-106",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
      "Last 3 weeks: MIN 8-11 (4.89 R/G scored, 4.95 allowed) vs DET 5-15 (3.4 / 5.15)",
@@ -1138,11 +1020,127 @@
     ],
     "total_lean": [
      "OVER 7.5",
-     0.6048333333333333
+     0.6052333333333333
     ],
-    "mean_total": 9.29,
-    "rl_p": 0.3729,
-    "rl_fair": "+168"
+    "mean_total": 9.3,
+    "rl_p": 0.3744,
+    "rl_fair": "+167"
+   }
+  },
+  {
+   "pk": 824958,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-08T02:05:00Z",
+   "venue": "Sutter Health Park",
+   "park_factor": 1.06,
+   "hr_park": 1.05,
+   "away_id": 141,
+   "home_id": 133,
+   "away": {
+    "name": "Toronto Blue Jays",
+    "abbr": "TOR",
+    "rec": "72-71",
+    "sp": "TBD",
+    "sp_id": null,
+    "sp_det": {
+     "unknown": true
+    },
+    "sp_ra9": 4.93,
+    "pen_ra9": 4.27,
+    "pen": {
+     "era": "3.74",
+     "fip": 3.96,
+     "ip": 600.0
+    },
+    "off": {
+     "rs_pg": 4.05,
+     "ops": ".691",
+     "hr": 134,
+     "avg": ".248",
+     "obp": ".309",
+     "so": 1029,
+     "form_mult": 1.049,
+     "recent_rs": 4.95,
+     "recent_ra": 3.58,
+     "recent_rec": "12-7"
+    },
+    "exp_runs": 4.67,
+    "score": null
+   },
+   "home": {
+    "name": "Athletics",
+    "abbr": "ATH",
+    "rec": "57-86",
+    "sp": "TBD",
+    "sp_id": null,
+    "sp_det": {
+     "unknown": true
+    },
+    "sp_ra9": 4.93,
+    "pen_ra9": 5.17,
+    "pen": {
+     "era": "5.48",
+     "fip": 4.48,
+     "ip": 576.0
+    },
+    "off": {
+     "rs_pg": 4.41,
+     "ops": ".728",
+     "hr": 174,
+     "avg": ".248",
+     "obp": ".321",
+     "so": 1225,
+     "form_mult": 1.015,
+     "recent_rs": 4.71,
+     "recent_ra": 5.24,
+     "recent_rec": "9-12"
+    },
+    "exp_runs": 4.83,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5140333333333333,
+    "p_away": 0.48596666666666666,
+    "p_home_rl": 0.3744,
+    "p_away_rl": 0.34703333333333336,
+    "mean_total": 9.505133333333333,
+    "median_total": 9,
+    "p_over": {
+     "6.5": 0.7060666666666666,
+     "7.0": 0.6778695112150216,
+     "7.5": 0.6185333333333334,
+     "8.0": 0.5817098578164407,
+     "8.5": 0.5305,
+     "9.0": 0.4864549531483574,
+     "9.5": 0.4447333333333333,
+     "10.0": 0.3981936416184971,
+     "10.5": 0.3674
+    },
+    "mean_home": 4.8360666666666665,
+    "mean_away": 4.669066666666667
+   },
+   "pick": {
+    "side": "home",
+    "team": "ATH",
+    "team_name": "Athletics",
+    "p": 0.514,
+    "tier": "PASS",
+    "fair": "-106",
+    "reasons": [
+     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
+     "Bullpen edge -0.90 RA/9 (ATH pen 5.48 ERA vs TOR pen 3.74 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: ATH 9-12 (4.71 R/G scored, 5.24 allowed) vs TOR 12-7 (4.95 / 3.58)",
+     "Sutter Health Park plays as a hitters' park (106 run factor) \u2014 raises variance, which cuts against the favorite"
+    ],
+    "total_lean": [
+     "OVER 7.5",
+     0.6185333333333334
+    ],
+    "mean_total": 9.51,
+    "rl_p": 0.3744,
+    "rl_fair": "+167"
    }
   },
   {
@@ -1166,25 +1164,25 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 5.28,
+    "pen_ra9": 5.31,
     "pen": {
-     "era": "5.01",
-     "fip": 4.9,
-     "ip": 641.0
+     "era": "5.05",
+     "fip": 4.93,
+     "ip": 643.0
     },
     "off": {
      "rs_pg": 5.16,
      "ops": ".754",
      "hr": 193,
-     "avg": ".248",
+     "avg": ".249",
      "obp": ".325",
-     "so": 1189,
+     "so": 1202,
      "form_mult": 0.951,
      "recent_rs": 4.0,
      "recent_ra": 4.45,
      "recent_rec": "7-13"
     },
-    "exp_runs": 4.59,
+    "exp_runs": 4.58,
     "score": null
    },
    "home": {
@@ -1197,66 +1195,66 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 3.97,
+    "pen_ra9": 3.95,
     "pen": {
-     "era": "3.48",
-     "fip": 3.6,
-     "ip": 595.0
+     "era": "3.44",
+     "fip": 3.59,
+     "ip": 601.7
     },
     "off": {
-     "rs_pg": 4.2,
-     "ops": ".700",
-     "hr": 154,
-     "avg": ".237",
+     "rs_pg": 4.21,
+     "ops": ".699",
+     "hr": 155,
+     "avg": ".236",
      "obp": ".314",
-     "so": 1147,
+     "so": 1157,
      "form_mult": 0.97,
      "recent_rs": 3.63,
      "recent_ra": 3.42,
      "recent_rec": "8-11"
     },
-    "exp_runs": 4.59,
+    "exp_runs": 4.61,
     "score": null
    },
    "sim": {
-    "p_home": 0.5058666666666667,
-    "p_away": 0.4941333333333333,
-    "p_home_rl": 0.3617666666666667,
-    "p_away_rl": 0.35536666666666666,
-    "mean_total": 9.164066666666667,
+    "p_home": 0.5118,
+    "p_away": 0.48819999999999997,
+    "p_home_rl": 0.3678,
+    "p_away_rl": 0.35033333333333333,
+    "mean_total": 9.173433333333334,
     "median_total": 9,
     "p_over": {
-     "6.5": 0.6846333333333333,
-     "7.0": 0.6540767824497259,
-     "7.5": 0.5963,
-     "8.0": 0.5550698016164586,
-     "8.5": 0.5036333333333334,
-     "9.0": 0.45779930090300025,
-     "9.5": 0.4191,
-     "10.0": 0.370820997905986,
-     "10.5": 0.34236666666666665
+     "6.5": 0.6839,
+     "7.0": 0.6528281164195497,
+     "7.5": 0.5944,
+     "8.0": 0.5532383609928037,
+     "8.5": 0.5022666666666666,
+     "9.0": 0.457570473699506,
+     "9.5": 0.41986666666666667,
+     "10.0": 0.3720594602395728,
+     "10.5": 0.34373333333333334
     },
-    "mean_home": 4.5986,
-    "mean_away": 4.565466666666667
+    "mean_home": 4.6277333333333335,
+    "mean_away": 4.5457
    },
    "pick": {
     "side": "home",
     "team": "SD",
     "team_name": "San Diego Padres",
-    "p": 0.5059,
+    "p": 0.5118,
     "tier": "PASS",
-    "fair": "-102",
+    "fair": "-105",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge +1.31 RA/9 (SD pen 3.48 ERA vs WSH pen 5.01 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Offense gap -0.96 R/G (SD 4.2 R/G, .700 OPS vs WSH 5.16 R/G, .754 OPS)",
+     "Bullpen edge +1.36 RA/9 (SD pen 3.44 ERA vs WSH pen 5.05 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Offense gap -0.95 R/G (SD 4.21 R/G, .699 OPS vs WSH 5.16 R/G, .754 OPS)",
      "Last 3 weeks: SD 8-11 (3.63 R/G scored, 3.42 allowed) vs WSH 7-13 (4.0 / 4.45)",
      "Petco Park suppresses runs (96 factor), which protects a lead and helps the better pitching staff"
     ],
     "total_lean": null,
-    "mean_total": 9.16,
-    "rl_p": 0.3618,
-    "rl_fair": "+176"
+    "mean_total": 9.17,
+    "rl_p": 0.3678,
+    "rl_fair": "+172"
    }
   },
   {
@@ -1280,25 +1278,25 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 4.44,
+    "pen_ra9": 4.41,
     "pen": {
-     "era": "4.08",
-     "fip": 4.04,
-     "ip": 489.7
+     "era": "4.05",
+     "fip": 4.01,
+     "ip": 493.3
     },
     "off": {
-     "rs_pg": 4.4,
+     "rs_pg": 4.43,
      "ops": ".708",
-     "hr": 139,
+     "hr": 140,
      "avg": ".242",
      "obp": ".314",
-     "so": 1039,
-     "form_mult": 0.978,
+     "so": 1045,
+     "form_mult": 0.976,
      "recent_rs": 3.95,
      "recent_ra": 4.7,
      "recent_rec": "10-10"
     },
-    "exp_runs": 4.67,
+    "exp_runs": 4.69,
     "score": null
    },
    "home": {
@@ -1311,67 +1309,67 @@
      "unknown": true
     },
     "sp_ra9": 4.93,
-    "pen_ra9": 5.43,
+    "pen_ra9": 5.4,
     "pen": {
-     "era": "5.09",
-     "fip": 5.15,
-     "ip": 498.7
+     "era": "5.05",
+     "fip": 5.13,
+     "ip": 502.7
     },
     "off": {
      "rs_pg": 4.27,
-     "ops": ".719",
-     "hr": 148,
-     "avg": ".248",
+     "ops": ".718",
+     "hr": 149,
+     "avg": ".247",
      "obp": ".316",
-     "so": 1108,
+     "so": 1112,
      "form_mult": 1.04,
      "recent_rs": 5.05,
      "recent_ra": 4.05,
      "recent_rec": "13-7"
     },
-    "exp_runs": 4.7,
+    "exp_runs": 4.69,
     "score": null
    },
    "sim": {
-    "p_home": 0.505,
-    "p_away": 0.495,
-    "p_home_rl": 0.36433333333333334,
-    "p_away_rl": 0.36146666666666666,
-    "mean_total": 9.455,
+    "p_home": 0.5041,
+    "p_away": 0.4959,
+    "p_home_rl": 0.3629,
+    "p_away_rl": 0.36236666666666667,
+    "mean_total": 9.462333333333333,
     "median_total": 9,
     "p_over": {
-     "6.5": 0.7017666666666666,
-     "7.0": 0.6725589225589226,
-     "7.5": 0.6125666666666667,
-     "8.0": 0.5766835415376771,
-     "8.5": 0.5278,
-     "9.0": 0.48449781659388647,
-     "9.5": 0.4438,
-     "10.0": 0.39606934742480726,
-     "10.5": 0.3647666666666667
+     "6.5": 0.7045333333333333,
+     "7.0": 0.6750494904318498,
+     "7.5": 0.6138,
+     "8.0": 0.5778466022955,
+     "8.5": 0.5286333333333333,
+     "9.0": 0.4850515276209898,
+     "9.5": 0.444,
+     "10.0": 0.3967013888888889,
+     "10.5": 0.3656
     },
-    "mean_home": 4.740266666666667,
-    "mean_away": 4.714733333333333
+    "mean_home": 4.7383,
+    "mean_away": 4.724033333333334
    },
    "pick": {
     "side": "home",
     "team": "KC",
     "team_name": "Kansas City Royals",
-    "p": 0.505,
+    "p": 0.5041,
     "tier": "PASS",
     "fair": "-102",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge -0.99 RA/9 (KC pen 5.09 ERA vs ARI pen 4.08 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Bullpen edge -0.99 RA/9 (KC pen 5.05 ERA vs ARI pen 4.05 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Last 3 weeks: KC 13-7 (5.05 R/G scored, 4.05 allowed) vs ARI 10-10 (3.95 / 4.7)"
     ],
     "total_lean": [
      "OVER 7.5",
-     0.6125666666666667
+     0.6138
     ],
     "mean_total": 9.46,
-    "rl_p": 0.3643,
-    "rl_fair": "+174"
+    "rl_p": 0.3629,
+    "rl_fair": "+176"
    }
   }
  ]
