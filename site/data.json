@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 1:34 PM EDT",
+ "generated": "Sep 6, 1:49 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,11 +122,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
+    "inning": 5,
+    "ord": "5th",
     "half": "Bottom",
-    "outs": 2,
-    "away_h": 2,
+    "outs": 0,
+    "away_h": 4,
     "home_h": 9
    },
    "start_utc": "2026-09-06T16:10:00Z",
@@ -181,7 +181,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 5.68,
-    "score": 3
+    "score": 6
    },
    "home": {
     "name": "Cincinnati Reds",
@@ -280,13 +280,13 @@
   {
    "pk": 823336,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
-    "outs": 0,
-    "away_h": 0,
+    "half": "End",
+    "outs": 3,
+    "away_h": 1,
     "home_h": 0
    },
    "start_utc": "2026-09-06T17:35:00Z",
@@ -438,13 +438,13 @@
   {
    "pk": 823822,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 0,
-    "away_h": 0,
+    "away_h": 1,
     "home_h": 0
    },
    "start_utc": "2026-09-06T17:40:00Z",
@@ -598,13 +598,13 @@
   {
    "pk": 824385,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
     "half": "Top",
-    "outs": 0,
-    "away_h": 0,
+    "outs": 1,
+    "away_h": 3,
     "home_h": 0
    },
    "start_utc": "2026-09-06T17:40:00Z",
@@ -659,7 +659,7 @@
      "recent_rec": "5-15"
     },
     "exp_runs": 3.76,
-    "score": 0
+    "score": 2
    },
    "home": {
     "name": "Cleveland Guardians",
@@ -1376,8 +1376,8 @@
   },
   {
    "pk": 824065,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -1513,7 +1513,7 @@
     "side": "home",
     "team": "KC",
     "team_name": "Kansas City Royals",
-    "p": 0.5324,
+    "p": 0.5317,
     "tier": "PASS",
     "fair": "-114",
     "reasons": [
@@ -1526,17 +1526,17 @@
     "rl_p": 0.3867,
     "rl_fair": "+159"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
    "pk": 823578,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 0,
     "away_h": 0,
     "home_h": 0
@@ -1837,12 +1837,12 @@
   {
    "pk": 824794,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
-    "outs": 0,
+    "half": "Bottom",
+    "outs": 1,
     "away_h": 0,
     "home_h": 0
    },
@@ -2311,12 +2311,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "Middle",
-    "outs": 3,
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Top",
+    "outs": 2,
     "away_h": 0,
-    "home_h": 1
+    "home_h": 2
    },
    "start_utc": "2026-09-06T17:10:00Z",
    "venue": "Citizens Bank Park",

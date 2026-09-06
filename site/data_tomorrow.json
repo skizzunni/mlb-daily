@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 1:34 PM EDT",
+ "generated": "Sep 6, 1:49 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -25,29 +25,29 @@
     "name": "Atlanta Braves",
     "abbr": "ATL",
     "rec": "84-58",
-    "sp": "Bryce Elder",
-    "sp_id": 693821,
+    "sp": "Grant Holmes",
+    "sp_id": 656550,
     "sp_det": {
-     "ip": 149.0,
-     "era": "4.11",
-     "fip": 4.61,
-     "k9": "7.31",
-     "bb9": "2.96",
-     "hr9": "1.45",
-     "whip": "1.27",
-     "avg": ".244",
+     "ip": 131.7,
+     "era": "3.62",
+     "fip": 4.71,
+     "k9": "7.11",
+     "bb9": "3.76",
+     "hr9": "1.30",
+     "whip": "1.31",
+     "avg": ".236",
      "gs": 26,
-     "exp_ip": 5.8,
-     "ra9": 4.84,
+     "exp_ip": 4.8,
+     "ra9": 4.7,
      "unknown": false,
-     "prior_fip": 4.57,
-     "prior_bf": 436,
-     "blend_w": 0.811,
+     "prior_fip": 4.15,
+     "prior_bf": 349,
+     "blend_w": 0.785,
      "opener": false,
-     "start_ip_recent": 5.87,
+     "start_ip_recent": 4.73,
      "n_starts": 26
     },
-    "sp_ra9": 4.84,
+    "sp_ra9": 4.7,
     "pen_ra9": 4.04,
     "pen": {
      "era": "3.34",
@@ -114,49 +114,49 @@
      "recent_ra": 3.11,
      "recent_rec": "15-4"
     },
-    "exp_runs": 4.78,
+    "exp_runs": 4.61,
     "score": null
    },
    "sim": {
-    "p_home": 0.6069,
-    "p_away": 0.3931,
-    "p_home_rl": 0.4493,
-    "p_away_rl": 0.25066666666666665,
-    "mean_total": 8.258966666666666,
+    "p_home": 0.5983333333333334,
+    "p_away": 0.4016666666666666,
+    "p_home_rl": 0.43693333333333334,
+    "p_away_rl": 0.25553333333333333,
+    "mean_total": 8.078766666666667,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6162,
-     "7.0": 0.5752545374059319,
-     "7.5": 0.5198,
-     "8.0": 0.4703871181206573,
-     "8.5": 0.4265,
-     "9.0": 0.3724238555535291,
-     "9.5": 0.3403333333333333,
-     "10.0": 0.28851339205464677,
-     "10.5": 0.2675
+     "6.5": 0.6013,
+     "7.0": 0.5579495897701234,
+     "7.5": 0.5032333333333333,
+     "8.0": 0.4520150022062068,
+     "8.5": 0.40976666666666667,
+     "9.0": 0.3538062915115685,
+     "9.5": 0.32316666666666666,
+     "10.0": 0.2708108884579473,
+     "10.5": 0.2513666666666667
     },
-    "mean_home": 4.7353,
-    "mean_away": 3.5236666666666667
+    "mean_home": 4.5757,
+    "mean_away": 3.5030666666666668
    },
    "pick": {
     "side": "home",
     "team": "PHI",
     "team_name": "Philadelphia Phillies",
-    "p": 0.6069,
+    "p": 0.5983,
     "tier": "A",
-    "fair": "-154",
+    "fair": "-149",
     "reasons": [
-     "Starter edge +1.35 RA/9: Jes\u00fas Luzardo (3.02 ERA, 11.09 K/9, 2.71 BB/9 over 169.7 IP) vs Bryce Elder (4.11 ERA, 7.31 K/9, 2.96 BB/9)",
+     "Starter edge +1.21 RA/9: Jes\u00fas Luzardo (3.02 ERA, 11.09 K/9, 2.71 BB/9 over 169.7 IP) vs Grant Holmes (3.62 ERA, 7.11 K/9, 3.76 BB/9)",
      "Bullpen edge -0.33 RA/9 (PHI pen 4.21 ERA vs ATL pen 3.34 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Last 3 weeks: PHI 15-4 (5.0 R/G scored, 3.11 allowed) vs ATL 11-9 (3.45 / 3.6)"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6596666666666666
+     0.6768333333333334
     ],
-    "mean_total": 8.26,
-    "rl_p": 0.4493,
-    "rl_fair": "+123"
+    "mean_total": 8.08,
+    "rl_p": 0.4369,
+    "rl_fair": "+129"
    }
   },
   {
