@@ -1,0 +1,92 @@
+{
+ "823335": {
+  "pick": "Pittsburgh Pirates",
+  "side": "home",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "824468": {
+  "pick": "Milwaukee Brewers",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "823094": {
+  "pick": "Seattle Mariners",
+  "side": "home",
+  "conf": "low",
+  "disagrees": false
+ },
+ "824389": {
+  "pick": "Cleveland Guardians",
+  "side": "home",
+  "conf": "medium",
+  "disagrees": true
+ },
+ "823419": {
+  "pick": "Atlanta Braves",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": true
+ },
+ "823904": {
+  "pick": "Los Angeles Dodgers",
+  "side": "home",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "823823": {
+  "pick": "Chicago Cubs",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "824795": {
+  "pick": "Boston Red Sox",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "823577": {
+  "pick": "New York Mets",
+  "side": "home",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "824066": {
+  "pick": "Toronto Blue Jays",
+  "side": "away",
+  "conf": "low",
+  "disagrees": true
+ },
+ "824553": {
+  "pick": "Minnesota Twins",
+  "side": "away",
+  "conf": "low",
+  "disagrees": true
+ },
+ "823257": {
+  "pick": "New York Yankees",
+  "side": "away",
+  "conf": "low",
+  "disagrees": true
+ },
+ "824310": {
+  "pick": "St. Louis Cardinals",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": false
+ },
+ "822850": {
+  "pick": "Tampa Bay Rays",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": true
+ },
+ "824145": {
+  "pick": "Arizona Diamondbacks",
+  "side": "away",
+  "conf": "medium",
+  "disagrees": true
+ }
+}

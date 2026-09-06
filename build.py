@@ -26,6 +26,7 @@ HISTORY = os.path.join(DATA, "history.json")
 LINES = os.path.join(DATA, "lines.json")   # optional real book lines, keyed by gamePk
 BACKTEST = os.path.join(DATA, "backtest.json")
 NOTES = os.path.join(DATA, "notes.json")
+RESEARCH = os.path.join(DATA, "research.json")
 SEASON = 2026
 
 # Thresholds re-cut on the 447-game backtest. The old A=60 / B=55.5 split was
@@ -237,6 +238,42 @@ def build_hr_board(games, team_stats, lg, top_n=5):
     return cands[:top_n], round(lg_rate, 4)
 
 
+def apply_research(a, research):
+    """Let the per-game research overrule the model on which side to take.
+
+    The board used to publish the model's side while the research printed
+    underneath it, so a card could read "PICK: Kansas City" above a note saying
+    "Research picks Toronto". That is incoherent, and on today's UFC card the
+    same instinct -- overruling the researcher toward the consensus -- went 1-2
+    on the three fights where I did it.
+
+    The research sees things the run-expectancy model structurally cannot:
+    bullpen pitch counts over the last three days, who is unavailable, platoon
+    splits against today's specific starter, hot and cold bats, and injuries.
+    So it leads. The model's own probability for the chosen side is still shown
+    -- if the research takes a team the model has at 47%, the card says 47%
+    rather than inventing a number to justify the pick.
+    """
+    r = research.get(str(a["pk"]))
+    if not r or r.get("side") not in ("away", "home"):
+        return
+    if r["side"] == a["pick"]["side"]:
+        a["pick"]["research"] = "agrees"
+        return
+    sim = a["sim"]
+    p = sim["p_home"] if r["side"] == "home" else sim["p_away"]
+    me = a[r["side"]]
+    a["pick"] = dict(a["pick"], side=r["side"], team=me["abbr"], team_name=me["name"],
+                     p=round(p, 4), fair=M.fmt_odds(M.prob_to_american(p)),
+                     tier=("A" if p >= TIER_A else "B" if p >= TIER_B else "PASS"),
+                     research="overrides",
+                     reasons=["Research pick, against the model. The model favours %s at %s; "
+                              "the research takes %s on bullpen state, form and matchup -- see "
+                              "the sourced context below."
+                              % (a["away" if r["side"] == "home" else "home"]["abbr"],
+                                 pct(1 - p), me["name"])] + a["pick"]["reasons"])
+
+
 def build_pick(a):
     p_home = a["sim"]["p_home"]
     p_away = a["sim"]["p_away"]
@@ -368,11 +405,20 @@ def update_history(date_str, games, lines=None):
         # The graded record is the locked one; render that, not whatever the model
         # says now, or the page would show a pick the history never took.
         if rec.get("locked") and rec.get("side") != a["pick"]["side"]:
+            why = ("Locked at first pitch. The model has since moved to the other side; "
+                   "the locked pick is what gets graded.")
+            if a["pick"].get("research") == "overrides":
+                why = ("Locked at first pitch, BEFORE the research landed. The research takes "
+                       "%s and the reasoning is below, but a pick cannot be changed after the "
+                       "game starts, so %s is what gets graded. From tomorrow's slate the "
+                       "research leads the pick outright."
+                       % (a["pick"]["team_name"], rec["pick"]))
             a["pick"] = dict(a["pick"], team=rec["pick"], side=rec["side"], p=rec["p"],
                              tier=rec["tier"], fair=rec["fair"],
                              team_name=a[rec["side"]]["name"],
-                             reasons=["Locked at first pitch. The model has since moved to "
-                                      "the other side; the locked pick is what gets graded."])
+                             research="locked-before-research"
+                                      if a["pick"].get("research") == "overrides" else None,
+                             reasons=[why])
         elif rec.get("locked"):
             a["pick"] = dict(a["pick"], p=rec["p"], tier=rec["tier"], fair=rec["fair"])
     save_json(HISTORY, hist)
@@ -917,6 +963,7 @@ def main():
         if d:
             lgby[y] = d
     lines = load_json(LINES, {})
+    research = load_json(RESEARCH, {})
 
     games = []
     pen_cache = {}
@@ -929,6 +976,7 @@ def main():
                         raise ValueError("no season stats for team id %s" % tid)
                 a = analyze_game(g, team_stats, form, lg, pen_cache, parks, lgby)
                 a["pick"] = build_pick(a)
+                apply_research(a, research)
                 games.append(a)
             except Exception as e:
                 sys.stderr.write("skip game %s: %s\n" % (g.get("gamePk"), e))
