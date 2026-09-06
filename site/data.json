@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 10:52 PM EDT",
+ "generated": "Sep 5, 11:08 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -177,10 +177,10 @@
    "live": {
     "inning": 7,
     "ord": "7th",
-    "half": "Top",
-    "outs": 1,
-    "away_h": 3,
-    "home_h": 8
+    "half": "Bottom",
+    "outs": 0,
+    "away_h": 6,
+    "home_h": 9
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "Great American Ball Park",
@@ -234,7 +234,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 5.61,
-    "score": 2
+    "score": 3
    },
    "home": {
     "name": "Cincinnati Reds",
@@ -282,7 +282,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.09,
-    "score": 3
+    "score": 4
    },
    "sim": {
     "p_home": 0.38353333333333334,
@@ -335,10 +335,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Top",
-    "outs": 2,
+    "inning": 6,
+    "ord": "6th",
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 6,
     "home_h": 1
    },
@@ -656,11 +656,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "Bottom",
-    "outs": 1,
-    "away_h": 5,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Top",
+    "outs": 2,
+    "away_h": 7,
     "home_h": 4
    },
    "start_utc": "2026-09-06T01:10:00Z",
@@ -715,7 +715,7 @@
      "recent_rec": "7-13"
     },
     "exp_runs": 4.1,
-    "score": 3
+    "score": 4
    },
    "home": {
     "name": "Los Angeles Dodgers",
@@ -1763,14 +1763,14 @@
   {
    "pk": 824310,
    "state": "Live",
-   "detail": "Umpire review",
+   "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 11,
-    "home_h": 10
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 13,
+    "home_h": 11
    },
    "start_utc": "2026-09-06T00:10:00Z",
    "venue": "Coors Field",
@@ -1824,7 +1824,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.05,
-    "score": 5
+    "score": 7
    },
    "home": {
     "name": "Colorado Rockies",
