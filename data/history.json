@@ -219,8 +219,8 @@
    "fair": "-164",
    "locked": true,
    "result": "L",
-   "price": null,
-   "mkt": null,
+   "price": "-188",
+   "mkt": 0.6238,
    "final": "LAA 6 - PIT 1"
   },
   "824468": {
@@ -232,8 +232,8 @@
    "fair": "-161",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-156",
+   "mkt": 0.5825
   },
   "823094": {
    "matchup": "ATH @ SEA",
@@ -244,8 +244,8 @@
    "fair": "-141",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-249",
+   "mkt": 0.6823
   },
   "824389": {
    "matchup": "DET @ CLE",
@@ -256,8 +256,8 @@
    "fair": "-141",
    "locked": true,
    "result": "L",
-   "price": null,
-   "mkt": null,
+   "price": "-163",
+   "mkt": 0.5919,
    "final": "DET 6 - CLE 0"
   },
   "823419": {
@@ -269,8 +269,8 @@
    "fair": "-130",
    "locked": true,
    "result": "W",
-   "price": null,
-   "mkt": null,
+   "price": "-166",
+   "mkt": 0.5966,
    "final": "ATL 2 - PHI 4"
   },
   "823904": {
@@ -294,8 +294,8 @@
    "fair": "-118",
    "locked": true,
    "result": "L",
-   "price": null,
-   "mkt": null,
+   "price": "-171",
+   "mkt": 0.6033,
    "final": "SF 9 - NYM 5"
   },
   "823823": {
@@ -307,8 +307,8 @@
    "fair": "-120",
    "locked": true,
    "result": "W",
-   "price": null,
-   "mkt": null,
+   "price": "-126",
+   "mkt": 0.5333,
    "final": "CHC 6 - MIA 5"
   },
   "824795": {
@@ -320,8 +320,8 @@
    "fair": "-115",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-126",
+   "mkt": 0.5333
   },
   "824066": {
    "matchup": "TOR @ KC",
@@ -332,8 +332,8 @@
    "fair": "-111",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-108",
+   "mkt": 0.4967
   },
   "823257": {
    "matchup": "NYY @ SD",
@@ -344,8 +344,8 @@
    "fair": "-109",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "+105",
+   "mkt": 0.4667
   },
   "822850": {
    "matchup": "TB @ TEX",
@@ -356,8 +356,8 @@
    "fair": "-108",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-107",
+   "mkt": 0.4945
   },
   "824310": {
    "matchup": "STL @ COL",
@@ -368,8 +368,8 @@
    "fair": "-109",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "+108",
+   "mkt": 0.4596
   },
   "824553": {
    "matchup": "MIN @ CWS",
@@ -380,8 +380,8 @@
    "fair": "-110",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-126",
+   "mkt": 0.5321
   },
   "824145": {
    "matchup": "ARI @ HOU",
@@ -392,8 +392,8 @@
    "fair": "-103",
    "locked": true,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-106",
+   "mkt": 0.4924
   }
  }
 }

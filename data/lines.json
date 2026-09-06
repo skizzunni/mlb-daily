@@ -1,11 +1,140 @@
 {
-"823337": {"ml_away":"+135","ml_home":"-163","total":"8.5","source":"VegasInsider consensus + PickDawgz + Covers, read 2026-09-03"},
-"824388": {"ml_away":"-112","ml_home":"-107","total":"8","source":"DraftKings via ESPN game page; VegasInsider concurs"},
-"824144": {"ml_away":"+134","ml_home":"-162","total":"8.5","source":"DraftKings via ESPN; PickDawgz + Covers concur"},
-"824796": {"ml_away":"-130","ml_home":"+110","total":"8.5","source":"FanDuel via B/R; BetMGM -135/+110, PickDawgz -136/+113"},
-"824632": {"ml_away":"-112","ml_home":"-107","total":"8","source":"DraftKings via ESPN; BetMGM -115/-105"},
-"824069": {"ml_away":"-120","ml_home":"+100","total":"9","source":"DraftKings via ESPN; Covers consensus -118/+107"},
-"822853": {"ml_away":"-126","ml_home":"+104","total":"8","source":"DraftKings via ESPN; Covers -130/+110 (a VegasInsider -191 read was stale, discarded)"},
-"823095": {"ml_away":"+169","ml_home":"-207","total":"7.5","source":"DraftKings via ESPN; Covers range +170/+183, -195/-210"},
-"823907": {"ml_away":"+246","ml_home":"-311","total":"8","source":"DraftKings via ESPN (B/R showed -300 and a 7.5 total — confirm the total at your book)"}
+ "823337": {
+  "ml_away": "+135",
+  "ml_home": "-163",
+  "total": "8.5",
+  "source": "VegasInsider consensus + PickDawgz + Covers, read 2026-09-03"
+ },
+ "824388": {
+  "ml_away": "-112",
+  "ml_home": "-107",
+  "total": "8",
+  "source": "DraftKings via ESPN game page; VegasInsider concurs"
+ },
+ "824144": {
+  "ml_away": "+134",
+  "ml_home": "-162",
+  "total": "8.5",
+  "source": "DraftKings via ESPN; PickDawgz + Covers concur"
+ },
+ "824796": {
+  "ml_away": "-130",
+  "ml_home": "+110",
+  "total": "8.5",
+  "source": "FanDuel via B/R; BetMGM -135/+110, PickDawgz -136/+113"
+ },
+ "824632": {
+  "ml_away": "-112",
+  "ml_home": "-107",
+  "total": "8",
+  "source": "DraftKings via ESPN; BetMGM -115/-105"
+ },
+ "824069": {
+  "ml_away": "-120",
+  "ml_home": "+100",
+  "total": "9",
+  "source": "DraftKings via ESPN; Covers consensus -118/+107"
+ },
+ "822853": {
+  "ml_away": "-126",
+  "ml_home": "+104",
+  "total": "8",
+  "source": "DraftKings via ESPN; Covers -130/+110 (a VegasInsider -191 read was stale, discarded)"
+ },
+ "823095": {
+  "ml_away": "+169",
+  "ml_home": "-207",
+  "total": "7.5",
+  "source": "DraftKings via ESPN; Covers range +170/+183, -195/-210"
+ },
+ "823907": {
+  "ml_away": "+246",
+  "ml_home": "-311",
+  "total": "8",
+  "source": "DraftKings via ESPN (B/R showed -300 and a 7.5 total \u2014 confirm the total at your book)"
+ },
+ "823823": {
+  "ml_away": "-126",
+  "ml_home": "+105",
+  "total": "8.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "823577": {
+  "ml_away": "+141",
+  "ml_home": "-171",
+  "total": "8.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "823419": {
+  "ml_away": "+137",
+  "ml_home": "-166",
+  "total": "8.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824389": {
+  "ml_away": "+134",
+  "ml_home": "-163",
+  "total": "7.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "823335": {
+  "ml_away": "+154",
+  "ml_home": "-188",
+  "total": "7.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824468": {
+  "ml_away": "-156",
+  "ml_home": "+129",
+  "total": "9.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824795": {
+  "ml_away": "-126",
+  "ml_home": "+105",
+  "total": "7.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "822850": {
+  "ml_away": "-107",
+  "ml_home": "-112",
+  "total": "7.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824553": {
+  "ml_away": "+104",
+  "ml_home": "-126",
+  "total": "8.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824066": {
+  "ml_away": "-111",
+  "ml_home": "-108",
+  "total": "9.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824145": {
+  "ml_away": "-113",
+  "ml_home": "-106",
+  "total": "9.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "823257": {
+  "ml_away": "+105",
+  "ml_home": "-126",
+  "total": "7.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "824310": {
+  "ml_away": "-130",
+  "ml_home": "+108",
+  "total": "11.0",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ },
+ "823094": {
+  "ml_away": "+201",
+  "ml_home": "-249",
+  "total": "7.5",
+  "source": "DraftKings via ESPN, fetched 2026-09-05"
+ }
 }

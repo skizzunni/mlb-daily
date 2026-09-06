@@ -13,6 +13,7 @@ import urllib.request
 import urllib.error
 import datetime as dt
 import os
+import time
 
 API = "https://statsapi.mlb.com/api/v1"
 UA = {"User-Agent": "mlb-daily-model/1.0"}
@@ -32,9 +33,15 @@ def get(url, cache_key=None, max_age=0):
             except Exception:
                 pass
     last = None
-    for attempt in range(3):
+    # ESPN 403s any User-Agent it does not recognise, so it gets the bare
+    # default; statsapi.mlb.com is fine either way. Sending UA to ESPN was
+    # why fetch_book_lines silently returned nothing.
+    hdrs = {} if ("espn.com" in url) else UA
+    delay = 0.8
+    for attempt in range(5):
         try:
-            req = urllib.request.Request(url, headers=UA)
+            req = urllib.request.Request(url, headers=hdrs) if hdrs \
+                else urllib.request.Request(url)
             with urllib.request.urlopen(req, timeout=30) as r:
                 data = json.loads(r.read().decode("utf-8"))
             if path:
@@ -44,6 +51,9 @@ def get(url, cache_key=None, max_age=0):
             return data
         except Exception as e:  # noqa
             last = e
+            if attempt < 4:
+                time.sleep(delay)
+                delay = min(delay * 1.8, 8.0)
     # fall back to stale cache rather than failing the whole run
     if path and os.path.exists(path):
         with open(path) as f:
@@ -662,3 +672,83 @@ def batter_hr_prob(bat, staff_rate, lg_rate, park, pitch_hand, team_games):
     p = 1.0 - (1.0 - clamp(rate, 0.0, 0.4)) ** pa_g
     return {"p": p, "rate": rate, "pa_g": round(pa_g, 2), "platoon": plat,
             "play": round(play, 2), "raw": raw}
+
+
+# ---------------------------------------------------------------- book lines
+ESPN_MLB = "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb"
+CORE_MLB = "https://sports.core.api.espn.com/v2/sports/baseball/leagues/mlb"
+
+# ESPN abbreviations that differ from MLB StatsAPI's
+_ABBR_FIX = {"CHW": "CWS", "OAK": "ATH", "WSH": "WSH", "SFG": "SF", "TBR": "TB",
+             "KCR": "KC", "SDP": "SD", "ARZ": "ARI"}
+
+
+def _norm_abbr(a):
+    a = (a or "").upper()
+    return _ABBR_FIX.get(a, a)
+
+
+def fetch_book_lines(date_str, abbr_of):
+    """Today's moneylines and totals, keyed by MLB gamePk.
+
+    data/lines.json used to be hand-written. It was populated once on 2026-09-03
+    and never again, so from 2026-09-04 onward every game had no price, no edge
+    could be computed, and "Today's read" reported nothing every single day.
+    This fetches them instead.
+
+    ESPN keys games by its own event id, not by gamePk, so the two are matched on
+    (away abbr, home abbr) for the date. ESPN's `details` string ("CHC -126")
+    names the favourite independently of the awayTeamOdds/homeTeamOdds fields,
+    and is used to catch a mis-mapping rather than trusting field order -- the
+    same class of bug that inverted five MMA lines.
+    """
+    day = date_str.replace("-", "")
+    try:
+        sb = get(ESPN_MLB + "/scoreboard?dates=" + day,
+                 cache_key="espn_mlb_%s" % day, max_age=900)
+    except Exception:
+        return {}
+    out = {}
+    for ev in sb.get("events", []):
+        comps = ev.get("competitions") or []
+        if not comps:
+            continue
+        c = comps[0]
+        sides = {}
+        for x in c.get("competitors") or []:
+            sides[x.get("homeAway")] = _norm_abbr((x.get("team") or {}).get("abbreviation"))
+        away, home = sides.get("away"), sides.get("home")
+        pk = abbr_of.get((away, home))
+        if not pk:
+            continue
+        try:
+            items = get("%s/events/%s/competitions/%s/odds" % (CORE_MLB, ev["id"], c["id"]),
+                        cache_key="odds_%s" % c["id"], max_age=900).get("items") or []
+        except Exception:
+            continue
+        if not items:
+            continue
+        it = items[0]
+        a_ml = (it.get("awayTeamOdds") or {}).get("moneyLine")
+        h_ml = (it.get("homeTeamOdds") or {}).get("moneyLine")
+        # a moneyLine of 0 means "not posted", not "even money"
+        if a_ml is None or h_ml is None or a_ml == 0 or h_ml == 0:
+            continue
+        # cross-check against the human-readable line before trusting the mapping
+        det = str(it.get("details") or "")
+        fav = det.split()[0].upper() if det else ""
+        if fav:
+            fav = _norm_abbr(fav)
+            want_away = f(a_ml, 0) < f(h_ml, 0)
+            if (fav == away) != want_away and fav in (away, home):
+                sys.stderr.write("lines: %s@%s mapping disagrees with details %r, skipping\n"
+                                 % (away, home, det))
+                continue
+        out[str(pk)] = {
+            "ml_away": ("+%d" % a_ml) if a_ml > 0 else str(int(a_ml)),
+            "ml_home": ("+%d" % h_ml) if h_ml > 0 else str(int(h_ml)),
+            "total": str(it.get("overUnder")) if it.get("overUnder") else None,
+            "source": "%s via ESPN, fetched %s" % (
+                (it.get("provider") or {}).get("name", "book"), date_str),
+        }
+    return out

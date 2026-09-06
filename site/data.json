@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 9:23 PM EDT",
+ "generated": "Sep 5, 9:26 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -14,7 +14,7 @@
   {
    "pk": 823335,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -659,9 +659,9 @@
     "inning": 1,
     "ord": "1st",
     "half": "Bottom",
-    "outs": 1,
+    "outs": 2,
     "away_h": 0,
-    "home_h": 1
+    "home_h": 2
    },
    "start_utc": "2026-09-06T01:10:00Z",
    "venue": "UNIQLO Field at Dodger Stadium",
@@ -763,7 +763,7 @@
      "recent_rec": "11-8"
     },
     "exp_runs": 4.77,
-    "score": 0
+    "score": 1
    },
    "sim": {
     "p_home": 0.5555666666666667,
@@ -974,10 +974,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "End",
-    "outs": 3,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 1,
     "away_h": 8,
     "home_h": 3
    },
@@ -1452,8 +1452,8 @@
    "live": {
     "inning": 9,
     "ord": "9th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 9,
     "home_h": 6
    },
@@ -1610,8 +1610,8 @@
    "live": {
     "inning": 7,
     "ord": "7th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Middle",
+    "outs": 3,
     "away_h": 6,
     "home_h": 6
    },
@@ -1767,10 +1767,10 @@
    "live": {
     "inning": 5,
     "ord": "5th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 8,
-    "home_h": 0
+    "home_h": 1
    },
    "start_utc": "2026-09-06T00:10:00Z",
    "venue": "Coors Field",
@@ -1924,8 +1924,8 @@
    "live": {
     "inning": 8,
     "ord": "8th",
-    "half": "Top",
-    "outs": 0,
+    "half": "Middle",
+    "outs": 3,
     "away_h": 8,
     "home_h": 5
    },
@@ -2081,9 +2081,9 @@
    "live": {
     "inning": 8,
     "ord": "8th",
-    "half": "Top",
-    "outs": 1,
-    "away_h": 11,
+    "half": "Middle",
+    "outs": 3,
+    "away_h": 12,
     "home_h": 5
    },
    "start_utc": "2026-09-05T23:10:00Z",

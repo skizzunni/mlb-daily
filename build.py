@@ -962,7 +962,6 @@ def main():
         d = M.fetch_league_season(y)
         if d:
             lgby[y] = d
-    lines = load_json(LINES, {})
     research = load_json(RESEARCH, {})
 
     games = []
@@ -980,6 +979,21 @@ def main():
                 games.append(a)
             except Exception as e:
                 sys.stderr.write("skip game %s: %s\n" % (g.get("gamePk"), e))
+
+    # Refresh the book lines every build. These used to be hand-written once and
+    # then went stale the next day, which is why "Today's read" reported nothing
+    # every day after 2026-09-03: with no line there is no edge to compute.
+    idx = {(a["away"]["abbr"], a["home"]["abbr"]): a["pk"] for a in games}
+    try:
+        fresh = M.fetch_book_lines(date_str, idx)
+    except Exception as e:
+        sys.stderr.write("lines: %s\n" % e)
+        fresh = {}
+    lines = load_json(LINES, {})
+    if fresh:
+        lines.update(fresh)
+        save_json(LINES, lines)
+        sys.stderr.write("lines: refreshed %d of %d games\n" % (len(fresh), len(games)))
 
     games.sort(key=lambda x: (-x["pick"]["p"], x["start_utc"]))
     try:
