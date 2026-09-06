@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 10:10 PM EDT",
+ "generated": "Sep 5, 10:52 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -175,12 +175,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
+    "inning": 7,
+    "ord": "7th",
     "half": "Top",
-    "outs": 0,
+    "outs": 1,
     "away_h": 3,
-    "home_h": 6
+    "home_h": 8
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "Great American Ball Park",
@@ -282,7 +282,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.09,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.38353333333333334,
@@ -335,12 +335,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "Bottom",
+    "inning": 5,
+    "ord": "5th",
+    "half": "Top",
     "outs": 2,
-    "away_h": 1,
-    "home_h": 0
+    "away_h": 6,
+    "home_h": 1
    },
    "start_utc": "2026-09-06T01:40:00Z",
    "venue": "T-Mobile Park",
@@ -394,7 +394,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 3.88,
-    "score": 1
+    "score": 4
    },
    "home": {
     "name": "Seattle Mariners",
@@ -656,12 +656,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Top",
-    "outs": 2,
-    "away_h": 3,
-    "home_h": 3
+    "inning": 6,
+    "ord": "6th",
+    "half": "Bottom",
+    "outs": 1,
+    "away_h": 5,
+    "home_h": 4
    },
    "start_utc": "2026-09-06T01:10:00Z",
    "venue": "UNIQLO Field at Dodger Stadium",
@@ -715,7 +715,7 @@
      "recent_rec": "7-13"
     },
     "exp_runs": 4.1,
-    "score": 1
+    "score": 3
    },
    "home": {
     "name": "Los Angeles Dodgers",
@@ -972,7 +972,7 @@
   {
    "pk": 824795,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -1289,15 +1289,15 @@
   },
   {
    "pk": 823257,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
-    "half": "Top",
-    "outs": 1,
+    "half": "Bottom",
+    "outs": 3,
     "away_h": 9,
-    "home_h": 2
+    "home_h": 3
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Petco Park",
@@ -1308,7 +1308,7 @@
    "away": {
     "name": "New York Yankees",
     "abbr": "NYY",
-    "rec": "80-61",
+    "rec": "81-61",
     "sp": "Carlos Rod\u00f3n",
     "sp_id": 607074,
     "sp_det": {
@@ -1356,7 +1356,7 @@
    "home": {
     "name": "San Diego Padres",
     "abbr": "SD",
-    "rec": "74-67",
+    "rec": "74-68",
     "sp": "Robbie Ray",
     "sp_id": 592662,
     "sp_det": {
@@ -1443,7 +1443,7 @@
     "research": "agrees"
    },
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 822850,
@@ -1605,15 +1605,15 @@
   },
   {
    "pk": 824145,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
-    "inning": 9,
-    "ord": "9th",
-    "half": "Middle",
+    "inning": 10,
+    "ord": "10th",
+    "half": "Bottom",
     "outs": 3,
-    "away_h": 7,
-    "home_h": 8
+    "away_h": 8,
+    "home_h": 9
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Daikin Park",
@@ -1624,7 +1624,7 @@
    "away": {
     "name": "Arizona Diamondbacks",
     "abbr": "ARI",
-    "rec": "74-68",
+    "rec": "75-68",
     "sp": "Brandon Pfaadt",
     "sp_id": 694297,
     "sp_det": {
@@ -1667,12 +1667,12 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 3
+    "score": 4
    },
    "home": {
     "name": "Houston Astros",
     "abbr": "HOU",
-    "rec": "73-69",
+    "rec": "73-70",
     "sp": "Ethan Pecko",
     "sp_id": 814490,
     "sp_det": {
@@ -1758,19 +1758,19 @@
     "research": "locked-before-research"
    },
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 824310,
    "state": "Live",
-   "detail": "In Progress",
+   "detail": "Umpire review",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "End",
-    "outs": 3,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 11,
-    "home_h": 6
+    "home_h": 10
    },
    "start_utc": "2026-09-06T00:10:00Z",
    "venue": "Coors Field",
@@ -1872,7 +1872,7 @@
      "recent_rec": "6-14"
     },
     "exp_runs": 5.33,
-    "score": 6
+    "score": 10
    },
    "sim": {
     "p_home": 0.5209,

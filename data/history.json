@@ -345,9 +345,10 @@
    "tier": "PASS",
    "fair": "-109",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "+105",
-   "mkt": 0.4667
+   "mkt": 0.4667,
+   "final": "NYY 5 - SD 1"
   },
   "822850": {
    "matchup": "TB @ TEX",
@@ -395,9 +396,10 @@
    "tier": "PASS",
    "fair": "-103",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-106",
-   "mkt": 0.4924
+   "mkt": 0.4924,
+   "final": "ARI 4 - HOU 3"
   }
  }
 }
