@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 4:37 PM EDT",
+ "generated": "Sep 6, 4:52 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,12 +122,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
+    "inning": 3,
+    "ord": "3rd",
     "half": "Top",
-    "outs": 1,
+    "outs": 2,
     "away_h": 2,
-    "home_h": 3
+    "home_h": 4
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "Petco Park",
@@ -281,11 +281,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Middle",
-    "outs": 3,
-    "away_h": 7,
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
+    "outs": 2,
+    "away_h": 8,
     "home_h": 7
    },
    "start_utc": "2026-09-06T18:10:00Z",
@@ -596,7 +596,7 @@
   {
    "pk": 823822,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -1236,12 +1236,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
     "outs": 1,
-    "away_h": 8,
-    "home_h": 5
+    "away_h": 9,
+    "home_h": 7
    },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Daikin Park",
@@ -1343,7 +1343,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.16,
-    "score": 1
+    "score": 2
    },
    "sim": {
     "p_home": 0.5143666666666666,
@@ -1393,12 +1393,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
+    "inning": 6,
+    "ord": "6th",
     "half": "Bottom",
     "outs": 1,
     "away_h": 6,
-    "home_h": 8
+    "home_h": 10
    },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
@@ -1500,7 +1500,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 5
+    "score": 7
    },
    "sim": {
     "p_home": 0.49356666666666665,
@@ -1551,11 +1551,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
+    "inning": 6,
+    "ord": "6th",
     "half": "Top",
-    "outs": 2,
-    "away_h": 8,
+    "outs": 1,
+    "away_h": 10,
     "home_h": 6
    },
    "start_utc": "2026-09-06T19:10:00Z",
@@ -1610,7 +1610,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.4,
-    "score": 3
+    "score": 7
    },
    "home": {
     "name": "Colorado Rockies",
@@ -2337,10 +2337,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 3,
+    "ord": "3rd",
+    "half": "End",
+    "outs": 3,
     "away_h": 0,
     "home_h": 1
    },
