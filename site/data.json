@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 11:09 PM EDT",
+ "generated": "Sep 5, 11:27 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -173,14 +173,14 @@
   {
    "pk": 824468,
    "state": "Live",
-   "detail": "Manager challenge",
+   "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
+    "inning": 8,
+    "ord": "8th",
     "half": "Bottom",
     "outs": 0,
     "away_h": 6,
-    "home_h": 10
+    "home_h": 11
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "Great American Ball Park",
@@ -335,12 +335,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 6,
-    "home_h": 1
+    "inning": 7,
+    "ord": "7th",
+    "half": "End",
+    "outs": 3,
+    "away_h": 7,
+    "home_h": 2
    },
    "start_utc": "2026-09-06T01:40:00Z",
    "venue": "T-Mobile Park",
@@ -658,10 +658,10 @@
    "live": {
     "inning": 7,
     "ord": "7th",
-    "half": "Middle",
-    "outs": 3,
+    "half": "Bottom",
+    "outs": 2,
     "away_h": 7,
-    "home_h": 4
+    "home_h": 6
    },
    "start_utc": "2026-09-06T01:10:00Z",
    "venue": "UNIQLO Field at Dodger Stadium",
@@ -763,7 +763,7 @@
      "recent_rec": "11-8"
     },
     "exp_runs": 4.77,
-    "score": 2
+    "score": 5
    },
    "sim": {
     "p_home": 0.5555666666666667,
@@ -1762,13 +1762,13 @@
   },
   {
    "pk": 824310,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
     "half": "Top",
-    "outs": 1,
+    "outs": 3,
     "away_h": 13,
     "home_h": 11
    },
@@ -1781,7 +1781,7 @@
    "away": {
     "name": "St. Louis Cardinals",
     "abbr": "STL",
-    "rec": "71-71",
+    "rec": "71-72",
     "sp": "Matthew Liberatore",
     "sp_id": 669461,
     "sp_det": {
@@ -1829,7 +1829,7 @@
    "home": {
     "name": "Colorado Rockies",
     "abbr": "COL",
-    "rec": "54-87",
+    "rec": "55-87",
     "sp": "Mason Adams",
     "sp_id": 690279,
     "sp_det": {
@@ -1915,7 +1915,7 @@
     "research": "locked-before-research"
    },
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 824553,

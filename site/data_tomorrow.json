@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 5, 11:09 PM EDT",
+ "generated": "Sep 5, 11:27 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -550,6 +550,155 @@
     "mean_total": 9.31,
     "rl_p": 0.4508,
     "rl_fair": "+122"
+   }
+  },
+  {
+   "pk": 824552,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-06T22:20:00Z",
+   "venue": "Rate Field",
+   "park_factor": 1.0,
+   "hr_park": 1.12,
+   "away_id": 142,
+   "home_id": 145,
+   "away": {
+    "name": "Minnesota Twins",
+    "abbr": "MIN",
+    "rec": "68-74",
+    "sp": "Bailey Ober",
+    "sp_id": 641927,
+    "sp_det": {
+     "ip": 113.3,
+     "era": "4.37",
+     "fip": 4.63,
+     "k9": "6.27",
+     "bb9": "2.46",
+     "hr9": "1.43",
+     "whip": "1.24",
+     "avg": ".247",
+     "gs": 21,
+     "exp_ip": 5.3,
+     "ra9": 4.87,
+     "unknown": false,
+     "prior_fip": 4.54,
+     "prior_bf": 541,
+     "blend_w": 0.803,
+     "opener": false,
+     "start_ip_recent": 5.27,
+     "n_starts": 21
+    },
+    "sp_ra9": 4.87,
+    "pen_ra9": 4.8,
+    "pen": {
+     "era": "4.76",
+     "fip": 4.27,
+     "ip": 504.7
+    },
+    "off": {
+     "rs_pg": 4.64,
+     "ops": ".726",
+     "hr": 166,
+     "avg": ".246",
+     "obp": ".319",
+     "so": 1122,
+     "form_mult": 1.009,
+     "recent_rs": 4.83,
+     "recent_ra": 5.0,
+     "recent_rec": "7-11"
+    },
+    "exp_runs": 4.31,
+    "score": null
+   },
+   "home": {
+    "name": "Chicago White Sox",
+    "abbr": "CWS",
+    "rec": "74-68",
+    "sp": "Bryan Hudson",
+    "sp_id": 663542,
+    "sp_det": {
+     "ip": 59.3,
+     "era": "3.03",
+     "fip": 3.17,
+     "k9": "8.34",
+     "bb9": "2.58",
+     "hr9": "0.61",
+     "whip": "1.21",
+     "avg": ".255",
+     "gs": 7,
+     "exp_ip": 1.2,
+     "ra9": 3.99,
+     "unknown": false,
+     "prior_fip": 3.69,
+     "prior_bf": 64,
+     "blend_w": 0.556,
+     "opener": true,
+     "start_ip_recent": 1.2,
+     "n_starts": 7
+    },
+    "sp_ra9": 3.99,
+    "pen_ra9": 4.34,
+    "pen": {
+     "era": "3.71",
+     "fip": 4.09,
+     "ip": 652.7
+    },
+    "off": {
+     "rs_pg": 4.71,
+     "ops": ".724",
+     "hr": 186,
+     "avg": ".236",
+     "obp": ".318",
+     "so": 1282,
+     "form_mult": 0.985,
+     "recent_rs": 4.38,
+     "recent_ra": 4.29,
+     "recent_rec": "12-9"
+    },
+    "exp_runs": 5.12,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5727333333333333,
+    "p_away": 0.4272666666666667,
+    "p_home_rl": 0.42506666666666665,
+    "p_away_rl": 0.29646666666666666,
+    "mean_total": 9.466,
+    "median_total": 9,
+    "p_over": {
+     "6.5": 0.7086,
+     "7.0": 0.6796628801758886,
+     "7.5": 0.6182666666666666,
+     "8.0": 0.5816773816481591,
+     "8.5": 0.5308,
+     "9.0": 0.48627737226277373,
+     "9.5": 0.4441333333333333,
+     "10.0": 0.3963438914027149,
+     "10.5": 0.36496666666666666
+    },
+    "mean_home": 5.165466666666667,
+    "mean_away": 4.300533333333333
+   },
+   "pick": {
+    "side": "home",
+    "team": "CWS",
+    "team_name": "Chicago White Sox",
+    "p": 0.5727,
+    "tier": "B",
+    "fair": "-134",
+    "reasons": [
+     "Starter edge +0.88 RA/9: Bryan Hudson (3.03 ERA, 8.34 K/9, 2.58 BB/9 over 59.3 IP) vs Bailey Ober (4.37 ERA, 6.27 K/9, 2.46 BB/9)",
+     "Bullpen edge +0.46 RA/9 (CWS pen 3.71 ERA vs MIN pen 4.76 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: CWS 12-9 (4.38 R/G scored, 4.29 allowed) vs MIN 7-11 (4.83 / 5.0)"
+    ],
+    "total_lean": [
+     "OVER 7.5",
+     0.6182666666666666
+    ],
+    "mean_total": 9.47,
+    "rl_p": 0.4251,
+    "rl_fair": "+135"
    }
   },
   {
@@ -1158,7 +1307,7 @@
    "away": {
     "name": "St. Louis Cardinals",
     "abbr": "STL",
-    "rec": "71-71",
+    "rec": "71-72",
     "sp": "Kyle Leahy",
     "sp_id": 681517,
     "sp_det": {
@@ -1206,7 +1355,7 @@
    "home": {
     "name": "Colorado Rockies",
     "abbr": "COL",
-    "rec": "54-87",
+    "rec": "55-87",
     "sp": "Tanner Gordon",
     "sp_id": 685299,
     "sp_det": {
@@ -1291,137 +1440,6 @@
     "mean_total": 10.04,
     "rl_p": 0.4011,
     "rl_fair": "+149"
-   }
-  },
-  {
-   "pk": 824552,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-06T22:20:00Z",
-   "venue": "Rate Field",
-   "park_factor": 1.0,
-   "hr_park": 1.12,
-   "away_id": 142,
-   "home_id": 145,
-   "away": {
-    "name": "Minnesota Twins",
-    "abbr": "MIN",
-    "rec": "68-74",
-    "sp": "Bailey Ober",
-    "sp_id": 641927,
-    "sp_det": {
-     "ip": 113.3,
-     "era": "4.37",
-     "fip": 4.63,
-     "k9": "6.27",
-     "bb9": "2.46",
-     "hr9": "1.43",
-     "whip": "1.24",
-     "avg": ".247",
-     "gs": 21,
-     "exp_ip": 5.3,
-     "ra9": 4.87,
-     "unknown": false,
-     "prior_fip": 4.54,
-     "prior_bf": 541,
-     "blend_w": 0.803,
-     "opener": false,
-     "start_ip_recent": 5.27,
-     "n_starts": 21
-    },
-    "sp_ra9": 4.87,
-    "pen_ra9": 4.8,
-    "pen": {
-     "era": "4.76",
-     "fip": 4.27,
-     "ip": 504.7
-    },
-    "off": {
-     "rs_pg": 4.64,
-     "ops": ".726",
-     "hr": 166,
-     "avg": ".246",
-     "obp": ".319",
-     "so": 1122,
-     "form_mult": 1.009,
-     "recent_rs": 4.83,
-     "recent_ra": 5.0,
-     "recent_rec": "7-11"
-    },
-    "exp_runs": 4.68,
-    "score": null
-   },
-   "home": {
-    "name": "Chicago White Sox",
-    "abbr": "CWS",
-    "rec": "74-68",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.34,
-    "pen": {
-     "era": "3.71",
-     "fip": 4.09,
-     "ip": 652.7
-    },
-    "off": {
-     "rs_pg": 4.71,
-     "ops": ".724",
-     "hr": 186,
-     "avg": ".236",
-     "obp": ".318",
-     "so": 1282,
-     "form_mult": 0.985,
-     "recent_rs": 4.38,
-     "recent_ra": 4.29,
-     "recent_rec": "12-9"
-    },
-    "exp_runs": 5.12,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5340333333333334,
-    "p_away": 0.46596666666666664,
-    "p_home_rl": 0.39586666666666664,
-    "p_away_rl": 0.33343333333333336,
-    "mean_total": 9.8323,
-    "median_total": 9,
-    "p_over": {
-     "6.5": 0.7303,
-     "7.0": 0.705224424366074,
-     "7.5": 0.6452333333333333,
-     "8.0": 0.6110156792514894,
-     "8.5": 0.5572666666666667,
-     "9.0": 0.5156267094562562,
-     "9.5": 0.4713,
-     "10.0": 0.42640676985389847,
-     "10.5": 0.39303333333333335
-    },
-    "mean_home": 5.1384,
-    "mean_away": 4.6939
-   },
-   "pick": {
-    "side": "home",
-    "team": "CWS",
-    "team_name": "Chicago White Sox",
-    "p": 0.534,
-    "tier": "PASS",
-    "fair": "-115",
-    "reasons": [
-     "Bullpen edge +0.46 RA/9 (CWS pen 3.71 ERA vs MIN pen 4.76 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: CWS 12-9 (4.38 R/G scored, 4.29 allowed) vs MIN 7-11 (4.83 / 5.0)"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.6452333333333333
-    ],
-    "mean_total": 9.83,
-    "rl_p": 0.3959,
-    "rl_fair": "+153"
    }
   },
   {

@@ -371,9 +371,10 @@
    "tier": "PASS",
    "fair": "-109",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "+108",
-   "mkt": 0.4596
+   "mkt": 0.4596,
+   "final": "STL 7 - COL 10"
   },
   "824553": {
    "matchup": "MIN @ CWS",
