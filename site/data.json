@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 9:54 PM EDT",
+ "generated": "Sep 5, 10:10 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -173,14 +173,14 @@
   {
    "pk": 824468,
    "state": "Live",
-   "detail": "Delayed",
+   "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 5,
+    "ord": "5th",
+    "half": "Top",
+    "outs": 0,
     "away_h": 3,
-    "home_h": 5
+    "home_h": 6
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "Great American Ball Park",
@@ -282,7 +282,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.09,
-    "score": 1
+    "score": 2
    },
    "sim": {
     "p_home": 0.38353333333333334,
@@ -337,9 +337,9 @@
    "live": {
     "inning": 2,
     "ord": "2nd",
-    "half": "Top",
-    "outs": 0,
-    "away_h": 0,
+    "half": "Bottom",
+    "outs": 2,
+    "away_h": 1,
     "home_h": 0
    },
    "start_utc": "2026-09-06T01:40:00Z",
@@ -394,7 +394,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 3.88,
-    "score": 0
+    "score": 1
    },
    "home": {
     "name": "Seattle Mariners",
@@ -656,11 +656,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
+    "inning": 4,
+    "ord": "4th",
     "half": "Top",
-    "outs": 1,
-    "away_h": 2,
+    "outs": 2,
+    "away_h": 3,
     "home_h": 3
    },
    "start_utc": "2026-09-06T01:10:00Z",
@@ -971,15 +971,15 @@
   },
   {
    "pk": 824795,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
-    "half": "Top",
-    "outs": 2,
+    "half": "Bottom",
+    "outs": 3,
     "away_h": 9,
-    "home_h": 4
+    "home_h": 5
    },
    "start_utc": "2026-09-05T23:05:00Z",
    "venue": "Oriole Park at Camden Yards",
@@ -990,7 +990,7 @@
    "away": {
     "name": "Boston Red Sox",
     "abbr": "BOS",
-    "rec": "77-65",
+    "rec": "78-65",
     "sp": "Sonny Gray",
     "sp_id": 543243,
     "sp_det": {
@@ -1038,7 +1038,7 @@
    "home": {
     "name": "Baltimore Orioles",
     "abbr": "BAL",
-    "rec": "69-73",
+    "rec": "69-74",
     "sp": "Chris Bassitt",
     "sp_id": 605135,
     "sp_det": {
@@ -1127,7 +1127,7 @@
     "research": "agrees"
    },
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 823577,
@@ -1292,10 +1292,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
+    "inning": 9,
+    "ord": "9th",
     "half": "Top",
-    "outs": 2,
+    "outs": 1,
     "away_h": 9,
     "home_h": 2
    },
@@ -1448,7 +1448,7 @@
   {
    "pk": 822850,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 10,
     "ord": "10th",
@@ -1608,12 +1608,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
-    "outs": 1,
+    "inning": 9,
+    "ord": "9th",
+    "half": "Middle",
+    "outs": 3,
     "away_h": 7,
-    "home_h": 7
+    "home_h": 8
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Daikin Park",
@@ -1767,8 +1767,8 @@
    "live": {
     "inning": 6,
     "ord": "6th",
-    "half": "Top",
-    "outs": 0,
+    "half": "End",
+    "outs": 3,
     "away_h": 11,
     "home_h": 6
    },
@@ -1824,7 +1824,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.05,
-    "score": 4
+    "score": 5
    },
    "home": {
     "name": "Colorado Rockies",
@@ -1920,7 +1920,7 @@
   {
    "pk": 824553,
    "state": "Final",
-   "detail": "Game Over",
+   "detail": "Final",
    "live": {
     "inning": 9,
     "ord": "9th",
@@ -1938,7 +1938,7 @@
    "away": {
     "name": "Minnesota Twins",
     "abbr": "MIN",
-    "rec": "67-74",
+    "rec": "68-74",
     "sp": "Taj Bradley",
     "sp_id": 671737,
     "sp_det": {
@@ -1986,7 +1986,7 @@
    "home": {
     "name": "Chicago White Sox",
     "abbr": "CWS",
-    "rec": "74-67",
+    "rec": "74-68",
     "sp": "Anthony Kay",
     "sp_id": 641743,
     "sp_det": {

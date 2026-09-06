@@ -319,9 +319,10 @@
    "tier": "PASS",
    "fair": "-115",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-126",
-   "mkt": 0.5333
+   "mkt": 0.5333,
+   "final": "BOS 5 - BAL 0"
   },
   "824066": {
    "matchup": "TOR @ KC",
