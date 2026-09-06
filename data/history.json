@@ -218,9 +218,10 @@
    "tier": "A",
    "fair": "-164",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": null,
-   "mkt": null
+   "mkt": null,
+   "final": "LAA 6 - PIT 1"
   },
   "824468": {
    "matchup": "MIL @ CIN",
@@ -238,10 +239,10 @@
    "matchup": "ATH @ SEA",
    "pick": "SEA",
    "side": "home",
-   "p": 0.5851,
+   "p": 0.5853,
    "tier": "A",
    "fair": "-141",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": null,
    "mkt": null
@@ -254,9 +255,10 @@
    "tier": "A",
    "fair": "-141",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": null,
-   "mkt": null
+   "mkt": null,
+   "final": "DET 6 - CLE 0"
   },
   "823419": {
    "matchup": "ATL @ PHI",
@@ -266,18 +268,19 @@
    "tier": "B",
    "fair": "-130",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": null,
-   "mkt": null
+   "mkt": null,
+   "final": "ATL 2 - PHI 4"
   },
   "823904": {
    "matchup": "WSH @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.5555,
+   "p": 0.5556,
    "tier": "B",
    "fair": "-125",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": null,
    "mkt": null

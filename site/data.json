@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 8:14 PM EDT",
+ "generated": "Sep 5, 9:23 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -9,125 +9,19 @@
   "r_per_er": 1.0900473933649288
  },
  "league_hr_rate": 0.0303,
- "hr_board": [
-  {
-   "name": "James Wood",
-   "team": "WSH",
-   "pos": "RF",
-   "bats": "L",
-   "opp": "LAD",
-   "opp_sp": "Tyler Glasnow",
-   "opp_hand": "R",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "hr_park": 1.08,
-   "hr": 30,
-   "pa": 544,
-   "hr_per": 18.1,
-   "ops": ".928",
-   "platoon": "platoon edge",
-   "pa_g": 4.69,
-   "p": 0.2261,
-   "fair": "+342",
-   "sp_hr9": "0.87",
-   "start_utc": "2026-09-06T01:10:00Z"
-  },
-  {
-   "name": "Cal Raleigh",
-   "team": "SEA",
-   "pos": "C",
-   "bats": "S",
-   "opp": "ATH",
-   "opp_sp": "Jeffrey Springs",
-   "opp_hand": "L",
-   "venue": "T-Mobile Park",
-   "hr_park": 0.95,
-   "hr": 21,
-   "pa": 446,
-   "hr_per": 21.2,
-   "ops": ".662",
-   "platoon": "platoon edge",
-   "pa_g": 4.17,
-   "p": 0.2192,
-   "fair": "+356",
-   "sp_hr9": "2.41",
-   "start_utc": "2026-09-06T01:40:00Z"
-  },
-  {
-   "name": "Shohei Ohtani",
-   "team": "LAD",
-   "pos": "TWP",
-   "bats": "L",
-   "opp": "WSH",
-   "opp_sp": "Cade Cavalli",
-   "opp_hand": "R",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "hr_park": 1.08,
-   "hr": 30,
-   "pa": 592,
-   "hr_per": 19.7,
-   "ops": ".906",
-   "platoon": "platoon edge",
-   "pa_g": 4.45,
-   "p": 0.2166,
-   "fair": "+362",
-   "sp_hr9": "1.00",
-   "start_utc": "2026-09-06T01:10:00Z"
-  },
-  {
-   "name": "Randy Arozarena",
-   "team": "SEA",
-   "pos": "LF",
-   "bats": "R",
-   "opp": "ATH",
-   "opp_sp": "Jeffrey Springs",
-   "opp_hand": "L",
-   "venue": "T-Mobile Park",
-   "hr_park": 0.95,
-   "hr": 22,
-   "pa": 581,
-   "hr_per": 26.4,
-   "ops": ".834",
-   "platoon": "platoon edge",
-   "pa_g": 4.34,
-   "p": 0.1961,
-   "fair": "+410",
-   "sp_hr9": "2.41",
-   "start_utc": "2026-09-06T01:40:00Z"
-  },
-  {
-   "name": "CJ Abrams",
-   "team": "WSH",
-   "pos": "SS",
-   "bats": "L",
-   "opp": "LAD",
-   "opp_sp": "Tyler Glasnow",
-   "opp_hand": "R",
-   "venue": "UNIQLO Field at Dodger Stadium",
-   "hr_park": 1.08,
-   "hr": 29,
-   "pa": 578,
-   "hr_per": 19.9,
-   "ops": ".839",
-   "platoon": "platoon edge",
-   "pa_g": 4.31,
-   "p": 0.1961,
-   "fair": "+410",
-   "sp_hr9": "0.87",
-   "start_utc": "2026-09-06T01:10:00Z"
-  }
- ],
+ "hr_board": [],
  "games": [
   {
    "pk": 823335,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
-    "inning": 6,
-    "ord": "6th",
+    "inning": 9,
+    "ord": "9th",
     "half": "Bottom",
-    "outs": 2,
-    "away_h": 7,
-    "home_h": 5
+    "outs": 3,
+    "away_h": 12,
+    "home_h": 8
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "PNC Park",
@@ -138,7 +32,7 @@
    "away": {
     "name": "Los Angeles Angels",
     "abbr": "LAA",
-    "rec": "53-88",
+    "rec": "54-88",
     "sp": "Yusei Kikuchi",
     "sp_id": 579328,
     "sp_det": {
@@ -181,12 +75,12 @@
      "recent_rec": "5-14"
     },
     "exp_runs": 3.4,
-    "score": 3
+    "score": 6
    },
    "home": {
     "name": "Pittsburgh Pirates",
     "abbr": "PIT",
-    "rec": "70-72",
+    "rec": "70-73",
     "sp": "Braxton Ashcraft",
     "sp_id": 677952,
     "sp_det": {
@@ -229,7 +123,7 @@
      "recent_rec": "11-8"
     },
     "exp_runs": 4.74,
-    "score": 0
+    "score": 1
    },
    "sim": {
     "p_home": 0.6210666666666667,
@@ -274,7 +168,7 @@
     "research": "agrees"
    },
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 824468,
@@ -438,8 +332,8 @@
   },
   {
    "pk": 823094,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -594,18 +488,18 @@
     "rl_fair": "+131",
     "research": "agrees"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
    "pk": 824389,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Top",
-    "outs": 1,
+    "inning": 9,
+    "ord": "9th",
+    "half": "Bottom",
+    "outs": 3,
     "away_h": 11,
     "home_h": 3
    },
@@ -618,7 +512,7 @@
    "away": {
     "name": "Detroit Tigers",
     "abbr": "DET",
-    "rec": "64-77",
+    "rec": "65-77",
     "sp": "Framber Valdez",
     "sp_id": 664285,
     "sp_det": {
@@ -666,7 +560,7 @@
    "home": {
     "name": "Cleveland Guardians",
     "abbr": "CLE",
-    "rec": "72-70",
+    "rec": "72-71",
     "sp": "Parker Messick",
     "sp_id": 800048,
     "sp_det": {
@@ -755,19 +649,19 @@
     "research": "agrees"
    },
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 823904,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
-    "outs": 0,
+    "half": "Bottom",
+    "outs": 1,
     "away_h": 0,
-    "home_h": 0
+    "home_h": 1
    },
    "start_utc": "2026-09-06T01:10:00Z",
    "venue": "UNIQLO Field at Dodger Stadium",
@@ -912,7 +806,7 @@
     "rl_fair": "+146",
     "research": "agrees"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -1080,12 +974,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Top",
-    "outs": 2,
-    "away_h": 2,
-    "home_h": 2
+    "inning": 7,
+    "ord": "7th",
+    "half": "End",
+    "outs": 3,
+    "away_h": 8,
+    "home_h": 3
    },
    "start_utc": "2026-09-05T23:05:00Z",
    "venue": "Oriole Park at Camden Yards",
@@ -1139,7 +1033,7 @@
      "recent_rec": "12-9"
     },
     "exp_runs": 4.08,
-    "score": 0
+    "score": 5
    },
    "home": {
     "name": "Baltimore Orioles",
@@ -1398,12 +1292,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Top",
+    "inning": 6,
+    "ord": "6th",
+    "half": "Bottom",
     "outs": 1,
-    "away_h": 5,
-    "home_h": 1
+    "away_h": 8,
+    "home_h": 2
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Petco Park",
@@ -1505,7 +1399,7 @@
      "recent_rec": "9-10"
     },
     "exp_runs": 3.8,
-    "score": 0
+    "score": 1
    },
    "sim": {
     "p_home": 0.4784333333333333,
@@ -1556,12 +1450,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Middle",
-    "outs": 3,
-    "away_h": 4,
-    "home_h": 1
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
+    "outs": 2,
+    "away_h": 9,
+    "home_h": 6
    },
    "start_utc": "2026-09-05T23:05:00Z",
    "venue": "Globe Life Field",
@@ -1615,7 +1509,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 4.15,
-    "score": 2
+    "score": 3
    },
    "home": {
     "name": "Texas Rangers",
@@ -1663,7 +1557,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 3.93,
-    "score": 0
+    "score": 3
    },
    "sim": {
     "p_home": 0.48146666666666665,
@@ -1714,12 +1608,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
+    "inning": 7,
+    "ord": "7th",
     "half": "Top",
-    "outs": 1,
-    "away_h": 3,
-    "home_h": 3
+    "outs": 2,
+    "away_h": 6,
+    "home_h": 6
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Daikin Park",
@@ -1773,7 +1667,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 0
+    "score": 2
    },
    "home": {
     "name": "Houston Astros",
@@ -1821,7 +1715,7 @@
      "recent_rec": "11-9"
     },
     "exp_runs": 4.33,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.5080333333333333,
@@ -1869,13 +1763,13 @@
   {
    "pk": 824310,
    "state": "Live",
-   "detail": "Player challenge",
+   "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
+    "inning": 5,
+    "ord": "5th",
     "half": "Top",
-    "outs": 0,
-    "away_h": 0,
+    "outs": 2,
+    "away_h": 8,
     "home_h": 0
    },
    "start_utc": "2026-09-06T00:10:00Z",
@@ -1930,7 +1824,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.05,
-    "score": 0
+    "score": 3
    },
    "home": {
     "name": "Colorado Rockies",
@@ -2028,12 +1922,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Bottom",
-    "outs": 2,
-    "away_h": 3,
-    "home_h": 2
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 8,
+    "home_h": 5
    },
    "start_utc": "2026-09-05T23:10:00Z",
    "venue": "Rate Field",
@@ -2087,7 +1981,7 @@
      "recent_rec": "7-11"
     },
     "exp_runs": 4.66,
-    "score": 2
+    "score": 6
    },
    "home": {
     "name": "Chicago White Sox",
@@ -2135,7 +2029,7 @@
      "recent_rec": "12-9"
     },
     "exp_runs": 4.89,
-    "score": 3
+    "score": 4
    },
    "sim": {
     "p_home": 0.524,
@@ -2185,12 +2079,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Middle",
-    "outs": 3,
-    "away_h": 8,
-    "home_h": 3
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 11,
+    "home_h": 5
    },
    "start_utc": "2026-09-05T23:10:00Z",
    "venue": "Kauffman Stadium",
@@ -2244,7 +2138,7 @@
      "recent_rec": "12-7"
     },
     "exp_runs": 4.56,
-    "score": 3
+    "score": 4
    },
    "home": {
     "name": "Kansas City Royals",
@@ -2292,7 +2186,7 @@
      "recent_rec": "14-6"
     },
     "exp_runs": 4.91,
-    "score": 2
+    "score": 3
    },
    "sim": {
     "p_home": 0.5263666666666666,
@@ -2339,15 +2233,15 @@
   },
   {
    "pk": 823419,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
-    "outs": 0,
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
+    "outs": 3,
     "away_h": 5,
-    "home_h": 8
+    "home_h": 9
    },
    "start_utc": "2026-09-05T22:05:00Z",
    "venue": "Citizens Bank Park",
@@ -2358,7 +2252,7 @@
    "away": {
     "name": "Atlanta Braves",
     "abbr": "ATL",
-    "rec": "84-57",
+    "rec": "84-58",
     "sp": "Mart\u00edn P\u00e9rez",
     "sp_id": 527048,
     "sp_det": {
@@ -2406,7 +2300,7 @@
    "home": {
     "name": "Philadelphia Phillies",
     "abbr": "PHI",
-    "rec": "79-62",
+    "rec": "80-62",
     "sp": "Zack Wheeler",
     "sp_id": 554430,
     "sp_det": {
@@ -2492,7 +2386,7 @@
     "research": "locked-before-research"
    },
    "locked": true,
-   "result": null
+   "result": "W"
   }
  ]
 }
