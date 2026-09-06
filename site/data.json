@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 1:04 PM EDT",
+ "generated": "Sep 6, 1:19 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,11 +122,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "End",
+    "inning": 4,
+    "ord": "4th",
+    "half": "Middle",
     "outs": 3,
-    "away_h": 0,
+    "away_h": 2,
     "home_h": 6
    },
    "start_utc": "2026-09-06T16:10:00Z",
@@ -181,7 +181,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 5.68,
-    "score": 0
+    "score": 3
    },
    "home": {
     "name": "Cincinnati Reds",
@@ -279,8 +279,8 @@
   },
   {
    "pk": 823336,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -416,7 +416,7 @@
     "side": "home",
     "team": "PIT",
     "team_name": "Pittsburgh Pirates",
-    "p": 0.612,
+    "p": 0.6121,
     "tier": "A",
     "fair": "-158",
     "reasons": [
@@ -432,7 +432,7 @@
     "rl_p": 0.4414,
     "rl_fair": "+127"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -597,8 +597,8 @@
   },
   {
    "pk": 824385,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -751,7 +751,7 @@
     "rl_p": 0.407,
     "rl_fair": "+146"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -908,7 +908,7 @@
   {
    "pk": 823091,
    "state": "Preview",
-   "detail": "Scheduled",
+   "detail": "Pre-Game",
    "live": null,
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "T-Mobile Park",
@@ -1062,7 +1062,14 @@
    "pk": 823253,
    "state": "Preview",
    "detail": "Pre-Game",
-   "live": null,
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "Petco Park",
    "park_factor": 0.96,
@@ -1115,7 +1122,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.06,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "San Diego Padres",
@@ -1163,7 +1170,7 @@
      "recent_rec": "8-11"
     },
     "exp_runs": 3.61,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.45976666666666666,
@@ -1829,8 +1836,8 @@
   },
   {
    "pk": 824794,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -1966,7 +1973,7 @@
     "side": "away",
     "team": "BOS",
     "team_name": "Boston Red Sox",
-    "p": 0.5182,
+    "p": 0.5183,
     "tier": "PASS",
     "fair": "-108",
     "reasons": [
@@ -1983,7 +1990,7 @@
     "rl_p": 0.3555,
     "rl_fair": "+181"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -2302,11 +2309,11 @@
   {
    "pk": 823417,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 0,
     "away_h": 0,
     "home_h": 0
