@@ -46,8 +46,8 @@ SEASON = 2026
 # and the cells that look better than that (65%+ at 75%, 66%+ at 87.5%) sit on
 # 12 and 8 picks with a 50.0% band directly beneath them. Badging those as
 # locks would be selling n=8 as a promise.
-TIER_A = 0.580
-TIER_B = 0.550
+TIER_A = 0.580   # retained only for the backtest table; no longer a tier
+TIER_B = 0.550   # the one cut the data supports: above 55% vs below
 
 TEAM_ABBR = {
     "Arizona Diamondbacks": "ARI", "Atlanta Braves": "ATL", "Baltimore Orioles": "BAL",
@@ -74,6 +74,16 @@ def load_json(path, default):
             return json.load(f)
     except Exception:
         return default
+
+
+def save_history(hist, prior_days):
+    """Write history only if it still holds every day it held before."""
+    missing = set(prior_days) - set(hist)
+    if missing:
+        raise HistoryUnreadable(
+            "refusing to write history missing %d previously-recorded day(s): %s"
+            % (len(missing), ", ".join(sorted(missing))))
+    save_json(HISTORY, hist)
 
 
 def save_json(path, obj):
@@ -280,12 +290,23 @@ def build_pick(a):
     side = "home" if p_home >= p_away else "away"
     other = "away" if side == "home" else "home"
     p = max(p_home, p_away)
-    if p >= TIER_A:
-        tier = "A"          # 58%+ : 68-43 (61.3%) in backtest
-    elif p >= TIER_B:
-        tier = "B"          # 55-58% : 65-41 (61.3%)
+    # The A/B split is gone. It claimed to rank picks and it did the opposite:
+    # across 35 graded picks the correlation between model confidence and
+    # winning is -0.101, the top half by confidence went 9-8 (53%) and the
+    # bottom half 12-6 (67%). Tier A specifically ran 4-7 (36%) while the PASS
+    # tier -- the one labelled not bettable -- ran 14-7 (67%).
+    #
+    # The 447-game backtest says the same thing in more data: 58-60% scores
+    # 65.9%, 60-62% scores 58.6%, 62-65% scores 50.0%. That is a saw, not a
+    # gradient. Above roughly 55% this model cannot tell its own good picks
+    # from its bad ones, so the board no longer pretends it can.
+    #
+    # One cut survives, and it is the only one the backtest supports:
+    # above 55% is 133-84 (61.3%), below it 122-108 (53.0%).
+    if p >= TIER_B:
+        tier = "PLAY"
     else:
-        tier = "PASS"       # under 55% : 122-108 (53.0%), not bettable
+        tier = "PASS"
 
     me, opp = a[side], a[other]
     reasons = []
@@ -352,6 +373,33 @@ def build_pick(a):
 
 # ---------------------------------------------------------------- history / grading
 
+class HistoryUnreadable(Exception):
+    """The graded record could not be read. Never overwrite it blind."""
+
+
+def load_history():
+    """Read history.json, or raise rather than silently returning {}.
+
+    load_json() swallows every read error and returns the default. For
+    history.json that default is {}, so ONE unreadable read -- a truncated
+    write, a rebase leaving conflict markers -- made update_history() start from
+    empty and the next save_json() wrote a file containing only today. That is
+    exactly what happened at 2026-09-06 13:34: the file went from three days of
+    graded picks to one, destroying the Sept 4 (12-4) and Sept 5 records. The
+    ledger is the only thing in this repo that cannot be refetched.
+    """
+    if not os.path.exists(HISTORY):
+        return {}
+    try:
+        with open(HISTORY) as f:
+            d = json.load(f)
+    except Exception as e:
+        raise HistoryUnreadable("%s: %s" % (HISTORY, e))
+    if not isinstance(d, dict):
+        raise HistoryUnreadable("%s is not an object" % HISTORY)
+    return d
+
+
 def update_history(date_str, games, lines=None):
     """Freeze each pick at first pitch, and freeze the PRICE with it.
 
@@ -363,7 +411,8 @@ def update_history(date_str, games, lines=None):
     the record carries ROI beside the hit rate.
     """
     lines = lines or {}
-    hist = load_json(HISTORY, {})
+    hist = load_history()
+    prior_days = set(hist)
     day = hist.setdefault(date_str, {})
     for a in games:
         pk = str(a["pk"])
@@ -421,7 +470,7 @@ def update_history(date_str, games, lines=None):
                              reasons=[why])
         elif rec.get("locked"):
             a["pick"] = dict(a["pick"], p=rec["p"], tier=rec["tier"], fair=rec["fair"])
-    save_json(HISTORY, hist)
+    save_history(hist, prior_days)
     return hist
 
 
@@ -554,14 +603,15 @@ def backtest_summary():
 
 def render(date_str, games, hist, lines, notes, generated):
     rec = tally(hist)
-    plays = [g for g in games if g["pick"]["tier"] == "A"]
-    leans = [g for g in games if g["pick"]["tier"] == "B"]
-    passes = [g for g in games if g["pick"]["tier"] == "PASS"]
+    # Ordered by edge against the book, not by model confidence.
+    plays = [g for g in games if g.get("edge", -99) >= 0.02]
+    leans = [g for g in games if -0.02 <= g.get("edge", -99) < 0.02]
+    passes = [g for g in games if g.get("edge", -99) < -0.02]
 
     def game_card(a):
         p = a["pick"]
-        tier_cls = {"A": "tier-a", "B": "tier-b", "PASS": "tier-pass"}[p["tier"]]
-        tier_txt = {"A": "PLAY", "B": "LEAN", "PASS": "PASS"}[p["tier"]]
+        tier_cls = {"PLAY": "tier-a", "PASS": "tier-pass"}.get(p["tier"], "tier-pass")
+        tier_txt = p["tier"]
         ln = lines.get(str(a["pk"]), {})
         book = ""
         if ln.get("ml_home") or ln.get("total"):
@@ -897,13 +947,13 @@ code{background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px}
 %s
 %s
 
-<h2>Plays &mdash; 58%%+ confidence</h2>
+<h2>Edge on the book &mdash; model above the de-vigged price</h2>
 %s
 
-<h2>Leans &mdash; 55&ndash;58%%</h2>
+<h2>Level with the market</h2>
 %s
 
-<h2>Pass &mdash; under 55%%, measured 53.0%% and not bettable</h2>
+<h2>Market is ahead of the model &mdash; no edge here</h2>
 %s
 
 <footer>
@@ -916,6 +966,15 @@ League baseline: %.2f R/G, %.2f ERA.</p>
 <p><strong>Fair odds are model prices, not book prices.</strong> Where a real sportsbook line appears
 above, it was read from a named source. Lines are never estimated — a blank means no line was found,
 because a guessed line is worse than no line.</p>
+<p><strong>The board no longer ranks by model confidence, because that number does
+not predict.</strong> Across 35 graded picks the correlation between this model's
+confidence and winning is <b>&minus;0.101</b>: the top half by confidence went 9-8
+(53%%) while the bottom half went 12-6 (67%%), and the old top tier ran 4-7 (36%%)
+against the "not bettable" tier's 14-7 (67%%). The 447-game backtest agrees &mdash;
+58&ndash;60%% scores 65.9%%, 62&ndash;65%% scores 50.0%%, which is a saw rather than a
+gradient. Above roughly 55%% this model cannot separate its own good picks from its
+bad ones, so the games are now ordered by <b>edge against the book</b>, which is the
+thing that actually correlated with profit (+10.4%% ROI against +3.9%%).</p>
 <p><strong>There is no lock tier here, on purpose.</strong> On the companion board a
 lock means 88%% &mdash; tennis at 72%%+ and soccer favourites. Baseball's ceiling is about
 61%%: above 55%% this model goes 133-84 (61.3%%) across 217 backtested picks, and the cells
@@ -995,7 +1054,22 @@ def main():
         save_json(LINES, lines)
         sys.stderr.write("lines: refreshed %d of %d games\n" % (len(fresh), len(games)))
 
-    games.sort(key=lambda x: (-x["pick"]["p"], x["start_utc"]))
+    # Rank by EDGE against the book, not by model confidence. Confidence has a
+    # -0.101 correlation with winning here; edge is the thing that showed
+    # +10.4% ROI on the companion board's 140 priced picks against +3.9% for
+    # picks the market had ahead. Games with no line fall to the bottom rather
+    # than being ranked on a number that does not predict.
+    def _edge(a):
+        ln = lines.get(str(a["pk"]), {})
+        pa, ph = novig(ln.get("ml_away"), ln.get("ml_home"))
+        if pa is None:
+            return -99.0
+        mkt = ph if a["pick"]["side"] == "home" else pa
+        return a["pick"]["p"] - mkt
+
+    for a in games:
+        a["edge"] = _edge(a)
+    games.sort(key=lambda x: (-x["edge"], x["start_utc"]))
     try:
         hr_board, lg_hr = build_hr_board(games, team_stats, lg)
     except Exception as e:
@@ -1003,7 +1077,7 @@ def main():
         hr_board, lg_hr = [], 0.0
     hist = update_history(date_str, games, lines)
     if grade_open_days(hist, date_str):
-        save_json(HISTORY, hist)
+        save_history(hist, set(hist))
 
     now = dt.datetime.now(TZ) if TZ else dt.datetime.now()
     generated = now.strftime("%b %-d, %-I:%M %p %Z").strip()

@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 3:25 PM EDT",
+ "generated": "Sep 6, 4:19 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -10,8 +10,8 @@
  },
  "lines": {
   "823415": {
-   "ml_away": "+138",
-   "ml_home": "-167",
+   "ml_away": "+139",
+   "ml_home": "-168",
    "total": "8.0",
    "source": "DraftKings via ESPN, fetched 2026-09-07"
   },
@@ -19,6 +19,18 @@
    "ml_away": "+104",
    "ml_home": "-126",
    "total": "7.5",
+   "source": "DraftKings via ESPN, fetched 2026-09-07"
+  },
+  "824793": {
+   "ml_away": "+104",
+   "ml_home": "-126",
+   "total": "8.5",
+   "source": "DraftKings via ESPN, fetched 2026-09-07"
+  },
+  "823742": {
+   "ml_away": "+107",
+   "ml_home": "-129",
+   "total": "8.5",
    "source": "DraftKings via ESPN, fetched 2026-09-07"
   }
  },
@@ -37,7 +49,7 @@
    "away": {
     "name": "Atlanta Braves",
     "abbr": "ATL",
-    "rec": "84-58",
+    "rec": "85-58",
     "sp": "Grant Holmes",
     "sp_id": 656550,
     "sp_det": {
@@ -85,7 +97,7 @@
    "home": {
     "name": "Philadelphia Phillies",
     "abbr": "PHI",
-    "rec": "80-62",
+    "rec": "80-63",
     "sp": "Jes\u00fas Luzardo",
     "sp_id": 666200,
     "sp_det": {
@@ -156,7 +168,7 @@
     "team": "PHI",
     "team_name": "Philadelphia Phillies",
     "p": 0.5983,
-    "tier": "A",
+    "tier": "PLAY",
     "fair": "-149",
     "reasons": [
      "Starter edge +1.21 RA/9: Jes\u00fas Luzardo (3.02 ERA, 11.09 K/9, 2.71 BB/9 over 169.7 IP) vs Grant Holmes (3.62 ERA, 7.11 K/9, 3.76 BB/9)",
@@ -186,7 +198,7 @@
    "away": {
     "name": "Los Angeles Angels",
     "abbr": "LAA",
-    "rec": "54-88",
+    "rec": "54-89",
     "sp": "Grayson Rodriguez",
     "sp_id": 680570,
     "sp_det": {
@@ -288,7 +300,7 @@
     "team": "BOS",
     "team_name": "Boston Red Sox",
     "p": 0.5932,
-    "tier": "A",
+    "tier": "PLAY",
     "fair": "-146",
     "reasons": [
      "Bullpen edge +0.66 RA/9 (BOS pen 3.16 ERA vs LAA pen 4.35 ERA) \u2014 matters because the starters project to hand off around the 6th",
@@ -435,7 +447,7 @@
     "team": "TOR",
     "team_name": "Toronto Blue Jays",
     "p": 0.569,
-    "tier": "B",
+    "tier": "PLAY",
     "fair": "-132",
     "reasons": [
      "Starter edge +1.59 RA/9: Dylan Cease (2.25 ERA, 12.72 K/9, 3.74 BB/9 over 156.3 IP) vs Jacob Lopez (4.71 ERA, 8.83 K/9, 4.46 BB/9)",
@@ -497,7 +509,7 @@
    "home": {
     "name": "San Francisco Giants",
     "abbr": "SF",
-    "rec": "59-84",
+    "rec": "59-85",
     "sp": "Logan Webb",
     "sp_id": 657277,
     "sp_det": {
@@ -568,7 +580,7 @@
     "team": "SF",
     "team_name": "San Francisco Giants",
     "p": 0.5622,
-    "tier": "B",
+    "tier": "PLAY",
     "fair": "-128",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
@@ -717,7 +729,7 @@
     "team": "BAL",
     "team_name": "Baltimore Orioles",
     "p": 0.5552,
-    "tier": "B",
+    "tier": "PLAY",
     "fair": "-125",
     "reasons": [
      "Offense gap +0.45 R/G (BAL 4.48 R/G, .710 OPS vs CLE 4.03 R/G, .685 OPS)",
@@ -747,7 +759,7 @@
    "away": {
     "name": "New York Mets",
     "abbr": "NYM",
-    "rec": "64-78",
+    "rec": "65-78",
     "sp": "Jonah Tong",
     "sp_id": 804636,
     "sp_det": {
@@ -863,7 +875,7 @@
     "team": "MIA",
     "team_name": "Miami Marlins",
     "p": 0.5501,
-    "tier": "B",
+    "tier": "PLAY",
     "fair": "-122",
     "reasons": [
      "Last 3 weeks: MIA 9-11 (4.3 R/G scored, 4.4 allowed) vs NYM 10-9 (4.11 / 4.42)",
@@ -1021,7 +1033,7 @@
    "away": {
     "name": "Cincinnati Reds",
     "abbr": "CIN",
-    "rec": "68-74",
+    "rec": "69-74",
     "sp": "Chase Burns",
     "sp_id": 695505,
     "sp_det": {
@@ -1333,7 +1345,7 @@
    "home": {
     "name": "Milwaukee Brewers",
     "abbr": "MIL",
-    "rec": "88-55",
+    "rec": "88-56",
     "sp": "Robert Gasser",
     "sp_id": 688107,
     "sp_det": {

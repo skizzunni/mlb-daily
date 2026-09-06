@@ -33,7 +33,10 @@ def main():
         edge = (p["p"] - mkt) if mkt is not None else None
         rows.append((g, p, ln, mkt, edge))
 
-    plays = [r for r in rows if r[4] is not None and r[4] >= 0.03]
+    # Ranked by edge on the book, because model confidence has a -0.101
+    # correlation with winning across the graded picks and cannot rank them.
+    rows.sort(key=lambda r: -(r[4] if r[4] is not None else -99))
+    plays = [r for r in rows if r[4] is not None and r[4] >= 0.02]
 
     live_now = [g for g in games if g.get("state") == "Live"]
     done = [g for g in games if g.get("state") == "Final"]
@@ -91,7 +94,10 @@ def main():
             ecls, etxt = "neg", "%.1f vs market" % (100 * edge)
         else:
             ecls, etxt = "flat", "level with market"
-        tier = {"A": "PLAY", "B": "LEAN", "PASS": "PASS"}[p["tier"]]
+        # "A"/"B" are legacy values still carried by picks that locked before the
+        # tiers were collapsed; they are not written any more.
+        tier = {"A": "PLAY", "B": "LEAN", "PLAY": "PLAY", "PASS": "PASS"}.get(
+            p["tier"], p["tier"])
 
         why = "".join("<li>%s</li>" % esc(r) for r in p["reasons"][:3])
         nt = notes.get(str(g["pk"]), {})
@@ -130,7 +136,8 @@ def main():
   <ul class="why">%s</ul>
   %s
 </article>""" % (
-            p["tier"].lower(), g["pk"], p["side"],
+            {"A": "a", "B": "b", "PLAY": "a", "PASS": "pass"}.get(p["tier"], "pass"),
+            g["pk"], p["side"],
             esc(g["away"]["abbr"]), esc(g["home"]["abbr"]),
             esc(g["away"]["abbr"]), esc(g["away"]["rec"]),
             esc(g["home"]["abbr"]), esc(g["home"]["rec"]), when,
