@@ -450,10 +450,10 @@
    "matchup": "MIN @ CWS",
    "pick": "CWS",
    "side": "home",
-   "p": 0.5634,
+   "p": 0.5603,
    "tier": "PLAY",
-   "fair": "-129",
-   "locked": false,
+   "fair": "-127",
+   "locked": true,
    "result": null,
    "price": "-150",
    "mkt": 0.5734
@@ -479,9 +479,10 @@
    "tier": "PASS",
    "fair": "-118",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-205",
-   "mkt": 0.6422
+   "mkt": 0.6422,
+   "final": "ATH 0 - SEA 2"
   },
   "823253": {
    "matchup": "NYY @ SD",
@@ -491,9 +492,10 @@
    "tier": "PASS",
    "fair": "-118",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-110",
-   "mkt": 0.5
+   "mkt": 0.5,
+   "final": "NYY 3 - SD 4"
   },
   "824309": {
    "matchup": "STL @ COL",
@@ -503,9 +505,10 @@
    "tier": "PASS",
    "fair": "-115",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-136",
-   "mkt": 0.5511
+   "mkt": 0.5511,
+   "final": "STL 10 - COL 8"
   },
   "824065": {
    "matchup": "TOR @ KC",
