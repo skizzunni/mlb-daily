@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 4:19 PM EDT",
+ "generated": "Sep 6, 4:21 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -127,7 +127,7 @@
     "half": "Bottom",
     "outs": 0,
     "away_h": 0,
-    "home_h": 0
+    "home_h": 2
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "Petco Park",
@@ -229,7 +229,7 @@
      "recent_rec": "8-11"
     },
     "exp_runs": 3.61,
-    "score": 0
+    "score": 2
    },
    "sim": {
     "p_home": 0.45976666666666666,
@@ -284,7 +284,7 @@
     "inning": 7,
     "ord": "7th",
     "half": "Bottom",
-    "outs": 1,
+    "outs": 2,
     "away_h": 6,
     "home_h": 7
    },
@@ -1236,10 +1236,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "End",
-    "outs": 3,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 0,
     "away_h": 7,
     "home_h": 4
    },
@@ -1395,10 +1395,10 @@
    "live": {
     "inning": 4,
     "ord": "4th",
-    "half": "Bottom",
-    "outs": 2,
+    "half": "End",
+    "outs": 3,
     "away_h": 6,
-    "home_h": 6
+    "home_h": 7
    },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
@@ -1500,7 +1500,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 3
+    "score": 5
    },
    "sim": {
     "p_home": 0.49356666666666665,
@@ -1554,7 +1554,7 @@
     "inning": 4,
     "ord": "4th",
     "half": "Bottom",
-    "outs": 0,
+    "outs": 2,
     "away_h": 5,
     "home_h": 6
    },
@@ -1707,13 +1707,13 @@
   },
   {
    "pk": 824794,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
     "half": "Bottom",
-    "outs": 2,
+    "outs": 3,
     "away_h": 4,
     "home_h": 5
    },
@@ -1726,7 +1726,7 @@
    "away": {
     "name": "Boston Red Sox",
     "abbr": "BOS",
-    "rec": "78-65",
+    "rec": "79-65",
     "sp": "Payton Tolle",
     "sp_id": 801139,
     "sp_det": {
@@ -1774,7 +1774,7 @@
    "home": {
     "name": "Baltimore Orioles",
     "abbr": "BAL",
-    "rec": "69-74",
+    "rec": "69-75",
     "sp": "Kyle Bradish",
     "sp_id": 680694,
     "sp_det": {
@@ -1863,7 +1863,7 @@
    },
    "edge": -0.030917421335380002,
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 824385,
@@ -1872,8 +1872,8 @@
    "live": {
     "inning": 10,
     "ord": "10th",
-    "half": "Middle",
-    "outs": 3,
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 4,
     "home_h": 5
    },
@@ -2340,9 +2340,9 @@
     "inning": 1,
     "ord": "1st",
     "half": "Bottom",
-    "outs": 0,
+    "outs": 1,
     "away_h": 0,
-    "home_h": 0
+    "home_h": 1
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "T-Mobile Park",

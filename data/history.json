@@ -534,7 +534,7 @@
    "matchup": "WSH @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.531,
+   "p": 0.5308,
    "tier": "PASS",
    "fair": "-113",
    "locked": false,
@@ -550,9 +550,10 @@
    "tier": "PASS",
    "fair": "-108",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-135",
-   "mkt": 0.5491
+   "mkt": 0.5491,
+   "final": "BOS 3 - BAL 1"
   },
   "824142": {
    "matchup": "ARI @ HOU",

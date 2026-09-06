@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 4:19 PM EDT",
+ "generated": "Sep 6, 4:21 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -246,7 +246,7 @@
    "home": {
     "name": "Boston Red Sox",
     "abbr": "BOS",
-    "rec": "78-65",
+    "rec": "79-65",
     "sp": "TBD",
     "sp_id": null,
     "sp_det": {
@@ -658,7 +658,7 @@
    "home": {
     "name": "Baltimore Orioles",
     "abbr": "BAL",
-    "rec": "69-74",
+    "rec": "69-75",
     "sp": "Trevor Rogers",
     "sp_id": 669432,
     "sp_det": {
