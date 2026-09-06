@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 2:04 PM EDT",
+ "generated": "Sep 6, 2:20 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -30,27 +30,6 @@
    "fair": "+281",
    "sp_hr9": "1.43",
    "start_utc": "2026-09-06T22:20:00Z"
-  },
-  {
-   "name": "Junior Caminero",
-   "team": "TB",
-   "pos": "3B",
-   "bats": "R",
-   "opp": "TEX",
-   "opp_sp": "MacKenzie Gore",
-   "opp_hand": "L",
-   "venue": "Globe Life Field",
-   "hr_park": 1.03,
-   "hr": 38,
-   "pa": 620,
-   "hr_per": 16.3,
-   "ops": ".897",
-   "platoon": "platoon edge",
-   "pa_g": 4.37,
-   "p": 0.2307,
-   "fair": "+333",
-   "sp_hr9": "1.05",
-   "start_utc": "2026-09-06T18:35:00Z"
   },
   {
    "name": "Colson Montgomery",
@@ -114,6 +93,27 @@
    "fair": "+387",
    "sp_hr9": "0.90",
    "start_utc": "2026-09-06T19:10:00Z"
+  },
+  {
+   "name": "Ben Rice",
+   "team": "NYY",
+   "pos": "DH",
+   "bats": "L",
+   "opp": "SD",
+   "opp_sp": "Michael King",
+   "opp_hand": "R",
+   "venue": "Petco Park",
+   "hr_park": 0.95,
+   "hr": 36,
+   "pa": 586,
+   "hr_per": 16.3,
+   "ops": ".883",
+   "platoon": "platoon edge",
+   "pa_g": 4.31,
+   "p": 0.1986,
+   "fair": "+403",
+   "sp_hr9": "1.00",
+   "start_utc": "2026-09-06T20:10:00Z"
   }
  ],
  "games": [
@@ -122,10 +122,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Top",
+    "outs": 0,
     "away_h": 4,
     "home_h": 12
    },
@@ -282,12 +282,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
+    "inning": 3,
+    "ord": "3rd",
     "half": "End",
     "outs": 3,
-    "away_h": 1,
-    "home_h": 0
+    "away_h": 2,
+    "home_h": 1
    },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "PNC Park",
@@ -389,7 +389,7 @@
      "recent_rec": "10-9"
     },
     "exp_runs": 4.41,
-    "score": 0
+    "score": 1
    },
    "sim": {
     "p_home": 0.612,
@@ -440,12 +440,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 1,
-    "home_h": 1
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 3,
+    "home_h": 2
    },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "loanDepot park",
@@ -499,7 +499,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 5.28,
-    "score": 0
+    "score": 1
    },
    "home": {
     "name": "Miami Marlins",
@@ -547,7 +547,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 4.09,
-    "score": 0
+    "score": 2
    },
    "sim": {
     "p_home": 0.4135333333333333,
@@ -600,10 +600,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Top",
+    "outs": 0,
     "away_h": 3,
     "home_h": 2
    },
@@ -909,7 +909,14 @@
    "pk": 823091,
    "state": "Preview",
    "detail": "Pre-Game",
-   "live": null,
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "T-Mobile Park",
    "park_factor": 0.94,
@@ -962,7 +969,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 3.81,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Seattle Mariners",
@@ -1010,7 +1017,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 4.19,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5402666666666667,
@@ -1377,14 +1384,14 @@
   {
    "pk": 824065,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 0,
     "away_h": 0,
-    "home_h": 0
+    "home_h": 1
    },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Kauffman Stadium",
@@ -1534,12 +1541,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "Middle",
-    "outs": 3,
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Bottom",
+    "outs": 0,
     "away_h": 0,
-    "home_h": 1
+    "home_h": 2
    },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "Citi Field",
@@ -1839,11 +1846,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
+    "inning": 3,
+    "ord": "3rd",
     "half": "Top",
-    "outs": 2,
-    "away_h": 0,
+    "outs": 0,
+    "away_h": 2,
     "home_h": 2
    },
    "start_utc": "2026-09-06T17:35:00Z",
@@ -1898,7 +1905,7 @@
      "recent_rec": "13-8"
     },
     "exp_runs": 3.92,
-    "score": 0
+    "score": 3
    },
    "home": {
     "name": "Baltimore Orioles",
@@ -1996,12 +2003,12 @@
   {
    "pk": 824142,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "In Progress",
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
-    "outs": 0,
+    "half": "Middle",
+    "outs": 3,
     "away_h": 0,
     "home_h": 0
    },
@@ -2151,8 +2158,8 @@
   },
   {
    "pk": 822848,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -2288,7 +2295,7 @@
     "side": "away",
     "team": "TB",
     "team_name": "Tampa Bay Rays",
-    "p": 0.5064,
+    "p": 0.5063,
     "tier": "PASS",
     "fair": "-103",
     "reasons": [
@@ -2303,7 +2310,7 @@
     "rl_p": 0.3571,
     "rl_fair": "+180"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -2311,11 +2318,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Bottom",
-    "outs": 2,
-    "away_h": 0,
+    "inning": 5,
+    "ord": "5th",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 1,
     "home_h": 4
    },
    "start_utc": "2026-09-06T17:10:00Z",
