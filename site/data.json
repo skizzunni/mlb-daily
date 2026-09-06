@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 4:37 AM EDT",
+ "generated": "Sep 6, 12:49 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -10,48 +10,6 @@
  },
  "league_hr_rate": 0.0303,
  "hr_board": [
-  {
-   "name": "Matt Olson",
-   "team": "ATL",
-   "pos": "1B",
-   "bats": "L",
-   "opp": "PHI",
-   "opp_sp": "Aaron Nola",
-   "opp_hand": "R",
-   "venue": "Citizens Bank Park",
-   "hr_park": 1.1,
-   "hr": 37,
-   "pa": 617,
-   "hr_per": 16.7,
-   "ops": ".838",
-   "platoon": "platoon edge",
-   "pa_g": 4.35,
-   "p": 0.3029,
-   "fair": "+230",
-   "sp_hr9": "1.95",
-   "start_utc": "2026-09-06T17:10:00Z"
-  },
-  {
-   "name": "Kyle Schwarber",
-   "team": "PHI",
-   "pos": "DH",
-   "bats": "L",
-   "opp": "ATL",
-   "opp_sp": "Tyler Mahle",
-   "opp_hand": "R",
-   "venue": "Citizens Bank Park",
-   "hr_park": 1.1,
-   "hr": 41,
-   "pa": 610,
-   "hr_per": 14.9,
-   "ops": ".876",
-   "platoon": "platoon edge",
-   "pa_g": 4.49,
-   "p": 0.2771,
-   "fair": "+261",
-   "sp_hr9": "1.22",
-   "start_utc": "2026-09-06T17:10:00Z"
-  },
   {
    "name": "Munetaka Murakami",
    "team": "CWS",
@@ -74,54 +32,103 @@
    "start_utc": "2026-09-06T22:20:00Z"
   },
   {
-   "name": "Sal Stewart",
-   "team": "CIN",
-   "pos": "1B",
+   "name": "Junior Caminero",
+   "team": "TB",
+   "pos": "3B",
    "bats": "R",
-   "opp": "MIL",
-   "opp_sp": "Kyle Harrison",
+   "opp": "TEX",
+   "opp_sp": "MacKenzie Gore",
    "opp_hand": "L",
-   "venue": "Great American Ball Park",
-   "hr_park": 1.2,
-   "hr": 31,
-   "pa": 615,
-   "hr_per": 19.8,
-   "ops": ".822",
+   "venue": "Globe Life Field",
+   "hr_park": 1.03,
+   "hr": 38,
+   "pa": 620,
+   "hr_per": 16.3,
+   "ops": ".897",
    "platoon": "platoon edge",
-   "pa_g": 4.33,
-   "p": 0.2425,
-   "fair": "+312",
-   "sp_hr9": "1.60",
-   "start_utc": "2026-09-06T16:10:00Z"
+   "pa_g": 4.37,
+   "p": 0.2307,
+   "fair": "+333",
+   "sp_hr9": "1.05",
+   "start_utc": "2026-09-06T18:35:00Z"
   },
   {
-   "name": "Drake Baldwin",
-   "team": "ATL",
-   "pos": "C",
+   "name": "Colson Montgomery",
+   "team": "CWS",
+   "pos": "SS",
    "bats": "L",
-   "opp": "PHI",
-   "opp_sp": "Aaron Nola",
+   "opp": "MIN",
+   "opp_sp": "Bailey Ober",
    "opp_hand": "R",
-   "venue": "Citizens Bank Park",
-   "hr_park": 1.1,
-   "hr": 22,
-   "pa": 527,
-   "hr_per": 24.0,
-   "ops": ".805",
+   "venue": "Rate Field",
+   "hr_park": 1.12,
+   "hr": 31,
+   "pa": 566,
+   "hr_per": 18.3,
+   "ops": ".734",
    "platoon": "platoon edge",
-   "pa_g": 4.43,
-   "p": 0.2323,
-   "fair": "+331",
-   "sp_hr9": "1.95",
-   "start_utc": "2026-09-06T17:10:00Z"
+   "pa_g": 4.22,
+   "p": 0.2298,
+   "fair": "+335",
+   "sp_hr9": "1.43",
+   "start_utc": "2026-09-06T22:20:00Z"
+  },
+  {
+   "name": "James Wood",
+   "team": "WSH",
+   "pos": "RF",
+   "bats": "L",
+   "opp": "LAD",
+   "opp_sp": "Justin Wrobleski",
+   "opp_hand": "L",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "hr_park": 1.08,
+   "hr": 30,
+   "pa": 549,
+   "hr_per": 18.3,
+   "ops": ".925",
+   "platoon": "same-handed",
+   "pa_g": 4.69,
+   "p": 0.222,
+   "fair": "+350",
+   "sp_hr9": "1.40",
+   "start_utc": "2026-09-07T02:10:00Z"
+  },
+  {
+   "name": "Hunter Goodman",
+   "team": "COL",
+   "pos": "C",
+   "bats": "R",
+   "opp": "STL",
+   "opp_sp": "Kyle Leahy",
+   "opp_hand": "R",
+   "venue": "Coors Field",
+   "hr_park": 1.1,
+   "hr": 36,
+   "pa": 507,
+   "hr_per": 14.1,
+   "ops": ".846",
+   "platoon": "same-handed",
+   "pa_g": 4.16,
+   "p": 0.2052,
+   "fair": "+387",
+   "sp_hr9": "0.90",
+   "start_utc": "2026-09-06T19:10:00Z"
   }
  ],
  "games": [
   {
    "pk": 824469,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "state": "Live",
+   "detail": "In Progress",
+   "live": {
+    "inning": 2,
+    "ord": "2nd",
+    "half": "End",
+    "outs": 3,
+    "away_h": 0,
+    "home_h": 4
+   },
    "start_utc": "2026-09-06T16:10:00Z",
    "venue": "Great American Ball Park",
    "park_factor": 1.05,
@@ -174,7 +181,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 5.68,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Cincinnati Reds",
@@ -222,7 +229,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.13,
-    "score": null
+    "score": 3
    },
    "sim": {
     "p_home": 0.3857,
@@ -267,14 +274,21 @@
     "rl_p": 0.4804,
     "rl_fair": "+108"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
    "pk": 823336,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "PNC Park",
    "park_factor": 0.98,
@@ -327,7 +341,7 @@
      "recent_rec": "6-13"
     },
     "exp_runs": 3.26,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Pittsburgh Pirates",
@@ -375,7 +389,7 @@
      "recent_rec": "10-9"
     },
     "exp_runs": 4.41,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.612,
@@ -424,8 +438,15 @@
   {
    "pk": 823822,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "loanDepot park",
    "park_factor": 0.96,
@@ -478,7 +499,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 5.28,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Miami Marlins",
@@ -526,7 +547,7 @@
      "recent_rec": "9-11"
     },
     "exp_runs": 4.09,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.4135333333333333,
@@ -577,8 +598,15 @@
   {
    "pk": 824385,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "Progressive Field",
    "park_factor": 0.97,
@@ -631,7 +659,7 @@
      "recent_rec": "5-15"
     },
     "exp_runs": 3.76,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Cleveland Guardians",
@@ -679,7 +707,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.51,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5638,
@@ -1184,7 +1212,7 @@
   {
    "pk": 824309,
    "state": "Preview",
-   "detail": "Scheduled",
+   "detail": "Pre-Game",
    "live": null,
    "start_utc": "2026-09-06T19:10:00Z",
    "venue": "Coors Field",
@@ -1335,8 +1363,15 @@
   {
    "pk": 824065,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Kauffman Stadium",
    "park_factor": 1.01,
@@ -1389,7 +1424,7 @@
      "recent_rec": "12-7"
     },
     "exp_runs": 4.32,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Kansas City Royals",
@@ -1437,7 +1472,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 4.75,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5323666666666667,
@@ -1483,8 +1518,15 @@
   {
    "pk": 823578,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:40:00Z",
    "venue": "Citi Field",
    "park_factor": 0.97,
@@ -1534,7 +1576,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.09,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "New York Mets",
@@ -1582,7 +1624,7 @@
      "recent_rec": "10-9"
     },
     "exp_runs": 4.39,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5316,
@@ -1781,8 +1823,15 @@
   {
    "pk": 824794,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "Oriole Park at Camden Yards",
    "park_factor": 0.97,
@@ -1835,7 +1884,7 @@
      "recent_rec": "13-8"
     },
     "exp_runs": 3.92,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Baltimore Orioles",
@@ -1883,7 +1932,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 3.72,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.4818,
@@ -1933,8 +1982,15 @@
   {
    "pk": 824142,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Daikin Park",
    "park_factor": 0.99,
@@ -1987,7 +2043,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 3.99,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Houston Astros",
@@ -2035,7 +2091,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.16,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5143666666666666,
@@ -2082,8 +2138,15 @@
   {
    "pk": 822848,
    "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "detail": "Pre-Game",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
    "park_factor": 1.01,
@@ -2136,7 +2199,7 @@
      "recent_rec": "11-10"
     },
     "exp_runs": 4.32,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Texas Rangers",
@@ -2184,7 +2247,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.49356666666666665,
@@ -2231,9 +2294,16 @@
   },
   {
    "pk": 823417,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
+   "state": "Live",
+   "detail": "Warmup",
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T17:10:00Z",
    "venue": "Citizens Bank Park",
    "park_factor": 1.02,
@@ -2286,7 +2356,7 @@
      "recent_rec": "11-9"
     },
     "exp_runs": 4.45,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Philadelphia Phillies",
@@ -2334,7 +2404,7 @@
      "recent_rec": "15-4"
     },
     "exp_runs": 4.44,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5007,
@@ -2377,7 +2447,7 @@
     "rl_p": 0.3538,
     "rl_fair": "+183"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   }
  ]

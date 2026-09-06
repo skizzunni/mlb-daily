@@ -138,62 +138,62 @@
   "source": "DraftKings via ESPN, fetched 2026-09-05"
  },
  "824469": {
-  "ml_away": "-163",
-  "ml_home": "+135",
-  "total": "9.0",
+  "ml_away": "-149",
+  "ml_home": "+123",
+  "total": "8.5",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823417": {
-  "ml_away": "-109",
+  "ml_away": "-110",
   "ml_home": "-110",
   "total": "8.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823336": {
-  "ml_away": "+163",
-  "ml_home": "-198",
-  "total": "7.5",
+  "ml_away": "+149",
+  "ml_home": "-181",
+  "total": "7.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "824794": {
-  "ml_away": "-142",
-  "ml_home": "+118",
+  "ml_away": "-135",
+  "ml_home": "+112",
   "total": "7.5",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823822": {
-  "ml_away": "-149",
-  "ml_home": "+123",
+  "ml_away": "-150",
+  "ml_home": "+124",
   "total": "8.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "824385": {
-  "ml_away": "+137",
-  "ml_home": "-167",
-  "total": "7.5",
+  "ml_away": "+141",
+  "ml_home": "-171",
+  "total": "7.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823578": {
-  "ml_away": "+128",
-  "ml_home": "-155",
-  "total": "8.5",
+  "ml_away": "+130",
+  "ml_home": "-157",
+  "total": "8.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "824142": {
-  "ml_away": "-108",
-  "ml_home": "-112",
+  "ml_away": "-105",
+  "ml_home": "-114",
   "total": "8.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "824065": {
-  "ml_away": "-120",
-  "ml_home": "+100",
+  "ml_away": "-123",
+  "ml_home": "+102",
   "total": "9.5",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "822848": {
-  "ml_away": "-105",
-  "ml_home": "-115",
+  "ml_away": "-110",
+  "ml_home": "-110",
   "total": "7.5",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
@@ -204,14 +204,14 @@
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823091": {
-  "ml_away": "+161",
-  "ml_home": "-196",
-  "total": "7.5",
+  "ml_away": "+167",
+  "ml_home": "-205",
+  "total": "7.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823253": {
-  "ml_away": "-111",
-  "ml_home": "-108",
+  "ml_away": "-112",
+  "ml_home": "-107",
   "total": "7.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
@@ -222,9 +222,9 @@
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  },
  "823903": {
-  "ml_away": "+184",
-  "ml_home": "-226",
-  "total": "8.5",
+  "ml_away": "+163",
+  "ml_home": "-199",
+  "total": "8.0",
   "source": "DraftKings via ESPN, fetched 2026-09-06"
  }
 }

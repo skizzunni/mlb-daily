@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 4:37 AM EDT",
+ "generated": "Sep 6, 12:49 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -174,10 +174,27 @@
     "name": "Los Angeles Angels",
     "abbr": "LAA",
     "rec": "54-88",
-    "sp": "TBD",
-    "sp_id": null,
+    "sp": "Grayson Rodriguez",
+    "sp_id": 680570,
     "sp_det": {
-     "unknown": true
+     "ip": 77.7,
+     "era": "6.03",
+     "fip": 4.75,
+     "k9": "8.34",
+     "bb9": "3.82",
+     "hr9": "1.39",
+     "whip": "1.52",
+     "avg": ".281",
+     "gs": 16,
+     "exp_ip": 5.1,
+     "ra9": 4.93,
+     "unknown": false,
+     "prior_fip": 3.76,
+     "prior_bf": 137,
+     "blend_w": 0.66,
+     "opener": false,
+     "start_ip_recent": 5.33,
+     "n_starts": 16
     },
     "sp_ra9": 4.93,
     "pen_ra9": 4.54,
@@ -229,48 +246,180 @@
      "recent_ra": 4.52,
      "recent_rec": "13-8"
     },
-    "exp_runs": 5.02,
+    "exp_runs": 5.03,
     "score": null
    },
    "sim": {
-    "p_home": 0.5939666666666666,
-    "p_away": 0.40603333333333336,
-    "p_home_rl": 0.4444,
-    "p_away_rl": 0.27163333333333334,
-    "mean_total": 8.9509,
+    "p_home": 0.5932333333333333,
+    "p_away": 0.4067666666666667,
+    "p_home_rl": 0.44433333333333336,
+    "p_away_rl": 0.2715,
+    "mean_total": 8.9733,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6703,
-     "7.0": 0.6364939360529217,
-     "7.5": 0.5773,
-     "8.0": 0.5356985940246046,
-     "8.5": 0.4877,
-     "9.0": 0.4404150737302021,
-     "9.5": 0.4032,
-     "10.0": 0.3536462093862816,
-     "10.5": 0.32653333333333334
+     "6.5": 0.6714666666666667,
+     "7.0": 0.6383119266055046,
+     "7.5": 0.5798,
+     "8.0": 0.5378185151237397,
+     "8.5": 0.48896666666666666,
+     "9.0": 0.4420018198362148,
+     "9.5": 0.4048,
+     "10.0": 0.35540233204577454,
+     "10.5": 0.32816666666666666
     },
-    "mean_home": 5.0201,
-    "mean_away": 3.9308
+    "mean_home": 5.035,
+    "mean_away": 3.9383
    },
    "pick": {
     "side": "home",
     "team": "BOS",
     "team_name": "Boston Red Sox",
-    "p": 0.594,
+    "p": 0.5932,
     "tier": "A",
     "fair": "-146",
     "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
      "Bullpen edge +0.66 RA/9 (BOS pen 3.16 ERA vs LAA pen 4.35 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Offense gap +0.41 R/G (BOS 4.47 R/G, .729 OPS vs LAA 4.06 R/G, .678 OPS)",
      "Last 3 weeks: BOS 13-8 (4.62 R/G scored, 4.52 allowed) vs LAA 6-13 (3.74 / 3.32)",
      "Fenway Park plays as a hitters' park (107 run factor) \u2014 raises variance, which cuts against the favorite"
     ],
     "total_lean": null,
-    "mean_total": 8.95,
-    "rl_p": 0.4444,
+    "mean_total": 8.97,
+    "rl_p": 0.4443,
     "rl_fair": "+125"
+   }
+  },
+  {
+   "pk": 824958,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-08T02:05:00Z",
+   "venue": "Sutter Health Park",
+   "park_factor": 1.06,
+   "hr_park": 1.05,
+   "away_id": 141,
+   "home_id": 133,
+   "away": {
+    "name": "Toronto Blue Jays",
+    "abbr": "TOR",
+    "rec": "72-71",
+    "sp": "Dylan Cease",
+    "sp_id": 656302,
+    "sp_det": {
+     "ip": 156.3,
+     "era": "2.25",
+     "fip": 2.4,
+     "k9": "12.72",
+     "bb9": "3.74",
+     "hr9": "0.58",
+     "whip": "1.04",
+     "avg": ".176",
+     "gs": 26,
+     "exp_ip": 6.0,
+     "ra9": 3.34,
+     "unknown": false,
+     "prior_fip": 3.44,
+     "prior_bf": 610,
+     "blend_w": 0.831,
+     "opener": false,
+     "start_ip_recent": 6.0,
+     "n_starts": 26
+    },
+    "sp_ra9": 3.34,
+    "pen_ra9": 4.27,
+    "pen": {
+     "era": "3.74",
+     "fip": 3.96,
+     "ip": 600.0
+    },
+    "off": {
+     "rs_pg": 4.05,
+     "ops": ".691",
+     "hr": 134,
+     "avg": ".248",
+     "obp": ".309",
+     "so": 1029,
+     "form_mult": 1.049,
+     "recent_rs": 4.95,
+     "recent_ra": 3.58,
+     "recent_rec": "12-7"
+    },
+    "exp_runs": 4.67,
+    "score": null
+   },
+   "home": {
+    "name": "Athletics",
+    "abbr": "ATH",
+    "rec": "57-86",
+    "sp": "TBD",
+    "sp_id": null,
+    "sp_det": {
+     "unknown": true
+    },
+    "sp_ra9": 4.93,
+    "pen_ra9": 5.17,
+    "pen": {
+     "era": "5.48",
+     "fip": 4.48,
+     "ip": 576.0
+    },
+    "off": {
+     "rs_pg": 4.41,
+     "ops": ".728",
+     "hr": 174,
+     "avg": ".248",
+     "obp": ".321",
+     "so": 1225,
+     "form_mult": 1.015,
+     "recent_rs": 4.71,
+     "recent_ra": 5.24,
+     "recent_rec": "9-12"
+    },
+    "exp_runs": 3.8,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.4297666666666667,
+    "p_away": 0.5702333333333334,
+    "p_home_rl": 0.2806666666666667,
+    "p_away_rl": 0.4189,
+    "mean_total": 8.504033333333334,
+    "median_total": 8,
+    "p_over": {
+     "6.5": 0.6332,
+     "7.0": 0.5945019714780557,
+     "7.5": 0.5377666666666666,
+     "8.0": 0.48952696484446895,
+     "8.5": 0.44326666666666664,
+     "9.0": 0.39159259798921753,
+     "9.5": 0.35833333333333334,
+     "10.0": 0.3098132013911297,
+     "10.5": 0.2880333333333333
+    },
+    "mean_home": 3.8239,
+    "mean_away": 4.680133333333333
+   },
+   "pick": {
+    "side": "away",
+    "team": "TOR",
+    "team_name": "Toronto Blue Jays",
+    "p": 0.5702,
+    "tier": "B",
+    "fair": "-133",
+    "reasons": [
+     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
+     "Bullpen edge +0.90 RA/9 (TOR pen 3.74 ERA vs ATH pen 5.48 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: TOR 12-7 (4.95 R/G scored, 3.58 allowed) vs ATH 9-12 (4.71 / 5.24)",
+     "Sutter Health Park plays as a hitters' park (106 run factor) \u2014 raises variance, which cuts against the favorite"
+    ],
+    "total_lean": [
+     "UNDER 9.5",
+     0.6416666666666666
+    ],
+    "mean_total": 8.5,
+    "rl_p": 0.4189,
+    "rl_fair": "+139"
    }
   },
   {
@@ -406,6 +555,429 @@
    }
   },
   {
+   "pk": 824793,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-07T17:35:00Z",
+   "venue": "Oriole Park at Camden Yards",
+   "park_factor": 0.97,
+   "hr_park": 0.96,
+   "away_id": 114,
+   "home_id": 110,
+   "away": {
+    "name": "Cleveland Guardians",
+    "abbr": "CLE",
+    "rec": "72-71",
+    "sp": "Joey Cantillo",
+    "sp_id": 676282,
+    "sp_det": {
+     "ip": 141.7,
+     "era": "3.81",
+     "fip": 4.01,
+     "k9": "9.59",
+     "bb9": "4.57",
+     "hr9": "1.02",
+     "whip": "1.48",
+     "avg": ".255",
+     "gs": 29,
+     "exp_ip": 4.7,
+     "ra9": 4.31,
+     "unknown": false,
+     "prior_fip": 3.67,
+     "prior_bf": 266,
+     "blend_w": 0.779,
+     "opener": false,
+     "start_ip_recent": 4.6,
+     "n_starts": 29
+    },
+    "sp_ra9": 4.31,
+    "pen_ra9": 4.15,
+    "pen": {
+     "era": "3.72",
+     "fip": 3.74,
+     "ip": 488.7
+    },
+    "off": {
+     "rs_pg": 4.03,
+     "ops": ".685",
+     "hr": 133,
+     "avg": ".236",
+     "obp": ".314",
+     "so": 1146,
+     "form_mult": 1.023,
+     "recent_rs": 4.45,
+     "recent_ra": 3.6,
+     "recent_rec": "13-7"
+    },
+    "exp_runs": 3.67,
+    "score": null
+   },
+   "home": {
+    "name": "Baltimore Orioles",
+    "abbr": "BAL",
+    "rec": "69-74",
+    "sp": "Trevor Rogers",
+    "sp_id": 669432,
+    "sp_det": {
+     "ip": 144.3,
+     "era": "4.30",
+     "fip": 3.53,
+     "k9": "8.23",
+     "bb9": "2.31",
+     "hr9": "1.00",
+     "whip": "1.23",
+     "avg": ".253",
+     "gs": 26,
+     "exp_ip": 5.7,
+     "ra9": 4.11,
+     "unknown": false,
+     "prior_fip": 3.55,
+     "prior_bf": 390,
+     "blend_w": 0.799,
+     "opener": false,
+     "start_ip_recent": 5.73,
+     "n_starts": 26
+    },
+    "sp_ra9": 4.11,
+    "pen_ra9": 4.27,
+    "pen": {
+     "era": "3.95",
+     "fip": 3.83,
+     "ip": 506.3
+    },
+    "off": {
+     "rs_pg": 4.48,
+     "ops": ".710",
+     "hr": 172,
+     "avg": ".234",
+     "obp": ".316",
+     "so": 1315,
+     "form_mult": 0.993,
+     "recent_rs": 4.33,
+     "recent_ra": 3.95,
+     "recent_rec": "10-11"
+    },
+    "exp_runs": 4.27,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5552333333333334,
+    "p_away": 0.44476666666666664,
+    "p_home_rl": 0.3883,
+    "p_away_rl": 0.29323333333333335,
+    "mean_total": 7.920433333333333,
+    "median_total": 7,
+    "p_over": {
+     "6.5": 0.5823666666666667,
+     "7.0": 0.5361862806796728,
+     "7.5": 0.4828,
+     "8.0": 0.4308770128012324,
+     "8.5": 0.3915666666666667,
+     "9.0": 0.3383237874284057,
+     "9.5": 0.3111,
+     "10.0": 0.2602018900343642,
+     "10.5": 0.2423
+    },
+    "mean_home": 4.243933333333334,
+    "mean_away": 3.6765
+   },
+   "pick": {
+    "side": "home",
+    "team": "BAL",
+    "team_name": "Baltimore Orioles",
+    "p": 0.5552,
+    "tier": "B",
+    "fair": "-125",
+    "reasons": [
+     "Offense gap +0.45 R/G (BAL 4.48 R/G, .710 OPS vs CLE 4.03 R/G, .685 OPS)",
+     "Last 3 weeks: BAL 10-11 (4.33 R/G scored, 3.95 allowed) vs CLE 13-7 (4.45 / 3.6)",
+     "Oriole Park at Camden Yards suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
+    ],
+    "total_lean": [
+     "UNDER 8.5",
+     0.6084333333333334
+    ],
+    "mean_total": 7.92,
+    "rl_p": 0.3883,
+    "rl_fair": "+158"
+   }
+  },
+  {
+   "pk": 823820,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-07T17:10:00Z",
+   "venue": "loanDepot park",
+   "park_factor": 0.96,
+   "hr_park": 0.92,
+   "away_id": 121,
+   "home_id": 146,
+   "away": {
+    "name": "New York Mets",
+    "abbr": "NYM",
+    "rec": "64-78",
+    "sp": "Jonah Tong",
+    "sp_id": 804636,
+    "sp_det": {
+     "ip": 10.0,
+     "era": "3.60",
+     "fip": 5.09,
+     "k9": "6.30",
+     "bb9": "6.30",
+     "hr9": "0.90",
+     "whip": "1.50",
+     "avg": ".205",
+     "gs": 1,
+     "exp_ip": 4.6,
+     "ra9": 4.66,
+     "unknown": false,
+     "prior_fip": null,
+     "prior_bf": 0,
+     "blend_w": 0.158
+    },
+    "sp_ra9": 4.66,
+    "pen_ra9": 4.3,
+    "pen": {
+     "era": "3.78",
+     "fip": 3.97,
+     "ip": 576.7
+    },
+    "off": {
+     "rs_pg": 4.17,
+     "ops": ".696",
+     "hr": 174,
+     "avg": ".236",
+     "obp": ".306",
+     "so": 1204,
+     "form_mult": 0.997,
+     "recent_rs": 4.11,
+     "recent_ra": 4.42,
+     "recent_rec": "10-9"
+    },
+    "exp_runs": 3.85,
+    "score": null
+   },
+   "home": {
+    "name": "Miami Marlins",
+    "abbr": "MIA",
+    "rec": "71-72",
+    "sp": "Eury P\u00e9rez",
+    "sp_id": 691587,
+    "sp_det": {
+     "ip": 135.3,
+     "era": "3.72",
+     "fip": 4.06,
+     "k9": "9.64",
+     "bb9": "3.92",
+     "hr9": "1.13",
+     "whip": "1.18",
+     "avg": ".207",
+     "gs": 25,
+     "exp_ip": 5.2,
+     "ra9": 4.34,
+     "unknown": false,
+     "prior_fip": 3.68,
+     "prior_bf": 211,
+     "blend_w": 0.754,
+     "opener": false,
+     "start_ip_recent": 5.13,
+     "n_starts": 25
+    },
+    "sp_ra9": 4.34,
+    "pen_ra9": 4.4,
+    "pen": {
+     "era": "4.07",
+     "fip": 3.99,
+     "ip": 521.7
+    },
+    "off": {
+     "rs_pg": 4.34,
+     "ops": ".723",
+     "hr": 146,
+     "avg": ".247",
+     "obp": ".325",
+     "so": 1174,
+     "form_mult": 0.998,
+     "recent_rs": 4.3,
+     "recent_ra": 4.4,
+     "recent_rec": "9-11"
+    },
+    "exp_runs": 4.38,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5501,
+    "p_away": 0.44989999999999997,
+    "p_home_rl": 0.3869,
+    "p_away_rl": 0.3033666666666667,
+    "mean_total": 8.250566666666666,
+    "median_total": 8,
+    "p_over": {
+     "6.5": 0.6141333333333333,
+     "7.0": 0.572494275795849,
+     "7.5": 0.5167333333333334,
+     "8.0": 0.46706366710777825,
+     "8.5": 0.4235333333333333,
+     "9.0": 0.3703946410368429,
+     "9.5": 0.33913333333333334,
+     "10.0": 0.28798707128748424,
+     "10.5": 0.2673
+    },
+    "mean_home": 4.3806666666666665,
+    "mean_away": 3.8699
+   },
+   "pick": {
+    "side": "home",
+    "team": "MIA",
+    "team_name": "Miami Marlins",
+    "p": 0.5501,
+    "tier": "B",
+    "fair": "-122",
+    "reasons": [
+     "Last 3 weeks: MIA 9-11 (4.3 R/G scored, 4.4 allowed) vs NYM 10-9 (4.11 / 4.42)",
+     "loanDepot park suppresses runs (96 factor), which protects a lead and helps the better pitching staff"
+    ],
+    "total_lean": [
+     "UNDER 9.5",
+     0.6608666666666667
+    ],
+    "mean_total": 8.25,
+    "rl_p": 0.3869,
+    "rl_fair": "+158"
+   }
+  },
+  {
+   "pk": 824062,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-07T18:10:00Z",
+   "venue": "Kauffman Stadium",
+   "park_factor": 1.01,
+   "hr_park": 0.88,
+   "away_id": 109,
+   "home_id": 118,
+   "away": {
+    "name": "Arizona Diamondbacks",
+    "abbr": "ARI",
+    "rec": "75-68",
+    "sp": "TBD",
+    "sp_id": null,
+    "sp_det": {
+     "unknown": true
+    },
+    "sp_ra9": 4.93,
+    "pen_ra9": 4.41,
+    "pen": {
+     "era": "4.05",
+     "fip": 4.01,
+     "ip": 493.3
+    },
+    "off": {
+     "rs_pg": 4.43,
+     "ops": ".708",
+     "hr": 140,
+     "avg": ".242",
+     "obp": ".314",
+     "so": 1045,
+     "form_mult": 0.976,
+     "recent_rs": 3.95,
+     "recent_ra": 4.7,
+     "recent_rec": "10-10"
+    },
+    "exp_runs": 4.27,
+    "score": null
+   },
+   "home": {
+    "name": "Kansas City Royals",
+    "abbr": "KC",
+    "rec": "63-80",
+    "sp": "Noah Cameron",
+    "sp_id": 702070,
+    "sp_det": {
+     "ip": 154.3,
+     "era": "4.08",
+     "fip": 3.68,
+     "k9": "8.05",
+     "bb9": "2.86",
+     "hr9": "0.93",
+     "whip": "1.22",
+     "avg": ".237",
+     "gs": 26,
+     "exp_ip": 5.9,
+     "ra9": 4.3,
+     "unknown": false,
+     "prior_fip": 4.19,
+     "prior_bf": 305,
+     "blend_w": 0.792,
+     "opener": false,
+     "start_ip_recent": 6.13,
+     "n_starts": 26
+    },
+    "sp_ra9": 4.3,
+    "pen_ra9": 5.4,
+    "pen": {
+     "era": "5.05",
+     "fip": 5.13,
+     "ip": 502.7
+    },
+    "off": {
+     "rs_pg": 4.27,
+     "ops": ".718",
+     "hr": 149,
+     "avg": ".247",
+     "obp": ".316",
+     "so": 1112,
+     "form_mult": 1.04,
+     "recent_rs": 5.05,
+     "recent_ra": 4.05,
+     "recent_rec": "13-7"
+    },
+    "exp_runs": 4.69,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5368666666666667,
+    "p_away": 0.4631333333333333,
+    "p_home_rl": 0.3894666666666667,
+    "p_away_rl": 0.3237333333333333,
+    "mean_total": 9.031666666666666,
+    "median_total": 8,
+    "p_over": {
+     "6.5": 0.6769666666666667,
+     "7.0": 0.6445626260773886,
+     "7.5": 0.5858,
+     "8.0": 0.5452516010978956,
+     "8.5": 0.4966333333333333,
+     "9.0": 0.4503730664240218,
+     "9.5": 0.41246666666666665,
+     "10.0": 0.36033387769914715,
+     "10.5": 0.3309666666666667
+    },
+    "mean_home": 4.726833333333333,
+    "mean_away": 4.304833333333334
+   },
+   "pick": {
+    "side": "home",
+    "team": "KC",
+    "team_name": "Kansas City Royals",
+    "p": 0.5369,
+    "tier": "PASS",
+    "fair": "-116",
+    "reasons": [
+     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
+     "Bullpen edge -0.99 RA/9 (KC pen 5.05 ERA vs ARI pen 4.05 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: KC 13-7 (5.05 R/G scored, 4.05 allowed) vs ARI 10-10 (3.95 / 4.7)"
+    ],
+    "total_lean": null,
+    "mean_total": 9.03,
+    "rl_p": 0.3895,
+    "rl_fair": "+157"
+   }
+  },
+  {
    "pk": 823902,
    "state": "Preview",
    "detail": "Scheduled",
@@ -538,381 +1110,6 @@
    }
   },
   {
-   "pk": 823742,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-07T18:10:00Z",
-   "venue": "American Family Field",
-   "park_factor": 1.0,
-   "hr_park": 1.08,
-   "away_id": 112,
-   "home_id": 158,
-   "away": {
-    "name": "Chicago Cubs",
-    "abbr": "CHC",
-    "rec": "81-62",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.77,
-    "pen": {
-     "era": "3.98",
-     "fip": 4.65,
-     "ip": 528.7
-    },
-    "off": {
-     "rs_pg": 5.35,
-     "ops": ".772",
-     "hr": 200,
-     "avg": ".252",
-     "obp": ".340",
-     "so": 1211,
-     "form_mult": 1.043,
-     "recent_rs": 6.4,
-     "recent_ra": 5.0,
-     "recent_rec": "9-11"
-    },
-    "exp_runs": 5.36,
-    "score": null
-   },
-   "home": {
-    "name": "Milwaukee Brewers",
-    "abbr": "MIL",
-    "rec": "88-55",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 3.97,
-    "pen": {
-     "era": "3.32",
-     "fip": 3.68,
-     "ip": 553.0
-    },
-    "off": {
-     "rs_pg": 5.02,
-     "ops": ".739",
-     "hr": 132,
-     "avg": ".256",
-     "obp": ".339",
-     "so": 1201,
-     "form_mult": 1.043,
-     "recent_rs": 6.0,
-     "recent_ra": 3.85,
-     "recent_rec": "13-7"
-    },
-    "exp_runs": 5.77,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5296333333333333,
-    "p_away": 0.4703666666666667,
-    "p_home_rl": 0.4069333333333333,
-    "p_away_rl": 0.3475666666666667,
-    "mean_total": 11.1733,
-    "median_total": 10,
-    "p_over": {
-     "6.5": 0.7991,
-     "7.0": 0.7831468355341273,
-     "7.5": 0.7255333333333334,
-     "8.0": 0.7033541088734374,
-     "8.5": 0.6507666666666667,
-     "9.0": 0.621905449296283,
-     "9.5": 0.5744333333333334,
-     "10.0": 0.539728891773019,
-     "10.5": 0.49903333333333333
-    },
-    "mean_home": 5.791033333333333,
-    "mean_away": 5.382266666666666
-   },
-   "pick": {
-    "side": "home",
-    "team": "MIL",
-    "team_name": "Milwaukee Brewers",
-    "p": 0.5296,
-    "tier": "PASS",
-    "fair": "-113",
-    "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge +0.80 RA/9 (MIL pen 3.32 ERA vs CHC pen 3.98 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: MIL 13-7 (6.0 R/G scored, 3.85 allowed) vs CHC 9-11 (6.4 / 5.0)"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.7255333333333334
-    ],
-    "mean_total": 11.17,
-    "rl_p": 0.4069,
-    "rl_fair": "+146"
-   }
-  },
-  {
-   "pk": 823820,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-07T17:10:00Z",
-   "venue": "loanDepot park",
-   "park_factor": 0.96,
-   "hr_park": 0.92,
-   "away_id": 121,
-   "home_id": 146,
-   "away": {
-    "name": "New York Mets",
-    "abbr": "NYM",
-    "rec": "64-78",
-    "sp": "Jonah Tong",
-    "sp_id": 804636,
-    "sp_det": {
-     "ip": 10.0,
-     "era": "3.60",
-     "fip": 5.09,
-     "k9": "6.30",
-     "bb9": "6.30",
-     "hr9": "0.90",
-     "whip": "1.50",
-     "avg": ".205",
-     "gs": 1,
-     "exp_ip": 4.6,
-     "ra9": 4.66,
-     "unknown": false,
-     "prior_fip": null,
-     "prior_bf": 0,
-     "blend_w": 0.158
-    },
-    "sp_ra9": 4.66,
-    "pen_ra9": 4.3,
-    "pen": {
-     "era": "3.78",
-     "fip": 3.97,
-     "ip": 576.7
-    },
-    "off": {
-     "rs_pg": 4.17,
-     "ops": ".696",
-     "hr": 174,
-     "avg": ".236",
-     "obp": ".306",
-     "so": 1204,
-     "form_mult": 0.997,
-     "recent_rs": 4.11,
-     "recent_ra": 4.42,
-     "recent_rec": "10-9"
-    },
-    "exp_runs": 4.14,
-    "score": null
-   },
-   "home": {
-    "name": "Miami Marlins",
-    "abbr": "MIA",
-    "rec": "71-72",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.4,
-    "pen": {
-     "era": "4.07",
-     "fip": 3.99,
-     "ip": 521.7
-    },
-    "off": {
-     "rs_pg": 4.34,
-     "ops": ".723",
-     "hr": 146,
-     "avg": ".247",
-     "obp": ".325",
-     "so": 1174,
-     "form_mult": 0.998,
-     "recent_rs": 4.3,
-     "recent_ra": 4.4,
-     "recent_rec": "9-11"
-    },
-    "exp_runs": 4.38,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5263333333333333,
-    "p_away": 0.4736666666666667,
-    "p_home_rl": 0.3692,
-    "p_away_rl": 0.32803333333333334,
-    "mean_total": 8.5685,
-    "median_total": 8,
-    "p_over": {
-     "6.5": 0.6424333333333333,
-     "7.0": 0.6033207602987944,
-     "7.5": 0.5438333333333333,
-     "8.0": 0.49772443661454885,
-     "8.5": 0.45203333333333334,
-     "9.0": 0.4009110787172012,
-     "9.5": 0.3667,
-     "10.0": 0.3154253594206032,
-     "10.5": 0.2918
-    },
-    "mean_home": 4.4092666666666664,
-    "mean_away": 4.159233333333333
-   },
-   "pick": {
-    "side": "home",
-    "team": "MIA",
-    "team_name": "Miami Marlins",
-    "p": 0.5263,
-    "tier": "PASS",
-    "fair": "-111",
-    "reasons": [
-     "Last 3 weeks: MIA 9-11 (4.3 R/G scored, 4.4 allowed) vs NYM 10-9 (4.11 / 4.42)",
-     "loanDepot park suppresses runs (96 factor), which protects a lead and helps the better pitching staff"
-    ],
-    "total_lean": [
-     "UNDER 9.5",
-     0.6333
-    ],
-    "mean_total": 8.57,
-    "rl_p": 0.3692,
-    "rl_fair": "+171"
-   }
-  },
-  {
-   "pk": 824793,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-07T17:35:00Z",
-   "venue": "Oriole Park at Camden Yards",
-   "park_factor": 0.97,
-   "hr_park": 0.96,
-   "away_id": 114,
-   "home_id": 110,
-   "away": {
-    "name": "Cleveland Guardians",
-    "abbr": "CLE",
-    "rec": "72-71",
-    "sp": "Joey Cantillo",
-    "sp_id": 676282,
-    "sp_det": {
-     "ip": 141.7,
-     "era": "3.81",
-     "fip": 4.01,
-     "k9": "9.59",
-     "bb9": "4.57",
-     "hr9": "1.02",
-     "whip": "1.48",
-     "avg": ".255",
-     "gs": 29,
-     "exp_ip": 4.7,
-     "ra9": 4.31,
-     "unknown": false,
-     "prior_fip": 3.67,
-     "prior_bf": 266,
-     "blend_w": 0.779,
-     "opener": false,
-     "start_ip_recent": 4.6,
-     "n_starts": 29
-    },
-    "sp_ra9": 4.31,
-    "pen_ra9": 4.15,
-    "pen": {
-     "era": "3.72",
-     "fip": 3.74,
-     "ip": 488.7
-    },
-    "off": {
-     "rs_pg": 4.03,
-     "ops": ".685",
-     "hr": 133,
-     "avg": ".236",
-     "obp": ".314",
-     "so": 1146,
-     "form_mult": 1.023,
-     "recent_rs": 4.45,
-     "recent_ra": 3.6,
-     "recent_rec": "13-7"
-    },
-    "exp_runs": 4.08,
-    "score": null
-   },
-   "home": {
-    "name": "Baltimore Orioles",
-    "abbr": "BAL",
-    "rec": "69-74",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.27,
-    "pen": {
-     "era": "3.95",
-     "fip": 3.83,
-     "ip": 506.3
-    },
-    "off": {
-     "rs_pg": 4.48,
-     "ops": ".710",
-     "hr": 172,
-     "avg": ".234",
-     "obp": ".316",
-     "so": 1315,
-     "form_mult": 0.993,
-     "recent_rs": 4.33,
-     "recent_ra": 3.95,
-     "recent_rec": "10-11"
-    },
-    "exp_runs": 4.27,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5204,
-    "p_away": 0.4796,
-    "p_home_rl": 0.3631333333333333,
-    "p_away_rl": 0.32843333333333335,
-    "mean_total": 8.359066666666667,
-    "median_total": 8,
-    "p_over": {
-     "6.5": 0.6199,
-     "7.0": 0.5788054519262734,
-     "7.5": 0.5223333333333333,
-     "8.0": 0.4746104491292392,
-     "8.5": 0.4315,
-     "9.0": 0.3816843708081064,
-     "9.5": 0.3509333333333333,
-     "10.0": 0.3001222054489253,
-     "10.5": 0.2783333333333333
-    },
-    "mean_home": 4.2813,
-    "mean_away": 4.077766666666666
-   },
-   "pick": {
-    "side": "home",
-    "team": "BAL",
-    "team_name": "Baltimore Orioles",
-    "p": 0.5204,
-    "tier": "PASS",
-    "fair": "-109",
-    "reasons": [
-     "Offense gap +0.45 R/G (BAL 4.48 R/G, .710 OPS vs CLE 4.03 R/G, .685 OPS)",
-     "Last 3 weeks: BAL 10-11 (4.33 R/G scored, 3.95 allowed) vs CLE 13-7 (4.45 / 3.6)",
-     "Oriole Park at Camden Yards suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
-    ],
-    "total_lean": [
-     "UNDER 9.5",
-     0.6490666666666667
-    ],
-    "mean_total": 8.36,
-    "rl_p": 0.3631,
-    "rl_fair": "+175"
-   }
-  },
-  {
    "pk": 824229,
    "state": "Preview",
    "detail": "Scheduled",
@@ -951,19 +1148,36 @@
      "recent_ra": 4.95,
      "recent_rec": "8-11"
     },
-    "exp_runs": 4.76,
+    "exp_runs": 4.35,
     "score": null
    },
    "home": {
     "name": "Detroit Tigers",
     "abbr": "DET",
     "rec": "65-77",
-    "sp": "TBD",
-    "sp_id": null,
+    "sp": "Troy Melton",
+    "sp_id": 675512,
     "sp_det": {
-     "unknown": true
+     "ip": 102.3,
+     "era": "2.20",
+     "fip": 3.94,
+     "k9": "7.39",
+     "bb9": "2.55",
+     "hr9": "1.06",
+     "whip": "1.03",
+     "avg": ".205",
+     "gs": 17,
+     "exp_ip": 5.8,
+     "ra9": 4.25,
+     "unknown": false,
+     "prior_fip": 4.61,
+     "prior_bf": 99,
+     "blend_w": 0.669,
+     "opener": false,
+     "start_ip_recent": 5.67,
+     "n_starts": 17
     },
-    "sp_ra9": 4.93,
+    "sp_ra9": 4.25,
     "pen_ra9": 4.57,
     "pen": {
      "era": "4.01",
@@ -986,161 +1200,193 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.4854,
-    "p_away": 0.5146,
-    "p_home_rl": 0.3446666666666667,
-    "p_away_rl": 0.37443333333333334,
-    "mean_total": 9.2994,
-    "median_total": 9,
+    "p_home": 0.5196,
+    "p_away": 0.48040000000000005,
+    "p_home_rl": 0.37306666666666666,
+    "p_away_rl": 0.3384666666666667,
+    "mean_total": 8.897533333333334,
+    "median_total": 8,
     "p_over": {
-     "6.5": 0.6954666666666667,
-     "7.0": 0.6652621551313523,
-     "7.5": 0.6052333333333333,
-     "8.0": 0.5661427995750449,
-     "8.5": 0.5151333333333333,
-     "9.0": 0.4691047118507975,
-     "9.5": 0.42843333333333333,
-     "10.0": 0.3787994058616817,
-     "10.5": 0.3485333333333333
+     "6.5": 0.6659,
+     "7.0": 0.6314667058866786,
+     "7.5": 0.5724666666666667,
+     "8.0": 0.5296145523893351,
+     "8.5": 0.48136666666666666,
+     "9.0": 0.43138544750210134,
+     "9.5": 0.3934666666666667,
+     "10.0": 0.343152118980579,
+     "10.5": 0.3168666666666667
     },
-    "mean_home": 4.550066666666667,
-    "mean_away": 4.749333333333333
-   },
-   "pick": {
-    "side": "away",
-    "team": "MIN",
-    "team_name": "Minnesota Twins",
-    "p": 0.5146,
-    "tier": "PASS",
-    "fair": "-106",
-    "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Last 3 weeks: MIN 8-11 (4.89 R/G scored, 4.95 allowed) vs DET 5-15 (3.4 / 5.15)",
-     "Comerica Park suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.6052333333333333
-    ],
-    "mean_total": 9.3,
-    "rl_p": 0.3744,
-    "rl_fair": "+167"
-   }
-  },
-  {
-   "pk": 824958,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-08T02:05:00Z",
-   "venue": "Sutter Health Park",
-   "park_factor": 1.06,
-   "hr_park": 1.05,
-   "away_id": 141,
-   "home_id": 133,
-   "away": {
-    "name": "Toronto Blue Jays",
-    "abbr": "TOR",
-    "rec": "72-71",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.27,
-    "pen": {
-     "era": "3.74",
-     "fip": 3.96,
-     "ip": 600.0
-    },
-    "off": {
-     "rs_pg": 4.05,
-     "ops": ".691",
-     "hr": 134,
-     "avg": ".248",
-     "obp": ".309",
-     "so": 1029,
-     "form_mult": 1.049,
-     "recent_rs": 4.95,
-     "recent_ra": 3.58,
-     "recent_rec": "12-7"
-    },
-    "exp_runs": 4.67,
-    "score": null
-   },
-   "home": {
-    "name": "Athletics",
-    "abbr": "ATH",
-    "rec": "57-86",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 5.17,
-    "pen": {
-     "era": "5.48",
-     "fip": 4.48,
-     "ip": 576.0
-    },
-    "off": {
-     "rs_pg": 4.41,
-     "ops": ".728",
-     "hr": 174,
-     "avg": ".248",
-     "obp": ".321",
-     "so": 1225,
-     "form_mult": 1.015,
-     "recent_rs": 4.71,
-     "recent_ra": 5.24,
-     "recent_rec": "9-12"
-    },
-    "exp_runs": 4.83,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5140333333333333,
-    "p_away": 0.48596666666666666,
-    "p_home_rl": 0.3744,
-    "p_away_rl": 0.34703333333333336,
-    "mean_total": 9.505133333333333,
-    "median_total": 9,
-    "p_over": {
-     "6.5": 0.7060666666666666,
-     "7.0": 0.6778695112150216,
-     "7.5": 0.6185333333333334,
-     "8.0": 0.5817098578164407,
-     "8.5": 0.5305,
-     "9.0": 0.4864549531483574,
-     "9.5": 0.4447333333333333,
-     "10.0": 0.3981936416184971,
-     "10.5": 0.3674
-    },
-    "mean_home": 4.8360666666666665,
-    "mean_away": 4.669066666666667
+    "mean_home": 4.542566666666667,
+    "mean_away": 4.354966666666667
    },
    "pick": {
     "side": "home",
-    "team": "ATH",
-    "team_name": "Athletics",
-    "p": 0.514,
+    "team": "DET",
+    "team_name": "Detroit Tigers",
+    "p": 0.5196,
     "tier": "PASS",
-    "fair": "-106",
+    "fair": "-108",
     "reasons": [
      "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge -0.90 RA/9 (ATH pen 5.48 ERA vs TOR pen 3.74 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: ATH 9-12 (4.71 R/G scored, 5.24 allowed) vs TOR 12-7 (4.95 / 3.58)",
-     "Sutter Health Park plays as a hitters' park (106 run factor) \u2014 raises variance, which cuts against the favorite"
+     "Last 3 weeks: DET 5-15 (3.4 R/G scored, 5.15 allowed) vs MIN 8-11 (4.89 / 4.95)",
+     "Comerica Park suppresses runs (97 factor), which protects a lead and helps the better pitching staff"
+    ],
+    "total_lean": [
+     "UNDER 9.5",
+     0.6065333333333334
+    ],
+    "mean_total": 8.9,
+    "rl_p": 0.3731,
+    "rl_fair": "+168"
+   }
+  },
+  {
+   "pk": 823742,
+   "state": "Preview",
+   "detail": "Scheduled",
+   "live": null,
+   "start_utc": "2026-09-07T18:10:00Z",
+   "venue": "American Family Field",
+   "park_factor": 1.0,
+   "hr_park": 1.08,
+   "away_id": 112,
+   "home_id": 158,
+   "away": {
+    "name": "Chicago Cubs",
+    "abbr": "CHC",
+    "rec": "81-62",
+    "sp": "Matthew Boyd",
+    "sp_id": 571510,
+    "sp_det": {
+     "ip": 102.3,
+     "era": "4.05",
+     "fip": 4.56,
+     "k9": "6.95",
+     "bb9": "2.73",
+     "hr9": "1.32",
+     "whip": "1.23",
+     "avg": ".247",
+     "gs": 18,
+     "exp_ip": 5.8,
+     "ra9": 4.47,
+     "unknown": false,
+     "prior_fip": 3.63,
+     "prior_bf": 441,
+     "blend_w": 0.776,
+     "opener": false,
+     "start_ip_recent": 5.93,
+     "n_starts": 18
+    },
+    "sp_ra9": 4.47,
+    "pen_ra9": 4.77,
+    "pen": {
+     "era": "3.98",
+     "fip": 4.65,
+     "ip": 528.7
+    },
+    "off": {
+     "rs_pg": 5.35,
+     "ops": ".772",
+     "hr": 200,
+     "avg": ".252",
+     "obp": ".340",
+     "so": 1211,
+     "form_mult": 1.043,
+     "recent_rs": 6.4,
+     "recent_ra": 5.0,
+     "recent_rec": "9-11"
+    },
+    "exp_runs": 5.17,
+    "score": null
+   },
+   "home": {
+    "name": "Milwaukee Brewers",
+    "abbr": "MIL",
+    "rec": "88-55",
+    "sp": "Robert Gasser",
+    "sp_id": 688107,
+    "sp_det": {
+     "ip": 86.7,
+     "era": "4.57",
+     "fip": 4.36,
+     "k9": "8.52",
+     "bb9": "2.80",
+     "hr9": "1.35",
+     "whip": "1.29",
+     "avg": ".251",
+     "gs": 16,
+     "exp_ip": 4.9,
+     "ra9": 4.66,
+     "unknown": false,
+     "prior_fip": 3.47,
+     "prior_bf": 31,
+     "blend_w": 0.621,
+     "opener": false,
+     "start_ip_recent": 4.8,
+     "n_starts": 16
+    },
+    "sp_ra9": 4.66,
+    "pen_ra9": 3.97,
+    "pen": {
+     "era": "3.32",
+     "fip": 3.68,
+     "ip": 553.0
+    },
+    "off": {
+     "rs_pg": 5.02,
+     "ops": ".739",
+     "hr": 132,
+     "avg": ".256",
+     "obp": ".339",
+     "so": 1201,
+     "form_mult": 1.043,
+     "recent_rs": 6.0,
+     "recent_ra": 3.85,
+     "recent_rec": "13-7"
+    },
+    "exp_runs": 5.44,
+    "score": null
+   },
+   "sim": {
+    "p_home": 0.5195333333333333,
+    "p_away": 0.4804666666666667,
+    "p_home_rl": 0.38926666666666665,
+    "p_away_rl": 0.3536666666666667,
+    "mean_total": 10.666566666666666,
+    "median_total": 10,
+    "p_over": {
+     "6.5": 0.7760666666666667,
+     "7.0": 0.7570695016995733,
+     "7.5": 0.6978666666666666,
+     "8.0": 0.6716417910447761,
+     "8.5": 0.618,
+     "9.0": 0.5846020008699434,
+     "9.5": 0.5376,
+     "10.0": 0.4990068258153057,
+     "10.5": 0.4605666666666667
+    },
+    "mean_home": 5.4487,
+    "mean_away": 5.217866666666667
+   },
+   "pick": {
+    "side": "home",
+    "team": "MIL",
+    "team_name": "Milwaukee Brewers",
+    "p": 0.5195,
+    "tier": "PASS",
+    "fair": "-108",
+    "reasons": [
+     "Bullpen edge +0.80 RA/9 (MIL pen 3.32 ERA vs CHC pen 3.98 ERA) \u2014 matters because the starters project to hand off around the 6th",
+     "Last 3 weeks: MIL 13-7 (6.0 R/G scored, 3.85 allowed) vs CHC 9-11 (6.4 / 5.0)"
     ],
     "total_lean": [
      "OVER 7.5",
-     0.6185333333333334
+     0.6978666666666666
     ],
-    "mean_total": 9.51,
-    "rl_p": 0.3744,
-    "rl_fair": "+167"
+    "mean_total": 10.67,
+    "rl_p": 0.3893,
+    "rl_fair": "+157"
    }
   },
   {
@@ -1255,121 +1501,6 @@
     "mean_total": 9.17,
     "rl_p": 0.3678,
     "rl_fair": "+172"
-   }
-  },
-  {
-   "pk": 824062,
-   "state": "Preview",
-   "detail": "Scheduled",
-   "live": null,
-   "start_utc": "2026-09-07T18:10:00Z",
-   "venue": "Kauffman Stadium",
-   "park_factor": 1.01,
-   "hr_park": 0.88,
-   "away_id": 109,
-   "home_id": 118,
-   "away": {
-    "name": "Arizona Diamondbacks",
-    "abbr": "ARI",
-    "rec": "75-68",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 4.41,
-    "pen": {
-     "era": "4.05",
-     "fip": 4.01,
-     "ip": 493.3
-    },
-    "off": {
-     "rs_pg": 4.43,
-     "ops": ".708",
-     "hr": 140,
-     "avg": ".242",
-     "obp": ".314",
-     "so": 1045,
-     "form_mult": 0.976,
-     "recent_rs": 3.95,
-     "recent_ra": 4.7,
-     "recent_rec": "10-10"
-    },
-    "exp_runs": 4.69,
-    "score": null
-   },
-   "home": {
-    "name": "Kansas City Royals",
-    "abbr": "KC",
-    "rec": "63-80",
-    "sp": "TBD",
-    "sp_id": null,
-    "sp_det": {
-     "unknown": true
-    },
-    "sp_ra9": 4.93,
-    "pen_ra9": 5.4,
-    "pen": {
-     "era": "5.05",
-     "fip": 5.13,
-     "ip": 502.7
-    },
-    "off": {
-     "rs_pg": 4.27,
-     "ops": ".718",
-     "hr": 149,
-     "avg": ".247",
-     "obp": ".316",
-     "so": 1112,
-     "form_mult": 1.04,
-     "recent_rs": 5.05,
-     "recent_ra": 4.05,
-     "recent_rec": "13-7"
-    },
-    "exp_runs": 4.69,
-    "score": null
-   },
-   "sim": {
-    "p_home": 0.5041,
-    "p_away": 0.4959,
-    "p_home_rl": 0.3629,
-    "p_away_rl": 0.36236666666666667,
-    "mean_total": 9.462333333333333,
-    "median_total": 9,
-    "p_over": {
-     "6.5": 0.7045333333333333,
-     "7.0": 0.6750494904318498,
-     "7.5": 0.6138,
-     "8.0": 0.5778466022955,
-     "8.5": 0.5286333333333333,
-     "9.0": 0.4850515276209898,
-     "9.5": 0.444,
-     "10.0": 0.3967013888888889,
-     "10.5": 0.3656
-    },
-    "mean_home": 4.7383,
-    "mean_away": 4.724033333333334
-   },
-   "pick": {
-    "side": "home",
-    "team": "KC",
-    "team_name": "Kansas City Royals",
-    "p": 0.5041,
-    "tier": "PASS",
-    "fair": "-102",
-    "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
-     "Bullpen edge -0.99 RA/9 (KC pen 5.05 ERA vs ARI pen 4.05 ERA) \u2014 matters because the starters project to hand off around the 6th",
-     "Last 3 weeks: KC 13-7 (5.05 R/G scored, 4.05 allowed) vs ARI 10-10 (3.95 / 4.7)"
-    ],
-    "total_lean": [
-     "OVER 7.5",
-     0.6138
-    ],
-    "mean_total": 9.46,
-    "rl_p": 0.3629,
-    "rl_fair": "+176"
    }
   }
  ]

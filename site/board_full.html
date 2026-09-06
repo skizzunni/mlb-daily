@@ -1,3 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="900">
+<meta name="theme-color" content="#0c1216">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="MLB model win probabilities against real de-vigged market prices, with live scores.">
 <title>MLB Model Board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,12 +133,14 @@ footer b{color:var(--dim);font-weight:600}
 @media(max-width:520px){h1{font-size:31px}.btg{grid-template-columns:1fr}.edge{margin-left:0}}
 </style>
 
+</head>
+<body>
 <div class="wrap">
 <h1>MLB Model <span>Board</span></h1>
-<div class="meta"><span>2026-09-06</span><span>15 games</span><span>built Sep 6, 12:49 PM EDT</span>
+<div class="meta"><span>2026-09-06</span><span>15 games</span><span>built Sep 6, 12:45 PM EDT</span>
 <span id="livestamp" class="lstamp"></span></div>
 
-<section class="strip" id="strip"><h2 id="striph">Scoreboard &middot; 2 live &middot; 0 final</h2><div class="scg" id="scg"><div class="sc islive"><b>MIL 0</b><b>CIN 3</b><span>End 2nd</span></div><div class="sc islive"><b>ATL 0</b><b>PHI 0</b><span>Top 1st</span></div></div></section>
+<section class="strip" id="strip"><h2 id="striph">Scoreboard &middot; 2 live &middot; 0 final</h2><div class="scg" id="scg"><div class="sc islive"><b>MIL 0</b><b>CIN 1</b><span>Bottom 2nd</span></div><div class="sc islive"><b>ATL 0</b><b>PHI 0</b><span>Top 1st</span></div></div></section>
 <section class="read">
   <h2>Today's read</h2>
   <div class="prow"><b>Milwaukee Brewers -149</b><span>model 61.4% &middot; market 57.2%</span><b class="pos">+4.3</b></div><div class="prow"><b>New York Yankees -112</b><span>model 54.0% &middot; market 50.5%</span><b class="pos">+3.5</b></div><div class="prow"><b>Kansas City Royals +102</b><span>model 53.2% &middot; market 47.3% &middot; <i class="dog">plus-money dog</i></span><b class="pos">+5.9</b></div>
@@ -156,7 +169,7 @@ footer b{color:var(--dim);font-weight:600}
 <article class="g a" data-pk="824469" data-side="away" data-away="MIL" data-home="CIN">
   <header class="gh">
     <div class="teams"><b>MIL</b><i>88-55</i> <em>at</em> <b>CIN</b><i>68-74</i></div>
-    <div class="when" data-when><span class="lv">&#9679; End 2nd</span> MIL 0&ndash;CIN 3</div>
+    <div class="when" data-when><span class="lv">&#9679; Bottom 2nd</span> MIL 0&ndash;CIN 1</div>
   </header>
   <div class="arms">Kyle Harrison <span class="v">vs</span> Brady Singer</div>
   <div class="line">
@@ -451,3 +464,97 @@ market price. Tick to the right of the fill means the market likes it more than 
 named source. Lines are never estimated &mdash; a blank means none was found.</p>
 </footer>
 </div>
+<script>
+/* Live scores, fetched straight from MLB's public API by the browser.
+   GitHub throttles scheduled Actions hard, so the static rebuild cannot be
+   relied on for score freshness -- this keeps scores current regardless. */
+(function () {
+  var API = 'https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=R' +
+            '&hydrate=linescore,team&date=';
+  var BUILT = 'Sep 6, 12:45 PM EDT';
+  function etDate() {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York',
+      year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; });
+  }
+  function stamp(t) {
+    var el = document.getElementById('livestamp'); if (el) el.textContent = t;
+  }
+  function cell(cls, a, b, sub) {
+    return '<div class="' + cls + '"><b>' + esc(a) + '</b><b>' + esc(b) +
+           '</b><span>' + esc(sub) + '</span></div>';
+  }
+  async function tick() {
+    var data;
+    try {
+      var r = await fetch(API + etDate(), { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json();
+    } catch (e) { stamp('scores unavailable'); return; }
+
+    var games = [];
+    (data.dates || []).forEach(function (d) {
+      (d.games || []).forEach(function (g) { games.push(g); }); });
+
+    var live = 0, final = 0, cells = [];
+    games.forEach(function (g) {
+      var art = document.querySelector('article[data-pk="' + g.gamePk + '"]');
+      var st = (g.status || {}).abstractGameState;
+      var a = g.teams.away.score, h = g.teams.home.score;
+      if (a == null || h == null) return;
+      var aw = art ? art.dataset.away : (g.teams.away.team.abbreviation || 'AWY');
+      var hm = art ? art.dataset.home : (g.teams.home.team.abbreviation || 'HOM');
+      var ls = g.linescore || {};
+      var w = art ? art.querySelector('[data-when]') : null;
+      if (st === 'Live') {
+        live++;
+        var half = (ls.inningState || '').trim(), ord = ls.currentInningOrdinal || '';
+        var sub = (half + ' ' + ord).trim() || 'live';
+        if (ls.outs != null && (half === 'Top' || half === 'Bottom')) sub += ', ' + ls.outs + ' out';
+        if (w) w.innerHTML = '<span class="lv">&#9679; ' + esc(sub) + '</span> ' +
+          esc(aw) + ' ' + a + '&ndash;' + esc(hm) + ' ' + h;
+        cells.push(cell('sc islive', aw + ' ' + a, hm + ' ' + h, sub));
+      } else if (st === 'Final') {
+        final++;
+        var cls = 'sc', tail = '';
+        if (art) {
+          var won = art.dataset.side === 'home' ? h > a : a > h;
+          cls += won ? ' won' : ' lost';
+          tail = ' <span class="' + (won ? 'won' : 'lost') + '">PICK ' +
+                 (won ? 'WON' : 'LOST') + '</span>';
+        }
+        if (w) w.innerHTML = 'FINAL ' + esc(aw) + ' ' + a + '&ndash;' + esc(hm) + ' ' + h + tail;
+        cells.push(cell(cls, aw + ' ' + a, hm + ' ' + h, 'final'));
+      }
+    });
+
+    var strip = document.getElementById('strip');
+    var scg = document.getElementById('scg');
+    if (cells.length && strip && scg) {
+      scg.innerHTML = cells.join('');
+      document.getElementById('striph').innerHTML =
+        'Scoreboard &middot; ' + live + ' live &middot; ' + final + ' final';
+      strip.hidden = false;
+    } else if (strip) { strip.hidden = true; }
+
+    stamp('scores ' + new Date().toLocaleTimeString('en-US',
+      { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }));
+
+    /* reload only when a genuinely newer build exists */
+    try {
+      var j = await (await fetch('data.json', { cache: 'no-store' })).json();
+      if (BUILT && j.generated && j.generated !== BUILT) location.reload();
+    } catch (e) {}
+  }
+  tick();
+  setInterval(tick, 45000);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) tick(); });
+})();
+</script>
+
+</body>
+</html>
