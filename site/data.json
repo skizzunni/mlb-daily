@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 5:37 PM EDT",
+ "generated": "Sep 6, 5:52 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,10 +122,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
+    "inning": 7,
+    "ord": "7th",
     "half": "Top",
-    "outs": 0,
+    "outs": 1,
     "away_h": 4,
     "home_h": 5
    },
@@ -1390,13 +1390,13 @@
   },
   {
    "pk": 822848,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Final",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
+    "outs": 3,
     "away_h": 9,
     "home_h": 12
    },
@@ -1409,7 +1409,7 @@
    "away": {
     "name": "Tampa Bay Rays",
     "abbr": "TB",
-    "rec": "85-57",
+    "rec": "85-58",
     "sp": "Ian Seymour",
     "sp_id": 693855,
     "sp_det": {
@@ -1457,7 +1457,7 @@
    "home": {
     "name": "Texas Rangers",
     "abbr": "TEX",
-    "rec": "70-73",
+    "rec": "71-73",
     "sp": "MacKenzie Gore",
     "sp_id": 669022,
     "sp_det": {
@@ -1544,7 +1544,7 @@
    },
    "edge": -0.014100647388864962,
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 824309,
@@ -1553,10 +1553,10 @@
    "live": {
     "inning": 8,
     "ord": "8th",
-    "half": "Top",
-    "outs": 2,
-    "away_h": 13,
-    "home_h": 6
+    "half": "End",
+    "outs": 3,
+    "away_h": 15,
+    "home_h": 8
    },
    "start_utc": "2026-09-06T19:10:00Z",
    "venue": "Coors Field",
@@ -1610,7 +1610,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 5.4,
-    "score": 7
+    "score": 10
    },
    "home": {
     "name": "Colorado Rockies",
@@ -1658,7 +1658,7 @@
      "recent_rec": "6-14"
     },
     "exp_runs": 4.89,
-    "score": 5
+    "score": 6
    },
    "sim": {
     "p_home": 0.46416666666666667,
@@ -2337,10 +2337,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Top",
+    "outs": 0,
     "away_h": 1,
     "home_h": 6
    },

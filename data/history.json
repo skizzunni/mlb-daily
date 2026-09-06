@@ -450,7 +450,7 @@
    "matchup": "MIN @ CWS",
    "pick": "CWS",
    "side": "home",
-   "p": 0.5636,
+   "p": 0.5635,
    "tier": "PLAY",
    "fair": "-129",
    "locked": false,
@@ -579,9 +579,10 @@
    "tier": "PASS",
    "fair": "-103",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-111",
-   "mkt": 0.5033
+   "mkt": 0.5033,
+   "final": "TB 6 - TEX 8"
   },
   "823417": {
    "matchup": "ATL @ PHI",
