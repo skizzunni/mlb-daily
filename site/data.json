@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 4:52 PM EDT",
+ "generated": "Sep 6, 5:07 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,11 +122,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
+    "inning": 4,
+    "ord": "4th",
     "half": "Top",
-    "outs": 2,
-    "away_h": 2,
+    "outs": 1,
+    "away_h": 3,
     "home_h": 4
    },
    "start_utc": "2026-09-06T20:10:00Z",
@@ -278,13 +278,13 @@
   },
   {
    "pk": 824065,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
     "half": "Top",
-    "outs": 2,
+    "outs": 3,
     "away_h": 8,
     "home_h": 7
    },
@@ -297,7 +297,7 @@
    "away": {
     "name": "Toronto Blue Jays",
     "abbr": "TOR",
-    "rec": "72-71",
+    "rec": "72-72",
     "sp": "Spencer Arrighetti",
     "sp_id": 681293,
     "sp_det": {
@@ -345,7 +345,7 @@
    "home": {
     "name": "Kansas City Royals",
     "abbr": "KC",
-    "rec": "63-80",
+    "rec": "64-80",
     "sp": "Randy Dobnak",
     "sp_id": 677976,
     "sp_det": {
@@ -430,7 +430,7 @@
    },
    "edge": 0.059401230221015566,
    "locked": true,
-   "result": null
+   "result": "W"
   },
   {
    "pk": 824469,
@@ -909,7 +909,7 @@
     "rl_p": 0.4209,
     "rl_fair": "+138"
    },
-   "edge": 0.00041677005232210185,
+   "edge": -0.0014072753209700695,
    "locked": false,
    "result": null
   },
@@ -1233,13 +1233,13 @@
   },
   {
    "pk": 824142,
-   "state": "Live",
-   "detail": "In Progress",
+   "state": "Final",
+   "detail": "Game Over",
    "live": {
     "inning": 9,
     "ord": "9th",
-    "half": "Top",
-    "outs": 1,
+    "half": "Bottom",
+    "outs": 3,
     "away_h": 9,
     "home_h": 7
    },
@@ -1252,7 +1252,7 @@
    "away": {
     "name": "Arizona Diamondbacks",
     "abbr": "ARI",
-    "rec": "75-68",
+    "rec": "76-68",
     "sp": "Eduardo Rodriguez",
     "sp_id": 593958,
     "sp_det": {
@@ -1300,7 +1300,7 @@
    "home": {
     "name": "Houston Astros",
     "abbr": "HOU",
-    "rec": "73-70",
+    "rec": "73-71",
     "sp": "Peter Lambert",
     "sp_id": 663567,
     "sp_det": {
@@ -1386,18 +1386,18 @@
    },
    "edge": -0.009522362723767386,
    "locked": true,
-   "result": null
+   "result": "L"
   },
   {
    "pk": 822848,
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "Bottom",
-    "outs": 1,
-    "away_h": 6,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Middle",
+    "outs": 3,
+    "away_h": 8,
     "home_h": 10
    },
    "start_utc": "2026-09-06T18:35:00Z",
@@ -1452,7 +1452,7 @@
      "recent_rec": "11-10"
     },
     "exp_runs": 4.32,
-    "score": 5
+    "score": 6
    },
    "home": {
     "name": "Texas Rangers",
@@ -1551,11 +1551,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
+    "inning": 7,
+    "ord": "7th",
     "half": "Top",
-    "outs": 1,
-    "away_h": 10,
+    "outs": 0,
+    "away_h": 11,
     "home_h": 6
    },
    "start_utc": "2026-09-06T19:10:00Z",
@@ -2337,12 +2337,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "End",
-    "outs": 3,
-    "away_h": 0,
-    "home_h": 1
+    "inning": 4,
+    "ord": "4th",
+    "half": "Bottom",
+    "outs": 0,
+    "away_h": 1,
+    "home_h": 2
    },
    "start_utc": "2026-09-06T20:10:00Z",
    "venue": "T-Mobile Park",

@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 4:52 PM EDT",
+ "generated": "Sep 6, 5:07 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -328,7 +328,7 @@
    "away": {
     "name": "Toronto Blue Jays",
     "abbr": "TOR",
-    "rec": "72-71",
+    "rec": "72-72",
     "sp": "Dylan Cease",
     "sp_id": 656302,
     "sp_det": {
@@ -904,7 +904,7 @@
    "away": {
     "name": "Arizona Diamondbacks",
     "abbr": "ARI",
-    "rec": "75-68",
+    "rec": "76-68",
     "sp": "TBD",
     "sp_id": null,
     "sp_det": {
@@ -935,7 +935,7 @@
    "home": {
     "name": "Kansas City Royals",
     "abbr": "KC",
-    "rec": "63-80",
+    "rec": "64-80",
     "sp": "Noah Cameron",
     "sp_id": 702070,
     "sp_det": {
