@@ -1,6 +1,6 @@
 {
  "date": "2026-09-05",
- "generated": "Sep 5, 8:02 PM EDT",
+ "generated": "Sep 5, 8:14 PM EDT",
  "league": {
   "rpg": 4.468632958801498,
   "era": 4.170902098457249,
@@ -124,10 +124,10 @@
    "live": {
     "inning": 6,
     "ord": "6th",
-    "half": "Top",
-    "outs": 0,
+    "half": "Bottom",
+    "outs": 2,
     "away_h": 7,
-    "home_h": 4
+    "home_h": 5
    },
    "start_utc": "2026-09-05T22:40:00Z",
    "venue": "PNC Park",
@@ -602,11 +602,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "Bottom",
-    "outs": 0,
-    "away_h": 10,
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 11,
     "home_h": 3
    },
    "start_utc": "2026-09-05T22:10:00Z",
@@ -1083,8 +1083,8 @@
     "inning": 4,
     "ord": "4th",
     "half": "Top",
-    "outs": 0,
-    "away_h": 1,
+    "outs": 2,
+    "away_h": 2,
     "home_h": 2
    },
    "start_utc": "2026-09-05T23:05:00Z",
@@ -1398,11 +1398,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 2,
-    "ord": "2nd",
-    "half": "End",
-    "outs": 3,
-    "away_h": 3,
+    "inning": 3,
+    "ord": "3rd",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 5,
     "home_h": 1
    },
    "start_utc": "2026-09-05T23:15:00Z",
@@ -1457,7 +1457,7 @@
      "recent_rec": "12-8"
     },
     "exp_runs": 4.11,
-    "score": 4
+    "score": 5
    },
    "home": {
     "name": "San Diego Padres",
@@ -1556,12 +1556,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
-    "half": "Bottom",
-    "outs": 1,
-    "away_h": 3,
-    "home_h": 0
+    "inning": 5,
+    "ord": "5th",
+    "half": "Middle",
+    "outs": 3,
+    "away_h": 4,
+    "home_h": 1
    },
    "start_utc": "2026-09-05T23:05:00Z",
    "venue": "Globe Life Field",
@@ -1615,7 +1615,7 @@
      "recent_rec": "10-11"
     },
     "exp_runs": 4.15,
-    "score": 1
+    "score": 2
    },
    "home": {
     "name": "Texas Rangers",
@@ -1714,12 +1714,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Bottom",
-    "outs": 0,
+    "inning": 4,
+    "ord": "4th",
+    "half": "Top",
+    "outs": 1,
     "away_h": 3,
-    "home_h": 2
+    "home_h": 3
    },
    "start_utc": "2026-09-05T23:15:00Z",
    "venue": "Daikin Park",
@@ -1821,7 +1821,7 @@
      "recent_rec": "11-9"
     },
     "exp_runs": 4.33,
-    "score": 0
+    "score": 2
    },
    "sim": {
     "p_home": 0.5080333333333333,
@@ -1869,7 +1869,7 @@
   {
    "pk": 824310,
    "state": "Live",
-   "detail": "Warmup",
+   "detail": "Player challenge",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -2030,9 +2030,9 @@
    "live": {
     "inning": 4,
     "ord": "4th",
-    "half": "Top",
-    "outs": 1,
-    "away_h": 2,
+    "half": "Bottom",
+    "outs": 2,
+    "away_h": 3,
     "home_h": 2
    },
    "start_utc": "2026-09-05T23:10:00Z",
@@ -2087,7 +2087,7 @@
      "recent_rec": "7-11"
     },
     "exp_runs": 4.66,
-    "score": 0
+    "score": 2
    },
    "home": {
     "name": "Chicago White Sox",
@@ -2185,10 +2185,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Top",
-    "outs": 2,
+    "inning": 4,
+    "ord": "4th",
+    "half": "Middle",
+    "outs": 3,
     "away_h": 8,
     "home_h": 3
    },
@@ -2342,11 +2342,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
+    "inning": 8,
+    "ord": "8th",
     "half": "Bottom",
-    "outs": 1,
-    "away_h": 4,
+    "outs": 0,
+    "away_h": 5,
     "home_h": 8
    },
    "start_utc": "2026-09-05T22:05:00Z",
