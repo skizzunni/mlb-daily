@@ -1,6 +1,6 @@
 {
  "date": "2026-09-07",
- "generated": "Sep 6, 3:10 PM EDT",
+ "generated": "Sep 6, 3:25 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -8,7 +8,20 @@
   "ra9": 4.545733233782775,
   "r_per_er": 1.0899630366789879
  },
- "lines": {},
+ "lines": {
+  "823415": {
+   "ml_away": "+138",
+   "ml_home": "-167",
+   "total": "8.0",
+   "source": "DraftKings via ESPN, fetched 2026-09-07"
+  },
+  "823820": {
+   "ml_away": "+104",
+   "ml_home": "-126",
+   "total": "7.5",
+   "source": "DraftKings via ESPN, fetched 2026-09-07"
+  }
+ },
  "games": [
   {
    "pk": 823415,
@@ -345,17 +358,34 @@
      "recent_ra": 3.58,
      "recent_rec": "12-7"
     },
-    "exp_runs": 4.67,
+    "exp_runs": 4.66,
     "score": null
    },
    "home": {
     "name": "Athletics",
     "abbr": "ATH",
     "rec": "57-86",
-    "sp": "TBD",
-    "sp_id": null,
+    "sp": "Jacob Lopez",
+    "sp_id": 682052,
     "sp_det": {
-     "unknown": true
+     "ip": 105.0,
+     "era": "4.71",
+     "fip": 4.83,
+     "k9": "8.83",
+     "bb9": "4.46",
+     "hr9": "1.46",
+     "whip": "1.46",
+     "avg": ".251",
+     "gs": 20,
+     "exp_ip": 5.5,
+     "ra9": 4.93,
+     "unknown": false,
+     "prior_fip": 4.27,
+     "prior_bf": 219,
+     "blend_w": 0.733,
+     "opener": false,
+     "start_ip_recent": 6.0,
+     "n_starts": 20
     },
     "sp_ra9": 4.93,
     "pen_ra9": 5.17,
@@ -380,46 +410,46 @@
     "score": null
    },
    "sim": {
-    "p_home": 0.4297666666666667,
-    "p_away": 0.5702333333333334,
-    "p_home_rl": 0.2806666666666667,
-    "p_away_rl": 0.4189,
-    "mean_total": 8.504033333333334,
+    "p_home": 0.43096666666666666,
+    "p_away": 0.5690333333333333,
+    "p_home_rl": 0.28153333333333336,
+    "p_away_rl": 0.41696666666666665,
+    "mean_total": 8.488833333333334,
     "median_total": 8,
     "p_over": {
-     "6.5": 0.6332,
-     "7.0": 0.5945019714780557,
-     "7.5": 0.5377666666666666,
-     "8.0": 0.48952696484446895,
-     "8.5": 0.44326666666666664,
-     "9.0": 0.39159259798921753,
-     "9.5": 0.35833333333333334,
-     "10.0": 0.3098132013911297,
-     "10.5": 0.2880333333333333
+     "6.5": 0.6317333333333334,
+     "7.0": 0.5929705633128246,
+     "7.5": 0.5365,
+     "8.0": 0.48807157057654077,
+     "8.5": 0.4419,
+     "9.0": 0.3907426949528765,
+     "9.5": 0.3579333333333333,
+     "10.0": 0.30916003156158095,
+     "10.5": 0.28733333333333333
     },
-    "mean_home": 3.8239,
-    "mean_away": 4.680133333333333
+    "mean_home": 3.8272333333333335,
+    "mean_away": 4.6616
    },
    "pick": {
     "side": "away",
     "team": "TOR",
     "team_name": "Toronto Blue Jays",
-    "p": 0.5702,
+    "p": 0.569,
     "tier": "B",
-    "fair": "-133",
+    "fair": "-132",
     "reasons": [
-     "TBD has no meaningful 2026 track record \u2014 modelled at league average, which is itself a risk flag",
+     "Starter edge +1.59 RA/9: Dylan Cease (2.25 ERA, 12.72 K/9, 3.74 BB/9 over 156.3 IP) vs Jacob Lopez (4.71 ERA, 8.83 K/9, 4.46 BB/9)",
      "Bullpen edge +0.90 RA/9 (TOR pen 3.74 ERA vs ATH pen 5.48 ERA) \u2014 matters because the starters project to hand off around the 6th",
      "Last 3 weeks: TOR 12-7 (4.95 R/G scored, 3.58 allowed) vs ATH 9-12 (4.71 / 5.24)",
      "Sutter Health Park plays as a hitters' park (106 run factor) \u2014 raises variance, which cuts against the favorite"
     ],
     "total_lean": [
      "UNDER 9.5",
-     0.6416666666666666
+     0.6420666666666667
     ],
-    "mean_total": 8.5,
-    "rl_p": 0.4189,
-    "rl_fair": "+139"
+    "mean_total": 8.49,
+    "rl_p": 0.417,
+    "rl_fair": "+140"
    }
   },
   {

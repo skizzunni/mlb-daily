@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 3:10 PM EDT",
+ "generated": "Sep 6, 3:25 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -122,11 +122,11 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 8,
-    "ord": "8th",
-    "half": "Bottom",
+    "inning": 9,
+    "ord": "9th",
+    "half": "Top",
     "outs": 2,
-    "away_h": 6,
+    "away_h": 7,
     "home_h": 14
    },
    "start_utc": "2026-09-06T16:10:00Z",
@@ -181,7 +181,7 @@
      "recent_rec": "13-7"
     },
     "exp_runs": 5.68,
-    "score": 7
+    "score": 8
    },
    "home": {
     "name": "Cincinnati Reds",
@@ -282,12 +282,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
+    "inning": 7,
+    "ord": "7th",
     "half": "Middle",
     "outs": 3,
     "away_h": 4,
-    "home_h": 2
+    "home_h": 3
    },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "PNC Park",
@@ -438,13 +438,13 @@
   {
    "pk": 823822,
    "state": "Live",
-   "detail": "In Progress",
+   "detail": "Manager challenge",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Bottom",
-    "outs": 1,
-    "away_h": 5,
+    "inning": 6,
+    "ord": "6th",
+    "half": "Top",
+    "outs": 2,
+    "away_h": 6,
     "home_h": 7
    },
    "start_utc": "2026-09-06T17:40:00Z",
@@ -600,10 +600,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
-    "half": "Bottom",
-    "outs": 2,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Top",
+    "outs": 0,
     "away_h": 4,
     "home_h": 4
    },
@@ -758,7 +758,14 @@
    "pk": 824552,
    "state": "Preview",
    "detail": "Pre-Game",
-   "live": null,
+   "live": {
+    "inning": 1,
+    "ord": "1st",
+    "half": "Top",
+    "outs": 0,
+    "away_h": 0,
+    "home_h": 0
+   },
    "start_utc": "2026-09-06T22:20:00Z",
    "venue": "Rate Field",
    "park_factor": 1.0,
@@ -811,7 +818,7 @@
      "recent_rec": "8-11"
     },
     "exp_runs": 4.35,
-    "score": null
+    "score": 0
    },
    "home": {
     "name": "Chicago White Sox",
@@ -859,7 +866,7 @@
      "recent_rec": "11-10"
     },
     "exp_runs": 5.06,
-    "score": null
+    "score": 0
    },
    "sim": {
     "p_home": 0.5634666666666667,
@@ -1230,10 +1237,10 @@
    "live": {
     "inning": 1,
     "ord": "1st",
-    "half": "Top",
-    "outs": 0,
-    "away_h": 0,
-    "home_h": 0
+    "half": "Bottom",
+    "outs": 1,
+    "away_h": 2,
+    "home_h": 1
    },
    "start_utc": "2026-09-06T19:10:00Z",
    "venue": "Coors Field",
@@ -1386,10 +1393,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 4,
-    "ord": "4th",
+    "inning": 5,
+    "ord": "5th",
     "half": "Bottom",
-    "outs": 0,
+    "outs": 1,
     "away_h": 1,
     "home_h": 5
    },
@@ -1541,10 +1548,10 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 6,
-    "ord": "6th",
-    "half": "Middle",
-    "outs": 3,
+    "inning": 7,
+    "ord": "7th",
+    "half": "Top",
+    "outs": 2,
     "away_h": 4,
     "home_h": 3
    },
@@ -1846,12 +1853,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 5,
-    "ord": "5th",
+    "inning": 6,
+    "ord": "6th",
     "half": "Bottom",
-    "outs": 0,
+    "outs": 2,
     "away_h": 2,
-    "home_h": 3
+    "home_h": 4
    },
    "start_utc": "2026-09-06T17:35:00Z",
    "venue": "Oriole Park at Camden Yards",
@@ -2005,12 +2012,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 3,
-    "ord": "3rd",
-    "half": "Bottom",
-    "outs": 1,
+    "inning": 4,
+    "ord": "4th",
+    "half": "End",
+    "outs": 3,
     "away_h": 6,
-    "home_h": 1
+    "home_h": 2
    },
    "start_utc": "2026-09-06T18:10:00Z",
    "venue": "Daikin Park",
@@ -2163,10 +2170,10 @@
    "live": {
     "inning": 2,
     "ord": "2nd",
-    "half": "Top",
+    "half": "Bottom",
     "outs": 1,
-    "away_h": 3,
-    "home_h": 2
+    "away_h": 4,
+    "home_h": 3
    },
    "start_utc": "2026-09-06T18:35:00Z",
    "venue": "Globe Life Field",
@@ -2220,7 +2227,7 @@
      "recent_rec": "11-10"
     },
     "exp_runs": 4.32,
-    "score": 2
+    "score": 4
    },
    "home": {
     "name": "Texas Rangers",
@@ -2268,7 +2275,7 @@
      "recent_rec": "10-10"
     },
     "exp_runs": 4.29,
-    "score": 0
+    "score": 1
    },
    "sim": {
     "p_home": 0.49356666666666665,
@@ -2318,12 +2325,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 7,
-    "ord": "7th",
-    "half": "Bottom",
-    "outs": 2,
-    "away_h": 4,
-    "home_h": 5
+    "inning": 8,
+    "ord": "8th",
+    "half": "Top",
+    "outs": 1,
+    "away_h": 7,
+    "home_h": 6
    },
    "start_utc": "2026-09-06T17:10:00Z",
    "venue": "Citizens Bank Park",
@@ -2377,7 +2384,7 @@
      "recent_rec": "11-9"
     },
     "exp_runs": 4.45,
-    "score": 1
+    "score": 4
    },
    "home": {
     "name": "Philadelphia Phillies",
@@ -2425,7 +2432,7 @@
      "recent_rec": "15-4"
     },
     "exp_runs": 4.44,
-    "score": 3
+    "score": 4
    },
    "sim": {
     "p_home": 0.5007,
