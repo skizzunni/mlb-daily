@@ -1,6 +1,6 @@
 {
  "date": "2026-09-06",
- "generated": "Sep 6, 1:19 PM EDT",
+ "generated": "Sep 6, 1:34 PM EDT",
  "league": {
   "rpg": 4.480364656381487,
   "era": 4.170538890596864,
@@ -124,10 +124,10 @@
    "live": {
     "inning": 4,
     "ord": "4th",
-    "half": "Middle",
-    "outs": 3,
+    "half": "Bottom",
+    "outs": 2,
     "away_h": 2,
-    "home_h": 6
+    "home_h": 9
    },
    "start_utc": "2026-09-06T16:10:00Z",
    "venue": "Great American Ball Park",
@@ -229,7 +229,7 @@
      "recent_rec": "9-12"
     },
     "exp_runs": 4.13,
-    "score": 4
+    "score": 6
    },
    "sim": {
     "p_home": 0.3857,
@@ -416,7 +416,7 @@
     "side": "home",
     "team": "PIT",
     "team_name": "Pittsburgh Pirates",
-    "p": 0.6121,
+    "p": 0.612,
     "tier": "A",
     "fair": "-158",
     "reasons": [
@@ -437,8 +437,8 @@
   },
   {
    "pk": 823822,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -592,7 +592,7 @@
     "rl_p": 0.4475,
     "rl_fair": "+123"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -1531,8 +1531,8 @@
   },
   {
    "pk": 823578,
-   "state": "Preview",
-   "detail": "Pre-Game",
+   "state": "Live",
+   "detail": "Warmup",
    "live": {
     "inning": 1,
     "ord": "1st",
@@ -1680,7 +1680,7 @@
     "rl_p": 0.3765,
     "rl_fair": "+166"
    },
-   "locked": false,
+   "locked": true,
    "result": null
   },
   {
@@ -1973,7 +1973,7 @@
     "side": "away",
     "team": "BOS",
     "team_name": "Boston Red Sox",
-    "p": 0.5183,
+    "p": 0.5182,
     "tier": "PASS",
     "fair": "-108",
     "reasons": [
@@ -2311,12 +2311,12 @@
    "state": "Live",
    "detail": "In Progress",
    "live": {
-    "inning": 1,
-    "ord": "1st",
-    "half": "Bottom",
-    "outs": 0,
+    "inning": 2,
+    "ord": "2nd",
+    "half": "Middle",
+    "outs": 3,
     "away_h": 0,
-    "home_h": 0
+    "home_h": 1
    },
    "start_utc": "2026-09-06T17:10:00Z",
    "venue": "Citizens Bank Park",
@@ -2418,7 +2418,7 @@
      "recent_rec": "15-4"
     },
     "exp_runs": 4.44,
-    "score": 0
+    "score": 2
    },
    "sim": {
     "p_home": 0.5007,
