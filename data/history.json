@@ -612,9 +612,10 @@
    "tier": "PLAY",
    "fair": "-126",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-118",
-   "mkt": 0.5174
+   "mkt": 0.5174,
+   "final": "NYM 9 - MIA 4"
   },
   "824793": {
    "matchup": "CLE @ BAL",
@@ -624,9 +625,10 @@
    "tier": "PLAY",
    "fair": "-131",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-126",
-   "mkt": 0.5321
+   "mkt": 0.5321,
+   "final": "CLE 4 - BAL 6"
   },
   "823415": {
    "matchup": "ATL @ PHI",
@@ -645,7 +647,7 @@
    "matchup": "STL @ SF",
    "pick": "SF",
    "side": "home",
-   "p": 0.5328,
+   "p": 0.533,
    "tier": "PASS",
    "fair": "-114",
    "locked": false,
@@ -661,9 +663,10 @@
    "tier": "PASS",
    "fair": "-110",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-130",
-   "mkt": 0.5404
+   "mkt": 0.5404,
+   "final": "CHC 3 - MIL 4"
   },
   "824715": {
    "matchup": "LAA @ BOS",
@@ -673,15 +676,16 @@
    "tier": "PLAY",
    "fair": "-163",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-181",
-   "mkt": 0.616
+   "mkt": 0.616,
+   "final": "LAA 2 - BOS 5"
   },
   "823902": {
    "matchup": "CIN @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.5313,
+   "p": 0.5314,
    "tier": "PASS",
    "fair": "-113",
    "locked": false,
@@ -693,10 +697,10 @@
    "matchup": "WSH @ SD",
    "pick": "SD",
    "side": "home",
-   "p": 0.5667,
+   "p": 0.5669,
    "tier": "PLAY",
    "fair": "-131",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-203",
    "mkt": 0.6406
@@ -705,7 +709,7 @@
    "matchup": "TOR @ ATH",
    "pick": "TOR",
    "side": "away",
-   "p": 0.5687,
+   "p": 0.5688,
    "tier": "PLAY",
    "fair": "-132",
    "locked": false,
@@ -721,9 +725,10 @@
    "tier": "PASS",
    "fair": "-111",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-115",
-   "mkt": 0.5108
+   "mkt": 0.5108,
+   "final": "ARI 5 - KC 4"
   },
   "824229": {
    "matchup": "MIN @ DET",
@@ -733,9 +738,10 @@
    "tier": "PASS",
    "fair": "-111",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-126",
-   "mkt": 0.5321
+   "mkt": 0.5321,
+   "final": "MIN 4 - DET 5"
   }
  }
 }
