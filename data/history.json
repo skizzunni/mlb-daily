@@ -544,10 +544,11 @@
    "p": 0.5309,
    "tier": "PASS",
    "fair": "-113",
-   "locked": false,
-   "result": null,
+   "locked": true,
+   "result": "W",
    "price": "-199",
-   "mkt": 0.6364
+   "mkt": 0.6364,
+   "final": "5-7"
   },
   "824794": {
    "matchup": "BOS @ BAL",
@@ -607,7 +608,7 @@
    "matchup": "NYM @ MIA",
    "pick": "MIA",
    "side": "home",
-   "p": 0.554,
+   "p": 0.5541,
    "tier": "PLAY",
    "fair": "-124",
    "locked": false,
@@ -619,7 +620,7 @@
    "matchup": "CLE @ BAL",
    "pick": "BAL",
    "side": "home",
-   "p": 0.5574,
+   "p": 0.5572,
    "tier": "PLAY",
    "fair": "-126",
    "locked": false,
@@ -679,9 +680,9 @@
    "matchup": "CIN @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.5264,
+   "p": 0.5312,
    "tier": "PASS",
-   "fair": "-111",
+   "fair": "-113",
    "locked": false,
    "result": null,
    "price": "-156",
@@ -691,9 +692,9 @@
    "matchup": "WSH @ SD",
    "pick": "SD",
    "side": "home",
-   "p": 0.5647,
+   "p": 0.5673,
    "tier": "PLAY",
-   "fair": "-130",
+   "fair": "-131",
    "locked": false,
    "result": null,
    "price": "-203",
@@ -720,20 +721,20 @@
    "fair": "-122",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-115",
+   "mkt": 0.5108
   },
   "824229": {
    "matchup": "MIN @ DET",
    "pick": "DET",
    "side": "home",
-   "p": 0.5222,
+   "p": 0.5223,
    "tier": "PASS",
    "fair": "-109",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-126",
+   "mkt": 0.5321
   }
  }
 }
