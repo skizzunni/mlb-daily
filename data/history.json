@@ -780,7 +780,7 @@
    "p": 0.5596,
    "tier": "PLAY",
    "fair": "-127",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-136",
    "mkt": 0.5511
@@ -792,7 +792,7 @@
    "p": 0.5392,
    "tier": "PASS",
    "fair": "-117",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-131",
    "mkt": 0.5424
@@ -864,7 +864,7 @@
    "p": 0.506,
    "tier": "PASS",
    "fair": "-102",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-143",
    "mkt": 0.5631
@@ -876,7 +876,7 @@
    "p": 0.5092,
    "tier": "PASS",
    "fair": "-104",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-150",
    "mkt": 0.5734
@@ -921,9 +921,9 @@
    "matchup": "TEX @ SEA",
    "pick": "SEA",
    "side": "home",
-   "p": 0.5037,
+   "p": 0.5166,
    "tier": "PASS",
-   "fair": "-101",
+   "fair": "-107",
    "locked": false,
    "result": null,
    "price": "-136",
