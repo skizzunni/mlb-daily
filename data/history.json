@@ -1147,10 +1147,10 @@
    "matchup": "PIT @ CWS",
    "pick": "CWS",
    "side": "home",
-   "p": 0.5411,
+   "p": 0.541,
    "tier": "PASS",
    "fair": "-118",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-107",
    "mkt": 0.4935
@@ -1163,9 +1163,10 @@
    "tier": "PASS",
    "fair": "-105",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "+109",
-   "mkt": 0.4576
+   "mkt": 0.4576,
+   "final": "TEX 3 - SEA 4"
   },
   "824872": {
    "matchup": "TB @ ATL",
@@ -1197,10 +1198,10 @@
    "matchup": "COL @ NYY",
    "pick": "NYY",
    "side": "home",
-   "p": 0.6495,
+   "p": 0.6463,
    "tier": "PLAY",
-   "fair": "-185",
-   "locked": false,
+   "fair": "-183",
+   "locked": true,
    "result": null,
    "price": "-344",
    "mkt": 0.7414
