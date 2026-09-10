@@ -980,9 +980,10 @@
    "tier": "PASS",
    "fair": "-112",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-105",
-   "mkt": 0.4892
+   "mkt": 0.4892,
+   "final": "2-5"
   },
   "824871": {
    "matchup": "TB @ ATL",
@@ -992,9 +993,10 @@
    "tier": "PASS",
    "fair": "-108",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "+102",
-   "mkt": 0.473
+   "mkt": 0.473,
+   "final": "7-2"
   },
   "824791": {
    "matchup": "CLE @ BAL",
@@ -1004,9 +1006,10 @@
    "tier": "PASS",
    "fair": "-119",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-111",
-   "mkt": 0.5033
+   "mkt": 0.5033,
+   "final": "5-9"
   },
   "823818": {
    "matchup": "NYM @ MIA",
@@ -1016,9 +1019,10 @@
    "tier": "PASS",
    "fair": "-115",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-126",
-   "mkt": 0.5321
+   "mkt": 0.5321,
+   "final": "15-14"
   },
   "823416": {
    "matchup": "HOU @ PHI",
@@ -1028,9 +1032,10 @@
    "tier": "PLAY",
    "fair": "-141",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-160",
-   "mkt": 0.5891
+   "mkt": 0.5891,
+   "final": "7-11"
   },
   "823739": {
    "matchup": "CHC @ MIL",
@@ -1040,9 +1045,10 @@
    "tier": "PLAY",
    "fair": "-125",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-135",
-   "mkt": 0.5491
+   "mkt": 0.5491,
+   "final": "6-8"
   },
   "824713": {
    "matchup": "LAA @ BOS",
@@ -1052,9 +1058,10 @@
    "tier": "PLAY",
    "fair": "-172",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-217",
-   "mkt": 0.6547
+   "mkt": 0.6547,
+   "final": "6-4"
   },
   "823172": {
    "matchup": "STL @ SF",
@@ -1090,9 +1097,10 @@
    "tier": "PASS",
    "fair": "-115",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-156",
-   "mkt": 0.5825
+   "mkt": 0.5825,
+   "final": "4-2"
   },
   "823900": {
    "matchup": "CIN @ LAD",
@@ -1114,9 +1122,10 @@
    "tier": "PLAY",
    "fair": "-148",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-249",
-   "mkt": 0.6823
+   "mkt": 0.6823,
+   "final": "1-6"
   },
   "824956": {
    "matchup": "TOR @ ATH",
@@ -1130,6 +1139,68 @@
    "price": "-193",
    "mkt": 0.6305,
    "final": "TOR 0 - ATH 2"
+  }
+ },
+ "2026-09-10": {
+  "824550": {
+   "matchup": "PIT @ CWS",
+   "pick": "CWS",
+   "side": "home",
+   "p": 0.5404,
+   "tier": "PASS",
+   "fair": "-118",
+   "locked": false,
+   "result": null,
+   "price": "-107",
+   "mkt": 0.4935
+  },
+  "823088": {
+   "matchup": "TEX @ SEA",
+   "pick": "TEX",
+   "side": "away",
+   "p": 0.501,
+   "tier": "PASS",
+   "fair": "-100",
+   "locked": false,
+   "result": null,
+   "price": "+109",
+   "mkt": 0.4576
+  },
+  "824872": {
+   "matchup": "TB @ ATL",
+   "pick": "TB",
+   "side": "away",
+   "p": 0.5016,
+   "tier": "PASS",
+   "fair": "-101",
+   "locked": false,
+   "result": null,
+   "price": "+102",
+   "mkt": 0.473
+  },
+  "823413": {
+   "matchup": "HOU @ PHI",
+   "pick": "PHI",
+   "side": "home",
+   "p": 0.5828,
+   "tier": "PLAY",
+   "fair": "-140",
+   "locked": false,
+   "result": null,
+   "price": "-184",
+   "mkt": 0.6202
+  },
+  "823499": {
+   "matchup": "COL @ NYY",
+   "pick": "NYY",
+   "side": "home",
+   "p": 0.6495,
+   "tier": "PLAY",
+   "fair": "-185",
+   "locked": false,
+   "result": null,
+   "price": "-344",
+   "mkt": 0.7414
   }
  }
 }
