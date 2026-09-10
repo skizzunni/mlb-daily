@@ -1147,7 +1147,7 @@
    "matchup": "PIT @ CWS",
    "pick": "CWS",
    "side": "home",
-   "p": 0.5406,
+   "p": 0.5408,
    "tier": "PASS",
    "fair": "-118",
    "locked": false,
@@ -1159,9 +1159,9 @@
    "matchup": "TEX @ SEA",
    "pick": "TEX",
    "side": "away",
-   "p": 0.5016,
+   "p": 0.5011,
    "tier": "PASS",
-   "fair": "-101",
+   "fair": "-100",
    "locked": false,
    "result": null,
    "price": "+109",
@@ -1175,9 +1175,10 @@
    "tier": "PASS",
    "fair": "-101",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "+102",
-   "mkt": 0.473
+   "mkt": 0.473,
+   "final": "TB 1 - ATL 3"
   },
   "823413": {
    "matchup": "HOU @ PHI",
@@ -1187,9 +1188,10 @@
    "tier": "PLAY",
    "fair": "-141",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-184",
-   "mkt": 0.6202
+   "mkt": 0.6202,
+   "final": "HOU 2 - PHI 1"
   },
   "823499": {
    "matchup": "COL @ NYY",
