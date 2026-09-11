@@ -1363,8 +1363,8 @@
    "fair": "-128",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-199",
+   "mkt": 0.6364
   },
   "823817": {
    "matchup": "LAD @ MIA",
@@ -1375,8 +1375,8 @@
    "fair": "-102",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "+171",
+   "mkt": 0.353
   },
   "825036": {
    "matchup": "TEX @ ARI",
@@ -1387,8 +1387,8 @@
    "fair": "-115",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-132",
+   "mkt": 0.5432
   }
  }
 }
