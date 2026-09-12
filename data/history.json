@@ -1447,9 +1447,9 @@
    "matchup": "CWS @ STL",
    "pick": "STL",
    "side": "home",
-   "p": 0.5624,
-   "tier": "PLAY",
-   "fair": "-129",
+   "p": 0.5165,
+   "tier": "PASS",
+   "fair": "-107",
    "locked": false,
    "result": null,
    "price": "-116",
@@ -1584,8 +1584,8 @@
    "fair": "-188",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-194",
+   "mkt": 0.6309
   }
  }
 }
