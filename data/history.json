@@ -1633,10 +1633,10 @@
    "matchup": "SD @ SF",
    "pick": "SF",
    "side": "home",
-   "p": 0.5272,
+   "p": 0.52,
    "tier": "PASS",
-   "fair": "-112",
-   "locked": false,
+   "fair": "-108",
+   "locked": true,
    "result": null,
    "price": "+110",
    "mkt": 0.4556
@@ -1688,9 +1688,10 @@
    "tier": "PASS",
    "fair": "-122",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-144",
-   "mkt": 0.5638
+   "mkt": 0.5638,
+   "final": "TEX 7 - ARI 6"
   },
   "823495": {
    "matchup": "NYM @ NYY",
