@@ -1411,7 +1411,7 @@
    "matchup": "SEA @ ATH",
    "pick": "ATH",
    "side": "home",
-   "p": 0.5169,
+   "p": 0.5167,
    "tier": "PASS",
    "fair": "-107",
    "locked": false,
@@ -1427,9 +1427,10 @@
    "tier": "PASS",
    "fair": "-104",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "+132",
-   "mkt": 0.4119
+   "mkt": 0.4119,
+   "final": "SD 7 - SF 6"
   },
   "822685": {
    "matchup": "LAA @ WSH",
@@ -1439,18 +1440,19 @@
    "tier": "PLAY",
    "fair": "-141",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-118",
-   "mkt": 0.5174
+   "mkt": 0.5174,
+   "final": "LAA 5 - WSH 6"
   },
   "823009": {
    "matchup": "CWS @ STL",
    "pick": "STL",
    "side": "home",
-   "p": 0.517,
+   "p": 0.5175,
    "tier": "PASS",
    "fair": "-107",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-116",
    "mkt": 0.513
@@ -1459,10 +1461,10 @@
    "matchup": "PHI @ ATL",
    "pick": "ATL",
    "side": "home",
-   "p": 0.5244,
+   "p": 0.5222,
    "tier": "PASS",
-   "fair": "-110",
-   "locked": false,
+   "fair": "-109",
+   "locked": true,
    "result": null,
    "price": "-114",
    "mkt": 0.5087
@@ -1484,10 +1486,10 @@
    "matchup": "TEX @ ARI",
    "pick": "ARI",
    "side": "home",
-   "p": 0.568,
+   "p": 0.5648,
    "tier": "PLAY",
-   "fair": "-131",
-   "locked": false,
+   "fair": "-130",
+   "locked": true,
    "result": null,
    "price": "-143",
    "mkt": 0.562
@@ -1500,9 +1502,10 @@
    "tier": "PASS",
    "fair": "-100",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-112",
-   "mkt": 0.5043
+   "mkt": 0.5043,
+   "final": "CLE 3 - MIN 4"
   },
   "822768": {
    "matchup": "BAL @ TOR",
@@ -1576,18 +1579,19 @@
    "tier": "PLAY",
    "fair": "-128",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-202",
-   "mkt": 0.6402
+   "mkt": 0.6402,
+   "final": "LAD 3 - MIA 4"
   },
   "823737": {
    "matchup": "CIN @ MIL",
    "pick": "MIL",
    "side": "home",
-   "p": 0.6792,
+   "p": 0.6778,
    "tier": "PLAY",
-   "fair": "-212",
-   "locked": false,
+   "fair": "-210",
+   "locked": true,
    "result": null,
    "price": "-194",
    "mkt": 0.6309
