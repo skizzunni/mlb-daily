@@ -1769,8 +1769,8 @@
    "fair": "-113",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-137",
+   "mkt": 0.553
   },
   "823008": {
    "matchup": "CWS @ STL",
@@ -1781,8 +1781,8 @@
    "fair": "-114",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "+113",
+   "mkt": 0.4482
   }
  }
 }
