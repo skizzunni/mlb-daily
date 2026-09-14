@@ -1625,9 +1625,10 @@
    "tier": "PASS",
    "fair": "-100",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "+123",
-   "mkt": 0.4284
+   "mkt": 0.4284,
+   "final": "SEA 7 - ATH 8"
   },
   "823171": {
    "matchup": "SD @ SF",
@@ -1714,9 +1715,10 @@
    "tier": "PLAY",
    "fair": "-152",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-192",
-   "mkt": 0.6291
+   "mkt": 0.6291,
+   "final": "KC 1 - BOS 4"
   },
   "822928": {
    "matchup": "HOU @ TB",
