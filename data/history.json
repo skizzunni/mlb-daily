@@ -2281,7 +2281,7 @@
    "p": 0.5671,
    "tier": "PLAY",
    "fair": "-131",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-180",
    "mkt": 0.6145
@@ -2293,7 +2293,7 @@
    "p": 0.525,
    "tier": "PASS",
    "fair": "-111",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-163",
    "mkt": 0.5929
