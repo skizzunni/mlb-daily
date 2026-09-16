@@ -1937,10 +1937,10 @@
    "matchup": "SD @ COL",
    "pick": "COL",
    "side": "home",
-   "p": 0.5108,
+   "p": 0.505,
    "tier": "PASS",
-   "fair": "-104",
-   "locked": false,
+   "fair": "-102",
+   "locked": true,
    "result": null,
    "price": "+162",
    "mkt": 0.3653
@@ -1989,9 +1989,10 @@
    "tier": "PLAY",
    "fair": "-177",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-238",
-   "mkt": 0.6735
+   "mkt": 0.6735,
+   "final": "LAD 4 - CIN 0"
   },
   "823654": {
    "matchup": "NYY @ MIN",
@@ -2025,18 +2026,19 @@
    "tier": "PASS",
    "fair": "-101",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-130",
-   "mkt": 0.5404
+   "mkt": 0.5404,
+   "final": "CWS 6 - CLE 7"
   },
   "823980": {
    "matchup": "SEA @ LAA",
    "pick": "SEA",
    "side": "away",
-   "p": 0.5681,
+   "p": 0.5595,
    "tier": "PLAY",
-   "fair": "-132",
-   "locked": false,
+   "fair": "-127",
+   "locked": true,
    "result": null,
    "price": "-174",
    "mkt": 0.6078
@@ -2045,10 +2047,10 @@
    "matchup": "KC @ HOU",
    "pick": "HOU",
    "side": "home",
-   "p": 0.5569,
+   "p": 0.5653,
    "tier": "PLAY",
-   "fair": "-126",
-   "locked": false,
+   "fair": "-130",
+   "locked": true,
    "result": null,
    "price": "-167",
    "mkt": 0.5982
@@ -2061,9 +2063,10 @@
    "tier": "PLAY",
    "fair": "-176",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-257",
-   "mkt": 0.6871
+   "mkt": 0.6871,
+   "final": "MIL 5 - PIT 1"
   },
   "822925": {
    "matchup": "ATH @ TB",
@@ -2073,9 +2076,10 @@
    "tier": "PLAY",
    "fair": "-156",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-231",
-   "mkt": 0.667
+   "mkt": 0.667,
+   "final": "ATH 1 - TB 2"
   },
   "825030": {
    "matchup": "MIA @ ARI",
@@ -2084,7 +2088,7 @@
    "p": 0.5161,
    "tier": "PASS",
    "fair": "-107",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-156",
    "mkt": 0.5825
@@ -2097,18 +2101,19 @@
    "tier": "PASS",
    "fair": "-119",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-217",
-   "mkt": 0.6547
+   "mkt": 0.6547,
+   "final": "PHI 3 - WSH 6"
   },
   "822849": {
    "matchup": "BOS @ TEX",
    "pick": "TEX",
    "side": "home",
-   "p": 0.5371,
+   "p": 0.5342,
    "tier": "PASS",
-   "fair": "-116",
-   "locked": false,
+   "fair": "-115",
+   "locked": true,
    "result": null,
    "price": "-131",
    "mkt": 0.5376
