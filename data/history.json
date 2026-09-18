@@ -2331,10 +2331,10 @@
    "matchup": "MIN @ LAA",
    "pick": "LAA",
    "side": "home",
-   "p": 0.512,
+   "p": 0.5119,
    "tier": "PASS",
    "fair": "-105",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "+108",
    "mkt": 0.4596
