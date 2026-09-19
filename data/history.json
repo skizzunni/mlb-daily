@@ -2808,8 +2808,8 @@
    "fair": "-109",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "+134",
+   "mkt": 0.4087
   },
   "823899": {
    "matchup": "SF @ LAD",
@@ -2820,8 +2820,8 @@
    "fair": "-215",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-350",
+   "mkt": 0.7442
   }
  }
 }
