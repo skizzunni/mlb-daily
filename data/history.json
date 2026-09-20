@@ -2848,9 +2848,10 @@
    "tier": "PLAY",
    "fair": "-144",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-102",
-   "mkt": 0.4826
+   "mkt": 0.4826,
+   "final": "KC 3 - PIT 4"
   },
   "825028": {
    "matchup": "NYY @ ARI",
@@ -2868,9 +2869,9 @@
    "matchup": "MIL @ BAL",
    "pick": "MIL",
    "side": "away",
-   "p": 0.6569,
+   "p": 0.6571,
    "tier": "PLAY",
-   "fair": "-191",
+   "fair": "-192",
    "locked": false,
    "result": null,
    "price": "-206",
@@ -2896,18 +2897,19 @@
    "tier": "PLAY",
    "fair": "-129",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-149",
-   "mkt": 0.5716
+   "mkt": 0.5716,
+   "final": "WSH 3 - STL 5"
   },
   "824546": {
    "matchup": "DET @ CWS",
    "pick": "CWS",
    "side": "home",
-   "p": 0.5105,
+   "p": 0.5108,
    "tier": "PASS",
    "fair": "-104",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-121",
    "mkt": 0.5227
@@ -2920,9 +2922,10 @@
    "tier": "PASS",
    "fair": "-120",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-150",
-   "mkt": 0.5734
+   "mkt": 0.5734,
+   "final": "BOS 1 - TB 5"
   },
   "823247": {
    "matchup": "MIA @ SD",
@@ -2944,9 +2947,10 @@
    "tier": "PASS",
    "fair": "-105",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-143",
-   "mkt": 0.562
+   "mkt": 0.562,
+   "final": "ATL 4 - HOU 2"
   },
   "824381": {
    "matchup": "ATH @ CLE",
@@ -2980,9 +2984,10 @@
    "tier": "PASS",
    "fair": "-102",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-171",
-   "mkt": 0.6033
+   "mkt": 0.6033,
+   "final": "PHI 7 - NYM 2"
   },
   "824462": {
    "matchup": "CHC @ CIN",
@@ -2992,9 +2997,10 @@
    "tier": "PLAY",
    "fair": "-166",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-162",
-   "mkt": 0.5913
+   "mkt": 0.5913,
+   "final": "CHC 9 - CIN 1"
   },
   "822844": {
    "matchup": "TOR @ TEX",
@@ -3004,9 +3010,10 @@
    "tier": "PASS",
    "fair": "-118",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-162",
-   "mkt": 0.5913
+   "mkt": 0.5913,
+   "final": "TOR 7 - TEX 2"
   },
   "823896": {
    "matchup": "SF @ LAD",
