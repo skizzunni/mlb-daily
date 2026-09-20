@@ -2993,8 +2993,8 @@
    "fair": "-154",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-162",
+   "mkt": 0.5913
   },
   "822844": {
    "matchup": "TOR @ TEX",
@@ -3005,8 +3005,8 @@
    "fair": "-118",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-162",
+   "mkt": 0.5913
   },
   "823896": {
    "matchup": "SF @ LAD",
@@ -3017,8 +3017,8 @@
    "fair": "-143",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-280",
+   "mkt": 0.7048
   }
  }
 }
