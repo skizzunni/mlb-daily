@@ -2912,9 +2912,10 @@
    "tier": "PASS",
    "fair": "-104",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-121",
-   "mkt": 0.5227
+   "mkt": 0.5227,
+   "final": "DET 1 - CWS 8"
   },
   "822922": {
    "matchup": "BOS @ TB",
