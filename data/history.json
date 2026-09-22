@@ -3045,9 +3045,10 @@
    "tier": "PASS",
    "fair": "-118",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-112",
-   "mkt": 0.5055
+   "mkt": 0.5055,
+   "final": "3-4"
   },
   "823169": {
    "matchup": "MIN @ SF",
@@ -3056,10 +3057,11 @@
    "p": 0.5175,
    "tier": "PASS",
    "fair": "-107",
-   "locked": false,
-   "result": null,
+   "locked": true,
+   "result": "W",
    "price": "-102",
-   "mkt": 0.4826
+   "mkt": 0.4826,
+   "final": "2-5"
   },
   "824221": {
    "matchup": "WSH @ DET",
@@ -3073,6 +3075,200 @@
    "price": "-156",
    "mkt": 0.5825,
    "final": "WSH 2 - DET 9"
+  }
+ },
+ "2026-09-22": {
+  "823412": {
+   "matchup": "MIL @ PHI",
+   "pick": "MIL",
+   "side": "away",
+   "p": 0.5289,
+   "tier": "PASS",
+   "fair": "-112",
+   "locked": false,
+   "result": null,
+   "price": "+114",
+   "mkt": 0.447
+  },
+  "824785": {
+   "matchup": "TOR @ BAL",
+   "pick": "BAL",
+   "side": "home",
+   "p": 0.5677,
+   "tier": "PLAY",
+   "fair": "-131",
+   "locked": false,
+   "result": null,
+   "price": "-122",
+   "mkt": 0.5248
+  },
+  "823166": {
+   "matchup": "MIN @ SF",
+   "pick": "SF",
+   "side": "home",
+   "p": 0.5002,
+   "tier": "PASS",
+   "fair": "-100",
+   "locked": false,
+   "result": null,
+   "price": "+109",
+   "mkt": 0.4576
+  },
+  "824953": {
+   "matchup": "LAA @ ATH",
+   "pick": "ATH",
+   "side": "home",
+   "p": 0.5199,
+   "tier": "PASS",
+   "fair": "-108",
+   "locked": false,
+   "result": null,
+   "price": "-110",
+   "mkt": 0.5011
+  },
+  "824061": {
+   "matchup": "CWS @ KC",
+   "pick": "CWS",
+   "side": "away",
+   "p": 0.5383,
+   "tier": "PASS",
+   "fair": "-117",
+   "locked": false,
+   "result": null,
+   "price": "-120",
+   "mkt": 0.5217
+  },
+  "823089": {
+   "matchup": "HOU @ SEA",
+   "pick": "SEA",
+   "side": "home",
+   "p": 0.583,
+   "tier": "PLAY",
+   "fair": "-140",
+   "locked": false,
+   "result": null,
+   "price": "-149",
+   "mkt": 0.5716
+  },
+  "823494": {
+   "matchup": "TB @ NYY",
+   "pick": "NYY",
+   "side": "home",
+   "p": 0.5538,
+   "tier": "PLAY",
+   "fair": "-124",
+   "locked": false,
+   "result": null,
+   "price": "-132",
+   "mkt": 0.5432
+  },
+  "823897": {
+   "matchup": "SD @ LAD",
+   "pick": "LAD",
+   "side": "home",
+   "p": 0.5283,
+   "tier": "PASS",
+   "fair": "-112",
+   "locked": false,
+   "result": null,
+   "price": "-121",
+   "mkt": 0.5227
+  },
+  "824867": {
+   "matchup": "CIN @ ATL",
+   "pick": "ATL",
+   "side": "home",
+   "p": 0.6166,
+   "tier": "PLAY",
+   "fair": "-161",
+   "locked": false,
+   "result": null,
+   "price": "-193",
+   "mkt": 0.6296
+  },
+  "824709": {
+   "matchup": "CLE @ BOS",
+   "pick": "BOS",
+   "side": "home",
+   "p": 0.5171,
+   "tier": "PASS",
+   "fair": "-107",
+   "locked": false,
+   "result": null,
+   "price": "-131",
+   "mkt": 0.5424
+  },
+  "823328": {
+   "matchup": "STL @ PIT",
+   "pick": "PIT",
+   "side": "home",
+   "p": 0.5491,
+   "tier": "PASS",
+   "fair": "-122",
+   "locked": false,
+   "result": null,
+   "price": "-155",
+   "mkt": 0.5819
+  },
+  "824222": {
+   "matchup": "WSH @ DET",
+   "pick": "DET",
+   "side": "home",
+   "p": 0.5461,
+   "tier": "PASS",
+   "fair": "-120",
+   "locked": false,
+   "result": null,
+   "price": "-157",
+   "mkt": 0.5842
+  },
+  "822840": {
+   "matchup": "NYM @ TEX",
+   "pick": "TEX",
+   "side": "home",
+   "p": 0.5123,
+   "tier": "PASS",
+   "fair": "-105",
+   "locked": false,
+   "result": null,
+   "price": "-149",
+   "mkt": 0.5716
+  },
+  "824624": {
+   "matchup": "MIA @ CHC",
+   "pick": "CHC",
+   "side": "home",
+   "p": 0.5585,
+   "tier": "PLAY",
+   "fair": "-127",
+   "locked": false,
+   "result": null,
+   "price": "-218",
+   "mkt": 0.6559
+  },
+  "824302": {
+   "matchup": "ARI @ COL",
+   "pick": "ARI",
+   "side": "away",
+   "p": 0.5215,
+   "tier": "PASS",
+   "fair": "-109",
+   "locked": false,
+   "result": null,
+   "price": "-198",
+   "mkt": 0.6351
+  },
+  "823543": {
+   "matchup": "TB @ NYY",
+   "pick": "NYY",
+   "side": "home",
+   "p": 0.5487,
+   "tier": "PASS",
+   "fair": "-122",
+   "locked": false,
+   "result": null,
+   "price": null,
+   "mkt": null
   }
  }
 }
