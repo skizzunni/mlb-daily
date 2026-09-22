@@ -3041,10 +3041,10 @@
    "matchup": "TOR @ BAL",
    "pick": "BAL",
    "side": "home",
-   "p": 0.5411,
+   "p": 0.542,
    "tier": "PASS",
    "fair": "-118",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-112",
    "mkt": 0.5055
@@ -3053,7 +3053,7 @@
    "matchup": "MIN @ SF",
    "pick": "SF",
    "side": "home",
-   "p": 0.5179,
+   "p": 0.5175,
    "tier": "PASS",
    "fair": "-107",
    "locked": false,
@@ -3069,9 +3069,10 @@
    "tier": "PASS",
    "fair": "-109",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-156",
-   "mkt": 0.5825
+   "mkt": 0.5825,
+   "final": "WSH 2 - DET 9"
   }
  }
 }
