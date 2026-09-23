@@ -3464,20 +3464,20 @@
    "fair": "-119",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-133",
+   "mkt": 0.5452
   },
   "823086": {
    "matchup": "HOU @ SEA",
    "pick": "SEA",
    "side": "home",
-   "p": 0.5679,
+   "p": 0.5661,
    "tier": "PLAY",
-   "fair": "-131",
+   "fair": "-130",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-149",
+   "mkt": 0.5727
   }
  }
 }
