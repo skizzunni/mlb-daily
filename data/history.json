@@ -3856,8 +3856,8 @@
    "fair": "-123",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-182",
+   "mkt": 0.6164
   }
  }
 }
