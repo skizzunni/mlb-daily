@@ -3505,9 +3505,10 @@
    "tier": "PLAY",
    "fair": "-153",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "+100",
-   "mkt": 0.4773
+   "mkt": 0.4773,
+   "final": "MIL 5 - PHI 1"
   },
   "822842": {
    "matchup": "NYM @ TEX",
@@ -3530,9 +3531,10 @@
    "tier": "PLAY",
    "fair": "-166",
    "locked": true,
-   "result": null,
+   "result": "W",
    "price": "-156",
-   "mkt": 0.5825
+   "mkt": 0.5825,
+   "final": "TB 4 - NYY 6"
   },
   "824059": {
    "matchup": "CWS @ KC",
@@ -3568,9 +3570,10 @@
    "tier": "PLAY",
    "fair": "-178",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-225",
-   "mkt": 0.6621
+   "mkt": 0.6621,
+   "final": "CIN 7 - ATL 6"
   },
   "824707": {
    "matchup": "CLE @ BOS",
@@ -3580,18 +3583,19 @@
    "tier": "PASS",
    "fair": "-114",
    "locked": true,
-   "result": null,
+   "result": "L",
    "price": "-143",
-   "mkt": 0.5631
+   "mkt": 0.5631,
+   "final": "CLE 1 - BOS 0"
   },
   "823087": {
    "matchup": "LAA @ SEA",
    "pick": "SEA",
    "side": "home",
-   "p": 0.605,
+   "p": 0.6089,
    "tier": "PLAY",
-   "fair": "-153",
-   "locked": false,
+   "fair": "-156",
+   "locked": true,
    "result": null,
    "price": "-199",
    "mkt": 0.6364
@@ -3600,10 +3604,10 @@
    "matchup": "SD @ LAD",
    "pick": "LAD",
    "side": "home",
-   "p": 0.5644,
+   "p": 0.5646,
    "tier": "PLAY",
    "fair": "-130",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-173",
    "mkt": 0.6053
@@ -3612,10 +3616,10 @@
    "matchup": "HOU @ ATH",
    "pick": "HOU",
    "side": "away",
-   "p": 0.5458,
+   "p": 0.5462,
    "tier": "PASS",
    "fair": "-120",
-   "locked": false,
+   "locked": true,
    "result": null,
    "price": "-163",
    "mkt": 0.5919
