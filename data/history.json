@@ -4190,8 +4190,8 @@
    "fair": "-117",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-124",
+   "mkt": 0.5291
   },
   "824948": {
    "matchup": "HOU @ ATH",
@@ -4202,8 +4202,8 @@
    "fair": "-117",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-176",
+   "mkt": 0.6097
   },
   "823164": {
    "matchup": "LAD @ SF",
@@ -4214,8 +4214,8 @@
    "fair": "-138",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-260",
+   "mkt": 0.6906
   },
   "823246": {
    "matchup": "ARI @ SD",
@@ -4226,8 +4226,8 @@
    "fair": "-102",
    "locked": false,
    "result": null,
-   "price": null,
-   "mkt": null
+   "price": "-135",
+   "mkt": 0.5491
   }
  }
 }
